@@ -1,0 +1,11 @@
+/Users/matiasaguilar/Documents/OnlyDust/AURORA-Backend/target/debug/deps/libspin-fa16293532c7c6e7.rmeta: /Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/lib.rs /Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/mutex.rs /Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/mutex/spin.rs /Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/relax.rs /Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/rwlock.rs
+
+/Users/matiasaguilar/Documents/OnlyDust/AURORA-Backend/target/debug/deps/libspin-fa16293532c7c6e7.rlib: /Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/lib.rs /Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/mutex.rs /Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/mutex/spin.rs /Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/relax.rs /Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/rwlock.rs
+
+/Users/matiasaguilar/Documents/OnlyDust/AURORA-Backend/target/debug/deps/spin-fa16293532c7c6e7.d: /Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/lib.rs /Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/mutex.rs /Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/mutex/spin.rs /Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/relax.rs /Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/rwlock.rs
+
+/Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/lib.rs:
+/Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/mutex.rs:
+/Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/mutex/spin.rs:
+/Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/relax.rs:
+/Users/matiasaguilar/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/rwlock.rs:
