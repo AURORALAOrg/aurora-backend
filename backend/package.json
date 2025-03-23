@@ -16,7 +16,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@prisma/client": "^6.2.1",
     "axios": "^1.7.7",
     "bcrypt": "^5.1.1",
     "cookie-parser": "^1.4.6",
@@ -41,6 +40,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^9.5.0",
+    "@prisma/client": "^6.5.0",
     "@types/bcrypt": "^5.0.2",
     "@types/cookie-parser": "^1.4.6",
     "@types/cors": "^2.8.17",
@@ -61,6 +61,7 @@
     "jest-mock-extended": "^4.0.0-beta1",
     "nodemon": "^3.0.2",
     "prettier": "^3.1.1",
+    "prisma": "^6.5.0",
     "supertest": "^7.0.0",
     "ts-jest": "^29.2.6",
     "ts-node": "^10.9.1",

@@ -12,6 +12,17 @@ enum Status {
   INACTIVE @map("inactive")
 }
 
+enum QuestionType {
+  MULTIPLE_CHOICE    @map("multiple_choice")
+  SENTENCE_ORDERING  @map("sentence_ordering")
+}
+
+enum DifficultyLevel {
+  BEGINNER     @map("beginner")
+  INTERMEDIATE @map("intermediate")
+  ADVANCED     @map("advanced")
+}
+
 model User {
   id             String    @id @default(uuid())
   email          String    @unique
@@ -45,4 +56,32 @@ model WalletVerificationChallenge {
   nonce         String
   createdAt     DateTime  @default(now())
   expiresAt     DateTime
+}
+
+model Question {
+  id           String   @id @default(uuid())
+  content      Json     // Stores question, correctAnswer, wrongAnswers, and explanation
+  metadata     Json     // Stores englishLevel, difficulty, category, subCategory, tags, and type
+  gameMetadata Json     // Stores pointsValue, timeLimit, and difficultyMultiplier
+  createdBy    String
+  status       Status   @default(ACTIVE)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([createdBy])
+  @@map("questions")
+}
+
+model SentenceOrdering {
+  id           String   @id @default(uuid())
+  content      Json     // Stores sentence, words, and explanation
+  metadata     Json     // Stores englishLevel, difficulty, category, subCategory, tags, and type
+  gameMetadata Json     // Stores pointsValue, timeLimit, and difficultyMultiplier
+  createdBy    String
+  status       Status   @default(ACTIVE)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([createdBy])
+  @@map("sentence_orderings")
 }

@@ -1,17 +1,16 @@
 services:
-  mysql:
-    image: mysql:8.0
-    container_name: STARKLA-container
+  postgres:
+    image: postgres:15
+    container_name: aurora-db
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root_password
-      MYSQL_DATABASE: starkla
-      MYSQL_USER: my_user
-      MYSQL_PASSWORD: my_password
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: aurora_db
     ports:
-    - 3306:3306
+      - "5433:5432"
     volumes:
-    - my-db:/var/lib/mysql
-    
+      - postgres-data:/var/lib/postgresql/data
+
 volumes:
-  my-db:
+  postgres-data:
