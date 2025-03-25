@@ -103,7 +103,6 @@ describe("Authentication Endpoints", () => {
     });
   });
 
-
   // Similar approach for verify email tests
   describe("GET /verify-email", () => {
     it("should verify email with valid token", async () => {
@@ -133,6 +132,47 @@ describe("Authentication Endpoints", () => {
     });
 
     // Other tests remain similar
+  });
+
+  // Modify the login test to track created users
+  describe("POST /login", () => {
+    it("should successfully log in a user with valid credentials", async () => {
+      const userData = {
+        email: faker.internet.email(),
+        password: "StrongPassword123!",
+        firstName: faker.person.firstName(),
+        lastName: faker.person.lastName(),
+        walletAddress: "0x1234567890123456789012345678901234567890",
+      };
+
+      // Register the user first
+      await request(app).post("/register").send(userData);
+
+      // Verify the email
+      const createdUser = await prisma.user.findUnique({
+        where: { email: userData.email },
+      });
+
+      if (createdUser) {
+        createdUsers.push(createdUser.id);
+        const verificationToken = Jwt.issue({ userId: createdUser.id }, "1d");
+        await request(app).get(`/verify-email?token=${verificationToken}`);
+      }
+
+      // Attempt to log in
+      const response = await request(app).post("/login").send({
+        email: userData.email,
+        password: userData.password,
+      });
+
+      expect(response.status).toBe(200);
+      expect(response.body.data).toHaveProperty("authenticationToken");
+      expect(response.body.data.userResponse).toHaveProperty(
+        "email",
+        userData.email
+      );
+      expect(response.body.data.userResponse).not.toHaveProperty("password");
+    });
   });
 
   // Optional: Add a global afterAll to ensure complete cleanup
