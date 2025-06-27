@@ -1,4 +1,4 @@
-import { PrismaClient, Status } from "@prisma/client";
+import { PrismaClient } from '@prisma/client';
 import EmailNotifier from "../utils/service/emailNotifier";
 
 const prisma = new PrismaClient();
@@ -20,8 +20,7 @@ export interface ReminderHistory {
 }
 
 class NotificationService {
-  private static reminderHistory: Map<string, ReminderHistory[]> = new Map();
-
+  
   public static async getInactiveUsers(
     daysSince: number
   ): Promise<InactiveUser[]> {
@@ -64,8 +63,7 @@ class NotificationService {
       },
     });
 
-   
-    return users.map((user: any) => {
+    return users.map((user) => {
       const lastActivity =
         user.lastActivityAt || user.lastLoginAt || user.createdAt;
       const daysSinceLastActivity = Math.floor(
@@ -78,29 +76,42 @@ class NotificationService {
       };
     });
   }
-
-  /**
-   * Check if user has already received a specific reminder type
-   */
-  public static hasReceivedReminder(
+ 
+  public static async hasReceivedReminder(
     userId: string,
     reminderType: string
-  ): boolean {
-    const userHistory = this.reminderHistory.get(userId) || [];
-    return userHistory.some((history) => history.reminderType === reminderType);
+  ): Promise<boolean> {
+    const existingReminder = await prisma.reminderHistory.findUnique({
+      where: {
+        userId_reminderType: {
+          userId,
+          reminderType,
+        },
+      },
+    });
+    return !!existingReminder;
   }
 
   /**
    * Record that a reminder was sent
    */
-  public static recordReminderSent(userId: string, reminderType: string): void {
-    const userHistory = this.reminderHistory.get(userId) || [];
-    userHistory.push({
-      userId,
-      reminderType,
-      sentAt: new Date(),
+  public static async recordReminderSent(userId: string, reminderType: string): Promise<void> {
+    await prisma.reminderHistory.upsert({
+      where: {
+        userId_reminderType: {
+          userId,
+          reminderType,
+        },
+      },
+      update: {
+        sentAt: new Date(),
+      },
+      create: {
+        userId,
+        reminderType,
+        sentAt: new Date(),
+      },
     });
-    this.reminderHistory.set(userId, userHistory);
   }
 
   /**
@@ -112,7 +123,7 @@ class NotificationService {
   ): Promise<boolean> {
     try {
       // Check if reminder already sent
-      if (this.hasReceivedReminder(user.id, reminderType)) {
+      if (await this.hasReceivedReminder(user.id, reminderType)) {
         console.log(
           `Reminder ${reminderType} already sent to user ${user.email}`
         );
@@ -140,7 +151,7 @@ class NotificationService {
       }
 
       // Record that reminder was sent
-      this.recordReminderSent(user.id, reminderType);
+      await this.recordReminderSent(user.id, reminderType);
       console.log(`✅ Sent ${reminderType} reminder to ${user.email}`);
       return true;
     } catch (error) {

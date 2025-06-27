@@ -11,14 +11,23 @@ const server = app;
 const port = settings.serverPort || 8000;
 
 // Test the database connection before starting the server
-connectDB();
+const startServer = async () => {
+  try {
+    await connectDB();
+    
+    // Start scheduled jobs
+    UserReminderJob.startScheduledJob();
+    console.log("📅 Scheduled jobs initialized");
+    
+    server.listen(port, () => {
+      console.log(
+        `🚀🚀🚀 Aurora's server is running at http://localhost:${port} 🚀🚀🚀`
+      );
+    });
+  } catch (error) {
+    console.error("❌ Failed to start server:", error);
+    process.exit(1);
+  }
+};
 
-// Start scheduled jobs
-UserReminderJob.startScheduledJob();
-
-server.listen(port, () => {
-  console.log(
-    `🚀🚀🚀 Aurora's server is running at http://localhost:${port} 🚀🚀🚀`
-  );
-  console.log("📅 Scheduled jobs initialized");
-});
+startServer().catch(console.error);

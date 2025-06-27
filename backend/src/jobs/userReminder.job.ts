@@ -8,12 +8,12 @@ class UserReminderJob {
    * Check for inactive users and send reminders
    */
   public static async checkInactiveUsers(): Promise<void> {
-    if (this.isRunning) {
+    if (UserReminderJob.isRunning) {
       console.log("⏳ User reminder job already running, skipping...");
       return;
     }
 
-    this.isRunning = true;
+    UserReminderJob.isRunning = true;
     const startTime = new Date();
 
     try {
@@ -33,7 +33,7 @@ class UserReminderJob {
     } catch (error) {
       console.error("❌ User reminder job failed:", error);
     } finally {
-      this.isRunning = false;
+      UserReminderJob.isRunning = false;
     }
   }
 
@@ -41,24 +41,29 @@ class UserReminderJob {
    * Start the scheduled job
    */
   public static startScheduledJob(): void {
-    const isDevelopment = process.env.SERVER_ENVIRONMENT === "DEVELOPMENT";
+    try {
+      const isDevelopment = process.env.SERVER_ENVIRONMENT === "DEVELOPMENT";
 
-    if (isDevelopment) {
-      // Run every hour in development for testing
-      console.log(
-        "🔧 Development mode: User reminder job scheduled every hour"
-      );
-      cron.schedule("0 * * * *", async () => {
-        await this.checkInactiveUsers();
-      });
-    } else {
-      // Run daily at 2 AM UTC in production
-      console.log(
-        "🚀 Production mode: User reminder job scheduled daily at 2 AM UTC"
-      );
-      cron.schedule("0 2 * * *", async () => {
-        await this.checkInactiveUsers();
-      });
+      if (isDevelopment) {
+        // Run every hour in development for testing
+        console.log(
+          "🔧 Development mode: User reminder job scheduled every hour"
+        );
+        cron.schedule("0 * * * *", async () => {
+          await UserReminderJob.checkInactiveUsers();
+        });
+      } else {
+        // Run daily at 2 AM UTC in production
+        console.log(
+          "🚀 Production mode: User reminder job scheduled daily at 2 AM UTC"
+        );
+        cron.schedule("0 2 * * *", async () => {
+          await UserReminderJob.checkInactiveUsers();
+        });
+      }
+    } catch (error) {
+      console.error("❌ Failed to schedule user reminder job:", error);
+      throw error; // Re-throw to ensure the application knows about the failure
     }
   }
 
@@ -67,7 +72,7 @@ class UserReminderJob {
    */
   public static async runNow(): Promise<void> {
     console.log("🧪 Running user reminder job immediately...");
-    await this.checkInactiveUsers();
+    await UserReminderJob.checkInactiveUsers();
   }
 }
 
