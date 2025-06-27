@@ -15,7 +15,7 @@ class UserService {
       userData;
 
     try {
-      const result = await prisma.$transaction(async (tx) => {
+      const result = await prisma.$transaction(async (tx: any) => {
         const newUser = await tx.user.create({
           data: {
             email,
@@ -56,6 +56,39 @@ class UserService {
     return await prisma.user.findUnique({
       where: { id },
     });
+  }
+
+  /**
+   * Update user's last login and activity timestamps
+   */
+  public static async updateUserActivity(userId: string) {
+    try {
+      const now = new Date();
+      return await prisma.user.update({
+        where: { id: userId },
+        data: {
+          lastLoginAt: now,
+          lastActivityAt: now,
+        },
+      });
+    } catch (error) {
+      console.error("Failed to update user activity:", error);
+      throw new InternalError("Failed to update user activity");
+    }
+  }
+
+  /**
+   * Update user's last activity timestamp (for general activity tracking)
+   */
+  public static async updateLastActivity(userId: string) {
+    try {
+      return await prisma.user.update({
+        where: { id: userId },
+        data: { lastActivityAt: new Date() },
+      });
+    } catch (error) {
+      console.error("Failed to update last activity:", error);
+    }
   }
 }
 

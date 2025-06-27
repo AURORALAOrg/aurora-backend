@@ -26,19 +26,21 @@ enum DifficultyLevel {
 }
 
 model User {
-  id             String    @id @default(uuid())
-  email          String    @unique
-  password       String
-  isEmailVerified  Boolean @default(false)
-  firstName      String?
-  lastName       String?
-  phoneNumber    String?
-  profileImage   String?
-  status        Status     @default(INACTIVE)
-  createdAt      DateTime  @default(now())
-  updatedAt      DateTime  @updatedAt
-  wallet         Wallet?
-  questions      Question[]
+  id               String    @id @default(uuid())
+  email            String    @unique
+  password         String
+  isEmailVerified  Boolean   @default(false)
+  firstName        String?
+  lastName         String?
+  phoneNumber      String?
+  profileImage     String?
+  status           Status    @default(INACTIVE)
+  lastLoginAt      DateTime?
+  lastActivityAt   DateTime?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+  wallet           Wallet?
+  questions        Question[]
 }
 
 model Wallet {
