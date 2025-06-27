@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from "@prisma/client";
 import EmailNotifier from "../utils/service/emailNotifier";
 
 const prisma = new PrismaClient();
@@ -20,7 +20,6 @@ export interface ReminderHistory {
 }
 
 class NotificationService {
-  
   public static async getInactiveUsers(
     daysSince: number
   ): Promise<InactiveUser[]> {
@@ -69,14 +68,14 @@ class NotificationService {
       const daysSinceLastActivity = Math.floor(
         (Date.now() - lastActivity.getTime()) / (1000 * 60 * 60 * 24)
       );
-    
+
       return {
         ...user,
         daysSinceLastActivity,
       };
     });
   }
- 
+
   public static async hasReceivedReminder(
     userId: string,
     reminderType: string
@@ -95,7 +94,10 @@ class NotificationService {
   /**
    * Record that a reminder was sent
    */
-  public static async recordReminderSent(userId: string, reminderType: string): Promise<void> {
+  public static async recordReminderSent(
+    userId: string,
+    reminderType: string
+  ): Promise<void> {
     await prisma.reminderHistory.upsert({
       where: {
         userId_reminderType: {
