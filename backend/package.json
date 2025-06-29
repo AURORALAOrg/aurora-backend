@@ -36,8 +36,10 @@
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
     "nodemailer": "^6.10.0",
+    "openai": "^5.8.2",
     "pg": "^8.14.1",
     "rimraf": "^6.0.1",
+    "uuid": "^11.1.0",
     "winston": "^3.11.0",
     "zod": "^3.25.42"
   },
@@ -53,6 +55,7 @@
     "@types/jest": "^29.5.14",
     "@types/jsonwebtoken": "^9.0.5",
     "@types/lodash": "^4.14.202",
+    "@types/mocha": "^10.0.10",
     "@types/morgan": "^1.9.9",
     "@types/node": "^20.17.55",
     "@types/nodemailer": "^6.4.16",
@@ -66,7 +69,7 @@
     "prettier": "^3.1.1",
     "prisma": "^6.5.0",
     "supertest": "^7.0.0",
-    "ts-jest": "^29.2.6",
+    "ts-jest": "^29.4.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
