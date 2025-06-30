@@ -1,91 +1,106 @@
-import type { Request, Response, NextFunction } from "express"
-import { SuccessResponse, BadRequestResponse } from "../core/api/ApiResponse"
-import ChatService from "../services/chat.service"
-import type { ChatRequest, ChatResponse } from "../models/interfaces/chat.interfaces"
-import logger from "../core/config/logger"
+import { Request, Response } from "express"
 import asyncHandler from "../middlewares/async"
+import chatService from "../services/chat.service"
+import { SuccessResponse, BadRequestResponse } from "../core/api/ApiResponse"
+import logger from "../core/config/logger"
+import { ChatRequest } from "../models/interfaces/chat.interfaces"
 
-interface AuthenticatedRequest extends Request {
-  user?: any
+// Extend Express Request interface to include 'user'
+declare global {
+  namespace Express {
+    interface User {
+      id?: string
+      // add other user properties if needed
+    }
+    interface Request {
+      user?: User
+    }
+  }
 }
 
 class ChatController {
   /**
-   * Send message to AI and get response
+   * Send message to AI for conversation practice
    * POST /api/v1/chat/ai
    */
-  sendMessage = asyncHandler(async (req: AuthenticatedRequest, res: Response, next: NextFunction) => {
+  sendMessage = asyncHandler(async (req: Request, res: Response) => {
+    const {
+      message,
+      conversationContext = [],
+      practiceLevel,
+      conversationType = "general",
+      userLanguage = "en",
+      topicId,
+    }: ChatRequest & { topicId?: string } = req.body
+
+    // Validate required fields
+    if (!message || !practiceLevel) {
+      return new BadRequestResponse("Message and practice level are required").send(res)
+    }
+
+    // Validate conversation context
+    if (!chatService.validateConversationContext(conversationContext)) {
+      return new BadRequestResponse("Invalid conversation context format").send(res)
+    }
+
     try {
-      const userId = req.user?.id
-      if (!userId) {
-        return new BadRequestResponse("User authentication required").send(res)
+      let response
+
+      if (topicId) {
+        // Use topic-based chat
+        response = await chatService.generateTopicBasedResponse({
+          message,
+          conversationContext,
+          practiceLevel,
+          conversationType,
+          userLanguage,
+          topicId,
+        })
+      } else {
+        // Use general chat
+        response = await chatService.generateChatResponse({
+          message,
+          conversationContext,
+          practiceLevel,
+          conversationType,
+          userLanguage,
+        })
       }
 
-      const chatRequest: ChatRequest = {
-        message: req.body.message,
-        conversationContext: req.body.conversationContext || [],
-        practiceLevel: req.body.practiceLevel,
-        conversationType: req.body.conversationType || "general",
-        userLanguage: req.body.userLanguage || "en",
-      }
+      logger.info(`Chat response generated for user: ${req.user?.id}`)
 
-      // Validate conversation context
-      if (!ChatService.validateConversationContext(chatRequest.conversationContext)) {
-        return new BadRequestResponse("Invalid conversation context format").send(res)
-      }
-
-      logger.info(
-        `Chat request from user ${userId}: ${chatRequest.practiceLevel} level, ${chatRequest.conversationType} type`,
-      )
-
-      // Generate AI response
-      const serviceResponse = await ChatService.generateChatResponse(chatRequest)
-
-      // Prepare response data
-      const responseData: ChatResponse = {
-        response: serviceResponse.response,
-        conversationId: serviceResponse.conversationId,
-        timestamp: new Date(),
-        tokensUsed: serviceResponse.usage?.totalTokens,
-        practiceLevel: chatRequest.practiceLevel,
-        conversationType: chatRequest.conversationType,
-      }
-
-      logger.info(
-        `Chat response sent to user ${userId}. Tokens used: ${serviceResponse.usage?.totalTokens || "unknown"}`,
-      )
-
-      return new SuccessResponse("Chat response generated successfully", responseData).send(res)
-    } catch (error) {
-      logger.error("Error in sendMessage:", error)
-      next(error)
+      new SuccessResponse("Chat response generated successfully", {
+        response: response.response,
+        conversationId: response.conversationId,
+        timestamp: new Date().toISOString(),
+        tokensUsed: response.usage?.totalTokens,
+        practiceLevel,
+        conversationType,
+      }).send(res)
+    } catch (error: any) {
+      logger.error("Error in sendMessage controller:", error)
+      return new BadRequestResponse(error.message).send(res)
     }
   })
 
   /**
-   * Get conversation starters for practice
+   * Get conversation starters
    * GET /api/v1/chat/starters
    */
-  getConversationStarters = asyncHandler(async (req: AuthenticatedRequest, res: Response, next: NextFunction) => {
+  getConversationStarters = asyncHandler(async (req: Request, res: Response) => {
+    const { practiceLevel, conversationType = "general" } = req.query
+
+    if (!practiceLevel) {
+      return new BadRequestResponse("Practice level is required").send(res)
+    }
+
     try {
-      const { practiceLevel = "B1", conversationType = "general" } = req.query
+      const starters = await chatService.getConversationStarters(practiceLevel as string, conversationType as string)
 
-      if (!["A1", "A2", "B1", "B2", "C1", "C2"].includes(practiceLevel as string)) {
-        return new BadRequestResponse("Invalid practice level").send(res)
-      }
-
-      const starters = ChatService.getConversationStarters(practiceLevel as string, conversationType as string)
-
-      const responseData = {
-        starters,
-        practiceLevel,
-        conversationType,
-      }
-
-      return new SuccessResponse("Conversation starters retrieved successfully", responseData).send(res)
-    } catch (error) {
-      logger.error("Error in getConversationStarters:", error)
-      next(error)
+      new SuccessResponse("Conversation starters retrieved successfully", { starters }).send(res)
+    } catch (error: any) {
+      logger.error("Error in getConversationStarters controller:", error)
+      return new BadRequestResponse(error.message).send(res)
     }
   })
 
@@ -93,19 +108,16 @@ class ChatController {
    * Health check for chat service
    * GET /api/v1/chat/health
    */
-  healthCheck = asyncHandler(async (req: Request, res: Response, next: NextFunction) => {
+  healthCheck = asyncHandler(async (req: Request, res: Response) => {
     try {
-      const healthData = {
+      new SuccessResponse("Chat service is healthy", {
         status: "healthy",
-        timestamp: new Date(),
+        timestamp: new Date().toISOString(),
         service: "chat",
-        version: "1.0.0",
-      }
-
-      return new SuccessResponse("Chat service is healthy", healthData).send(res)
-    } catch (error) {
+      }).send(res)
+    } catch (error: any) {
       logger.error("Error in chat health check:", error)
-      next(error)
+      return new BadRequestResponse("Chat service is unhealthy").send(res)
     }
   })
 }

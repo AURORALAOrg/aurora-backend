@@ -25,6 +25,29 @@ enum DifficultyLevel {
   ADVANCED     @map("advanced")
 }
 
+enum EnglishLevel {
+  BEGINNER           @map("beginner")
+  ELEMENTARY         @map("elementary")
+  INTERMEDIATE       @map("intermediate")
+  UPPER_INTERMEDIATE @map("upper_intermediate")
+  ADVANCED           @map("advanced")
+  PROFICIENT         @map("proficient")
+}
+
+enum TopicCategory {
+  GENERAL       @map("general")
+  BUSINESS      @map("business")
+  TECHNOLOGY    @map("technology")
+  SCIENCE       @map("science")
+  HEALTH        @map("health")
+  EDUCATION     @map("education")
+  TRAVEL        @map("travel")
+  CULTURE       @map("culture")
+  SPORTS        @map("sports")
+  ENTERTAINMENT @map("entertainment")
+  OTHER         @map("other")
+}
+
 model User {
   id             String    @id @default(uuid())
   email          String    @unique
@@ -73,4 +96,22 @@ model Question {
   createdByUser User     @relation(fields: [createdBy], references: [id])
 
   @@map("questions")
+}
+
+model Topic {
+  id            String        @id @default(uuid())
+  name          String
+  description   String
+  category      TopicCategory
+  englishLevel  EnglishLevel
+  prompts       Json          // Array of conversation prompts
+  keywords      Json          // Array of relevant keywords
+  objectives    Json          // Learning objectives for this topic
+  status        Status        @default(ACTIVE)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  @@map("topics")
+  @@index([englishLevel, category])
+  @@index([status])
 }
