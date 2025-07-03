@@ -1,0 +1,3007 @@
+[
+	{
+		"content": {
+			"story": "Last weekend, I visited my grandparents who live in a small village near the mountains. They have a beautiful garden where they grow vegetables and fruits. My grandmother made apple pie using apples from their garden. It was delicious! During the day, my grandfather showed me how to plant tomatoes. We dug holes in the soil and placed small plants inside. Then we watered them carefully. In the evening, we sat outside and watched the stars. My grandfather knows the names of many stars and constellations. He taught me how to find the North Star. I had a wonderful time with them and didn't want to leave on Sunday.",
+			"questions": [
+				{
+					"question": "Where do the writer's grandparents live?",
+					"options": [
+						"In the mountains",
+						"In a city",
+						"In a small village near the mountains",
+						"By the sea"
+					],
+					"correct": 2,
+					"explanation": "The story says 'I visited my grandparents who live in a small village near the mountains.'"
+				},
+				{
+					"question": "What did the grandmother make?",
+					"options": ["Orange cake", "Apple pie", "Vegetable soup", "Bread"],
+					"correct": 1,
+					"explanation": "The story says 'My grandmother made apple pie using apples from their garden.'"
+				},
+				{
+					"question": "What did the grandfather teach the writer?",
+					"options": [
+						"How to fish",
+						"How to grow tomatoes",
+						"How to cook",
+						"How to find the North Star"
+					],
+					"correct": 3,
+					"explanation": "The story says 'He taught me how to find the North Star.'"
+				}
+			],
+			"summary": "A story about someone visiting their grandparents in the countryside, helping in the garden, and learning about stars."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family",
+			"tags": ["story", "reading", "A2", "family", "countryside"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"story": "Maria started a new job last month. She works as a receptionist in a busy hotel in the city center. Every day, she helps guests check in and check out. She gives them information about local restaurants and tourist attractions. Maria speaks three languages: English, Spanish, and French. This is very useful because many international tourists stay at the hotel. Her working hours are from 2 PM to 10 PM. She prefers working in the afternoon and evening because she can sleep late in the morning. Sometimes the job is stressful when there are too many guests waiting, but Maria enjoys meeting people from different countries. Next year, she wants to become a hotel manager.",
+			"questions": [
+				{
+					"question": "What is Maria's job?",
+					"options": ["Tour guide", "Chef", "Hotel manager", "Receptionist"],
+					"correct": 3,
+					"explanation": "The story says 'She works as a receptionist in a busy hotel in the city center.'"
+				},
+				{
+					"question": "How many languages does Maria speak?",
+					"options": ["One", "Two", "Three", "Four"],
+					"correct": 2,
+					"explanation": "The story says 'Maria speaks three languages: English, Spanish, and French.'"
+				},
+				{
+					"question": "What are Maria's working hours?",
+					"options": [
+						"9 AM to 5 PM",
+						"8 AM to 4 PM",
+						"2 PM to 10 PM",
+						"10 PM to 6 AM"
+					],
+					"correct": 2,
+					"explanation": "The story says 'Her working hours are from 2 PM to 10 PM.'"
+				}
+			],
+			"summary": "A story about Maria who works as a multilingual receptionist at a city center hotel and aspires to become a hotel manager."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "work",
+			"tags": ["story", "reading", "A2", "work", "languages"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"story": "Daniel wanted to buy a birthday present for his sister. He went to the shopping mall on Saturday morning. First, he looked in a clothes shop. He saw a nice scarf, but it was too expensive. Then he went to a bookshop because his sister loves reading. He found a novel by her favorite author. It wasn't expensive, so he decided to buy it. At the checkout, the shop assistant wrapped the book in colorful paper. Daniel also bought a birthday card. When he got home, he wrote a message in the card. He gave the present to his sister on Sunday. She was very happy and started reading the book immediately.",
+			"questions": [
+				{
+					"question": "Why didn't Daniel buy the scarf?",
+					"options": [
+						"His sister wouldn't like it",
+						"It was the wrong color",
+						"It was too expensive",
+						"It was too small"
+					],
+					"correct": 2,
+					"explanation": "The story says 'He saw a nice scarf, but it was too expensive.'"
+				},
+				{
+					"question": "Why did Daniel choose to look in a bookshop?",
+					"options": [
+						"It was close to the clothes shop",
+						"His sister loves reading",
+						"Books are cheap",
+						"He likes bookshops"
+					],
+					"correct": 1,
+					"explanation": "The story says 'Then he went to a bookshop because his sister loves reading.'"
+				},
+				{
+					"question": "What did Daniel's sister do when she received the book?",
+					"options": [
+						"Put it on a shelf",
+						"Said thank you",
+						"Gave him a present too",
+						"Started reading it immediately"
+					],
+					"correct": 3,
+					"explanation": "The story says 'She was very happy and started reading the book immediately.'"
+				}
+			],
+			"summary": "A story about Daniel shopping for a birthday present for his sister and choosing a book by her favorite author."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "shopping",
+			"tags": ["story", "reading", "A2", "shopping", "gifts"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"story": "Last summer, I went camping with my friends. We drove to a beautiful national park that is famous for its lakes and forests. When we arrived, we put up our tents near a lake. It was a hot day, so we decided to go swimming. The water was cold but refreshing. In the evening, we made a campfire and cooked sausages. We also toasted marshmallows. Later, we told ghost stories. I couldn't sleep well that night because I was scared! The next morning, we went hiking in the forest. We saw many animals, including deer and rabbits. We took lots of photos. It was a great weekend, although I was very tired when I got home on Sunday night.",
+			"questions": [
+				{
+					"question": "Where did they camp?",
+					"options": [
+						"On a beach",
+						"In a garden",
+						"Near a lake",
+						"On a mountain"
+					],
+					"correct": 2,
+					"explanation": "The story says 'When we arrived, we put up our tents near a lake.'"
+				},
+				{
+					"question": "Why couldn't the writer sleep well?",
+					"options": [
+						"It was too hot",
+						"The tent was uncomfortable",
+						"They were scared after the ghost stories",
+						"There was too much noise"
+					],
+					"correct": 2,
+					"explanation": "The story says 'I couldn't sleep well that night because I was scared!' after mentioning ghost stories."
+				},
+				{
+					"question": "Which animals did they see in the forest?",
+					"options": [
+						"Lions and tigers",
+						"Bears and wolves",
+						"Birds and fish",
+						"Deer and rabbits"
+					],
+					"correct": 3,
+					"explanation": "The story says 'We saw many animals, including deer and rabbits.'"
+				}
+			],
+			"summary": "A story about a camping trip in a national park, including swimming, campfire activities, and a forest hike."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "leisure activities",
+			"tags": ["story", "reading", "A2", "camping", "nature"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"story": "My flight to Paris was delayed by two hours. I had to wait at the airport, which was very boring. When we finally boarded the plane, I found my seat next to the window. A young woman sat next to me. She looked nervous and told me that this was her first flight. I tried to reassure her that flying is safe. During takeoff, she closed her eyes and held my hand tightly. I was surprised but didn't mind. After we reached cruising altitude, she relaxed and apologized. We started talking and discovered that we were both going to Paris for a language course. We decided to meet for coffee after the course on Monday. Sometimes, flight delays can lead to new friendships!",
+			"questions": [
+				{
+					"question": "How long was the flight delayed?",
+					"options": ["One hour", "Two hours", "Three hours", "Four hours"],
+					"correct": 1,
+					"explanation": "The story says 'My flight to Paris was delayed by two hours.'"
+				},
+				{
+					"question": "Why was the woman nervous?",
+					"options": [
+						"She was late",
+						"It was her first flight",
+						"She was ill",
+						"She had lost her luggage"
+					],
+					"correct": 1,
+					"explanation": "The story says 'She looked nervous and told me that this was her first flight.'"
+				},
+				{
+					"question": "What did the writer and the woman decide to do in Paris?",
+					"options": [
+						"Visit the Eiffel Tower together",
+						"Take a language course together",
+						"Meet for coffee",
+						"Share a hotel room"
+					],
+					"correct": 2,
+					"explanation": "The story says 'We decided to meet for coffee after the course on Monday.'"
+				}
+			],
+			"summary": "A story about a delayed flight to Paris where the narrator meets a nervous first-time flyer, and they discover they're both attending the same language course."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "travel",
+			"tags": ["story", "reading", "A2", "travel", "friendship"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"story": "Emma's bicycle broke on her way to school. She was worried she would be late for her math test. Luckily, her neighbor saw her and offered a ride. Emma thanked him and arrived at school just in time. She did well on her test and promised to help her neighbor with gardening as a thank you.",
+			"questions": [
+				{
+					"question": "Why was Emma worried?",
+					"options": [
+						"She forgot her homework",
+						"Her bicycle broke",
+						"She lost her bag",
+						"She missed the bus"
+					],
+					"correct": 1,
+					"explanation": "Emma was worried because her bicycle broke and she might be late for her math test."
+				},
+				{
+					"question": "How did Emma get to school?",
+					"options": [
+						"By bus",
+						"She walked",
+						"Her neighbor gave her a ride",
+						"Her mother drove her"
+					],
+					"correct": 2,
+					"explanation": "Her neighbor saw her and offered a ride."
+				}
+			],
+			"summary": "Emma's bike breaks, but her neighbor helps her reach school on time for her test."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "school",
+			"tags": ["story", "reading", "A2", "school", "help"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"story": "Tom and his family went to the zoo last Saturday. Tom loved watching the monkeys jump from tree to tree. His little sister liked the elephants best. They ate lunch near the lion's cage and took many photos. At the end of the day, Tom bought a small monkey toy as a souvenir.",
+			"questions": [
+				{
+					"question": "Where did Tom's family go?",
+					"options": ["The park", "The zoo", "The beach", "The museum"],
+					"correct": 1,
+					"explanation": "Tom and his family went to the zoo."
+				},
+				{
+					"question": "What animal did Tom's sister like best?",
+					"options": ["Lions", "Monkeys", "Elephants", "Giraffes"],
+					"correct": 2,
+					"explanation": "His little sister liked the elephants best."
+				}
+			],
+			"summary": "Tom and his family enjoy a fun day at the zoo."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family outing",
+			"tags": ["story", "reading", "A2", "zoo", "family"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"story": "Lina wanted to bake a cake for her mother's birthday. She followed a recipe she found online. She mixed flour, eggs, sugar, and butter, then put the cake in the oven. When her mother came home, Lina surprised her with the cake and a card. Her mother was very happy and said it was delicious.",
+			"questions": [
+				{
+					"question": "Why did Lina bake a cake?",
+					"options": [
+						"For a school project",
+						"For her friend's party",
+						"For her mother's birthday",
+						"For a picnic"
+					],
+					"correct": 2,
+					"explanation": "Lina baked a cake for her mother's birthday."
+				},
+				{
+					"question": "How did Lina's mother feel about the cake?",
+					"options": [
+						"She didn't like it",
+						"She was surprised and happy",
+						"She was angry",
+						"She was sad"
+					],
+					"correct": 1,
+					"explanation": "Her mother was very happy and said it was delicious."
+				}
+			],
+			"summary": "Lina bakes a cake to surprise her mother on her birthday."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "celebration",
+			"tags": ["story", "reading", "A2", "baking", "birthday"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"story": "Carlos joined the school's football team. He trained every afternoon after classes. At first, he found it difficult to keep up, but his coach encouraged him. After a month, Carlos played in his first match and scored a goal. His friends cheered for him, and he felt proud of his hard work.",
+			"questions": [
+				{
+					"question": "What sport did Carlos play?",
+					"options": ["Basketball", "Tennis", "Football", "Baseball"],
+					"correct": 2,
+					"explanation": "Carlos joined the school's football team."
+				},
+				{
+					"question": "How did Carlos feel after scoring a goal?",
+					"options": ["Sad", "Tired", "Proud", "Angry"],
+					"correct": 2,
+					"explanation": "His friends cheered for him, and he felt proud of his hard work."
+				}
+			],
+			"summary": "Carlos works hard to join the football team and scores a goal in his first match."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "sports",
+			"tags": ["story", "reading", "A2", "football", "school"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Anna went to the city library after school to find a book for her project. She asked the librarian for help. The librarian showed her the right section. Anna found a book about animals and borrowed it. At home, she read the book and wrote her report.",
+			"questions": [
+				{
+					"question": "Where did Anna go after school?",
+					"options": [
+						"To the park",
+						"To the library",
+						"To a friend's house",
+						"To the store"
+					],
+					"correct": 1,
+					"explanation": "Anna went to the city library after school."
+				},
+				{
+					"question": "What was Anna's project about?",
+					"options": ["Plants", "Animals", "Cities", "Music"],
+					"correct": 1,
+					"explanation": "Anna found a book about animals and borrowed it."
+				}
+			],
+			"summary": "Anna visits the library to find a book for her school project."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "school",
+			"tags": ["story", "reading", "A2", "library", "project"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ben's family moved to a new apartment last month. Ben was nervous about meeting new neighbors. On the first day, he saw a boy his age in the hallway. They started talking and soon became friends. Now, Ben enjoys living in the new place.",
+			"questions": [
+				{
+					"question": "Why was Ben nervous?",
+					"options": [
+						"He lost his toys",
+						"He did not like the apartment",
+						"He was worried about meeting new neighbors",
+						"He missed his school"
+					],
+					"correct": 2,
+					"explanation": "Ben was nervous about meeting new neighbors."
+				},
+				{
+					"question": "What happened after Ben met the boy?",
+					"options": [
+						"They became friends",
+						"They had a fight",
+						"They ignored each other",
+						"They moved again"
+					],
+					"correct": 0,
+					"explanation": "They started talking and soon became friends."
+				}
+			],
+			"summary": "Ben moves to a new apartment and makes a new friend."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "moving",
+			"tags": ["story", "reading", "A2", "friend", "apartment"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Sophie loves animals. Every Saturday, she helps at an animal shelter. She feeds the dogs and cats and plays with them. Sophie wants to become a vet when she grows up.",
+			"questions": [
+				{
+					"question": "Where does Sophie help every Saturday?",
+					"options": [
+						"At a hospital",
+						"At a school",
+						"At an animal shelter",
+						"At a shop"
+					],
+					"correct": 2,
+					"explanation": "She helps at an animal shelter."
+				},
+				{
+					"question": "What does Sophie want to be?",
+					"options": ["A teacher", "A vet", "A singer", "A chef"],
+					"correct": 1,
+					"explanation": "Sophie wants to become a vet when she grows up."
+				}
+			],
+			"summary": "Sophie volunteers at an animal shelter and dreams of being a vet."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "volunteering",
+			"tags": ["story", "reading", "A2", "animals", "shelter"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Omar forgot his umbrella at home. When he left school, it started to rain. He ran to the bus stop and got wet. At home, his mother gave him a towel and some hot tea. Omar promised to remember his umbrella next time.",
+			"questions": [
+				{
+					"question": "What did Omar forget?",
+					"options": ["His homework", "His lunch", "His umbrella", "His keys"],
+					"correct": 2,
+					"explanation": "Omar forgot his umbrella at home."
+				},
+				{
+					"question": "What did his mother give him?",
+					"options": ["A snack", "A towel and tea", "A new umbrella", "A book"],
+					"correct": 1,
+					"explanation": "His mother gave him a towel and some hot tea."
+				}
+			],
+			"summary": "Omar forgets his umbrella and gets wet in the rain."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "weather",
+			"tags": ["story", "reading", "A2", "rain", "umbrella"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Julia's class went on a field trip to the science museum. She saw a dinosaur skeleton and learned about space. Julia's favorite part was the planetarium show. She told her parents all about it when she got home.",
+			"questions": [
+				{
+					"question": "Where did Julia's class go?",
+					"options": [
+						"To the zoo",
+						"To the science museum",
+						"To the park",
+						"To the theater"
+					],
+					"correct": 1,
+					"explanation": "Julia's class went on a field trip to the science museum."
+				},
+				{
+					"question": "What was Julia's favorite part?",
+					"options": [
+						"The gift shop",
+						"The planetarium show",
+						"The dinosaur skeleton",
+						"The bus ride"
+					],
+					"correct": 1,
+					"explanation": "Julia's favorite part was the planetarium show."
+				}
+			],
+			"summary": "Julia visits the science museum with her class and enjoys the planetarium."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "school trip",
+			"tags": ["story", "reading", "A2", "museum", "science"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Sam's mother taught him how to cook pasta. First, they boiled water and added the pasta. Then, they made a tomato sauce together. Sam enjoyed cooking and was proud to eat the meal he made with his mom.",
+			"questions": [
+				{
+					"question": "What did Sam learn to cook?",
+					"options": ["Rice", "Pasta", "Soup", "Salad"],
+					"correct": 1,
+					"explanation": "Sam learned how to cook pasta."
+				},
+				{
+					"question": "Who helped Sam?",
+					"options": ["His father", "His friend", "His mother", "His sister"],
+					"correct": 2,
+					"explanation": "Sam's mother taught him how to cook."
+				}
+			],
+			"summary": "Sam learns to cook pasta with his mother."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "cooking",
+			"tags": ["story", "reading", "A2", "cooking", "family"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Paul got a new puppy for his birthday. The puppy was small and brown. Paul named him Max. Every morning, Paul takes Max for a walk in the park. They are best friends now.",
+			"questions": [
+				{
+					"question": "What did Paul get for his birthday?",
+					"options": ["A cat", "A puppy", "A toy car", "A book"],
+					"correct": 1,
+					"explanation": "Paul got a new puppy for his birthday."
+				},
+				{
+					"question": "What is the puppy's name?",
+					"options": ["Buddy", "Charlie", "Max", "Jack"],
+					"correct": 2,
+					"explanation": "Paul named his puppy Max."
+				}
+			],
+			"summary": "Paul gets a puppy for his birthday and names him Max."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "birthday",
+			"tags": ["story", "reading", "A2", "puppy", "birthday"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Helen's grandmother taught her how to knit a scarf. Helen chose blue yarn and learned to make simple stitches. It took her a week to finish the scarf. She gave it to her grandmother as a gift.",
+			"questions": [
+				{
+					"question": "What did Helen learn to make?",
+					"options": ["A hat", "A sweater", "A scarf", "A blanket"],
+					"correct": 2,
+					"explanation": "Helen learned to knit a scarf."
+				},
+				{
+					"question": "Who taught Helen to knit?",
+					"options": [
+						"Her mother",
+						"Her grandmother",
+						"Her friend",
+						"Her teacher"
+					],
+					"correct": 1,
+					"explanation": "Helen's grandmother taught her."
+				}
+			],
+			"summary": "Helen learns to knit a scarf and gives it to her grandmother."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "crafts",
+			"tags": ["story", "reading", "A2", "knitting", "gift"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "David and his cousin went fishing by the river. They waited a long time before catching a fish. David was excited and took a photo with the fish. They cooked it for dinner and shared it with their family.",
+			"questions": [
+				{
+					"question": "Where did David go fishing?",
+					"options": ["At the lake", "By the river", "In the sea", "In a pond"],
+					"correct": 1,
+					"explanation": "David and his cousin went fishing by the river."
+				},
+				{
+					"question": "What did they do with the fish?",
+					"options": [
+						"Threw it back",
+						"Kept it as a pet",
+						"Cooked it for dinner",
+						"Gave it away"
+					],
+					"correct": 2,
+					"explanation": "They cooked it for dinner and shared it with their family."
+				}
+			],
+			"summary": "David goes fishing with his cousin and they cook their catch for dinner."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "outdoor activities",
+			"tags": ["story", "reading", "A2", "fishing", "family"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Sara's favorite subject is art. She painted a picture of a tree for the school competition. Her teacher liked it and put it on the wall. Sara felt proud when her classmates said it was beautiful.",
+			"questions": [
+				{
+					"question": "What is Sara's favorite subject?",
+					"options": ["Math", "Science", "Art", "History"],
+					"correct": 2,
+					"explanation": "Sara's favorite subject is art."
+				},
+				{
+					"question": "What did the teacher do with Sara's painting?",
+					"options": [
+						"Put it on the wall",
+						"Took it home",
+						"Gave it to Sara",
+						"Sold it"
+					],
+					"correct": 0,
+					"explanation": "Her teacher put it on the wall."
+				}
+			],
+			"summary": "Sara paints a picture for the school competition and her teacher displays it."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "school",
+			"tags": ["story", "reading", "A2", "art", "school"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Leo went to the bakery to buy bread for his mother. He saw many cakes and cookies in the shop. Leo chose a loaf of bread and bought a small chocolate cake with his own money.",
+			"questions": [
+				{
+					"question": "Why did Leo go to the bakery?",
+					"options": [
+						"To buy bread",
+						"To buy a cake",
+						"To meet a friend",
+						"To work"
+					],
+					"correct": 0,
+					"explanation": "Leo went to the bakery to buy bread for his mother."
+				},
+				{
+					"question": "What did Leo buy with his own money?",
+					"options": [
+						"A loaf of bread",
+						"A small chocolate cake",
+						"A sandwich",
+						"A drink"
+					],
+					"correct": 1,
+					"explanation": "Leo bought a small chocolate cake with his own money."
+				}
+			],
+			"summary": "Leo buys bread for his mother and treats himself to a cake."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "shopping",
+			"tags": ["story", "reading", "A2", "bakery", "shopping"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Mia's school had a sports day. She ran in the 100-meter race and won second place. Mia's parents cheered for her. She got a silver medal and felt happy with her result.",
+			"questions": [
+				{
+					"question": "What event did Mia take part in?",
+					"options": ["Long jump", "100-meter race", "Swimming", "Football"],
+					"correct": 1,
+					"explanation": "Mia ran in the 100-meter race."
+				},
+				{
+					"question": "What did Mia win?",
+					"options": ["A gold medal", "A silver medal", "A trophy", "Nothing"],
+					"correct": 1,
+					"explanation": "She got a silver medal."
+				}
+			],
+			"summary": "Mia wins second place in the school sports day race."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "sports",
+			"tags": ["story", "reading", "A2", "sports day", "school"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Peter loves music. He joined the school band and learned to play the drums. Peter practices every evening. His first concert is next month, and he is excited to perform on stage.",
+			"questions": [
+				{
+					"question": "What instrument does Peter play?",
+					"options": ["Piano", "Guitar", "Drums", "Violin"],
+					"correct": 2,
+					"explanation": "Peter learned to play the drums."
+				},
+				{
+					"question": "When is Peter's first concert?",
+					"options": ["Tomorrow", "Next week", "Next month", "Next year"],
+					"correct": 2,
+					"explanation": "His first concert is next month."
+				}
+			],
+			"summary": "Peter joins the school band and prepares for his first concert."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "music",
+			"tags": ["story", "reading", "A2", "music", "band"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Nina visited her aunt in the countryside. They picked strawberries in the garden and made jam together. Nina learned how to cook the fruit and put the jam in jars. She brought a jar home for her family.",
+			"questions": [
+				{
+					"question": "What did Nina and her aunt pick?",
+					"options": ["Apples", "Strawberries", "Tomatoes", "Peaches"],
+					"correct": 1,
+					"explanation": "They picked strawberries in the garden."
+				},
+				{
+					"question": "What did Nina bring home?",
+					"options": [
+						"A cake",
+						"A jar of jam",
+						"A basket of fruit",
+						"A flower"
+					],
+					"correct": 1,
+					"explanation": "She brought a jar home for her family."
+				}
+			],
+			"summary": "Nina visits her aunt and learns to make strawberry jam."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family",
+			"tags": ["story", "reading", "A2", "jam", "countryside"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Jack broke his arm while playing football. He had to wear a cast for six weeks. His friends wrote messages on the cast to cheer him up. Jack was happy when the doctor finally removed it.",
+			"questions": [
+				{
+					"question": "How did Jack hurt himself?",
+					"options": [
+						"He fell from a bike",
+						"He was running",
+						"He was playing football",
+						"He was climbing a tree"
+					],
+					"correct": 2,
+					"explanation": "Jack broke his arm while playing football."
+				},
+				{
+					"question": "What did Jack's friends do?",
+					"options": [
+						"Visited him at home",
+						"Wrote messages on his cast",
+						"Brought him gifts",
+						"Took him to the hospital"
+					],
+					"correct": 1,
+					"explanation": "His friends wrote messages on the cast to cheer him up."
+				}
+			],
+			"summary": "Jack breaks his arm and his friends write on his cast."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "accidents",
+			"tags": ["story", "reading", "A2", "injury", "friends"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ella's family went to the beach for a picnic. They played volleyball and swam in the sea. Ella built a sandcastle with her brother. At the end of the day, they watched the sunset together.",
+			"questions": [
+				{
+					"question": "Where did Ella's family go?",
+					"options": [
+						"To the mountains",
+						"To the park",
+						"To the beach",
+						"To the zoo"
+					],
+					"correct": 2,
+					"explanation": "Ella's family went to the beach for a picnic."
+				},
+				{
+					"question": "What did Ella build?",
+					"options": ["A boat", "A sandcastle", "A kite", "A tent"],
+					"correct": 1,
+					"explanation": "Ella built a sandcastle with her brother."
+				}
+			],
+			"summary": "Ella enjoys a beach picnic and builds a sandcastle."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family outing",
+			"tags": ["story", "reading", "A2", "beach", "picnic"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Victor's class planted trees in the school yard for Earth Day. Victor helped dig holes and water the trees. He learned how important it is to care for the environment.",
+			"questions": [
+				{
+					"question": "What did Victor's class do for Earth Day?",
+					"options": [
+						"Cleaned the classroom",
+						"Planted trees",
+						"Painted pictures",
+						"Had a party"
+					],
+					"correct": 1,
+					"explanation": "Victor's class planted trees in the school yard."
+				},
+				{
+					"question": "What did Victor learn?",
+					"options": [
+						"How to paint",
+						"How to care for the environment",
+						"How to play football",
+						"How to cook"
+					],
+					"correct": 1,
+					"explanation": "He learned how important it is to care for the environment."
+				}
+			],
+			"summary": "Victor plants trees with his class for Earth Day."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "environment",
+			"tags": ["story", "reading", "A2", "trees", "Earth Day"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Tina's father took her to a football match. It was her first time at a stadium. Tina cheered for her favorite team and ate popcorn. Her team won, and she was very happy.",
+			"questions": [
+				{
+					"question": "Where did Tina go with her father?",
+					"options": [
+						"To a concert",
+						"To a football match",
+						"To a museum",
+						"To a movie"
+					],
+					"correct": 1,
+					"explanation": "Tina's father took her to a football match."
+				},
+				{
+					"question": "What did Tina eat at the stadium?",
+					"options": ["Ice cream", "Sandwich", "Popcorn", "Pizza"],
+					"correct": 2,
+					"explanation": "She ate popcorn at the stadium."
+				}
+			],
+			"summary": "Tina goes to her first football match and her team wins."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "sports",
+			"tags": ["story", "reading", "A2", "football", "stadium"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Lucas wanted to learn how to swim. His mother took him to the local pool every Saturday. At first, Lucas was afraid of the water, but his teacher was patient. After a few weeks, Lucas could swim by himself and felt very proud.",
+			"questions": [
+				{
+					"question": "Why did Lucas go to the pool?",
+					"options": [
+						"To play football",
+						"To learn how to swim",
+						"To meet friends",
+						"To buy snacks"
+					],
+					"correct": 1,
+					"explanation": "Lucas wanted to learn how to swim."
+				},
+				{
+					"question": "How did Lucas feel after learning to swim?",
+					"options": ["Sad", "Angry", "Proud", "Tired"],
+					"correct": 2,
+					"explanation": "Lucas could swim by himself and felt very proud."
+				}
+			],
+			"summary": "Lucas learns to swim with the help of his mother and teacher."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "sports",
+			"tags": ["story", "reading", "A2", "swimming", "learning"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Emma and her brother made lemonade to sell in front of their house. They used lemons, sugar, and water. Many neighbors stopped to buy a glass. Emma and her brother earned some money and bought ice cream with it.",
+			"questions": [
+				{
+					"question": "What did Emma and her brother make?",
+					"options": ["Cookies", "Lemonade", "Sandwiches", "Cake"],
+					"correct": 1,
+					"explanation": "They made lemonade."
+				},
+				{
+					"question": "What did they do with the money?",
+					"options": [
+						"Saved it",
+						"Bought toys",
+						"Bought ice cream",
+						"Gave it to their parents"
+					],
+					"correct": 2,
+					"explanation": "They bought ice cream with the money."
+				}
+			],
+			"summary": "Emma and her brother sell lemonade and buy ice cream."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "entrepreneurship",
+			"tags": ["story", "reading", "A2", "lemonade", "ice cream"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Mateo lost his favorite hat in the park. He looked for it everywhere but could not find it. The next day, his friend found the hat and brought it to school. Mateo was very happy to have his hat back.",
+			"questions": [
+				{
+					"question": "What did Mateo lose?",
+					"options": ["His book", "His hat", "His lunch", "His toy"],
+					"correct": 1,
+					"explanation": "Mateo lost his favorite hat."
+				},
+				{
+					"question": "Who found Mateo's hat?",
+					"options": ["His teacher", "His friend", "His mother", "His sister"],
+					"correct": 1,
+					"explanation": "His friend found the hat and brought it to school."
+				}
+			],
+			"summary": "Mateo loses his hat but his friend finds it."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "friendship",
+			"tags": ["story", "reading", "A2", "lost and found", "friend"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Priya wanted to help her neighbor, Mrs. Green, who had a broken leg. Priya visited her every day after school and helped with shopping and cleaning. Mrs. Green was grateful and gave Priya a thank-you card.",
+			"questions": [
+				{
+					"question": "Why did Priya visit Mrs. Green?",
+					"options": [
+						"To play games",
+						"To help with shopping and cleaning",
+						"To borrow a book",
+						"To watch TV"
+					],
+					"correct": 1,
+					"explanation": "Priya helped with shopping and cleaning because Mrs. Green had a broken leg."
+				},
+				{
+					"question": "What did Mrs. Green give Priya?",
+					"options": ["A gift", "A thank-you card", "A cake", "A book"],
+					"correct": 1,
+					"explanation": "Mrs. Green gave Priya a thank-you card."
+				}
+			],
+			"summary": "Priya helps her neighbor and receives a thank-you card."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "helping others",
+			"tags": ["story", "reading", "A2", "neighbor", "help"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Jin loves to draw. He spends hours making pictures of animals and nature. One day, his teacher entered his drawing in a school art contest. Jin won first prize and his parents were very proud.",
+			"questions": [
+				{
+					"question": "What does Jin like to do?",
+					"options": [
+						"Play football",
+						"Draw pictures",
+						"Cook food",
+						"Sing songs"
+					],
+					"correct": 1,
+					"explanation": "Jin loves to draw."
+				},
+				{
+					"question": "What did Jin win?",
+					"options": ["A book", "A toy", "First prize", "A trip"],
+					"correct": 2,
+					"explanation": "Jin won first prize in the art contest."
+				}
+			],
+			"summary": "Jin wins a school art contest for his drawings."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "art",
+			"tags": ["story", "reading", "A2", "drawing", "contest"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Hannah baked cookies for her classmates. She shared them during lunch break. Everyone loved the cookies and asked for the recipe. Hannah was happy to share how she made them.",
+			"questions": [
+				{
+					"question": "What did Hannah bake?",
+					"options": ["Cake", "Bread", "Cookies", "Pie"],
+					"correct": 2,
+					"explanation": "Hannah baked cookies."
+				},
+				{
+					"question": "Who did Hannah share the cookies with?",
+					"options": [
+						"Her family",
+						"Her classmates",
+						"Her neighbors",
+						"Her teacher"
+					],
+					"correct": 1,
+					"explanation": "She shared them during lunch break with her classmates."
+				}
+			],
+			"summary": "Hannah bakes cookies and shares them at school."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "school",
+			"tags": ["story", "reading", "A2", "cookies", "sharing"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Noah's father took him fishing for the first time. They woke up early and went to the lake. Noah was excited when he caught a small fish. They took a photo together and released the fish back into the water.",
+			"questions": [
+				{
+					"question": "Where did Noah go with his father?",
+					"options": [
+						"To the park",
+						"To the lake",
+						"To the zoo",
+						"To the mountains"
+					],
+					"correct": 1,
+					"explanation": "They went to the lake to fish."
+				},
+				{
+					"question": "What did they do with the fish?",
+					"options": [
+						"Cooked it",
+						"Gave it away",
+						"Released it back",
+						"Kept it as a pet"
+					],
+					"correct": 2,
+					"explanation": "They released the fish back into the water."
+				}
+			],
+			"summary": "Noah goes fishing with his father and releases the fish."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "outdoor activities",
+			"tags": ["story", "reading", "A2", "fishing", "lake"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Maya and her classmates planted flowers in the school garden. They watered the plants every day. After a month, the flowers bloomed and the garden looked beautiful. The teacher took a photo of the class with their flowers.",
+			"questions": [
+				{
+					"question": "What did Maya and her classmates plant?",
+					"options": ["Trees", "Vegetables", "Flowers", "Grass"],
+					"correct": 2,
+					"explanation": "They planted flowers in the school garden."
+				},
+				{
+					"question": "Who took a photo of the class?",
+					"options": ["The principal", "The teacher", "A student", "A parent"],
+					"correct": 1,
+					"explanation": "The teacher took a photo of the class with their flowers."
+				}
+			],
+			"summary": "Maya and her class plant flowers and care for the school garden."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "gardening",
+			"tags": ["story", "reading", "A2", "flowers", "school"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ethan and his sister built a snowman in the yard. They used a carrot for the nose and stones for the eyes. After playing, they went inside for hot chocolate. It was a fun winter day.",
+			"questions": [
+				{
+					"question": "What did Ethan and his sister build?",
+					"options": ["A sandcastle", "A snowman", "A treehouse", "A kite"],
+					"correct": 1,
+					"explanation": "They built a snowman in the yard."
+				},
+				{
+					"question": "What did they drink after playing?",
+					"options": ["Juice", "Milk", "Hot chocolate", "Water"],
+					"correct": 2,
+					"explanation": "They went inside for hot chocolate."
+				}
+			],
+			"summary": "Ethan and his sister build a snowman and enjoy hot chocolate."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "winter",
+			"tags": ["story", "reading", "A2", "snowman", "winter"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Isabella learned to ride a bicycle without training wheels. At first, she fell a few times, but she did not give up. Her father helped her practice every evening. Soon, Isabella could ride by herself and felt very happy.",
+			"questions": [
+				{
+					"question": "What did Isabella learn to do?",
+					"options": ["Swim", "Ride a bicycle", "Read", "Cook"],
+					"correct": 1,
+					"explanation": "Isabella learned to ride a bicycle."
+				},
+				{
+					"question": "Who helped Isabella practice?",
+					"options": ["Her mother", "Her friend", "Her father", "Her teacher"],
+					"correct": 2,
+					"explanation": "Her father helped her practice every evening."
+				}
+			],
+			"summary": "Isabella learns to ride a bicycle with her father's help."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "skills",
+			"tags": ["story", "reading", "A2", "bicycle", "learning"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Tom went camping with his scout group. They set up tents and cooked food over a fire. At night, they told stories and looked at the stars. Tom had a great adventure and made new friends.",
+			"questions": [
+				{
+					"question": "Who did Tom go camping with?",
+					"options": [
+						"His family",
+						"His scout group",
+						"His classmates",
+						"His neighbors"
+					],
+					"correct": 1,
+					"explanation": "Tom went camping with his scout group."
+				},
+				{
+					"question": "What did they do at night?",
+					"options": [
+						"Played games",
+						"Slept early",
+						"Told stories and looked at the stars",
+						"Went home"
+					],
+					"correct": 2,
+					"explanation": "They told stories and looked at the stars."
+				}
+			],
+			"summary": "Tom camps with his scout group and enjoys the adventure."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "camping",
+			"tags": ["story", "reading", "A2", "camping", "scout"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Leah made a birthday card for her best friend. She used colored paper and stickers. When she gave the card to her friend, her friend smiled and hugged Leah. Leah was glad to make her friend happy.",
+			"questions": [
+				{
+					"question": "What did Leah make?",
+					"options": ["A cake", "A birthday card", "A poster", "A drawing"],
+					"correct": 1,
+					"explanation": "Leah made a birthday card for her best friend."
+				},
+				{
+					"question": "How did Leah's friend feel?",
+					"options": ["Sad", "Angry", "Happy", "Surprised"],
+					"correct": 2,
+					"explanation": "Her friend smiled and hugged Leah."
+				}
+			],
+			"summary": "Leah makes a card for her friend's birthday and makes her happy."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "crafts",
+			"tags": ["story", "reading", "A2", "birthday", "card"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Owen's family went hiking in the mountains. They saw beautiful flowers and birds along the trail. At the top, they had a picnic and took photos. Owen loved spending time outdoors with his family.",
+			"questions": [
+				{
+					"question": "Where did Owen's family go?",
+					"options": [
+						"To the beach",
+						"To the zoo",
+						"Hiking in the mountains",
+						"To the city"
+					],
+					"correct": 2,
+					"explanation": "Owen's family went hiking in the mountains."
+				},
+				{
+					"question": "What did they do at the top?",
+					"options": [
+						"Played games",
+						"Had a picnic",
+						"Went swimming",
+						"Built a fire"
+					],
+					"correct": 1,
+					"explanation": "They had a picnic and took photos."
+				}
+			],
+			"summary": "Owen hikes with his family and enjoys a picnic on the mountain."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "outdoor activities",
+			"tags": ["story", "reading", "A2", "hiking", "mountains"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ava found a lost kitten near her house. She gave it food and water and made a bed for it in a box. Ava's parents helped her find the kitten's owner. The owner was very thankful and gave Ava a thank-you note.",
+			"questions": [
+				{
+					"question": "What did Ava find?",
+					"options": ["A puppy", "A bird", "A kitten", "A rabbit"],
+					"correct": 2,
+					"explanation": "Ava found a lost kitten near her house."
+				},
+				{
+					"question": "What did the owner give Ava?",
+					"options": ["Money", "A thank-you note", "A toy", "A book"],
+					"correct": 1,
+					"explanation": "The owner gave Ava a thank-you note."
+				}
+			],
+			"summary": "Ava finds a lost kitten and helps it return home."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "animals",
+			"tags": ["story", "reading", "A2", "kitten", "thank you"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Gabriel visited his uncle's farm during the holidays. He helped feed the chickens and collect eggs. Gabriel rode a horse for the first time and enjoyed the fresh air. He wants to visit again next year.",
+			"questions": [
+				{
+					"question": "Where did Gabriel go for the holidays?",
+					"options": [
+						"To the city",
+						"To a farm",
+						"To the beach",
+						"To the mountains"
+					],
+					"correct": 1,
+					"explanation": "Gabriel visited his uncle's farm."
+				},
+				{
+					"question": "What did Gabriel do for the first time?",
+					"options": ["Drive a car", "Ride a horse", "Swim", "Bake bread"],
+					"correct": 1,
+					"explanation": "Gabriel rode a horse for the first time."
+				}
+			],
+			"summary": "Gabriel visits his uncle's farm and rides a horse."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "holidays",
+			"tags": ["story", "reading", "A2", "farm", "horse riding"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Lily's class put on a play for the school. Lily played the main character and wore a costume. Her parents came to watch and took photos. After the play, everyone clapped for Lily and her classmates.",
+			"questions": [
+				{
+					"question": "What did Lily's class do?",
+					"options": [
+						"Went on a trip",
+						"Put on a play",
+						"Had a party",
+						"Watched a movie"
+					],
+					"correct": 1,
+					"explanation": "Lily's class put on a play for the school."
+				},
+				{
+					"question": "Who came to watch Lily?",
+					"options": [
+						"Her friends",
+						"Her parents",
+						"Her neighbors",
+						"Her teacher"
+					],
+					"correct": 1,
+					"explanation": "Her parents came to watch and took photos."
+				}
+			],
+			"summary": "Lily acts in a school play and her parents watch."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "performance",
+			"tags": ["story", "reading", "A2", "play", "school"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Jacob and his friends started a recycling club at school. They collected plastic bottles and paper every week. The school became cleaner, and the principal thanked them for their hard work.",
+			"questions": [
+				{
+					"question": "What club did Jacob and his friends start?",
+					"options": [
+						"A music club",
+						"A recycling club",
+						"A cooking club",
+						"A reading club"
+					],
+					"correct": 1,
+					"explanation": "Jacob and his friends started a recycling club."
+				},
+				{
+					"question": "Who thanked the club for their work?",
+					"options": [
+						"The principal",
+						"The teacher",
+						"The mayor",
+						"The janitor"
+					],
+					"correct": 0,
+					"explanation": "The principal thanked them for their hard work."
+				}
+			],
+			"summary": "Jacob starts a recycling club and helps clean the school."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "environment",
+			"tags": ["story", "reading", "A2", "recycling", "club"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Mason learned to play chess from his grandfather. They played together every Sunday afternoon. Mason lost many games at first, but he practiced and finally won a game. His grandfather was proud of him.",
+			"questions": [
+				{
+					"question": "Who taught Mason to play chess?",
+					"options": [
+						"His friend",
+						"His father",
+						"His grandfather",
+						"His teacher"
+					],
+					"correct": 2,
+					"explanation": "Mason learned to play chess from his grandfather."
+				},
+				{
+					"question": "When did they play chess?",
+					"options": [
+						"Every morning",
+						"Every Sunday afternoon",
+						"Every Friday night",
+						"Every Monday"
+					],
+					"correct": 1,
+					"explanation": "They played together every Sunday afternoon."
+				}
+			],
+			"summary": "Mason learns chess from his grandfather and finally wins a game."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "games",
+			"tags": ["story", "reading", "A2", "chess", "grandfather"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Sofia saved her pocket money to buy a new book. She went to the bookstore and chose a mystery novel. Sofia read the book every night before bed and finished it in a week.",
+			"questions": [
+				{
+					"question": "What did Sofia save her money for?",
+					"options": ["A toy", "A new book", "A dress", "A game"],
+					"correct": 1,
+					"explanation": "Sofia saved her pocket money to buy a new book."
+				},
+				{
+					"question": "How long did it take Sofia to finish the book?",
+					"options": ["One day", "A week", "A month", "A year"],
+					"correct": 1,
+					"explanation": "She finished it in a week."
+				}
+			],
+			"summary": "Sofia saves money and buys a mystery novel."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "shopping",
+			"tags": ["story", "reading", "A2", "book", "saving"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Olivia and her cousin went to the city park to fly a kite. The wind was strong, and the kite went high in the sky. Suddenly, the string broke, and the kite landed in a tree. A park worker helped them get it down, and they thanked him happily.",
+			"questions": [
+				{
+					"question": "Where did Olivia and her cousin go?",
+					"options": [
+						"To the zoo",
+						"To the park",
+						"To the school",
+						"To the store"
+					],
+					"correct": 1,
+					"explanation": "They went to the city park to fly a kite."
+				},
+				{
+					"question": "Who helped them get the kite down?",
+					"options": [
+						"A teacher",
+						"A park worker",
+						"A friend",
+						"A police officer"
+					],
+					"correct": 1,
+					"explanation": "A park worker helped them get it down."
+				}
+			],
+			"summary": "Olivia and her cousin fly a kite and get help from a park worker."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "outdoor activities",
+			"tags": ["story", "reading", "A2", "kite", "park"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Adam's family visited a farm during the weekend. Adam fed the sheep and learned how to milk a cow. He tasted fresh milk for the first time. Adam enjoyed the farm animals and wanted to visit again soon.",
+			"questions": [
+				{
+					"question": "Where did Adam's family go?",
+					"options": [
+						"To a farm",
+						"To the beach",
+						"To the city",
+						"To the mountains"
+					],
+					"correct": 0,
+					"explanation": "Adam's family visited a farm."
+				},
+				{
+					"question": "What did Adam taste for the first time?",
+					"options": ["Cheese", "Fresh milk", "Bread", "Cake"],
+					"correct": 1,
+					"explanation": "He tasted fresh milk for the first time."
+				}
+			],
+			"summary": "Adam visits a farm and learns about animals."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family outing",
+			"tags": ["story", "reading", "A2", "farm", "animals"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Nora joined the school choir. She practiced singing every afternoon with her friends. At the school concert, Nora sang a solo and everyone clapped for her. She felt nervous at first but was happy in the end.",
+			"questions": [
+				{
+					"question": "What did Nora join?",
+					"options": [
+						"The school choir",
+						"The football team",
+						"The art club",
+						"The science club"
+					],
+					"correct": 0,
+					"explanation": "Nora joined the school choir."
+				},
+				{
+					"question": "How did Nora feel at the concert?",
+					"options": ["Angry", "Nervous at first, then happy", "Sad", "Bored"],
+					"correct": 1,
+					"explanation": "She felt nervous at first but was happy in the end."
+				}
+			],
+			"summary": "Nora joins the choir and sings a solo at the concert."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "music",
+			"tags": ["story", "reading", "A2", "choir", "concert"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Eli and his father built a birdhouse in the garden. They painted it blue and put seeds inside. Soon, birds came to eat the seeds. Eli watched the birds every morning before school.",
+			"questions": [
+				{
+					"question": "What did Eli and his father build?",
+					"options": ["A treehouse", "A birdhouse", "A fence", "A bench"],
+					"correct": 1,
+					"explanation": "They built a birdhouse in the garden."
+				},
+				{
+					"question": "What did they put inside the birdhouse?",
+					"options": ["Water", "Seeds", "Leaves", "Flowers"],
+					"correct": 1,
+					"explanation": "They put seeds inside."
+				}
+			],
+			"summary": "Eli builds a birdhouse and enjoys watching birds."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "crafts",
+			"tags": ["story", "reading", "A2", "birdhouse", "garden"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Grace and her friends organized a charity bake sale at school. They made cupcakes and cookies. Many students bought the treats, and they raised money for a local animal shelter.",
+			"questions": [
+				{
+					"question": "What did Grace and her friends organize?",
+					"options": ["A sports event", "A bake sale", "A concert", "A play"],
+					"correct": 1,
+					"explanation": "They organized a charity bake sale."
+				},
+				{
+					"question": "What did they raise money for?",
+					"options": [
+						"A school trip",
+						"A new playground",
+						"A local animal shelter",
+						"A party"
+					],
+					"correct": 2,
+					"explanation": "They raised money for a local animal shelter."
+				}
+			],
+			"summary": "Grace and friends raise money for animals with a bake sale."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "charity",
+			"tags": ["story", "reading", "A2", "bake sale", "charity"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Aiden's teacher gave him a plant to care for over the holidays. Aiden watered it every day and put it by the window. When school started again, the plant had grown tall and healthy. The teacher was pleased with Aiden's work.",
+			"questions": [
+				{
+					"question": "What did Aiden's teacher give him?",
+					"options": ["A book", "A plant", "A toy", "A puzzle"],
+					"correct": 1,
+					"explanation": "Aiden's teacher gave him a plant to care for."
+				},
+				{
+					"question": "What happened to the plant?",
+					"options": [
+						"It died",
+						"It grew tall and healthy",
+						"It was lost",
+						"It was given away"
+					],
+					"correct": 1,
+					"explanation": "The plant had grown tall and healthy."
+				}
+			],
+			"summary": "Aiden cares for a plant and helps it grow."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "responsibility",
+			"tags": ["story", "reading", "A2", "plant", "care"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Zara and her mother made a scrapbook of family photos. They added stickers and wrote funny stories next to the pictures. Zara showed the scrapbook to her grandmother, who laughed and enjoyed the memories.",
+			"questions": [
+				{
+					"question": "What did Zara and her mother make?",
+					"options": ["A cake", "A scrapbook", "A drawing", "A puzzle"],
+					"correct": 1,
+					"explanation": "They made a scrapbook of family photos."
+				},
+				{
+					"question": "Who enjoyed the scrapbook?",
+					"options": [
+						"Her teacher",
+						"Her grandmother",
+						"Her neighbor",
+						"Her friend"
+					],
+					"correct": 1,
+					"explanation": "Her grandmother laughed and enjoyed the memories."
+				}
+			],
+			"summary": "Zara makes a family scrapbook with her mother."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family",
+			"tags": ["story", "reading", "A2", "scrapbook", "photos"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ethan and his classmates visited a fire station. A firefighter showed them the fire truck and explained how to stay safe in an emergency. Ethan tried on a firefighter's helmet and took a photo with his friends.",
+			"questions": [
+				{
+					"question": "Where did Ethan's class visit?",
+					"options": [
+						"A police station",
+						"A fire station",
+						"A hospital",
+						"A museum"
+					],
+					"correct": 1,
+					"explanation": "They visited a fire station."
+				},
+				{
+					"question": "What did Ethan try on?",
+					"options": ["A jacket", "A helmet", "Boots", "Gloves"],
+					"correct": 1,
+					"explanation": "Ethan tried on a firefighter's helmet."
+				}
+			],
+			"summary": "Ethan visits a fire station and learns about safety."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "school trip",
+			"tags": ["story", "reading", "A2", "fire station", "safety"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Liam found a wallet on the playground. He picked it up and gave it to the teacher. The teacher found the owner, who thanked Liam for being honest. Liam felt good about doing the right thing.",
+			"questions": [
+				{
+					"question": "What did Liam find?",
+					"options": ["A book", "A wallet", "A ball", "A key"],
+					"correct": 1,
+					"explanation": "Liam found a wallet on the playground."
+				},
+				{
+					"question": "Who did Liam give the wallet to?",
+					"options": ["His friend", "The teacher", "The police", "His parents"],
+					"correct": 1,
+					"explanation": "He gave it to the teacher."
+				}
+			],
+			"summary": "Liam finds a wallet and returns it to the owner."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "honesty",
+			"tags": ["story", "reading", "A2", "wallet", "honesty"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Mila's family went apple picking in the autumn. They filled baskets with red and green apples. Mila helped her mother bake an apple pie. The whole family enjoyed the pie for dessert.",
+			"questions": [
+				{
+					"question": "What did Mila's family do in autumn?",
+					"options": [
+						"Went swimming",
+						"Went apple picking",
+						"Went skiing",
+						"Went camping"
+					],
+					"correct": 1,
+					"explanation": "They went apple picking in the autumn."
+				},
+				{
+					"question": "What did Mila help bake?",
+					"options": ["A cake", "Bread", "An apple pie", "Cookies"],
+					"correct": 2,
+					"explanation": "Mila helped her mother bake an apple pie."
+				}
+			],
+			"summary": "Mila goes apple picking and helps bake a pie."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family outing",
+			"tags": ["story", "reading", "A2", "apple picking", "pie"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Oscar learned to play the piano. He practiced every day after school. At the music recital, Oscar played a song for his parents and friends. Everyone clapped and told him he did a great job.",
+			"questions": [
+				{
+					"question": "What instrument did Oscar learn?",
+					"options": ["Guitar", "Piano", "Drums", "Violin"],
+					"correct": 1,
+					"explanation": "Oscar learned to play the piano."
+				},
+				{
+					"question": "When did Oscar practice?",
+					"options": [
+						"Before school",
+						"During lunch",
+						"Every day after school",
+						"On weekends only"
+					],
+					"correct": 2,
+					"explanation": "He practiced every day after school."
+				}
+			],
+			"summary": "Oscar learns piano and performs at a recital."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "music",
+			"tags": ["story", "reading", "A2", "piano", "recital"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Chloe and her brother made popcorn and watched a movie at home. They laughed at the funny scenes and talked about their favorite characters. It was a relaxing evening for both of them.",
+			"questions": [
+				{
+					"question": "What did Chloe and her brother make?",
+					"options": ["Pizza", "Popcorn", "Sandwiches", "Cake"],
+					"correct": 1,
+					"explanation": "They made popcorn and watched a movie."
+				},
+				{
+					"question": "What did they do while watching the movie?",
+					"options": [
+						"Argued",
+						"Talked about their favorite characters",
+						"Went to sleep",
+						"Did homework"
+					],
+					"correct": 1,
+					"explanation": "They talked about their favorite characters."
+				}
+			],
+			"summary": "Chloe and her brother enjoy a movie night at home."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family",
+			"tags": ["story", "reading", "A2", "movie night", "popcorn"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Henry's class collected food for people in need. They brought cans and boxes from home and made a big pile in the classroom. Henry felt proud to help others and learned the importance of sharing.",
+			"questions": [
+				{
+					"question": "What did Henry's class collect?",
+					"options": ["Books", "Toys", "Food", "Clothes"],
+					"correct": 2,
+					"explanation": "They collected food for people in need."
+				},
+				{
+					"question": "How did Henry feel?",
+					"options": ["Proud", "Sad", "Angry", "Bored"],
+					"correct": 0,
+					"explanation": "Henry felt proud to help others."
+				}
+			],
+			"summary": "Henry helps collect food for people in need."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "charity",
+			"tags": ["story", "reading", "A2", "food drive", "sharing"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Amelia's family went camping by a lake. They set up a tent and cooked dinner over a fire. At night, they listened to the sounds of nature and watched the stars. Amelia loved the adventure and wanted to camp again.",
+			"questions": [
+				{
+					"question": "Where did Amelia's family go camping?",
+					"options": [
+						"By a river",
+						"By a lake",
+						"In the mountains",
+						"In the backyard"
+					],
+					"correct": 1,
+					"explanation": "They went camping by a lake."
+				},
+				{
+					"question": "What did they do at night?",
+					"options": [
+						"Played cards",
+						"Watched TV",
+						"Listened to nature and watched stars",
+						"Went swimming"
+					],
+					"correct": 2,
+					"explanation": "They listened to the sounds of nature and watched the stars."
+				}
+			],
+			"summary": "Amelia enjoys camping by the lake with her family."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "camping",
+			"tags": ["story", "reading", "A2", "camping", "lake"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Lucas helped his grandmother make soup for dinner. He washed the vegetables and stirred the pot. The soup smelled delicious, and everyone enjoyed the meal. Lucas was glad to help in the kitchen.",
+			"questions": [
+				{
+					"question": "What did Lucas help make?",
+					"options": ["Salad", "Soup", "Cake", "Pasta"],
+					"correct": 1,
+					"explanation": "Lucas helped make soup for dinner."
+				},
+				{
+					"question": "Who did Lucas help?",
+					"options": [
+						"His mother",
+						"His friend",
+						"His grandmother",
+						"His sister"
+					],
+					"correct": 2,
+					"explanation": "He helped his grandmother."
+				}
+			],
+			"summary": "Lucas helps his grandmother cook soup for the family."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "cooking",
+			"tags": ["story", "reading", "A2", "soup", "grandmother"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ella learned to roller skate in the park. She fell a few times but got back up and tried again. After practicing, Ella could skate without falling. She was proud of her new skill.",
+			"questions": [
+				{
+					"question": "What did Ella learn to do?",
+					"options": ["Swim", "Roller skate", "Ride a bike", "Play tennis"],
+					"correct": 1,
+					"explanation": "Ella learned to roller skate in the park."
+				},
+				{
+					"question": "How did Ella feel about her new skill?",
+					"options": ["Sad", "Tired", "Proud", "Angry"],
+					"correct": 2,
+					"explanation": "She was proud of her new skill."
+				}
+			],
+			"summary": "Ella learns to roller skate and feels proud."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "skills",
+			"tags": ["story", "reading", "A2", "roller skating", "learning"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Aarav's class made paper lanterns for a festival. Aarav decorated his lantern with stars and moons. At the festival, the lanterns were hung around the playground and looked beautiful at night.",
+			"questions": [
+				{
+					"question": "What did Aarav's class make?",
+					"options": ["Masks", "Paper lanterns", "Paintings", "Cards"],
+					"correct": 1,
+					"explanation": "They made paper lanterns for a festival."
+				},
+				{
+					"question": "How did Aarav decorate his lantern?",
+					"options": [
+						"With flowers",
+						"With stars and moons",
+						"With animals",
+						"With leaves"
+					],
+					"correct": 1,
+					"explanation": "He decorated his lantern with stars and moons."
+				}
+			],
+			"summary": "Aarav makes a paper lantern for the school festival."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "crafts",
+			"tags": ["story", "reading", "A2", "lantern", "festival"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Megan and her family visited a castle during the holidays. Megan imagined she was a princess as she walked through the big rooms. She took many photos and learned about the castle's history.",
+			"questions": [
+				{
+					"question": "Where did Megan visit?",
+					"options": ["A museum", "A castle", "A zoo", "A park"],
+					"correct": 1,
+					"explanation": "Megan visited a castle during the holidays."
+				},
+				{
+					"question": "What did Megan imagine?",
+					"options": [
+						"She was a queen",
+						"She was a princess",
+						"She was a knight",
+						"She was a teacher"
+					],
+					"correct": 1,
+					"explanation": "Megan imagined she was a princess."
+				}
+			],
+			"summary": "Megan visits a castle and imagines being a princess."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "holidays",
+			"tags": ["story", "reading", "A2", "castle", "princess"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Max planted sunflower seeds in a pot on his balcony. He watered them every morning. After a few weeks, tall sunflowers grew. Max was excited to see the bright yellow flowers.",
+			"questions": [
+				{
+					"question": "What did Max plant?",
+					"options": ["Roses", "Sunflowers", "Tulips", "Daisies"],
+					"correct": 1,
+					"explanation": "Max planted sunflower seeds."
+				},
+				{
+					"question": "Where did Max plant the seeds?",
+					"options": [
+						"In the garden",
+						"On his balcony",
+						"At school",
+						"In the park"
+					],
+					"correct": 1,
+					"explanation": "He planted them in a pot on his balcony."
+				}
+			],
+			"summary": "Max grows sunflowers on his balcony."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "gardening",
+			"tags": ["story", "reading", "A2", "sunflowers", "balcony"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Isabel and her brother went to the local market with their mother. They helped carry bags and picked out fresh fruit. Isabel chose apples and her brother chose bananas. When they got home, they made a fruit salad together.",
+			"questions": [
+				{
+					"question": "Where did Isabel and her brother go?",
+					"options": [
+						"To the park",
+						"To the market",
+						"To the zoo",
+						"To the beach"
+					],
+					"correct": 1,
+					"explanation": "They went to the local market."
+				},
+				{
+					"question": "What did they make at home?",
+					"options": ["A cake", "A fruit salad", "A sandwich", "A pizza"],
+					"correct": 1,
+					"explanation": "They made a fruit salad together."
+				}
+			],
+			"summary": "Isabel and her brother visit the market and make a fruit salad."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "shopping",
+			"tags": ["story", "reading", "A2", "market", "fruit"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Evan learned to play the guitar from his uncle. He practiced every day after school. At the school talent show, Evan played a song and everyone cheered. He was nervous but proud of himself.",
+			"questions": [
+				{
+					"question": "Who taught Evan to play guitar?",
+					"options": ["His father", "His uncle", "His teacher", "His friend"],
+					"correct": 1,
+					"explanation": "Evan learned to play guitar from his uncle."
+				},
+				{
+					"question": "Where did Evan play a song?",
+					"options": [
+						"At home",
+						"At the park",
+						"At the school talent show",
+						"At a concert hall"
+					],
+					"correct": 2,
+					"explanation": "He played a song at the school talent show."
+				}
+			],
+			"summary": "Evan learns guitar and plays at the talent show."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "music",
+			"tags": ["story", "reading", "A2", "guitar", "talent show"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Sasha and her friends started a book club. They met every Friday to talk about stories and share their favorite books. Sasha enjoyed reading and making new friends in the club.",
+			"questions": [
+				{
+					"question": "What did Sasha and her friends start?",
+					"options": [
+						"A dance group",
+						"A book club",
+						"A sports team",
+						"A cooking class"
+					],
+					"correct": 1,
+					"explanation": "They started a book club."
+				},
+				{
+					"question": "When did the club meet?",
+					"options": [
+						"Every Monday",
+						"Every Friday",
+						"Every Saturday",
+						"Every Sunday"
+					],
+					"correct": 1,
+					"explanation": "They met every Friday."
+				}
+			],
+			"summary": "Sasha joins a book club and enjoys reading with friends."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "clubs",
+			"tags": ["story", "reading", "A2", "book club", "friends"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Leo's family went to the mountains for a weekend trip. They hiked along a river and saw waterfalls. At night, they made a campfire and told stories. Leo loved the adventure and took many photos.",
+			"questions": [
+				{
+					"question": "Where did Leo's family go?",
+					"options": [
+						"To the city",
+						"To the mountains",
+						"To the desert",
+						"To the beach"
+					],
+					"correct": 1,
+					"explanation": "They went to the mountains."
+				},
+				{
+					"question": "What did they do at night?",
+					"options": [
+						"Watched TV",
+						"Made a campfire and told stories",
+						"Went swimming",
+						"Went shopping"
+					],
+					"correct": 1,
+					"explanation": "They made a campfire and told stories."
+				}
+			],
+			"summary": "Leo and his family enjoy a mountain adventure."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "travel",
+			"tags": ["story", "reading", "A2", "mountains", "adventure"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Nina helped her teacher decorate the classroom for a holiday. She made paper stars and hung them on the walls. Everyone said the classroom looked beautiful. Nina felt happy to help.",
+			"questions": [
+				{
+					"question": "What did Nina help decorate?",
+					"options": [
+						"The gym",
+						"The classroom",
+						"The library",
+						"The cafeteria"
+					],
+					"correct": 1,
+					"explanation": "Nina helped decorate the classroom."
+				},
+				{
+					"question": "What did Nina make?",
+					"options": [
+						"Paper stars",
+						"Paper boats",
+						"Paper animals",
+						"Paper flowers"
+					],
+					"correct": 0,
+					"explanation": "She made paper stars."
+				}
+			],
+			"summary": "Nina decorates the classroom for a holiday."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "crafts",
+			"tags": ["story", "reading", "A2", "decorating", "holiday"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Milo and his friend Sam built a model airplane. They painted it red and white. On Saturday, they flew the airplane in the park. It soared high, and both boys cheered.",
+			"questions": [
+				{
+					"question": "What did Milo and Sam build?",
+					"options": ["A boat", "A car", "A model airplane", "A robot"],
+					"correct": 2,
+					"explanation": "They built a model airplane."
+				},
+				{
+					"question": "Where did they fly the airplane?",
+					"options": ["At school", "In the park", "At home", "On the street"],
+					"correct": 1,
+					"explanation": "They flew the airplane in the park."
+				}
+			],
+			"summary": "Milo and Sam build and fly a model airplane."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "crafts",
+			"tags": ["story", "reading", "A2", "model airplane", "park"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Layla's class visited an aquarium. She saw colorful fish and a big shark. Layla wrote a report about her favorite sea animals for homework.",
+			"questions": [
+				{
+					"question": "Where did Layla's class go?",
+					"options": [
+						"To the zoo",
+						"To the aquarium",
+						"To the park",
+						"To the farm"
+					],
+					"correct": 1,
+					"explanation": "They visited an aquarium."
+				},
+				{
+					"question": "What did Layla write about?",
+					"options": ["Birds", "Sea animals", "Dinosaurs", "Insects"],
+					"correct": 1,
+					"explanation": "She wrote a report about sea animals."
+				}
+			],
+			"summary": "Layla visits the aquarium and writes about sea animals."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "school trip",
+			"tags": ["story", "reading", "A2", "aquarium", "sea animals"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Omar and his father fixed his bicycle. They changed the flat tire and cleaned the frame. Omar was happy to ride his bike again and thanked his father for the help.",
+			"questions": [
+				{
+					"question": "What did Omar and his father fix?",
+					"options": ["A car", "A bicycle", "A scooter", "A skateboard"],
+					"correct": 1,
+					"explanation": "They fixed the bicycle."
+				},
+				{
+					"question": "How did Omar feel after fixing his bike?",
+					"options": ["Sad", "Happy", "Tired", "Angry"],
+					"correct": 1,
+					"explanation": "Omar was happy to ride his bike again."
+				}
+			],
+			"summary": "Omar and his father fix a bicycle together."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "skills",
+			"tags": ["story", "reading", "A2", "bicycle", "repair"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ruby made lemonade for her family on a hot day. She squeezed lemons and mixed them with sugar and water. Everyone said the lemonade was delicious and asked for more.",
+			"questions": [
+				{
+					"question": "What did Ruby make?",
+					"options": ["Orange juice", "Lemonade", "Milkshake", "Tea"],
+					"correct": 1,
+					"explanation": "Ruby made lemonade."
+				},
+				{
+					"question": "Who drank the lemonade?",
+					"options": [
+						"Her friends",
+						"Her family",
+						"Her teacher",
+						"Her classmates"
+					],
+					"correct": 1,
+					"explanation": "Her family drank the lemonade."
+				}
+			],
+			"summary": "Ruby makes lemonade for her family."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "cooking",
+			"tags": ["story", "reading", "A2", "lemonade", "family"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Henry and his classmates planted a tree in the school yard. They watered it every day. By the end of the year, the tree had grown taller than Henry. He was proud of their hard work.",
+			"questions": [
+				{
+					"question": "What did Henry and his classmates plant?",
+					"options": ["A flower", "A tree", "A bush", "A vegetable"],
+					"correct": 1,
+					"explanation": "They planted a tree in the school yard."
+				},
+				{
+					"question": "How did Henry feel about the tree?",
+					"options": ["Proud", "Sad", "Angry", "Bored"],
+					"correct": 0,
+					"explanation": "He was proud of their hard work."
+				}
+			],
+			"summary": "Henry and his class plant a tree and watch it grow."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "gardening",
+			"tags": ["story", "reading", "A2", "tree", "school"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	},
+
+	{
+		"content": {
+			"story": "Zoe learned to sew a button on her shirt. Her mother showed her how to use a needle and thread. Zoe was careful and did a good job. She was happy to fix her shirt by herself.",
+			"questions": [
+				{
+					"question": "What did Zoe learn to do?",
+					"options": [
+						"Knit a scarf",
+						"Sew a button",
+						"Paint a picture",
+						"Bake a cake"
+					],
+					"correct": 1,
+					"explanation": "Zoe learned to sew a button on her shirt."
+				},
+				{
+					"question": "Who showed Zoe how to sew?",
+					"options": [
+						"Her friend",
+						"Her mother",
+						"Her teacher",
+						"Her grandmother"
+					],
+					"correct": 1,
+					"explanation": "Her mother showed her how to use a needle and thread."
+				}
+			],
+			"summary": "Zoe learns to sew a button with her mother's help."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "skills",
+			"tags": ["story", "reading", "A2", "sewing", "button"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.2
+		}
+	}
+]

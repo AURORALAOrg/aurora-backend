@@ -1,0 +1,1556 @@
+[
+	{
+		"content": {
+			"story": "A philosopher published a thought-provoking essay on the ethics of artificial intelligence, arguing that machines should be designed with moral reasoning capabilities. The essay sparked lively debate among scientists, ethicists, and policymakers. Some agreed that ethical programming is essential, while others warned of unintended consequences. The discussion led to new guidelines for AI development and increased collaboration between technology companies and ethicists.",
+			"questions": [
+				{
+					"question": "What was the main argument of the philosopher's essay?",
+					"options": [
+						"Machines should be able to repair themselves",
+						"Machines should have moral reasoning capabilities",
+						"Machines should replace humans",
+						"Machines should be banned"
+					],
+					"correct": 1,
+					"explanation": "The philosopher argued that machines should be designed with moral reasoning capabilities."
+				},
+				{
+					"question": "What was one result of the essay's publication?",
+					"options": [
+						"It was ignored",
+						"It led to new guidelines for AI development",
+						"It caused AI to be banned",
+						"It had no impact"
+					],
+					"correct": 1,
+					"explanation": "The essay led to new guidelines for AI development and increased collaboration."
+				}
+			],
+			"summary": "An essay on AI ethics sparks debate and new development guidelines."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "ethics and technology",
+			"tags": ["story", "reading", "C2", "AI", "ethics"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A team of economists used advanced modeling techniques to predict the economic impact of a universal basic income policy. Their findings suggested both positive and negative outcomes, depending on implementation details. The research was widely discussed in political and academic circles, influencing policy debates in several countries. The study highlighted the complexity of economic forecasting and the importance of evidence-based decision making.",
+			"questions": [
+				{
+					"question": "What policy did the economists study?",
+					"options": [
+						"Tax reform",
+						"Universal basic income",
+						"Healthcare privatization",
+						"Trade tariffs"
+					],
+					"correct": 1,
+					"explanation": "The economists studied the impact of a universal basic income policy."
+				},
+				{
+					"question": "What was one result of the research?",
+					"options": [
+						"It was ignored",
+						"It influenced policy debates in several countries",
+						"It ended economic modeling",
+						"It was kept secret"
+					],
+					"correct": 1,
+					"explanation": "The research influenced policy debates internationally."
+				}
+			],
+			"summary": "Economists' research on basic income shapes global policy debates."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "economics and policy",
+			"tags": ["story", "reading", "C2", "economics", "policy"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A historian uncovered newly digitized archives that revealed hidden aspects of a major historical event. The discovery challenged accepted narratives and prompted other researchers to re-examine primary sources. The historian's work was featured in academic journals and documentaries, leading to a broader public understanding of the complexities of history.",
+			"questions": [
+				{
+					"question": "What did the historian's discovery lead to?",
+					"options": [
+						"Re-examination of primary sources",
+						"Closure of archives",
+						"No change in understanding",
+						"A new historical event"
+					],
+					"correct": 0,
+					"explanation": "The discovery prompted researchers to re-examine primary sources."
+				},
+				{
+					"question": "How was the historian's work shared with the public?",
+					"options": [
+						"Through secret meetings",
+						"Through academic journals and documentaries",
+						"Only in classrooms",
+						"It was not shared"
+					],
+					"correct": 1,
+					"explanation": "The work was featured in journals and documentaries."
+				}
+			],
+			"summary": "A historian's discovery changes perspectives on a major event and deepens public understanding."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "history and discovery",
+			"tags": ["story", "reading", "C2", "history", "research"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A neuroscientist developed a brain-computer interface that allows users to control digital devices with their thoughts. The breakthrough raised ethical questions about privacy and autonomy, as well as excitement about new possibilities for people with disabilities. The invention was tested in clinical trials and showed promising results, leading to further research and investment in the field.",
+			"questions": [
+				{
+					"question": "What did the neuroscientist develop?",
+					"options": [
+						"A new drug",
+						"A brain-computer interface",
+						"A language app",
+						"A wearable fitness tracker"
+					],
+					"correct": 1,
+					"explanation": "The neuroscientist developed a brain-computer interface."
+				},
+				{
+					"question": "What concerns did the invention raise?",
+					"options": [
+						"Cost of production",
+						"Ethical questions about privacy and autonomy",
+						"Battery life",
+						"Market competition"
+					],
+					"correct": 1,
+					"explanation": "The breakthrough raised ethical questions about privacy and autonomy."
+				}
+			],
+			"summary": "A brain-computer interface opens new possibilities and raises ethical questions."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "science and technology",
+			"tags": ["story", "reading", "C2", "neuroscience", "technology"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A poet composed a collection of experimental works exploring the boundaries between language and music. The poems incorporated rhythm, sound, and visual elements, challenging readers to experience literature in new ways. The collection was performed at international festivals and received awards for its innovation. Critics praised the poet for expanding the definition of poetry and inspiring a new generation of artists.",
+			"questions": [
+				{
+					"question": "What was unique about the poet's collection?",
+					"options": [
+						"It was a traditional sonnet sequence",
+						"It explored boundaries between language and music",
+						"It was only published online",
+						"It was written in multiple languages"
+					],
+					"correct": 1,
+					"explanation": "The collection explored the boundaries between language and music."
+				},
+				{
+					"question": "How was the collection received?",
+					"options": [
+						"It was ignored",
+						"It received awards and inspired artists",
+						"It was banned",
+						"It was criticized for being too traditional"
+					],
+					"correct": 1,
+					"explanation": "The collection received awards and inspired artists."
+				}
+			],
+			"summary": "A poet's experimental collection redefines poetry and inspires new artists."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "arts and literature",
+			"tags": ["story", "reading", "C2", "poetry", "innovation"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "An international panel of scientists published a meta-analysis on the limitations of predictive modeling in epidemiology. The report highlighted the challenges of accounting for human behavior, data quality, and emerging variables in disease outbreaks. Policymakers used the findings to revise public health strategies, emphasizing adaptability and transparent communication. The study sparked ongoing debate about the role of models in decision-making during crises.",
+			"questions": [
+				{
+					"question": "What was the main focus of the scientists' report?",
+					"options": [
+						"Vaccine development",
+						"Limitations of predictive modeling in epidemiology",
+						"Medical ethics",
+						"Economic forecasts"
+					],
+					"correct": 1,
+					"explanation": "The report analyzed the limitations of predictive modeling in disease outbreaks."
+				},
+				{
+					"question": "How did policymakers respond to the report?",
+					"options": [
+						"They ignored it",
+						"They revised public health strategies",
+						"They increased funding",
+						"They restricted data access"
+					],
+					"correct": 1,
+					"explanation": "Policymakers revised strategies based on the findings."
+				}
+			],
+			"summary": "A meta-analysis on epidemiological models influences public health policy and debate."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "science and policy",
+			"tags": ["story", "reading", "C2", "epidemiology", "policy"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A philosopher organized a global symposium on the concept of free will in the age of neuroscience. The event brought together experts from philosophy, neuroscience, law, and artificial intelligence to discuss whether advances in brain science challenge traditional notions of responsibility. The symposium's proceedings were published and became a reference for interdisciplinary research and legal debates.",
+			"questions": [
+				{
+					"question": "What was the main topic of the symposium?",
+					"options": [
+						"Brain surgery",
+						"Free will in the context of neuroscience",
+						"Robotics",
+						"Genetic engineering"
+					],
+					"correct": 1,
+					"explanation": "The symposium focused on free will and neuroscience."
+				},
+				{
+					"question": "What was one outcome of the event?",
+					"options": [
+						"It was ignored",
+						"The proceedings became a reference for research and legal debates",
+						"It led to a ban on AI",
+						"It caused controversy in medicine"
+					],
+					"correct": 1,
+					"explanation": "The proceedings became a reference for interdisciplinary research and law."
+				}
+			],
+			"summary": "A global symposium explores free will and neuroscience, shaping research and legal discourse."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "philosophy and science",
+			"tags": ["story", "reading", "C2", "philosophy", "neuroscience"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A mathematician developed a new algorithm for quantum computing that dramatically increased processing speed for certain complex problems. The breakthrough was published in a leading journal and quickly adopted by major technology firms. The discovery accelerated research in cryptography, materials science, and artificial intelligence, marking a significant milestone in computational theory.",
+			"questions": [
+				{
+					"question": "What was the mathematician's major achievement?",
+					"options": [
+						"A new theory of relativity",
+						"An algorithm for quantum computing that increased processing speed",
+						"A vaccine for a rare disease",
+						"A new programming language"
+					],
+					"correct": 1,
+					"explanation": "The mathematician developed a quantum computing algorithm that increased speed."
+				},
+				{
+					"question": "What was one impact of the discovery?",
+					"options": [
+						"It was ignored",
+						"It accelerated research in several fields",
+						"It caused a decline in AI",
+						"It was kept secret"
+					],
+					"correct": 1,
+					"explanation": "The breakthrough accelerated research in cryptography, materials science, and AI."
+				}
+			],
+			"summary": "A quantum computing breakthrough advances multiple scientific fields."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "mathematics and technology",
+			"tags": ["story", "reading", "C2", "quantum computing", "algorithm"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A literary critic published a comprehensive analysis of postmodern literature, arguing that the genre reflects the uncertainties and complexities of contemporary society. The work became influential in academic circles and was cited in numerous dissertations and conferences. The critic's approach encouraged a new generation of scholars to explore interdisciplinary methods in literary studies.",
+			"questions": [
+				{
+					"question": "What was the main argument of the critic's analysis?",
+					"options": [
+						"Postmodern literature is outdated",
+						"It reflects contemporary uncertainties and complexities",
+						"It is only about style",
+						"It is easy to interpret"
+					],
+					"correct": 1,
+					"explanation": "The critic argued that postmodern literature reflects modern uncertainties."
+				},
+				{
+					"question": "What was one result of the analysis?",
+					"options": [
+						"It was ignored",
+						"It inspired interdisciplinary research in literary studies",
+						"It ended literary criticism",
+						"It was banned"
+					],
+					"correct": 1,
+					"explanation": "The analysis encouraged interdisciplinary approaches in literary studies."
+				}
+			],
+			"summary": "A critic's analysis of postmodern literature shapes academic research and interpretation."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "literature and society",
+			"tags": ["story", "reading", "C2", "literature", "postmodernism"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A sociologist conducted a longitudinal study on the effects of remote work on urban demographics and social cohesion. The research revealed shifts in population distribution, changes in community engagement, and new patterns of inequality. The findings were used by city planners and policymakers to design more inclusive urban environments and address emerging challenges in the digital age.",
+			"questions": [
+				{
+					"question": "What was the focus of the sociologist's study?",
+					"options": [
+						"Remote work's effects on urban demographics and social cohesion",
+						"The impact of tourism",
+						"Sports participation",
+						"School performance"
+					],
+					"correct": 0,
+					"explanation": "The study examined remote work's impact on cities and communities."
+				},
+				{
+					"question": "How were the findings used?",
+					"options": [
+						"They were ignored",
+						"They helped city planners design inclusive environments",
+						"They led to more inequality",
+						"They were only published in books"
+					],
+					"correct": 1,
+					"explanation": "The findings informed urban planning and policy."
+				}
+			],
+			"summary": "A study on remote work informs urban planning for the digital age."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "sociology and urbanism",
+			"tags": ["story", "reading", "C2", "sociology", "urban studies"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A computational linguist developed a multilingual AI system capable of interpreting idiomatic expressions across dozens of languages. The breakthrough addressed a longstanding challenge in machine translation and was quickly adopted by international organizations. The system's accuracy improved cross-cultural communication in diplomacy and global business, but also raised questions about language preservation and cultural nuance.",
+			"questions": [
+				{
+					"question": "What was the main achievement of the AI system?",
+					"options": [
+						"It translated only literal phrases",
+						"It interpreted idiomatic expressions across languages",
+						"It created new languages",
+						"It replaced human translators entirely"
+					],
+					"correct": 1,
+					"explanation": "The AI system could interpret idiomatic expressions in many languages."
+				},
+				{
+					"question": "What concern did the breakthrough raise?",
+					"options": [
+						"Cost of implementation",
+						"Language preservation and cultural nuance",
+						"Speed of translation",
+						"Hardware requirements"
+					],
+					"correct": 1,
+					"explanation": "The system raised questions about language preservation and nuance."
+				}
+			],
+			"summary": "A multilingual AI system advances translation but raises cultural concerns."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "technology and language",
+			"tags": ["story", "reading", "C2", "AI", "translation"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A constitutional court ruled on the legality of biometric surveillance in public spaces, balancing security needs against individual rights. The landmark decision set new precedents for privacy laws in the digital era. Legal scholars and civil society groups debated the implications, and several countries revised their regulations in response to the ruling.",
+			"questions": [
+				{
+					"question": "What issue did the court ruling address?",
+					"options": [
+						"Tax policy",
+						"Biometric surveillance and privacy rights",
+						"Environmental law",
+						"Education reform"
+					],
+					"correct": 1,
+					"explanation": "The court ruled on biometric surveillance and privacy."
+				},
+				{
+					"question": "What was one result of the ruling?",
+					"options": [
+						"No change in laws",
+						"Revised privacy regulations in several countries",
+						"Increased surveillance",
+						"A ban on all technology"
+					],
+					"correct": 1,
+					"explanation": "Several countries revised privacy regulations in response."
+				}
+			],
+			"summary": "A court ruling on biometric surveillance reshapes privacy law worldwide."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "law and society",
+			"tags": ["story", "reading", "C2", "privacy", "law"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A team of climate scientists used satellite data to model the effects of polar ice melt on global sea levels. Their projections indicated faster-than-expected changes, prompting urgent calls for international cooperation. The research influenced policy at the United Nations and led to new agreements on emissions reduction and coastal adaptation strategies.",
+			"questions": [
+				{
+					"question": "What did the scientists use to model sea level changes?",
+					"options": [
+						"Ground surveys",
+						"Satellite data",
+						"Historical records",
+						"Computer games"
+					],
+					"correct": 1,
+					"explanation": "The team used satellite data to model polar ice melt effects."
+				},
+				{
+					"question": "What was one impact of the research?",
+					"options": [
+						"It was ignored",
+						"It influenced UN policy and new agreements",
+						"It caused panic",
+						"It led to less research"
+					],
+					"correct": 1,
+					"explanation": "The research influenced UN policy and new agreements."
+				}
+			],
+			"summary": "Satellite-based climate research prompts international action on sea level rise."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "science and environment",
+			"tags": ["story", "reading", "C2", "climate", "sea level"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A philosopher's treatise on moral uncertainty argued that ethical decision-making should account for incomplete knowledge and conflicting values. The work challenged traditional ethical theories and was widely discussed in academic and policy circles. Its influence extended to medical ethics, environmental policy, and artificial intelligence design.",
+			"questions": [
+				{
+					"question": "What was the central idea of the philosopher's treatise?",
+					"options": [
+						"Ethics is always clear",
+						"Ethical decisions should consider uncertainty and conflicting values",
+						"Morality is unchanging",
+						"Only laws matter"
+					],
+					"correct": 1,
+					"explanation": "The treatise argued for considering uncertainty in ethical decisions."
+				},
+				{
+					"question": "Which fields were influenced by the work?",
+					"options": [
+						"Medical ethics, environmental policy, and AI design",
+						"Sports",
+						"Architecture",
+						"Fashion"
+					],
+					"correct": 0,
+					"explanation": "The work influenced medical ethics, environmental policy, and AI."
+				}
+			],
+			"summary": "A treatise on moral uncertainty shapes ethics in medicine, environment, and AI."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "philosophy and ethics",
+			"tags": ["story", "reading", "C2", "philosophy", "ethics"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A renowned conductor pioneered the use of real-time data visualization in orchestral performances. By integrating live graphics that responded to musical dynamics, the concerts offered audiences a multisensory experience. The innovation was adopted by leading orchestras worldwide, sparking debate about the future of classical music presentation and the role of technology in the arts.",
+			"questions": [
+				{
+					"question": "What was innovative about the conductor's performances?",
+					"options": [
+						"They used real-time data visualization with music",
+						"They were only for private audiences",
+						"They had no musicians",
+						"They excluded technology"
+					],
+					"correct": 0,
+					"explanation": "The conductor integrated live graphics with orchestral music."
+				},
+				{
+					"question": "What debate did the innovation spark?",
+					"options": [
+						"The future of classical music and technology's role in the arts",
+						"Ticket prices",
+						"Musician salaries",
+						"Length of concerts"
+					],
+					"correct": 0,
+					"explanation": "It sparked debate about music's future and technology in the arts."
+				}
+			],
+			"summary": "A conductor's use of data visualization transforms orchestral music and sparks debate."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "arts and innovation",
+			"tags": ["story", "reading", "C2", "music", "technology"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A sociolinguist published a comparative study on code-switching among multilingual professionals in international organizations. The research revealed how language choices affected group dynamics, decision-making, and perceptions of authority. The findings were adopted in cross-cultural training programs and influenced global workplace communication strategies.",
+			"questions": [
+				{
+					"question": "What was the focus of the sociolinguist's study?",
+					"options": [
+						"Language learning apps",
+						"Code-switching among multilingual professionals",
+						"Translation technology",
+						"Accent reduction"
+					],
+					"correct": 1,
+					"explanation": "The study focused on code-switching in multilingual workplaces."
+				},
+				{
+					"question": "How were the findings used?",
+					"options": [
+						"They were ignored",
+						"They influenced cross-cultural training and workplace communication",
+						"They led to fewer languages spoken",
+						"They caused controversy"
+					],
+					"correct": 1,
+					"explanation": "The findings influenced training and communication strategies."
+				}
+			],
+			"summary": "A study on code-switching shapes global workplace communication."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "linguistics and society",
+			"tags": ["story", "reading", "C2", "sociolinguistics", "workplace"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "An economist introduced a new model for measuring the social impact of universal basic income policies. The model incorporated behavioral economics and longitudinal data from pilot programs. Policymakers and researchers used the model to assess the effectiveness of UBI initiatives and to inform debates on social welfare reform worldwide.",
+			"questions": [
+				{
+					"question": "What was innovative about the economist's model?",
+					"options": [
+						"It ignored behavioral factors",
+						"It measured social impact using behavioral economics and pilot data",
+						"It focused only on taxes",
+						"It was not used"
+					],
+					"correct": 1,
+					"explanation": "The model used behavioral economics and pilot data to measure UBI impact."
+				},
+				{
+					"question": "How was the model used?",
+					"options": [
+						"To inform UBI policy debates and assess effectiveness",
+						"To increase taxes",
+						"To reduce welfare",
+						"To ban UBI"
+					],
+					"correct": 0,
+					"explanation": "The model was used to inform debates and assess UBI effectiveness."
+				}
+			],
+			"summary": "A new model measures UBI impact and informs global welfare debates."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "economics and policy",
+			"tags": ["story", "reading", "C2", "economics", "UBI"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A historian uncovered a cache of personal letters from a 19th-century social reformer, shedding new light on the origins of modern labor movements. The discovery prompted a reexamination of historical narratives and was featured in major museums and documentaries. The historian's work sparked renewed public interest in social justice history.",
+			"questions": [
+				{
+					"question": "What did the historian discover?",
+					"options": [
+						"Ancient artifacts",
+						"Personal letters from a 19th-century social reformer",
+						"A lost city",
+						"A scientific theory"
+					],
+					"correct": 1,
+					"explanation": "The historian found letters from a 19th-century reformer."
+				},
+				{
+					"question": "What was the impact of the discovery?",
+					"options": [
+						"No impact",
+						"It prompted a reexamination of labor history and sparked public interest",
+						"It was ignored",
+						"It led to protests"
+					],
+					"correct": 1,
+					"explanation": "The discovery led to renewed interest in social justice history."
+				}
+			],
+			"summary": "Letters from a reformer reshape labor history and inspire public interest."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "history and society",
+			"tags": ["story", "reading", "C2", "history", "reform"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A neuroscientist's research into brain-computer interfaces enabled paralyzed patients to communicate using thought-controlled devices. The breakthrough was hailed as a milestone in assistive technology and raised new ethical questions about privacy and cognitive enhancement. The findings led to international guidelines for the development and use of neural interfaces.",
+			"questions": [
+				{
+					"question": "What was the neuroscientist's breakthrough?",
+					"options": [
+						"A new drug",
+						"Thought-controlled devices for paralyzed patients",
+						"A surgical robot",
+						"A memory test"
+					],
+					"correct": 1,
+					"explanation": "The breakthrough enabled communication via thought-controlled devices."
+				},
+				{
+					"question": "What was one consequence of the research?",
+					"options": [
+						"No changes",
+						"International guidelines for neural interfaces",
+						"Less interest in technology",
+						"Bans on research"
+					],
+					"correct": 1,
+					"explanation": "The findings led to international guidelines for neural interfaces."
+				}
+			],
+			"summary": "Brain-computer interface research advances assistive tech and sparks ethical debate."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "neuroscience and technology",
+			"tags": ["story", "reading", "C2", "neuroscience", "interfaces"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A poet's experimental digital anthology used interactive media and augmented reality to immerse readers in multisensory experiences. The project was exhibited at international festivals and challenged conventional definitions of literature. Critics debated the artistic merit of digital poetry, while educators explored its potential in creative writing curricula.",
+			"questions": [
+				{
+					"question": "What was unique about the poet's anthology?",
+					"options": [
+						"It was a traditional printed book",
+						"It used interactive media and augmented reality",
+						"It was written in one language",
+						"It was anonymous"
+					],
+					"correct": 1,
+					"explanation": "The anthology used interactive media and AR for multisensory experiences."
+				},
+				{
+					"question": "How did the literary world respond?",
+					"options": [
+						"It was ignored",
+						"It was exhibited internationally and debated by critics",
+						"It was banned",
+						"It was rewritten"
+					],
+					"correct": 1,
+					"explanation": "The anthology was exhibited and debated by critics."
+				}
+			],
+			"summary": "A digital poetry anthology redefines literature and inspires debate."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "arts and technology",
+			"tags": ["story", "reading", "C2", "poetry", "digital"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A philosopher developed a framework for ethical decision-making in autonomous vehicles, balancing passenger safety with public welfare. The framework was adopted by major car manufacturers and became a reference in international policy debates. Critics raised concerns about algorithmic bias and the limits of machine morality.",
+			"questions": [
+				{
+					"question": "What was the philosopher's main contribution?",
+					"options": [
+						"A new car model",
+						"A framework for ethical decisions in autonomous vehicles",
+						"A driving manual",
+						"A safety test"
+					],
+					"correct": 1,
+					"explanation": "The philosopher developed an ethical framework for autonomous vehicles."
+				},
+				{
+					"question": "How was the framework used?",
+					"options": [
+						"It was ignored",
+						"It was adopted by manufacturers and used in policy debates",
+						"It was banned",
+						"It replaced all human drivers"
+					],
+					"correct": 1,
+					"explanation": "The framework was adopted by manufacturers and referenced in policy."
+				}
+			],
+			"summary": "A philosopher's ethical framework shapes autonomous vehicle policy."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "philosophy and technology",
+			"tags": ["story", "reading", "C2", "ethics", "autonomous vehicles"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A computational biologist engineered synthetic cells to produce biodegradable plastics, offering a sustainable alternative to petrochemical products. The breakthrough was commercialized by global manufacturers and sparked debate on bioengineering's environmental and ethical implications.",
+			"questions": [
+				{
+					"question": "What was the biologist's achievement?",
+					"options": [
+						"Faster computers",
+						"Synthetic cells for biodegradable plastics",
+						"A new vaccine",
+						"Improved fertilizers"
+					],
+					"correct": 1,
+					"explanation": "The biologist engineered synthetic cells for biodegradable plastics."
+				},
+				{
+					"question": "What debate did the breakthrough spark?",
+					"options": [
+						"Farming techniques",
+						"Bioengineering's environmental and ethical impact",
+						"Space travel",
+						"Food safety"
+					],
+					"correct": 1,
+					"explanation": "The breakthrough sparked debate on bioengineering's impact."
+				}
+			],
+			"summary": "Synthetic cells for plastics spark debate on bioengineering and sustainability."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "biology and environment",
+			"tags": ["story", "reading", "C2", "synthetic biology", "plastics"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A literary theorist redefined the concept of authorship in the digital era, analyzing collaborative writing platforms and AI-generated texts. Her work challenged traditional notions of originality and was cited in major academic journals. The theorist's ideas influenced copyright law reform and digital publishing standards.",
+			"questions": [
+				{
+					"question": "What did the theorist analyze?",
+					"options": [
+						"Solo novels only",
+						"Collaborative writing and AI-generated texts",
+						"Ancient manuscripts",
+						"Poetry only"
+					],
+					"correct": 1,
+					"explanation": "She analyzed collaborative and AI-generated texts."
+				},
+				{
+					"question": "What was one impact of her work?",
+					"options": [
+						"No impact",
+						"Influenced copyright law and publishing standards",
+						"It was banned",
+						"It was ignored"
+					],
+					"correct": 1,
+					"explanation": "Her work influenced copyright law and publishing."
+				}
+			],
+			"summary": "A theorist's work on authorship shapes copyright law and digital publishing."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "literature and technology",
+			"tags": ["story", "reading", "C2", "authorship", "AI"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A climate economist modeled the long-term effects of carbon pricing on global inequality. The research revealed that well-designed policies could reduce emissions and promote social equity. The findings were presented at international summits and influenced climate negotiations.",
+			"questions": [
+				{
+					"question": "What did the economist model?",
+					"options": [
+						"Short-term profits",
+						"Long-term effects of carbon pricing on inequality",
+						"Crop yields",
+						"Oil prices"
+					],
+					"correct": 1,
+					"explanation": "The economist modeled carbon pricing and inequality."
+				},
+				{
+					"question": "What was the impact of the findings?",
+					"options": [
+						"No impact",
+						"Influenced climate negotiations and summits",
+						"It was ignored",
+						"It led to more emissions"
+					],
+					"correct": 1,
+					"explanation": "The findings influenced climate negotiations."
+				}
+			],
+			"summary": "Carbon pricing models shape climate policy and social equity debates."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "economics and environment",
+			"tags": ["story", "reading", "C2", "economics", "climate"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A neuroscientist pioneered research on the neural basis of creativity, using advanced imaging to map brain activity during artistic tasks. The studies revealed complex networks involved in imagination and problem-solving. The research was featured in global media and led to interdisciplinary programs in art and science education.",
+			"questions": [
+				{
+					"question": "What did the neuroscientist study?",
+					"options": [
+						"Memory loss",
+						"Neural basis of creativity",
+						"Sleep patterns",
+						"Language acquisition"
+					],
+					"correct": 1,
+					"explanation": "The neuroscientist mapped the neural basis of creativity."
+				},
+				{
+					"question": "What was the impact of the research?",
+					"options": [
+						"No impact",
+						"Led to interdisciplinary art and science programs",
+						"It was banned",
+						"It was ignored"
+					],
+					"correct": 1,
+					"explanation": "The research led to interdisciplinary education programs."
+				}
+			],
+			"summary": "Research on creativity's neural basis inspires art-science education."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "neuroscience and arts",
+			"tags": ["story", "reading", "C2", "creativity", "neuroscience"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A legal theorist examined the implications of digital evidence in international criminal trials. Her recommendations improved the admissibility and reliability of electronic records, influencing reforms in global justice systems. The work was recognized by human rights organizations and legal scholars.",
+			"questions": [
+				{
+					"question": "What did the theorist examine?",
+					"options": [
+						"Forensic medicine",
+						"Digital evidence in criminal trials",
+						"Jury selection",
+						"Sentencing guidelines"
+					],
+					"correct": 1,
+					"explanation": "She examined digital evidence in criminal trials."
+				},
+				{
+					"question": "What was one result of her work?",
+					"options": [
+						"No result",
+						"Reforms in global justice systems",
+						"It was banned",
+						"It was ignored"
+					],
+					"correct": 1,
+					"explanation": "Her recommendations led to justice system reforms."
+				}
+			],
+			"summary": "Digital evidence research reforms international criminal justice systems."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "law and technology",
+			"tags": ["story", "reading", "C2", "law", "digital evidence"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A historian reconstructed the daily life of ancient civilizations using archaeological data and digital modeling. The immersive reconstructions were displayed in museums and educational platforms, transforming public understanding of history. The project received awards for innovation in digital humanities.",
+			"questions": [
+				{
+					"question": "What did the historian reconstruct?",
+					"options": [
+						"Modern cities",
+						"Daily life of ancient civilizations",
+						"Famous battles",
+						"Religious rituals only"
+					],
+					"correct": 1,
+					"explanation": "The historian reconstructed daily life in ancient civilizations."
+				},
+				{
+					"question": "Where were the reconstructions displayed?",
+					"options": [
+						"Private collections",
+						"Museums and educational platforms",
+						"Only in books",
+						"Government offices"
+					],
+					"correct": 1,
+					"explanation": "The reconstructions were displayed in museums and online."
+				}
+			],
+			"summary": "Digital reconstructions of ancient life transform history education."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "history and technology",
+			"tags": ["story", "reading", "C2", "history", "digital humanities"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A sociologist's global survey on remote work revealed changes in urban migration patterns and family structures. The research influenced urban planning policies and corporate strategies for flexible work arrangements. The findings were discussed at international forums and shaped post-pandemic recovery plans.",
+			"questions": [
+				{
+					"question": "What did the survey reveal?",
+					"options": [
+						"No changes",
+						"Changes in migration and family structures due to remote work",
+						"Higher birth rates",
+						"More car usage"
+					],
+					"correct": 1,
+					"explanation": "The survey revealed changes in migration and family structures."
+				},
+				{
+					"question": "How were the findings used?",
+					"options": [
+						"Ignored",
+						"Influenced urban planning and corporate strategies",
+						"Led to school closures",
+						"Increased taxes"
+					],
+					"correct": 1,
+					"explanation": "The findings influenced planning and corporate strategies."
+				}
+			],
+			"summary": "Remote work research shapes urban planning and corporate policy."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "sociology and work",
+			"tags": ["story", "reading", "C2", "sociology", "remote work"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A linguist's research on endangered sign languages led to the creation of digital archives and educational resources. The project preserved unique linguistic heritage and enabled deaf communities to access their cultural history. International organizations recognized the initiative as a model for language preservation.",
+			"questions": [
+				{
+					"question": "What was the focus of the linguist's project?",
+					"options": [
+						"Spoken dialects",
+						"Endangered sign languages",
+						"Written alphabets",
+						"Ancient scripts"
+					],
+					"correct": 1,
+					"explanation": "The project focused on endangered sign languages."
+				},
+				{
+					"question": "What was one result of the project?",
+					"options": [
+						"No result",
+						"Creation of digital archives and access for deaf communities",
+						"It was banned",
+						"It led to language extinction"
+					],
+					"correct": 1,
+					"explanation": "The project created digital archives and enabled access."
+				}
+			],
+			"summary": "Sign language preservation project creates digital archives and access."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "linguistics and culture",
+			"tags": ["story", "reading", "C2", "sign language", "archives"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A medical ethicist led a global task force on equitable vaccine distribution during a pandemic. The task force's guidelines were adopted by governments and NGOs, improving access for vulnerable populations. The ethicist's leadership was recognized with international awards.",
+			"questions": [
+				{
+					"question": "What did the ethicist lead?",
+					"options": [
+						"A research lab",
+						"A global task force on vaccine distribution",
+						"A hospital",
+						"A pharmaceutical company"
+					],
+					"correct": 1,
+					"explanation": "The ethicist led a task force on vaccine distribution."
+				},
+				{
+					"question": "What was the impact of the guidelines?",
+					"options": [
+						"No impact",
+						"Improved access for vulnerable populations",
+						"It was banned",
+						"It led to protests"
+					],
+					"correct": 1,
+					"explanation": "The guidelines improved access for vulnerable populations."
+				}
+			],
+			"summary": "Global vaccine distribution guidelines improve equity in pandemics."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "ethics and medicine",
+			"tags": ["story", "reading", "C2", "ethics", "vaccine"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A poet's multilingual anthology explored the interplay between language, identity, and migration. The collection received critical acclaim and was translated into several languages, fostering cross-cultural dialogue. The poet was invited to speak at international literary festivals.",
+			"questions": [
+				{
+					"question": "What themes did the anthology explore?",
+					"options": [
+						"Nature only",
+						"Language, identity, and migration",
+						"Science",
+						"Economics"
+					],
+					"correct": 1,
+					"explanation": "The anthology explored language, identity, and migration."
+				},
+				{
+					"question": "What was one impact of the collection?",
+					"options": [
+						"No impact",
+						"It fostered cross-cultural dialogue and was translated",
+						"It was banned",
+						"It was ignored"
+					],
+					"correct": 1,
+					"explanation": "The collection fostered dialogue and was translated."
+				}
+			],
+			"summary": "A multilingual poetry anthology fosters cross-cultural dialogue and acclaim."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "literature and migration",
+			"tags": ["story", "reading", "C2", "poetry", "migration"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A behavioral economist designed a nudge-based intervention to promote sustainable consumer choices. The intervention was tested in multiple countries and led to measurable reductions in plastic use. The results were published in top journals and informed environmental policy reforms.",
+			"questions": [
+				{
+					"question": "What was the economist's intervention?",
+					"options": [
+						"A tax increase",
+						"A nudge-based intervention for sustainability",
+						"A new product",
+						"A marketing campaign"
+					],
+					"correct": 1,
+					"explanation": "The intervention promoted sustainable choices using behavioral nudges."
+				},
+				{
+					"question": "What was the outcome?",
+					"options": [
+						"No change",
+						"Reductions in plastic use and policy reforms",
+						"Increased waste",
+						"It was ignored"
+					],
+					"correct": 1,
+					"explanation": "The intervention reduced plastic use and informed policy."
+				}
+			],
+			"summary": "Behavioral nudges reduce plastic use and shape environmental policy."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "economics and environment",
+			"tags": [
+				"story",
+				"reading",
+				"C2",
+				"behavioral economics",
+				"sustainability"
+			],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A geneticist's research on epigenetic inheritance challenged established theories of evolution. The findings were debated at international conferences and led to new research in developmental biology. The geneticist was awarded a prestigious prize for scientific innovation.",
+			"questions": [
+				{
+					"question": "What did the geneticist study?",
+					"options": [
+						"Classical genetics",
+						"Epigenetic inheritance",
+						"Plant breeding",
+						"Population growth"
+					],
+					"correct": 1,
+					"explanation": "The research focused on epigenetic inheritance."
+				},
+				{
+					"question": "What was the impact of the findings?",
+					"options": [
+						"No impact",
+						"Debate and new research in developmental biology",
+						"It was ignored",
+						"It was banned"
+					],
+					"correct": 1,
+					"explanation": "The findings led to debate and new research."
+				}
+			],
+			"summary": "Epigenetic inheritance research sparks debate and new studies in biology."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "genetics and evolution",
+			"tags": ["story", "reading", "C2", "genetics", "epigenetics"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A cyberlaw expert drafted international standards for digital privacy and data protection. The standards were adopted by major technology companies and formed the basis for new legislation in several countries. The expert's work was cited in global legal and policy debates.",
+			"questions": [
+				{
+					"question": "What did the expert draft?",
+					"options": [
+						"Tax codes",
+						"International standards for digital privacy and data protection",
+						"Copyright laws",
+						"Trade agreements"
+					],
+					"correct": 1,
+					"explanation": "The expert drafted standards for digital privacy and data protection."
+				},
+				{
+					"question": "What was the impact of the standards?",
+					"options": [
+						"No impact",
+						"Adoption by companies and new laws",
+						"It was ignored",
+						"It was banned"
+					],
+					"correct": 1,
+					"explanation": "The standards were adopted and used for new laws."
+				}
+			],
+			"summary": "Digital privacy standards drafted by a cyberlaw expert shape global legislation."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "law and technology",
+			"tags": ["story", "reading", "C2", "cyberlaw", "privacy"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A historian's critical analysis of colonial archives revealed overlooked narratives of resistance and resilience. The work prompted museums to revise exhibits and led to new educational materials. The historian was recognized for advancing postcolonial studies.",
+			"questions": [
+				{
+					"question": "What did the historian analyze?",
+					"options": [
+						"Modern novels",
+						"Colonial archives for resistance narratives",
+						"Economic data",
+						"Ancient poetry"
+					],
+					"correct": 1,
+					"explanation": "The historian analyzed colonial archives for resistance narratives."
+				},
+				{
+					"question": "What was the impact of the work?",
+					"options": [
+						"No impact",
+						"Museums revised exhibits and new educational materials",
+						"It was ignored",
+						"It was banned"
+					],
+					"correct": 1,
+					"explanation": "The work led to museum and educational changes."
+				}
+			],
+			"summary": "Colonial archive analysis revises museum exhibits and education."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "history and society",
+			"tags": ["story", "reading", "C2", "history", "postcolonial"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	},
+	{
+		"content": {
+			"story": "A systems engineer designed a resilient power grid for disaster-prone regions, integrating renewable energy and real-time monitoring. The grid maintained electricity during extreme weather events and was adopted as a model for climate adaptation. The engineer received awards for innovation in infrastructure.",
+			"questions": [
+				{
+					"question": "What did the engineer design?",
+					"options": [
+						"A new smartphone",
+						"A resilient power grid for disasters",
+						"A bridge",
+						"A railway system"
+					],
+					"correct": 1,
+					"explanation": "The engineer designed a resilient power grid for disasters."
+				},
+				{
+					"question": "What was the impact of the design?",
+					"options": [
+						"No impact",
+						"Maintained electricity during disasters and became a model",
+						"It was ignored",
+						"It was banned"
+					],
+					"correct": 1,
+					"explanation": "The grid maintained electricity and became a model."
+				}
+			],
+			"summary": "A resilient power grid model for disaster adaptation wins awards."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "reading",
+			"subCategory": "engineering and environment",
+			"tags": ["story", "reading", "C2", "engineering", "climate adaptation"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 300,
+			"difficultyMultiplier": 2.5
+		}
+	}
+]

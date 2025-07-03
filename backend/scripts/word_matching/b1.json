@@ -1,0 +1,419 @@
+[
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "opportunity",
+					"match": "a favorable situation or chance for progress"
+				},
+				{
+					"word": "achievement",
+					"match": "something accomplished through effort and skill"
+				},
+				{
+					"word": "experience",
+					"match": "knowledge gained through involvement in activities"
+				},
+				{
+					"word": "decision",
+					"match": "a conclusion or resolution reached after consideration"
+				},
+				{
+					"word": "communication",
+					"match": "the exchange of information between people"
+				},
+				{
+					"word": "situation",
+					"match": "a set of circumstances or state of affairs"
+				}
+			],
+			"difficulty": "intermediate",
+			"category": "abstract concepts"
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B1", "abstract nouns"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 80,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "discuss",
+					"match": "talk about something with another person to share ideas"
+				},
+				{
+					"word": "suggest",
+					"match": "put forward an idea or plan for consideration"
+				},
+				{
+					"word": "improve",
+					"match": "make something better than before"
+				},
+				{
+					"word": "consider",
+					"match": "think carefully about something before deciding"
+				},
+				{
+					"word": "achieve",
+					"match": "successfully complete something or reach a goal"
+				},
+				{
+					"word": "arrange",
+					"match": "plan or organize something in advance"
+				}
+			],
+			"difficulty": "intermediate",
+			"category": "common verbs"
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B1", "verbs"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 80,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "successful",
+					"match": "having achieved desired aims or attained prosperity"
+				},
+				{
+					"word": "memorable",
+					"match": "worth remembering or easily remembered"
+				},
+				{
+					"word": "impressive",
+					"match": "evoking admiration through size, quality, or skill"
+				},
+				{
+					"word": "responsible",
+					"match": "having a duty to deal with something or having control over someone"
+				},
+				{
+					"word": "enthusiastic",
+					"match": "showing intense and eager enjoyment or interest"
+				},
+				{
+					"word": "disappointed",
+					"match": "sad or displeased because something was not as good as expected"
+				}
+			],
+			"difficulty": "intermediate",
+			"category": "descriptive adjectives"
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B1", "adjectives"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 80,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "environment",
+					"match": "the surroundings or conditions in which people live"
+				},
+				{
+					"word": "technology",
+					"match": "methods, systems, and devices which are the result of scientific knowledge"
+				},
+				{
+					"word": "education",
+					"match": "the process of receiving or giving systematic instruction"
+				},
+				{
+					"word": "entertainment",
+					"match": "activities providing amusement or enjoyment"
+				},
+				{
+					"word": "culture",
+					"match": "the customs, arts, and social institutions of a particular nation or group"
+				},
+				{
+					"word": "generation",
+					"match": "all people born and living at about the same time"
+				}
+			],
+			"difficulty": "intermediate",
+			"category": "society and life"
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B1", "society"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 80,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "regularly",
+					"match": "at constant or definite intervals"
+				},
+				{
+					"word": "occasionally",
+					"match": "now and then; from time to time"
+				},
+				{
+					"word": "gradually",
+					"match": "in a slow and steady way"
+				},
+				{
+					"word": "suddenly",
+					"match": "quickly and unexpectedly"
+				},
+				{
+					"word": "eventually",
+					"match": "in the end, especially after a long time"
+				},
+				{
+					"word": "previously",
+					"match": "at an earlier time or before now"
+				}
+			],
+			"difficulty": "intermediate",
+			"category": "adverbs of time and manner"
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B1", "adverbs"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 80,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "arrangement",
+					"match": "a plan or preparation for a future event"
+				},
+				{
+					"word": "advantage",
+					"match": "a condition that puts one in a favorable position"
+				},
+				{
+					"word": "challenge",
+					"match": "a task or situation that tests someone's abilities"
+				},
+				{
+					"word": "solution",
+					"match": "a means of solving a problem or dealing with a difficult situation"
+				},
+				{
+					"word": "priority",
+					"match": "something regarded as more important than another"
+				},
+				{
+					"word": "conclusion",
+					"match": "the end or finish of an event or process"
+				}
+			],
+			"difficulty": "intermediate",
+			"category": "problem solving"
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B1", "problem solving"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 80,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "frequently", "match": "regularly or often" },
+				{ "word": "rarely", "match": "not often" },
+				{ "word": "immediately", "match": "at once; instantly" },
+				{ "word": "recently", "match": "not long ago" },
+				{ "word": "eventually", "match": "in the end, after a period of time" },
+				{
+					"word": "temporarily",
+					"match": "for a limited period of time; not permanently"
+				}
+			],
+			"difficulty": "intermediate",
+			"category": "adverbs of frequency and time"
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B1", "adverbs"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 80,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "creative",
+					"match": "having the ability to create new ideas or things"
+				},
+				{
+					"word": "efficient",
+					"match": "working in a well-organized and competent way"
+				},
+				{
+					"word": "reliable",
+					"match": "consistently good in quality or performance"
+				},
+				{
+					"word": "generous",
+					"match": "showing kindness and willingness to give"
+				},
+				{
+					"word": "patient",
+					"match": "able to accept or tolerate delays or problems"
+				},
+				{
+					"word": "ambitious",
+					"match": "having a strong desire for success or achievement"
+				}
+			],
+			"difficulty": "intermediate",
+			"category": "personality traits"
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B1", "personality"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 80,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "conference", "match": "a formal meeting for discussion" },
+				{ "word": "lecture", "match": "an educational talk to an audience" },
+				{
+					"word": "seminar",
+					"match": "a class at a college or university in which a small group discusses a topic"
+				},
+				{
+					"word": "interview",
+					"match": "a meeting at which someone is asked questions"
+				},
+				{
+					"word": "workshop",
+					"match": "a meeting at which people engage in intensive discussion or activity on a particular subject"
+				},
+				{
+					"word": "presentation",
+					"match": "a talk giving information about something"
+				}
+			],
+			"difficulty": "intermediate",
+			"category": "education and work"
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B1", "education"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 80,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "solution", "match": "an answer to a problem or puzzle" },
+				{ "word": "discussion", "match": "a conversation about something" },
+				{
+					"word": "progress",
+					"match": "forward or onward movement toward a destination"
+				},
+				{
+					"word": "failure",
+					"match": "lack of success in doing or achieving something"
+				},
+				{ "word": "opinion", "match": "a belief or judgment about something" },
+				{ "word": "support", "match": "help or encouragement given to someone" }
+			],
+			"difficulty": "intermediate",
+			"category": "problem and opinion"
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B1", "problems"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 80,
+			"difficultyMultiplier": 1.5
+		}
+	}
+]

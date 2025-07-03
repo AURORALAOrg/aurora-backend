@@ -1,0 +1,574 @@
+[
+	{
+		"content": {
+			"word": "appointment",
+			"scrambled": "mentntiappo",
+			"hint": "A scheduled meeting with someone",
+			"explanation": "An appointment is an arrangement to meet someone at a particular time and place.",
+			"contextSentence": "I have a dental appointment next Tuesday at 3 PM."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "time management",
+			"tags": ["vocabulary", "word-scramble", "B1", "scheduling"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "environment",
+			"scrambled": "mentronvien",
+			"hint": "The natural world around us",
+			"explanation": "The environment refers to the surroundings or conditions in which a person, animal, or plant lives.",
+			"contextSentence": "We should all do more to protect the environment from pollution."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "nature",
+			"tags": ["vocabulary", "word-scramble", "B1", "ecology"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "opportunity",
+			"scrambled": "tyrtunioppo",
+			"hint": "A chance for something positive to happen",
+			"explanation": "An opportunity is a favorable time or situation for doing something you want to do.",
+			"contextSentence": "Moving to a new city gave me the opportunity to start fresh."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "abstract nouns",
+			"tags": ["vocabulary", "word-scramble", "B1", "career"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "impossible",
+			"scrambled": "blesiposim",
+			"hint": "Not able to occur or be done",
+			"explanation": "Impossible means not possible to do or achieve.",
+			"contextSentence": "Without a ticket, it's impossible to enter the concert hall."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "B1", "negations"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "adventure",
+			"scrambled": "turevaden",
+			"hint": "An exciting or unusual experience",
+			"explanation": "An adventure is an exciting or dangerous experience that is typically bold or risky.",
+			"contextSentence": "Our hiking trip through the mountains was quite an adventure."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "activities",
+			"tags": ["vocabulary", "word-scramble", "B1", "experiences"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "experience",
+			"scrambled": "nceperieex",
+			"hint": "The knowledge you get from doing a job or activity",
+			"explanation": "Experience refers to the knowledge or skill acquired by a period of practical experience of something.",
+			"contextSentence": "She has a lot of experience working in customer service."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "abstract nouns",
+			"tags": ["vocabulary", "word-scramble", "B1", "career"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "celebration",
+			"scrambled": "tionbracele",
+			"hint": "A special event to mark an important occasion",
+			"explanation": "A celebration is a social gathering or enjoyable activity intended to celebrate something.",
+			"contextSentence": "They organized a big celebration for their wedding anniversary."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "events",
+			"tags": ["vocabulary", "word-scramble", "B1", "social"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "suggestion",
+			"scrambled": "gestionugs",
+			"hint": "An idea or plan put forward for consideration",
+			"explanation": "A suggestion is an idea or plan put forward for consideration.",
+			"contextSentence": "Do you have any suggestions for where we should go for dinner?"
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "communication",
+			"tags": ["vocabulary", "word-scramble", "B1", "ideas"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "documentary",
+			"scrambled": "rymendocuta",
+			"hint": "A film or program providing facts about a subject",
+			"explanation": "A documentary is a film or television program that provides a factual report on a particular subject.",
+			"contextSentence": "We watched an interesting documentary about marine life."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "entertainment",
+			"tags": ["vocabulary", "word-scramble", "B1", "media"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "achievement",
+			"scrambled": "mentveachie",
+			"hint": "Something successful that you did with effort",
+			"explanation": "An achievement is something that has been accomplished successfully through effort, skill, or courage.",
+			"contextSentence": "Graduating from university was a major achievement for her."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "abstract nouns",
+			"tags": ["vocabulary", "word-scramble", "B1", "success"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "impressive",
+			"scrambled": "vesimpires",
+			"hint": "Evoking admiration through size, quality, or skill",
+			"explanation": "Something impressive causes admiration because it is very good, large, or shows great skill.",
+			"contextSentence": "His knowledge of foreign languages is very impressive."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "B1", "descriptions"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "influence",
+			"scrambled": "ceinfluen",
+			"hint": "The power to affect someone's beliefs or actions",
+			"explanation": "Influence is the capacity to have an effect on the character, development, or behavior of someone or something.",
+			"contextSentence": "Parents have a significant influence on their children's behavior."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "abstract nouns",
+			"tags": ["vocabulary", "word-scramble", "B1", "relationships"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "concentrate",
+			"scrambled": "teconcentra",
+			"hint": "To focus all your attention on something",
+			"explanation": "To concentrate means to focus one's attention or mental effort on a particular object or activity.",
+			"contextSentence": "I find it difficult to concentrate when there's a lot of noise."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "verbs",
+			"tags": ["vocabulary", "word-scramble", "B1", "cognition"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "significant",
+			"scrambled": "cantsignifi",
+			"hint": "Important or noticeable",
+			"explanation": "Significant means sufficiently great or important to be worthy of attention; noteworthy.",
+			"contextSentence": "There has been a significant increase in the number of students learning online."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "B1", "descriptions"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "embarrassed",
+			"scrambled": "sedembarras",
+			"hint": "Feeling ashamed or awkward",
+			"explanation": "Embarrassed describes feeling awkward, self-conscious, or ashamed about something.",
+			"contextSentence": "He was embarrassed when he fell in front of everyone."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "emotions",
+			"tags": ["vocabulary", "word-scramble", "B1", "feelings"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "participate",
+			"scrambled": "teparticipa",
+			"hint": "To take part in an activity or event",
+			"explanation": "To participate means to take part in an activity or event with others.",
+			"contextSentence": "All students are encouraged to participate in the discussion."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "verbs",
+			"tags": ["vocabulary", "word-scramble", "B1", "activities"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "recommendation",
+			"scrambled": "tionrecommendat",
+			"hint": "A suggestion about what someone should do or choose",
+			"explanation": "A recommendation is advice telling someone what the best thing to do is.",
+			"contextSentence": "He gave me a recommendation for a good restaurant."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "communication",
+			"tags": ["vocabulary", "word-scramble", "B1", "advice"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "transportation",
+			"scrambled": "tiontransporta",
+			"hint": "The movement of people or goods from one place to another",
+			"explanation": "Transportation is the movement of people or goods from one place to another.",
+			"contextSentence": "Public transportation in the city is very convenient."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B1", "travel"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "confidence",
+			"scrambled": "denceconfi",
+			"hint": "A feeling or belief that you can do something well or succeed at something",
+			"explanation": "Confidence is the feeling or belief that one can rely on someone or something; firm trust.",
+			"contextSentence": "She spoke with confidence during her presentation."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B1", "feelings"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "contribution",
+			"scrambled": "butioncontri",
+			"hint": "Something that you give or do to help something be successful",
+			"explanation": "A contribution is something that you give or do to help make something successful.",
+			"contextSentence": "Her contribution to the project was very valuable."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B1", "helping"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "entertainment",
+			"scrambled": "tainmententer",
+			"hint": "Activities that amuse or interest people",
+			"explanation": "Entertainment is shows, movies, television, or other performances or activities that entertain people.",
+			"contextSentence": "They provided entertainment for the guests at the party."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B1", "fun"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "flexible",
+			"scrambled": "flexible",
+			"hint": "Able to change or be changed easily according to the situation",
+			"explanation": "Flexible means able to change or be changed easily according to the situation.",
+			"contextSentence": "You need to be flexible if you want to travel a lot."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "B1", "qualities"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "community",
+			"scrambled": "munitycom",
+			"hint": "A group of people living in the same place or having a particular characteristic in common",
+			"explanation": "A community is a group of people who live in the same area or have a particular interest in common.",
+			"contextSentence": "The community organized a festival for everyone."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B1", "society"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "responsibility",
+			"scrambled": "bilityresponsi",
+			"hint": "A duty to take care of something or someone",
+			"explanation": "Responsibility is the state or fact of having a duty to deal with something or of having control over someone.",
+			"contextSentence": "Taking care of a pet is a big responsibility."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B1", "duties"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "preparation",
+			"scrambled": "rationprepa",
+			"hint": "The process of getting something ready for use or for a particular purpose",
+			"explanation": "Preparation is the action or process of making something ready for use or for getting ready for some occasion, test, or duty.",
+			"contextSentence": "Good preparation is important before an exam."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B1", "study"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"word": "volunteer",
+			"scrambled": "teervolun",
+			"hint": "A person who offers to do something without being paid",
+			"explanation": "A volunteer is someone who does something, especially helping other people, willingly and without being forced or paid to do it.",
+			"contextSentence": "She works as a volunteer at the animal shelter every weekend."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B1", "helping"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 45,
+			"difficultyMultiplier": 1.5
+		}
+	}
+]

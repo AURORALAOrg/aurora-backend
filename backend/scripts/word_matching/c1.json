@@ -1,0 +1,437 @@
+[
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "ubiquitous",
+					"match": "present, appearing, or found everywhere"
+				},
+				{
+					"word": "ameliorate",
+					"match": "to make something better or improve"
+				},
+				{ "word": "meticulous", "match": "showing great attention to detail" },
+				{
+					"word": "conundrum",
+					"match": "a confusing and difficult problem or question"
+				},
+				{ "word": "paradigm", "match": "a model or example of something" },
+				{ "word": "juxtapose", "match": "to place side by side for contrast" }
+			],
+			"difficulty": "advanced",
+			"category": "abstract concepts"
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C1", "abstract"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 100,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "cognizant", "match": "having knowledge or being aware of" },
+				{
+					"word": "epitome",
+					"match": "a perfect example of a particular quality"
+				},
+				{ "word": "lucid", "match": "expressed clearly; easy to understand" },
+				{ "word": "tenuous", "match": "very weak or slight" },
+				{ "word": "fortuitous", "match": "happening by chance, often lucky" },
+				{
+					"word": "dichotomy",
+					"match": "a division between two contrasting things"
+				}
+			],
+			"difficulty": "advanced",
+			"category": "advanced adjectives"
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C1", "adjectives"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 100,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "precocious",
+					"match": "having developed abilities at an earlier age"
+				},
+				{
+					"word": "insidious",
+					"match": "proceeding in a gradual, harmful way"
+				},
+				{ "word": "magnanimous", "match": "very generous or forgiving" },
+				{
+					"word": "pragmatic",
+					"match": "dealing with things sensibly and realistically"
+				},
+				{
+					"word": "vociferous",
+					"match": "expressing opinions loudly and forcefully"
+				},
+				{ "word": "obsequious", "match": "excessively obedient or attentive" }
+			],
+			"difficulty": "advanced",
+			"category": "personality traits"
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C1", "traits"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 100,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "prolific",
+					"match": "producing much fruit, foliage, or many offspring"
+				},
+				{
+					"word": "esoteric",
+					"match": "intended for or understood by a small group"
+				},
+				{ "word": "acrimonious", "match": "angry and bitter in tone" },
+				{ "word": "idiosyncratic", "match": "peculiar or individual" },
+				{ "word": "incongruous", "match": "not in harmony with surroundings" },
+				{ "word": "perfunctory", "match": "carried out with minimum effort" }
+			],
+			"difficulty": "advanced",
+			"category": "advanced adjectives"
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C1", "adjectives"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 100,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "ameliorate", "match": "to make something better" },
+				{ "word": "circumspect", "match": "wary and unwilling to take risks" },
+				{ "word": "disparate", "match": "essentially different in kind" },
+				{ "word": "fastidious", "match": "very attentive to detail" },
+				{ "word": "gregarious", "match": "fond of company; sociable" },
+				{ "word": "ineffable", "match": "too great to be expressed in words" }
+			],
+			"difficulty": "advanced",
+			"category": "personality traits"
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C1", "traits"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 100,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "catalyst", "match": "something that speeds up a process" },
+				{ "word": "delineate", "match": "to describe or portray precisely" },
+				{ "word": "enervate", "match": "to weaken or drain energy" },
+				{ "word": "fluctuate", "match": "to rise and fall irregularly" },
+				{ "word": "mitigate", "match": "to make less severe or serious" },
+				{ "word": "ostracize", "match": "to exclude from a group" }
+			],
+			"difficulty": "advanced",
+			"category": "verbs"
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C1", "verbs"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 100,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "pervasive", "match": "spreading widely throughout an area" },
+				{
+					"word": "quintessential",
+					"match": "representing the most perfect example"
+				},
+				{ "word": "salient", "match": "most noticeable or important" },
+				{
+					"word": "taciturn",
+					"match": "reserved or uncommunicative in speech"
+				},
+				{ "word": "venerable", "match": "accorded a great deal of respect" },
+				{ "word": "zealous", "match": "having great energy or enthusiasm" }
+			],
+			"difficulty": "advanced",
+			"category": "characteristics"
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C1", "characteristics"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 100,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "altruism", "match": "selfless concern for others" },
+				{ "word": "belligerent", "match": "hostile and aggressive" },
+				{ "word": "camaraderie", "match": "mutual trust and friendship" },
+				{ "word": "deleterious", "match": "causing harm or damage" },
+				{
+					"word": "emulate",
+					"match": "to match or surpass, typically by imitation"
+				},
+				{ "word": "fortitude", "match": "courage in pain or adversity" }
+			],
+			"difficulty": "advanced",
+			"category": "social and emotional"
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C1", "emotions"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 100,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "gregarious", "match": "fond of company; sociable" },
+				{
+					"word": "harbinger",
+					"match": "a person or thing that signals the approach of another"
+				},
+				{
+					"word": "impeccable",
+					"match": "in accordance with the highest standards"
+				},
+				{
+					"word": "juxtaposition",
+					"match": "the act of placing things side by side"
+				},
+				{ "word": "kinetic", "match": "relating to motion" },
+				{ "word": "lament", "match": "to mourn a loss or death" }
+			],
+			"difficulty": "advanced",
+			"category": "miscellaneous"
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C1", "misc"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 100,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "malleable", "match": "easily influenced; pliable" },
+				{ "word": "nefarious", "match": "wicked or criminal" },
+				{ "word": "obfuscate", "match": "to make unclear or unintelligible" },
+				{
+					"word": "paragon",
+					"match": "a person or thing regarded as a perfect example"
+				},
+				{ "word": "quandary", "match": "a state of perplexity or doubt" },
+				{ "word": "rancor", "match": "bitterness or resentfulness" }
+			],
+			"difficulty": "advanced",
+			"category": "advanced vocabulary"
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C1", "advanced"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 100,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "sagacious",
+					"match": "having or showing keen mental discernment"
+				},
+				{
+					"word": "tacit",
+					"match": "understood or implied without being stated"
+				},
+				{
+					"word": "ubiquitous",
+					"match": "present, appearing, or found everywhere"
+				},
+				{ "word": "vacuous", "match": "having or showing a lack of thought" },
+				{ "word": "wary", "match": "feeling or showing caution" },
+				{ "word": "yoke", "match": "to join together; to unite" }
+			],
+			"difficulty": "advanced",
+			"category": "logic and reasoning"
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C1", "logic"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 100,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "zealot",
+					"match": "a person who is fanatical in pursuit of their ideals"
+				},
+				{ "word": "aberration", "match": "a departure from what is normal" },
+				{
+					"word": "cacophony",
+					"match": "a harsh, discordant mixture of sounds"
+				},
+				{ "word": "daunting", "match": "seeming difficult to deal with" },
+				{
+					"word": "eclectic",
+					"match": "deriving ideas from a broad range of sources"
+				},
+				{
+					"word": "fallacy",
+					"match": "a mistaken belief, especially one based on unsound argument"
+				}
+			],
+			"difficulty": "advanced",
+			"category": "logic and reasoning"
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C1", "logic"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 100,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "garner", "match": "to gather or collect" },
+				{
+					"word": "hinder",
+					"match": "to create difficulties, resulting in delay"
+				},
+				{ "word": "imminent", "match": "about to happen" },
+				{
+					"word": "jubilant",
+					"match": "feeling or expressing great happiness"
+				},
+				{
+					"word": "kinship",
+					"match": "blood relationship or close connection"
+				},
+				{ "word": "lament", "match": "to mourn a loss or death" }
+			],
+			"difficulty": "advanced",
+			"category": "miscellaneous"
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C1", "misc"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 100,
+			"difficultyMultiplier": 2.0
+		}
+	}
+]

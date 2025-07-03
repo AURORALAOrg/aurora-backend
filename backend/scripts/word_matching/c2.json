@@ -1,0 +1,449 @@
+[
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "intransigent",
+					"match": "unwilling or refusing to change one's views"
+				},
+				{
+					"word": "obfuscate",
+					"match": "to deliberately make something unclear"
+				},
+				{ "word": "ephemeral", "match": "lasting for a very short time" },
+				{
+					"word": "recalcitrant",
+					"match": "having an obstinately uncooperative attitude"
+				},
+				{
+					"word": "pellucid",
+					"match": "transparently clear in style or meaning"
+				},
+				{ "word": "antediluvian", "match": "ridiculously old-fashioned" }
+			],
+			"difficulty": "proficient",
+			"category": "abstract concepts"
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C2", "abstract"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 110,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "pulchritude", "match": "physical beauty" },
+				{
+					"word": "quixotic",
+					"match": "exceedingly idealistic; unrealistic and impractical"
+				},
+				{ "word": "recondite", "match": "little known; abstruse" },
+				{ "word": "sagacity", "match": "acuteness of mental discernment" },
+				{
+					"word": "taciturn",
+					"match": "reserved or uncommunicative in speech"
+				},
+				{
+					"word": "vicissitude",
+					"match": "a change of circumstances or fortune"
+				}
+			],
+			"difficulty": "proficient",
+			"category": "advanced adjectives"
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C2", "adjectives"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 110,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "obstreperous", "match": "noisy and difficult to control" },
+				{
+					"word": "parsimonious",
+					"match": "unwilling to spend money or use resources"
+				},
+				{
+					"word": "recalcitrant",
+					"match": "stubbornly resistant to authority"
+				},
+				{
+					"word": "soporific",
+					"match": "tending to induce drowsiness or sleep"
+				},
+				{
+					"word": "trenchant",
+					"match": "vigorous or incisive in expression or style"
+				},
+				{ "word": "unctuous", "match": "excessively flattering; oily" }
+			],
+			"difficulty": "proficient",
+			"category": "personality traits"
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C2", "traits"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 110,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "abstruse", "match": "difficult to understand; obscure" },
+				{
+					"word": "blandishment",
+					"match": "flattering or pleasing statement or action"
+				},
+				{ "word": "cogent", "match": "clear, logical, and convincing" },
+				{ "word": "diaphanous", "match": "light, delicate, and translucent" },
+				{ "word": "equanimity", "match": "mental calmness, composure" },
+				{ "word": "fatuous", "match": "silly and pointless" }
+			],
+			"difficulty": "proficient",
+			"category": "advanced adjectives"
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C2", "adjectives"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 110,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "garrulous", "match": "excessively talkative" },
+				{ "word": "histrionic", "match": "overly theatrical or melodramatic" },
+				{ "word": "impecunious", "match": "having little or no money" },
+				{ "word": "jejune", "match": "naive, simplistic, and superficial" },
+				{ "word": "lachrymose", "match": "tearful or given to weeping" },
+				{ "word": "mendacious", "match": "not telling the truth; lying" }
+			],
+			"difficulty": "proficient",
+			"category": "personality traits"
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C2", "traits"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 110,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "neophyte",
+					"match": "a person who is new to a subject or activity"
+				},
+				{
+					"word": "obdurate",
+					"match": "stubbornly refusing to change opinion"
+				},
+				{ "word": "panacea", "match": "a solution for all problems" },
+				{
+					"word": "quandary",
+					"match": "a state of uncertainty over what to do"
+				},
+				{ "word": "reprobate", "match": "an unprincipled person" },
+				{
+					"word": "sagacious",
+					"match": "having or showing keen mental discernment"
+				}
+			],
+			"difficulty": "proficient",
+			"category": "abstract concepts"
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C2", "abstract"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 110,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "sanguine", "match": "optimistic or positive" },
+				{
+					"word": "tacit",
+					"match": "understood or implied without being stated"
+				},
+				{
+					"word": "ubiquitous",
+					"match": "present, appearing, or found everywhere"
+				},
+				{
+					"word": "vicissitude",
+					"match": "a change of circumstances or fortune"
+				},
+				{ "word": "wizened", "match": "shriveled or wrinkled with age" },
+				{ "word": "yoke", "match": "to join together; to unite" }
+			],
+			"difficulty": "proficient",
+			"category": "characteristics"
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C2", "characteristics"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 110,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "zephyr", "match": "a soft gentle breeze" },
+				{ "word": "abnegate", "match": "to renounce or reject something" },
+				{
+					"word": "cacophony",
+					"match": "a harsh, discordant mixture of sounds"
+				},
+				{ "word": "deleterious", "match": "causing harm or damage" },
+				{ "word": "enervate", "match": "to weaken or drain energy" },
+				{ "word": "fastidious", "match": "very attentive to detail" }
+			],
+			"difficulty": "proficient",
+			"category": "advanced vocabulary"
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C2", "advanced"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 110,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "garrulous", "match": "excessively talkative" },
+				{ "word": "harangue", "match": "a lengthy and aggressive speech" },
+				{ "word": "impecunious", "match": "having little or no money" },
+				{
+					"word": "juxtaposition",
+					"match": "the act of placing things side by side"
+				},
+				{ "word": "kinetic", "match": "relating to motion" },
+				{ "word": "lament", "match": "to mourn a loss or death" }
+			],
+			"difficulty": "proficient",
+			"category": "miscellaneous"
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C2", "misc"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 110,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "malleable", "match": "easily influenced; pliable" },
+				{ "word": "nefarious", "match": "wicked or criminal" },
+				{ "word": "obfuscate", "match": "to make unclear or unintelligible" },
+				{
+					"word": "paragon",
+					"match": "a person or thing regarded as a perfect example"
+				},
+				{ "word": "quandary", "match": "a state of perplexity or doubt" },
+				{ "word": "rancor", "match": "bitterness or resentfulness" }
+			],
+			"difficulty": "proficient",
+			"category": "advanced vocabulary"
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C2", "advanced"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 110,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "sagacious",
+					"match": "having or showing keen mental discernment"
+				},
+				{
+					"word": "tacit",
+					"match": "understood or implied without being stated"
+				},
+				{
+					"word": "ubiquitous",
+					"match": "present, appearing, or found everywhere"
+				},
+				{ "word": "vacuous", "match": "having or showing a lack of thought" },
+				{ "word": "wary", "match": "feeling or showing caution" },
+				{ "word": "yoke", "match": "to join together; to unite" }
+			],
+			"difficulty": "proficient",
+			"category": "logic and reasoning"
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C2", "logic"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 110,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "zealot",
+					"match": "a person who is fanatical in pursuit of their ideals"
+				},
+				{ "word": "aberration", "match": "a departure from what is normal" },
+				{
+					"word": "cacophony",
+					"match": "a harsh, discordant mixture of sounds"
+				},
+				{ "word": "daunting", "match": "seeming difficult to deal with" },
+				{
+					"word": "eclectic",
+					"match": "deriving ideas from a broad range of sources"
+				},
+				{
+					"word": "fallacy",
+					"match": "a mistaken belief, especially one based on unsound argument"
+				}
+			],
+			"difficulty": "proficient",
+			"category": "logic and reasoning"
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C2", "logic"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 110,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "garner", "match": "to gather or collect" },
+				{
+					"word": "hinder",
+					"match": "to create difficulties, resulting in delay"
+				},
+				{ "word": "imminent", "match": "about to happen" },
+				{
+					"word": "jubilant",
+					"match": "feeling or expressing great happiness"
+				},
+				{
+					"word": "kinship",
+					"match": "blood relationship or close connection"
+				},
+				{ "word": "lament", "match": "to mourn a loss or death" }
+			],
+			"difficulty": "proficient",
+			"category": "miscellaneous"
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "C2", "misc"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 110,
+			"difficultyMultiplier": 2.3
+		}
+	}
+]

@@ -1,0 +1,1161 @@
+[
+  {
+    "content": {
+      "story": "A renowned linguist published a controversial paper arguing that language shapes not only how we communicate, but also how we perceive reality. The research, based on years of cross-cultural studies, found that speakers of different languages categorize colors, emotions, and even time in unique ways. The findings sparked debates in academic circles, with some scholars supporting the idea and others insisting that thought precedes language. The paper led to new interdisciplinary collaborations between linguists, psychologists, and neuroscientists, opening fresh avenues for research into the relationship between language and cognition.",
+    "questions": [
+      {
+        "question": "What was the main argument of the linguist's paper?",
+        "options": ["Language only helps us communicate", "Language shapes how we perceive reality", "Language is universal", "Language is unrelated to thought"],
+        "correct": 1,
+        "explanation": "The linguist argued that language shapes not only communication but also perception of reality."
+      },
+      {
+        "question": "What was one result of the paper's publication?",
+        "options": ["It was ignored", "It led to new interdisciplinary collaborations", "It ended research in the field", "It was withdrawn"],
+        "correct": 1,
+        "explanation": "The paper led to new collaborations between linguists, psychologists, and neuroscientists."
+      }
+    ],
+    "summary": "A linguist's paper claims language shapes perception, sparking debate and new research collaborations."
+  },
+  "metadata": {
+    "englishLevel": "C1",
+    "difficulty": "advanced",
+    "category": "reading",
+    "subCategory": "language and cognition",
+    "tags": ["story", "reading", "C1", "linguistics", "cognition"],
+    "type": "story_game"
+  },
+  "gameMetadata": {
+    "pointsValue": 30,
+    "timeLimit": 260,
+    "difficultyMultiplier": 2.0
+  }
+},
+{
+  "content": {
+    "story": "A multinational corporation faced public backlash after it was revealed that its supply chain included factories with poor labor conditions. Investigative journalists published a detailed report, prompting consumer boycotts and calls for greater transparency. In response, the company launched an independent audit and committed to improving working conditions. The incident led to new industry standards for ethical sourcing and increased awareness among consumers about the origins of everyday products.",
+    "questions": [
+      {
+        "question": "What triggered the public backlash against the corporation?",
+        "options": ["Product recalls", "Poor labor conditions in its supply chain", "Environmental violations", "False advertising"],
+        "correct": 1,
+        "explanation": "The backlash was triggered by reports of poor labor conditions in the company's supply chain."
+      },
+      {
+        "question": "What was one consequence of the incident?",
+        "options": ["Lower product prices", "New industry standards for ethical sourcing", "A merger with another company", "A decline in product quality"],
+        "correct": 1,
+        "explanation": "The incident led to new industry standards for ethical sourcing."
+      }
+    ],
+    "summary": "A corporation's labor practices spark reform and new ethical sourcing standards."
+  },
+  "metadata": {
+    "englishLevel": "C1",
+    "difficulty": "advanced",
+    "category": "reading",
+    "subCategory": "current affairs",
+    "tags": ["story", "reading", "C1", "business", "ethics"],
+    "type": "story_game"
+  },
+  "gameMetadata": {
+    "pointsValue": 30,
+    "timeLimit": 260,
+    "difficultyMultiplier": 2.0
+  }
+},
+{
+  "content": {
+    "story": "A medical team in a conflict zone developed a new technique for treating traumatic injuries using locally available materials. The innovation saved countless lives and was later adopted by hospitals in other parts of the world. The team's work was recognized by international organizations, and their approach became a model for resourceful medical care in emergencies. The story highlights the importance of adaptability and creativity in challenging circumstances.",
+    "questions": [
+      {
+        "question": "What was innovative about the medical team's work?",
+        "options": ["They used expensive imported technology", "They used locally available materials for treatment", "They focused on cosmetic surgery", "They only treated children"],
+        "correct": 1,
+        "explanation": "The team developed a new technique using locally available materials."
+      },
+      {
+        "question": "What was the global impact of the team's technique?",
+        "options": ["It was ignored outside the conflict zone", "It was adopted by hospitals worldwide", "It was banned", "It caused controversy"],
+        "correct": 1,
+        "explanation": "The technique was adopted by hospitals in other parts of the world."
+      }
+    ],
+    "summary": "A new medical technique from a conflict zone saves lives and influences global emergency care."
+  },
+  "metadata": {
+    "englishLevel": "C1",
+    "difficulty": "advanced",
+    "category": "reading",
+    "subCategory": "medicine and innovation",
+    "tags": ["story", "reading", "C1", "medicine", "innovation"],
+    "type": "story_game"
+  },
+  "gameMetadata": {
+    "pointsValue": 30,
+    "timeLimit": 260,
+    "difficultyMultiplier": 2.0
+  }
+},
+{
+  "content": {
+    "story": "A climate scientist gave a TED Talk explaining the complex feedback loops that accelerate global warming. The presentation used clear visuals and analogies to make the science accessible to a general audience. The talk went viral, sparking conversations on social media and leading to increased public engagement with climate issues. Policymakers cited the talk when proposing new environmental legislation, and the scientist became a prominent advocate for climate action.",
+    "questions": [
+      {
+        "question": "What was the main topic of the scientist's TED Talk?",
+        "options": ["Renewable energy", "Feedback loops in global warming", "Ocean pollution", "Wildlife conservation"],
+        "correct": 1,
+        "explanation": "The talk focused on complex feedback loops that accelerate global warming."
+      },
+      {
+        "question": "What was one impact of the talk?",
+        "options": ["It was ignored by policymakers", "It sparked public engagement and influenced legislation", "It caused confusion", "It led to protests against science"],
+        "correct": 1,
+        "explanation": "The talk increased public engagement and was cited by policymakers."
+      }
+    ],
+    "summary": "A viral TED Talk on climate feedback loops boosts public and political action."
+  },
+  "metadata": {
+    "englishLevel": "C1",
+    "difficulty": "advanced",
+    "category": "reading",
+    "subCategory": "science and environment",
+    "tags": ["story", "reading", "C1", "climate", "science communication"],
+    "type": "story_game"
+  },
+  "gameMetadata": {
+    "pointsValue": 30,
+    "timeLimit": 260,
+    "difficultyMultiplier": 2.0
+  }
+},
+{
+  "content": {
+    "story": "A novelist experimented with nonlinear storytelling in her latest book, allowing readers to choose different narrative paths. The book received critical acclaim for its originality and challenged traditional ideas about plot and character development. Literary critics debated whether the approach represented the future of fiction or a passing trend. The novelist's work inspired other authors to explore interactive and experimental forms of literature.",
+    "questions": [
+      {
+        "question": "What was unique about the novelist's book?",
+        "options": ["It was a biography", "It used nonlinear storytelling with multiple narrative paths", "It was written in verse", "It was a historical novel"],
+        "correct": 1,
+        "explanation": "The book allowed readers to choose different narrative paths."
+      },
+      {
+        "question": "What was one result of the book's publication?",
+        "options": ["It was ignored", "It inspired other authors to experiment", "It was banned", "It ended the novelist's career"],
+        "correct": 1,
+        "explanation": "The book inspired other authors to explore experimental literature."
+      }
+    ],
+    "summary": "A novelist's nonlinear book challenges fiction conventions and inspires literary innovation."
+  },
+  "metadata": {
+    "englishLevel": "C1",
+    "difficulty": "advanced",
+    "category": "reading",
+    "subCategory": "arts and literature",
+    "tags": ["story", "reading", "C1", "literature", "innovation"],
+    "type": "story_game"
+  },
+  "gameMetadata": {
+    "pointsValue": 30,
+    "timeLimit": 260,
+    "difficultyMultiplier": 2.0
+  }
+}
+,
+  {
+    "content": {
+      "story": "A renowned architect designed an eco-friendly skyscraper that uses vertical gardens and solar panels to reduce its environmental footprint. The building became a landmark for sustainable urban development, attracting international attention. Critics praised its innovative features, but some questioned the high construction costs. The project inspired other cities to adopt similar green building practices, signaling a shift in urban planning priorities.",
+      "questions": [
+        {
+          "question": "What was unique about the architect's skyscraper?",
+          "options": ["It was the tallest in the world", "It used vertical gardens and solar panels for sustainability", "It was built in a rural area", "It had no windows"],
+          "correct": 1,
+          "explanation": "The skyscraper's eco-friendly design included vertical gardens and solar panels."
+        },
+        {
+          "question": "What impact did the project have on other cities?",
+          "options": ["No impact", "Inspired adoption of green building practices", "Led to higher pollution", "Discouraged innovation"],
+          "correct": 1,
+          "explanation": "The project inspired other cities to adopt similar green practices."
+        }
+      ],
+      "summary": "An eco-friendly skyscraper sets a new standard for sustainable urban development."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "architecture and environment",
+      "tags": ["story", "reading", "C1", "architecture", "sustainability"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A documentary filmmaker followed the journey of a refugee family as they rebuilt their lives in a new country. The film highlighted the challenges of adapting to a different culture, learning a new language, and finding employment. Audiences praised the documentary for its empathy and realism, and it was used in educational settings to foster understanding of migration issues. The family eventually became active members of their community, helping others in similar situations.",
+      "questions": [
+        {
+          "question": "What was the main focus of the documentary?",
+          "options": ["The filmmaker's career", "A refugee family's adaptation to a new country", "Political debates", "Tourist attractions"],
+          "correct": 1,
+          "explanation": "The documentary followed a refugee family's journey of adaptation."
+        },
+        {
+          "question": "How did the family contribute to their new community?",
+          "options": ["They became active and helped others in similar situations", "They returned home", "They avoided community events", "They started a business"],
+          "correct": 0,
+          "explanation": "The family became active members and helped others."
+        }
+      ],
+      "summary": "A documentary explores a refugee family's adaptation and community involvement."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "society and culture",
+      "tags": ["story", "reading", "C1", "refugee", "documentary"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "An investigative journalist uncovered corruption in a major sporting organization, revealing bribery and match-fixing at the highest levels. The exposé led to criminal investigations, resignations, and reforms in sports governance. While some fans were shocked, others suspected such issues for years. The story reignited debates about ethics and transparency in professional sports worldwide.",
+      "questions": [
+        {
+          "question": "What did the journalist uncover?",
+          "options": ["New training methods", "Corruption and match-fixing in sports", "A new sports league", "A player transfer"],
+          "correct": 1,
+          "explanation": "The journalist revealed corruption and match-fixing."
+        },
+        {
+          "question": "What was one result of the exposé?",
+          "options": ["No changes", "Criminal investigations and reforms", "Increased ticket prices", "A new tournament"],
+          "correct": 1,
+          "explanation": "The exposé led to investigations, resignations, and reforms."
+        }
+      ],
+      "summary": "A sports corruption exposé sparks investigations and reforms in governance."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "media and ethics",
+      "tags": ["story", "reading", "C1", "journalism", "sports"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A leading neuroscientist published a groundbreaking study on the effects of meditation on brain plasticity. The research demonstrated measurable changes in neural pathways associated with attention, memory, and emotional regulation. The findings were widely discussed in scientific and popular media, inspiring new approaches to mental health treatment and personal development. Critics called for further studies to confirm the results, but the work marked a significant step in mind-body research.",
+      "questions": [
+        {
+          "question": "What did the neuroscientist's study focus on?",
+          "options": ["Diet and nutrition", "Meditation's effects on brain plasticity", "Physical exercise", "Sleep patterns"],
+          "correct": 1,
+          "explanation": "The study examined meditation and brain plasticity."
+        },
+        {
+          "question": "What was the broader impact of the research?",
+          "options": ["It was ignored", "It inspired new approaches to mental health and personal development", "It led to a ban on meditation", "It was criticized for lack of evidence"],
+          "correct": 1,
+          "explanation": "The findings inspired new approaches to mental health and personal development."
+        }
+      ],
+      "summary": "A study on meditation and brain plasticity inspires advances in mental health."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "science and health",
+      "tags": ["story", "reading", "C1", "neuroscience", "meditation"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A tech entrepreneur launched a platform that connects freelance professionals with clients worldwide. The platform uses artificial intelligence to match skills with project requirements, reducing hiring time and increasing efficiency. It quickly became popular, especially among startups and small businesses. The entrepreneur faced challenges related to data security and fair compensation, but ongoing improvements addressed many concerns and set new industry standards.",
+      "questions": [
+        {
+          "question": "What is the main feature of the entrepreneur's platform?",
+          "options": ["It only serves local clients", "It uses AI to match freelancers with projects", "It sells physical products", "It is only for large corporations"],
+          "correct": 1,
+          "explanation": "The platform uses AI to match freelancers with projects."
+        },
+        {
+          "question": "What challenge did the platform face?",
+          "options": ["Lack of interest", "Data security and fair compensation", "Too many users", "No competition"],
+          "correct": 1,
+          "explanation": "The platform faced data security and compensation challenges."
+        }
+      ],
+      "summary": "A global freelance platform uses AI to improve hiring and sets industry standards."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "technology and business",
+      "tags": ["story", "reading", "C1", "entrepreneurship", "AI"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  }
+,
+  {
+    "content": {
+      "story": "A marine biologist led a multi-year study on coral reef resilience in the face of climate change. The research team discovered certain coral species that could adapt to warmer waters, offering hope for restoration efforts. The findings were published in a top scientific journal and influenced conservation strategies worldwide. Environmentalists and policymakers collaborated to implement new protection measures based on the study's recommendations.",
+      "questions": [
+        {
+          "question": "What did the research team discover about some coral species?",
+          "options": ["They are all dying", "Some can adapt to warmer waters", "They are unaffected by humans", "They are only found in cold regions"],
+          "correct": 1,
+          "explanation": "The study found certain coral species could adapt to warmer waters."
+        },
+        {
+          "question": "What was the impact of the findings?",
+          "options": ["No impact", "They influenced global conservation strategies", "They were ignored", "They led to more fishing"],
+          "correct": 1,
+          "explanation": "The findings influenced conservation strategies worldwide."
+        }
+      ],
+      "summary": "A study on coral resilience shapes global conservation efforts."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "science and environment",
+      "tags": ["story", "reading", "C1", "marine biology", "climate change"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A social entrepreneur launched a nationwide initiative to combat food waste by connecting restaurants with charities. The program used a digital platform to coordinate surplus food donations, reducing landfill use and feeding thousands of people in need. The initiative gained widespread support, winning awards and inspiring similar projects abroad. Critics noted logistical challenges, but the overall impact was considered highly positive.",
+      "questions": [
+        {
+          "question": "What was the main goal of the initiative?",
+          "options": ["Increase restaurant profits", "Reduce food waste and help those in need", "Promote fast food", "Export food overseas"],
+          "correct": 1,
+          "explanation": "The initiative aimed to reduce food waste and support people in need."
+        },
+        {
+          "question": "What tool did the program use to coordinate donations?",
+          "options": ["A digital platform", "Phone calls", "Paper forms", "Television ads"],
+          "correct": 0,
+          "explanation": "A digital platform was used to coordinate surplus food donations."
+        }
+      ],
+      "summary": "A digital platform connects restaurants and charities to reduce food waste."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "social innovation",
+      "tags": ["story", "reading", "C1", "entrepreneurship", "food waste"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A historian published a biography of a little-known political leader whose reforms transformed a small nation. The book challenged existing narratives and sparked debate among scholars and the public. The biography was translated into several languages and adapted into a documentary, bringing international attention to the leader's legacy. The story illustrates how historical research can reshape collective memory.",
+      "questions": [
+        {
+          "question": "What was the subject of the historian's biography?",
+          "options": ["A famous king", "A little-known political leader", "A celebrity", "A scientist"],
+          "correct": 1,
+          "explanation": "The biography focused on a lesser-known political leader."
+        },
+        {
+          "question": "What was one result of the book's publication?",
+          "options": ["It was ignored", "It was translated and adapted into a documentary", "It led to protests", "It was banned"],
+          "correct": 1,
+          "explanation": "The biography was translated and made into a documentary."
+        }
+      ],
+      "summary": "A biography of a reformer transforms historical understanding and public memory."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "history and politics",
+      "tags": ["story", "reading", "C1", "history", "biography"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A psychologist developed a new therapy for anxiety based on mindfulness and cognitive restructuring. Clinical trials demonstrated significant improvements in patients' well-being, and the therapy was adopted by mental health professionals worldwide. The psychologist received recognition from leading medical associations, and the approach was incorporated into public health programs. Ongoing research continues to refine the method and expand its applications.",
+      "questions": [
+        {
+          "question": "What was innovative about the psychologist's therapy?",
+          "options": ["It used medication only", "It combined mindfulness with cognitive restructuring", "It was based on hypnosis", "It involved group sessions only"],
+          "correct": 1,
+          "explanation": "The therapy combined mindfulness with cognitive restructuring."
+        },
+        {
+          "question": "What was the outcome of clinical trials?",
+          "options": ["No improvement", "Significant improvements in well-being", "Negative side effects", "No change"],
+          "correct": 1,
+          "explanation": "Clinical trials showed significant improvements in patients' well-being."
+        }
+      ],
+      "summary": "A new anxiety therapy based on mindfulness and cognition is adopted worldwide."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "psychology and health",
+      "tags": ["story", "reading", "C1", "psychology", "therapy"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A playwright's satirical drama about government surveillance was performed in major theaters across Europe. The play provoked intense discussion about privacy, security, and freedom in the digital age. Critics praised its wit and relevance, and the production won several awards. The playwright became a leading voice in debates on civil liberties and technology.",
+      "questions": [
+        {
+          "question": "What was the main theme of the playwright's drama?",
+          "options": ["Family relationships", "Government surveillance and privacy", "Sports competition", "Historical romance"],
+          "correct": 1,
+          "explanation": "The play was about government surveillance and privacy."
+        },
+        {
+          "question": "How was the play received?",
+          "options": ["It was ignored", "It won awards and provoked discussion", "It was banned", "It was criticized for being outdated"],
+          "correct": 1,
+          "explanation": "The play won awards and sparked debate."
+        }
+      ],
+      "summary": "A satirical play on surveillance sparks debate and wins acclaim across Europe."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "arts and society",
+      "tags": ["story", "reading", "C1", "theater", "privacy"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  }
+,
+  {
+    "content": {
+      "story": "A linguist launched a project to document endangered languages in remote regions. The team recorded oral histories, created digital dictionaries, and collaborated with local communities to preserve cultural heritage. The project attracted international funding and inspired similar initiatives. The linguist's work emphasized the importance of linguistic diversity in a globalized world.",
+      "questions": [
+        {
+          "question": "What was the main goal of the linguist's project?",
+          "options": ["Translate popular books", "Document endangered languages and preserve cultural heritage", "Teach English", "Develop new languages"],
+          "correct": 1,
+          "explanation": "The project focused on documenting endangered languages and preserving heritage."
+        },
+        {
+          "question": "How did the project impact others?",
+          "options": ["It was ignored", "It inspired similar initiatives worldwide", "It led to language bans", "It reduced cultural diversity"],
+          "correct": 1,
+          "explanation": "The project inspired similar language preservation initiatives."
+        }
+      ],
+      "summary": "A linguist's project preserves endangered languages and inspires global action."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "linguistics and culture",
+      "tags": ["story", "reading", "C1", "linguistics", "preservation"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A financial analyst predicted a major shift in global markets due to emerging green technologies. Her report forecasted changes in investment strategies and highlighted opportunities in renewable energy. The analysis was widely circulated among industry leaders and influenced corporate decision-making. Critics debated the timeline, but most agreed on the significance of the trend.",
+      "questions": [
+        {
+          "question": "What did the analyst predict?",
+          "options": ["A decline in technology", "A shift in markets due to green technologies", "No changes in investments", "A rise in fossil fuels"],
+          "correct": 1,
+          "explanation": "The analyst predicted a shift due to green technologies."
+        },
+        {
+          "question": "How did industry leaders respond to the analysis?",
+          "options": ["They ignored it", "It influenced corporate decision-making", "They sold all stocks", "They banned green tech"],
+          "correct": 1,
+          "explanation": "The analysis influenced corporate decisions."
+        }
+      ],
+      "summary": "A financial report on green tech shifts global investment strategies."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "economics and environment",
+      "tags": ["story", "reading", "C1", "finance", "green tech"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A medical researcher developed a rapid diagnostic test for a rare disease, enabling earlier treatment and improved patient outcomes. The innovation was recognized by health organizations and quickly implemented in hospitals worldwide. The researcher's breakthrough sparked new interest in rare disease research and led to increased funding for similar projects.",
+      "questions": [
+        {
+          "question": "What was the researcher's main achievement?",
+          "options": ["A new vaccine", "A rapid diagnostic test for a rare disease", "A surgical technique", "A fitness app"],
+          "correct": 1,
+          "explanation": "The main achievement was a rapid diagnostic test for a rare disease."
+        },
+        {
+          "question": "What was one result of the breakthrough?",
+          "options": ["No change", "Increased funding for rare disease research", "Fewer hospital patients", "More paperwork"],
+          "correct": 1,
+          "explanation": "The breakthrough led to increased funding for rare disease research."
+        }
+      ],
+      "summary": "A rapid test for a rare disease improves outcomes and drives further research."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "medicine and innovation",
+      "tags": ["story", "reading", "C1", "medicine", "diagnostics"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A climate scientist's study on urban heat islands revealed the disproportionate impact of rising temperatures on low-income neighborhoods. The research led to new city planning policies focused on green spaces and heat mitigation. Community leaders collaborated with scientists to implement solutions, improving residents' quality of life and resilience to climate change.",
+      "questions": [
+        {
+          "question": "What did the study reveal about urban heat islands?",
+          "options": ["They only affect wealthy areas", "They impact low-income neighborhoods most", "They have no effect", "They are caused by rain"],
+          "correct": 1,
+          "explanation": "The study showed heat islands affect low-income neighborhoods most."
+        },
+        {
+          "question": "What was the result of the research?",
+          "options": ["No action taken", "New city planning policies for green spaces and heat mitigation", "Increased pollution", "More car traffic"],
+          "correct": 1,
+          "explanation": "The research led to new city policies for heat mitigation."
+        }
+      ],
+      "summary": "Urban heat island research leads to equitable city planning policies."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "science and society",
+      "tags": ["story", "reading", "C1", "climate", "urban planning"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A novelist experimented with nonlinear storytelling in her latest book, challenging readers to piece together the narrative from multiple perspectives and timelines. The novel received critical acclaim for its complexity and originality, and it was shortlisted for several literary awards. The author held workshops to teach aspiring writers about innovative narrative structures.",
+      "questions": [
+        {
+          "question": "What was innovative about the novelist's book?",
+          "options": ["It was written backwards", "It used nonlinear storytelling with multiple perspectives and timelines", "It had only one character", "It was a collection of poems"],
+          "correct": 1,
+          "explanation": "The novel used nonlinear storytelling and multiple perspectives."
+        },
+        {
+          "question": "How did the literary community respond?",
+          "options": ["It was ignored", "It received critical acclaim and award nominations", "It was banned", "It was rewritten"],
+          "correct": 1,
+          "explanation": "The novel received acclaim and was shortlisted for awards."
+        }
+      ],
+      "summary": "A nonlinear novel earns acclaim and inspires writers to explore new forms."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "literature and innovation",
+      "tags": ["story", "reading", "C1", "novel", "narrative"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  }
+,
+  {
+    "content": {
+      "story": "A documentary photographer chronicled the lives of indigenous communities adapting to environmental changes in the Arctic. Her images and interviews raised awareness about climate resilience and cultural preservation. The project was exhibited internationally and influenced policy discussions on indigenous rights and environmental justice.",
+      "questions": [
+        {
+          "question": "What was the focus of the photographer's project?",
+          "options": ["Urban development", "Indigenous adaptation to environmental changes", "Sports events", "Tourism"],
+          "correct": 1,
+          "explanation": "The project documented indigenous adaptation to environmental changes."
+        },
+        {
+          "question": "What was one result of the project?",
+          "options": ["It was ignored", "It influenced policy discussions on indigenous rights", "It led to protests", "It focused on technology"],
+          "correct": 1,
+          "explanation": "The project influenced policy discussions on indigenous rights."
+        }
+      ],
+      "summary": "A photo project highlights indigenous adaptation and influences policy on rights."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "photography and environment",
+      "tags": ["story", "reading", "C1", "photography", "indigenous"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A tech startup developed an app to support mental health by providing daily mindfulness exercises and real-time mood tracking. The app gained popularity among young adults and was integrated into university wellness programs. Psychologists praised its user-friendly design and evidence-based approach, though some warned about over-reliance on technology for well-being.",
+      "questions": [
+        {
+          "question": "What was the main feature of the app?",
+          "options": ["Online shopping", "Mindfulness exercises and mood tracking", "Music streaming", "Weather updates"],
+          "correct": 1,
+          "explanation": "The app provided mindfulness exercises and mood tracking."
+        },
+        {
+          "question": "How was the app received?",
+          "options": ["It was ignored", "It was integrated into wellness programs and praised by psychologists", "It was banned", "It was criticized for poor design"],
+          "correct": 1,
+          "explanation": "The app was integrated into wellness programs and praised."
+        }
+      ],
+      "summary": "A mental health app gains popularity and is integrated into wellness programs."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "technology and health",
+      "tags": ["story", "reading", "C1", "mental health", "app"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A political scientist analyzed the effects of social media campaigns on voter turnout in national elections. The study found that targeted messaging increased engagement among young voters but also contributed to polarization. Policymakers used the findings to develop new regulations on digital campaigning and electoral transparency.",
+      "questions": [
+        {
+          "question": "What did the study find about social media campaigns?",
+          "options": ["They had no effect", "They increased engagement among young voters", "They reduced voter turnout", "They only affected older voters"],
+          "correct": 1,
+          "explanation": "The study found social media campaigns increased engagement among young voters."
+        },
+        {
+          "question": "How did policymakers respond?",
+          "options": ["They ignored the study", "They developed new regulations on digital campaigning", "They banned social media", "They increased advertising"],
+          "correct": 1,
+          "explanation": "Policymakers developed new regulations based on the study."
+        }
+      ],
+      "summary": "A study on social media's impact on elections leads to new digital campaign rules."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "politics and technology",
+      "tags": ["story", "reading", "C1", "politics", "social media"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A renowned chef introduced a plant-based menu in a Michelin-starred restaurant, challenging traditional culinary norms. The menu received critical acclaim and attracted a new clientele interested in sustainable dining. The chef's innovation sparked a trend among high-end restaurants to explore plant-based cuisine.",
+      "questions": [
+        {
+          "question": "What was innovative about the chef's menu?",
+          "options": ["It was entirely plant-based", "It featured only desserts", "It used imported ingredients", "It was cooked by robots"],
+          "correct": 0,
+          "explanation": "The menu was innovative because it was entirely plant-based."
+        },
+        {
+          "question": "What was the impact of the new menu?",
+          "options": ["It was ignored", "It sparked a trend in high-end restaurants", "It led to lower sales", "It caused controversy"],
+          "correct": 1,
+          "explanation": "The menu sparked a plant-based trend in fine dining."
+        }
+      ],
+      "summary": "A plant-based menu in fine dining sparks a culinary trend."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "food and innovation",
+      "tags": ["story", "reading", "C1", "chef", "plant-based"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A sociologist conducted a longitudinal study on remote education during the pandemic, focusing on its effects on student motivation and achievement. The research revealed significant disparities based on socioeconomic status and access to technology. The findings informed policies to bridge the digital divide and improve educational equity.",
+      "questions": [
+        {
+          "question": "What did the study focus on?",
+          "options": ["Remote education's effects on student motivation and achievement", "School lunches", "Sports participation", "Teacher salaries"],
+          "correct": 0,
+          "explanation": "The study focused on remote education's effects during the pandemic."
+        },
+        {
+          "question": "What was an outcome of the research?",
+          "options": ["No changes", "Policies to bridge the digital divide", "Increased homework", "Fewer teachers"],
+          "correct": 1,
+          "explanation": "The findings informed policies to bridge the digital divide."
+        }
+      ],
+      "summary": "A study on remote education leads to policies for greater equity."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "education and society",
+      "tags": ["story", "reading", "C1", "education", "pandemic"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A filmmaker produced a documentary about urban farming initiatives in major cities. The film showcased how community gardens improved food security, fostered social cohesion, and contributed to environmental sustainability. The documentary was screened at international festivals and inspired new urban agriculture projects worldwide.",
+      "questions": [
+        {
+          "question": "What was the main topic of the documentary?",
+          "options": ["Urban farming initiatives", "Traffic congestion", "Public art", "City nightlife"],
+          "correct": 0,
+          "explanation": "The documentary focused on urban farming initiatives."
+        },
+        {
+          "question": "What was the impact of the film?",
+          "options": ["It was ignored", "It inspired new urban agriculture projects", "It led to less farming", "It caused protests"],
+          "correct": 1,
+          "explanation": "The film inspired new urban agriculture projects."
+        }
+      ],
+      "summary": "A documentary on urban farming inspires global agriculture projects."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "film and environment",
+      "tags": ["story", "reading", "C1", "film", "urban farming"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A mathematician developed an algorithm to optimize renewable energy distribution in smart grids. The innovation reduced energy waste and operational costs, and was adopted by several countries. The mathematician received international recognition for advancing sustainable technology.",
+      "questions": [
+        {
+          "question": "What was the mathematician's achievement?",
+          "options": ["A new type of battery", "An algorithm for optimizing renewable energy distribution", "A smartphone app", "A financial model"],
+          "correct": 1,
+          "explanation": "The mathematician developed an algorithm for energy optimization."
+        },
+        {
+          "question": "What was the result of the innovation?",
+          "options": ["No adoption", "It was adopted by several countries", "It increased energy waste", "It was criticized"],
+          "correct": 1,
+          "explanation": "The algorithm was adopted by several countries."
+        }
+      ],
+      "summary": "An energy optimization algorithm advances sustainable technology."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "mathematics and technology",
+      "tags": ["story", "reading", "C1", "mathematics", "energy"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A novelist's historical fiction explored the lives of women scientists in the early 20th century. The book brought attention to overlooked contributions and inspired educational programs encouraging girls to pursue STEM fields. The novel received awards for its research and storytelling.",
+      "questions": [
+        {
+          "question": "What did the novel highlight?",
+          "options": ["Famous inventors", "Women scientists' contributions in the early 20th century", "Political leaders", "Artists"],
+          "correct": 1,
+          "explanation": "The novel highlighted women scientists' contributions."
+        },
+        {
+          "question": "What was one impact of the novel?",
+          "options": ["No impact", "It inspired educational programs for girls in STEM", "It was banned", "It led to protests"],
+          "correct": 1,
+          "explanation": "The novel inspired STEM education programs for girls."
+        }
+      ],
+      "summary": "A historical novel inspires STEM education for girls and wins awards."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "literature and science",
+      "tags": ["story", "reading", "C1", "novel", "STEM"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A public health expert coordinated a vaccination campaign in response to a regional disease outbreak. The campaign combined education, community engagement, and mobile clinics, resulting in high immunization rates. The expert's approach was adopted as a model for future public health interventions.",
+      "questions": [
+        {
+          "question": "What was the focus of the campaign?",
+          "options": ["Mobile phone use", "Vaccination in response to a disease outbreak", "Road safety", "Environmental cleanup"],
+          "correct": 1,
+          "explanation": "The campaign focused on vaccination during an outbreak."
+        },
+        {
+          "question": "What was the outcome of the campaign?",
+          "options": ["Low immunization rates", "High immunization rates and adoption as a model", "No change", "Increased disease"],
+          "correct": 1,
+          "explanation": "The campaign resulted in high immunization rates and became a model."
+        }
+      ],
+      "summary": "A vaccination campaign achieves success and sets a public health model."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "health and society",
+      "tags": ["story", "reading", "C1", "public health", "vaccination"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A playwright's drama about migration explored the emotional journeys of families separated by borders. The play received standing ovations and was translated into multiple languages. Its success led to international collaborations and raised awareness of migration issues in the arts.",
+      "questions": [
+        {
+          "question": "What was the theme of the play?",
+          "options": ["Migration and family separation", "Comedy", "Sports", "Science fiction"],
+          "correct": 0,
+          "explanation": "The play explored migration and family separation."
+        },
+        {
+          "question": "What was one result of the play's success?",
+          "options": ["It was ignored", "It led to international collaborations and awareness", "It was banned", "It caused protests"],
+          "correct": 1,
+          "explanation": "The play led to collaborations and raised awareness."
+        }
+      ],
+      "summary": "A play on migration wins acclaim and inspires global collaborations."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "theater and society",
+      "tags": ["story", "reading", "C1", "play", "migration"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A journalist's exposé on corporate whistleblowers revealed the risks and rewards of exposing wrongdoing. The series led to new protections for whistleblowers and sparked public debate about ethics in business. The journalist received awards for investigative reporting.",
+      "questions": [
+        {
+          "question": "What was the focus of the exposé?",
+          "options": ["Corporate whistleblowers", "Celebrity scandals", "Sports injuries", "Fashion trends"],
+          "correct": 0,
+          "explanation": "The exposé focused on corporate whistleblowers."
+        },
+        {
+          "question": "What was one result of the series?",
+          "options": ["No change", "New protections for whistleblowers and public debate", "More corporate secrecy", "It was banned"],
+          "correct": 1,
+          "explanation": "The series led to new protections and debate."
+        }
+      ],
+      "summary": "An exposé on whistleblowers leads to new protections and public debate."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "media and ethics",
+      "tags": ["story", "reading", "C1", "journalism", "whistleblower"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A biotechnologist engineered drought-resistant crops to address food insecurity in arid regions. The breakthrough improved yields and supported local economies. Governments and NGOs partnered with the biotechnologist to expand the technology to other regions facing similar challenges.",
+      "questions": [
+        {
+          "question": "What was the biotechnologist's achievement?",
+          "options": ["A new pesticide", "Drought-resistant crops", "A farming robot", "A weather app"],
+          "correct": 1,
+          "explanation": "The achievement was engineering drought-resistant crops."
+        },
+        {
+          "question": "What was the result of the breakthrough?",
+          "options": ["No adoption", "Improved yields and economic support", "More droughts", "It was banned"],
+          "correct": 1,
+          "explanation": "The breakthrough improved yields and supported economies."
+        }
+      ],
+      "summary": "Drought-resistant crops improve food security and support economies."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "biotechnology and society",
+      "tags": ["story", "reading", "C1", "biotech", "food security"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A legal scholar advocated for restorative justice practices in criminal law, emphasizing rehabilitation over punishment. Her proposals influenced legislative reforms and inspired pilot programs in several countries. The scholar's work received recognition for promoting a more humane approach to justice.",
+      "questions": [
+        {
+          "question": "What did the scholar advocate for?",
+          "options": ["Harsher punishments", "Restorative justice and rehabilitation", "Longer trials", "More prisons"],
+          "correct": 1,
+          "explanation": "The scholar advocated for restorative justice and rehabilitation."
+        },
+        {
+          "question": "What was the impact of her proposals?",
+          "options": ["No impact", "Legislative reforms and pilot programs", "Increased crime", "Fewer judges"],
+          "correct": 1,
+          "explanation": "Her proposals influenced reforms and pilot programs."
+        }
+      ],
+      "summary": "Restorative justice advocacy leads to reforms and humane legal practices."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "law and society",
+      "tags": ["story", "reading", "C1", "law", "restorative justice"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A marine engineer designed a floating solar farm to generate renewable energy in coastal regions. The project reduced reliance on fossil fuels and provided electricity to remote communities. The engineer's innovation was recognized at international energy conferences and adopted in several countries.",
+      "questions": [
+        {
+          "question": "What did the marine engineer design?",
+          "options": ["A wind turbine", "A floating solar farm", "A new boat", "A bridge"],
+          "correct": 1,
+          "explanation": "The engineer designed a floating solar farm."
+        },
+        {
+          "question": "What was the outcome of the project?",
+          "options": ["No change", "Electricity for remote communities and international recognition", "More pollution", "It was banned"],
+          "correct": 1,
+          "explanation": "The project provided electricity and was recognized internationally."
+        }
+      ],
+      "summary": "A floating solar farm brings renewable energy and recognition to coastal regions."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "engineering and environment",
+      "tags": ["story", "reading", "C1", "engineering", "solar energy"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  },
+  {
+    "content": {
+      "story": "A psychologist's research on resilience in children affected by natural disasters led to new therapeutic approaches in schools. The findings were implemented in disaster-prone regions and improved long-term outcomes for students. The psychologist received awards for contributions to educational psychology.",
+      "questions": [
+        {
+          "question": "What did the psychologist study?",
+          "options": ["Resilience in children after natural disasters", "Math skills", "Nutrition", "Sports injuries"],
+          "correct": 0,
+          "explanation": "The study focused on resilience in children after disasters."
+        },
+        {
+          "question": "What was the impact of the research?",
+          "options": ["No impact", "New therapies in schools and improved outcomes", "More disasters", "It was ignored"],
+          "correct": 1,
+          "explanation": "The research led to new therapies and improved outcomes."
+        }
+      ],
+      "summary": "Research on resilience after disasters improves therapies for children in schools."
+    },
+    "metadata": {
+      "englishLevel": "C1",
+      "difficulty": "advanced",
+      "category": "reading",
+      "subCategory": "psychology and education",
+      "tags": ["story", "reading", "C1", "psychology", "resilience"],
+      "type": "story_game"
+    },
+    "gameMetadata": {
+      "pointsValue": 30,
+      "timeLimit": 260,
+      "difficultyMultiplier": 2.0
+    }
+  }
+]
