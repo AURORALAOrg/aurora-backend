@@ -27,19 +27,22 @@ enum DifficultyLevel {
 }
 
 model User {
-  id             String    @id @default(uuid())
-  email          String    @unique
-  password       String
-  isEmailVerified  Boolean @default(false)
-  firstName      String?
-  lastName       String?
-  phoneNumber    String?
-  profileImage   String?
-  status        Status     @default(INACTIVE)
-  createdAt      DateTime  @default(now())
-  updatedAt      DateTime  @updatedAt
-  wallet         Wallet?
-  questions      Question[]
+  id               String    @id @default(uuid())
+  email            String    @unique
+  password         String
+  isEmailVerified  Boolean   @default(false)
+  firstName        String?
+  lastName         String?
+  phoneNumber      String?
+  profileImage     String?
+  status           Status    @default(INACTIVE)
+  lastLoginAt      DateTime?
+  lastActivityAt   DateTime?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+  wallet           Wallet?
+  questions        Question[]
+  reminderHistory  ReminderHistory[] 
 }
 
 model Wallet {
@@ -74,4 +77,16 @@ model Question {
   createdByUser User     @relation(fields: [createdBy], references: [id])
 
   @@map("questions")
+}
+
+model ReminderHistory {
+  id           String   @id @default(cuid())
+  userId       String
+  reminderType String
+  sentAt       DateTime @default(now())
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@unique([userId, reminderType])
+  @@index([userId])
+  @@map("reminder_history")
 }
