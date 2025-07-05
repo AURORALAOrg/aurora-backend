@@ -1,6 +1,5 @@
 import ChatService from "../../src/services/chat.service"
 import { ChatRequest } from "../../src/models/interfaces/chat.interfaces"
-import jest from "jest" // Declare the jest variable
 
 // Mock OpenAI
 jest.mock("openai", () => {
@@ -50,6 +49,8 @@ describe("ChatService", () => {
       expect(response).toHaveProperty("conversationId")
       expect(response).toHaveProperty("usage")
       expect(response.response).toBe("Hello! I'd be happy to help you practice English conversation.")
+      expect(response.usage).toBeDefined()
+      expect(response.usage?.totalTokens).toBe(70)
     })
 
     it("should handle conversation context", async () => {
@@ -76,6 +77,7 @@ describe("ChatService", () => {
 
       expect(response).toHaveProperty("response")
       expect(response).toHaveProperty("conversationId")
+      expect(response).toHaveProperty("usage")
     })
   })
 

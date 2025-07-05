@@ -30,7 +30,7 @@ router.get("/health", ChatController.healthCheck)
 router.use(isAuthorized())
 
 // Send message to AI
-router.post("/ai", validateRequest(chatMessageSchema), ChatController.sendMessage)
+router.post("/ai", validateRequest({ body: chatMessageSchema }), ChatController.sendMessage)
 
 // Get conversation starters
 router.get("/starters", ChatController.getConversationStarters)

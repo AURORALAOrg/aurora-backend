@@ -3,6 +3,33 @@ import app from "../../src/app"
 import { PrismaClient } from "@prisma/client"
 import Jwt from "../../src/utils/security/jwt"
 
+// Mock OpenAI globally for e2e tests
+jest.mock("openai", () => {
+  return {
+    __esModule: true,
+    default: jest.fn().mockImplementation(() => ({
+      chat: {
+        completions: {
+          create: jest.fn().mockResolvedValue({
+            choices: [
+              {
+                message: {
+                  content: "Hello! I'd be happy to help you practice English conversation.",
+                },
+              },
+            ],
+            usage: {
+              prompt_tokens: 50,
+              completion_tokens: 20,
+              total_tokens: 70,
+            },
+          }),
+        },
+      },
+    })),
+  }
+})
+
 const prisma = new PrismaClient()
 
 describe("Chat API Endpoints", () => {
@@ -22,7 +49,7 @@ describe("Chat API Endpoints", () => {
     })
 
     userId = testUser.id
-    authToken = Jwt.sign({ id: testUser.id, email: testUser.email })
+    authToken = Jwt.issue({ id: testUser.id, email: testUser.email }, "1h")
   })
 
   afterAll(async () => {
@@ -130,11 +157,4 @@ describe("Chat API Endpoints", () => {
     })
   })
 })
-function afterAll(arg0: () => Promise<void>) {
-    throw new Error("Function not implemented.")
-}
-
-function beforeAll(arg0: () => Promise<void>) {
-    throw new Error("Function not implemented.")
-}
 
