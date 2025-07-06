@@ -1,0 +1,395 @@
+[
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "weather",
+					"match": "conditions outside like rain or sunshine"
+				},
+				{
+					"word": "restaurant",
+					"match": "a place where you pay to eat meals"
+				},
+				{
+					"word": "weekend",
+					"match": "Saturday and Sunday together"
+				},
+				{
+					"word": "vacation",
+					"match": "time spent away from work or school"
+				},
+				{
+					"word": "shopping",
+					"match": "buying things from stores"
+				},
+				{
+					"word": "airport",
+					"match": "where planes take off and land"
+				}
+			],
+			"difficulty": "easy-intermediate",
+			"category": "everyday vocabulary"
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "A2", "daily life"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 70,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "beautiful",
+					"match": "very pleasing to look at"
+				},
+				{
+					"word": "boring",
+					"match": "not interesting or exciting"
+				},
+				{
+					"word": "expensive",
+					"match": "costing a lot of money"
+				},
+				{
+					"word": "dangerous",
+					"match": "likely to cause harm or injury"
+				},
+				{
+					"word": "comfortable",
+					"match": "providing physical ease and relaxation"
+				},
+				{
+					"word": "difficult",
+					"match": "not easy, requiring effort"
+				}
+			],
+			"difficulty": "easy-intermediate",
+			"category": "adjectives"
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "A2", "adjectives"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 70,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "supermarket",
+					"match": "a large store that sells food and household goods"
+				},
+				{
+					"word": "library",
+					"match": "a place where books are kept for people to read or borrow"
+				},
+				{
+					"word": "cinema",
+					"match": "a place where films are shown to the public"
+				},
+				{
+					"word": "hospital",
+					"match": "a place where sick people receive medical treatment"
+				},
+				{
+					"word": "museum",
+					"match": "a building where objects of historical or cultural interest are kept"
+				},
+				{
+					"word": "stadium",
+					"match": "a large building for sports events with many seats"
+				}
+			],
+			"difficulty": "easy-intermediate",
+			"category": "places"
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "A2", "places"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 70,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "usually",
+					"match": "in the way that most often happens"
+				},
+				{
+					"word": "never",
+					"match": "not at any time or not on any occasion"
+				},
+				{
+					"word": "sometimes",
+					"match": "on some occasions but not always"
+				},
+				{
+					"word": "often",
+					"match": "many times or frequently"
+				},
+				{
+					"word": "always",
+					"match": "at all times, on every occasion"
+				},
+				{
+					"word": "rarely",
+					"match": "not very often"
+				}
+			],
+			"difficulty": "easy-intermediate",
+			"category": "frequency adverbs"
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "A2", "adverbs"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 70,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "tired",
+					"match": "needing rest or sleep"
+				},
+				{
+					"word": "hungry",
+					"match": "wanting or needing food"
+				},
+				{
+					"word": "thirsty",
+					"match": "feeling that you want to drink something"
+				},
+				{
+					"word": "surprised",
+					"match": "feeling or showing shock when something unexpected happens"
+				},
+				{
+					"word": "worried",
+					"match": "anxious or troubled about actual or potential problems"
+				},
+				{
+					"word": "excited",
+					"match": "feeling very happy and enthusiastic"
+				}
+			],
+			"difficulty": "easy-intermediate",
+			"category": "feelings"
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "A2", "emotions"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 70,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "polite",
+					"match": "having good manners and respect for others"
+				},
+				{ "word": "noisy", "match": "making a lot of loud sounds" },
+				{ "word": "quiet", "match": "making little or no noise" },
+				{ "word": "dangerous", "match": "likely to cause harm or injury" },
+				{ "word": "safe", "match": "not likely to cause harm or injury" },
+				{ "word": "friendly", "match": "kind and pleasant to others" }
+			],
+			"difficulty": "easy-intermediate",
+			"category": "people and safety"
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "A2", "people"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 70,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "breakfast", "match": "the first meal of the day" },
+				{ "word": "lunch", "match": "the meal eaten in the middle of the day" },
+				{ "word": "dinner", "match": "the main meal eaten in the evening" },
+				{
+					"word": "snack",
+					"match": "a small amount of food eaten between meals"
+				},
+				{ "word": "fruit", "match": "food like apples, bananas, and oranges" },
+				{
+					"word": "vegetable",
+					"match": "food like carrots, potatoes, and beans"
+				}
+			],
+			"difficulty": "easy-intermediate",
+			"category": "food"
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "A2", "food"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 70,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "bus",
+					"match": "a large vehicle that carries many passengers"
+				},
+				{ "word": "train", "match": "a long vehicle that moves on tracks" },
+				{ "word": "car", "match": "a small vehicle for a few people" },
+				{ "word": "bicycle", "match": "a vehicle with two wheels you pedal" },
+				{ "word": "taxi", "match": "a car you pay to travel in" },
+				{
+					"word": "motorcycle",
+					"match": "a two-wheeled vehicle powered by an engine"
+				}
+			],
+			"difficulty": "easy-intermediate",
+			"category": "transport"
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "A2", "transport"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 70,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "teacher", "match": "someone who helps students learn" },
+				{
+					"word": "doctor",
+					"match": "a person who helps sick people get better"
+				},
+				{
+					"word": "nurse",
+					"match": "someone who cares for people in a hospital"
+				},
+				{
+					"word": "police officer",
+					"match": "a person who keeps people safe and enforces the law"
+				},
+				{ "word": "firefighter", "match": "a person who puts out fires" },
+				{
+					"word": "student",
+					"match": "a person who is learning at a school or college"
+				}
+			],
+			"difficulty": "easy-intermediate",
+			"category": "jobs"
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "A2", "jobs"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 70,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "spring",
+					"match": "the season after winter and before summer"
+				},
+				{ "word": "summer", "match": "the warmest season of the year" },
+				{
+					"word": "autumn",
+					"match": "the season after summer and before winter"
+				},
+				{ "word": "winter", "match": "the coldest season of the year" },
+				{ "word": "rainy", "match": "weather with a lot of rain" },
+				{ "word": "sunny", "match": "weather with a lot of sunshine" }
+			],
+			"difficulty": "easy-intermediate",
+			"category": "seasons and weather"
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "A2", "seasons"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 70,
+			"difficultyMultiplier": 1.2
+		}
+	}
+]

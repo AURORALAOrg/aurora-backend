@@ -1,0 +1,288 @@
+[
+	{
+		"content": {
+			"word": "ubiquitous",
+			"scrambled": "OITUBUQSUIS",
+			"hint": "Present everywhere",
+			"explanation": "Ubiquitous means present, appearing, or found everywhere.",
+			"contextSentence": "Smartphones have become ubiquitous in modern society."
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "abstract",
+			"tags": ["vocabulary", "word-scramble", "C1", "abstract"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 50,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"word": "ameliorate",
+			"scrambled": "ALMIEAORTE",
+			"hint": "To improve",
+			"explanation": "Ameliorate means to make something better or improve it.",
+			"contextSentence": "The reforms did much to ameliorate living standards."
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "verbs",
+			"tags": ["vocabulary", "word-scramble", "C1", "verbs"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 50,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"word": "meticulous",
+			"scrambled": "MOTICULES",
+			"hint": "Very careful and precise",
+			"explanation": "Meticulous means showing great attention to detail.",
+			"contextSentence": "She kept meticulous records of every expense."
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "C1", "adjectives"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 50,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"word": "conundrum",
+			"scrambled": "UNMDRUCON",
+			"hint": "A confusing problem or question",
+			"explanation": "Conundrum means a confusing and difficult problem or question.",
+			"contextSentence": "The administration is facing a familiar conundrum."
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "abstract",
+			"tags": ["vocabulary", "word-scramble", "C1", "abstract"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 50,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"word": "paradigm",
+			"scrambled": "ADIGMRAP",
+			"hint": "A model or example",
+			"explanation": "Paradigm means a typical example or pattern of something.",
+			"contextSentence": "The discovery of electricity created a new paradigm in science."
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "abstract",
+			"tags": ["vocabulary", "word-scramble", "C1", "abstract"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 50,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"word": "juxtapose",
+			"scrambled": "XJUPASOTU",
+			"hint": "To place side by side for contrast",
+			"explanation": "Juxtapose means to place different things together to highlight differences.",
+			"contextSentence": "The exhibition juxtaposes modern art with classical sculpture."
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "verbs",
+			"tags": ["vocabulary", "word-scramble", "C1", "verbs"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 50,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"word": "cognizant",
+			"scrambled": "ZCOGNTIAN",
+			"hint": "Having knowledge or being aware of",
+			"explanation": "Cognizant means having knowledge or being aware of something.",
+			"contextSentence": "He was cognizant of the difficulties ahead."
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "C1", "adjectives"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 50,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"word": "epitome",
+			"scrambled": "TEMEPOIT",
+			"hint": "A perfect example",
+			"explanation": "Epitome means a person or thing that is a perfect example of a quality.",
+			"contextSentence": "She looked the epitome of elegance and good taste."
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "abstract",
+			"tags": ["vocabulary", "word-scramble", "C1", "abstract"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 50,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"word": "lucid",
+			"scrambled": "CILUD",
+			"hint": "Expressed clearly; easy to understand",
+			"explanation": "Lucid means expressed clearly and easy to understand.",
+			"contextSentence": "His explanation was lucid and to the point."
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "C1", "adjectives"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 50,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"word": "tenuous",
+			"scrambled": "TNUOESU",
+			"hint": "Very weak or slight",
+			"explanation": "Tenuous means very weak or slight.",
+			"contextSentence": "The evidence for the theory is extremely tenuous."
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "C1", "adjectives"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 50,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"word": "fortuitous",
+			"scrambled": "TUFITIOUSRO",
+			"hint": "Happening by chance, often lucky",
+			"explanation": "Fortuitous means happening by chance, often in a lucky way.",
+			"contextSentence": "Their meeting was entirely fortuitous."
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "C1", "adjectives"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 50,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"word": "dichotomy",
+			"scrambled": "MYDICHOTO",
+			"hint": "A division between two contrasting things",
+			"explanation": "Dichotomy means a division or contrast between two things.",
+			"contextSentence": "There is a clear dichotomy between theory and practice."
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "abstract",
+			"tags": ["vocabulary", "word-scramble", "C1", "abstract"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 50,
+			"difficultyMultiplier": 2.0
+		}
+	},
+	{
+		"content": {
+			"word": "precocious",
+			"scrambled": "OCCIOUSPRE",
+			"hint": "Having developed abilities at an earlier age",
+			"explanation": "Precocious means having developed abilities at an earlier age than usual.",
+			"contextSentence": "She was a precocious child, able to read before she was three."
+		},
+		"metadata": {
+			"englishLevel": "C1",
+			"difficulty": "advanced",
+			"category": "vocabulary",
+			"subCategory": "traits",
+			"tags": ["vocabulary", "word-scramble", "C1", "traits"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 30,
+			"timeLimit": 50,
+			"difficultyMultiplier": 2.0
+		}
+	}
+]

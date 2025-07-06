@@ -1,0 +1,68 @@
+[
+	{
+		"content": {
+			"word": "house",
+			"scrambled": "esuoh",
+			"hint": "A place where people live",
+			"explanation": "A house is a building where people live, typically where a family lives.",
+			"contextSentence": "I live in a small house with my parents."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "A1", "housing"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 10,
+			"timeLimit": 30,
+			"difficultyMultiplier": 1.0
+		}
+	},
+	{
+		"content": {
+			"word": "school",
+			"scrambled": "olohcs",
+			"hint": "A place where children learn",
+			"explanation": "A school is an institution designed for teaching students under the direction of teachers.",
+			"contextSentence": "I go to school every weekday morning."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "A1", "education"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 10,
+			"timeLimit": 30,
+			"difficultyMultiplier": 1.0
+		}
+	},
+	{
+		"content": {
+			"word": "apple",
+			"scrambled": "elppa",
+			"hint": "A round fruit that is often red or green",
+			"explanation": "An apple is a common round fruit with red, green, or yellow skin and crisp flesh.",
+			"contextSentence": "I eat an apple every morning for breakfast."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "vocabulary",
+			"subCategory": "food",
+			"tags": ["vocabulary", "word-scramble", "A1", "fruits"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 10,
+			"timeLimit": 30,
+			"difficultyMultiplier": 1.0
+		}
+	}
+]

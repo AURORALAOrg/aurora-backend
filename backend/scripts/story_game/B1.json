@@ -1,0 +1,1610 @@
+[
+	{
+		"content": {
+			"story": "When I was offered a job in another country, I had mixed feelings about accepting it. On the one hand, it was a great opportunity to advance my career and experience living in a different culture. On the other hand, I was worried about leaving my friends and family behind. After careful consideration, I decided to take the plunge. The first few months were challenging as I had to adapt to a new environment and learn the local customs. The language barrier was particularly difficult to overcome, even though I had taken some lessons before arriving. Gradually, I made new friends through a local community club, which helped me feel less isolated. Now, after two years, I consider this place my second home. Looking back, I'm glad I took the risk because it has broadened my horizons in ways I couldn't have imagined.",
+			"questions": [
+				{
+					"question": "What was the narrator's main concern about taking the job?",
+					"options": [
+						"The salary was too low",
+						"The job was too demanding",
+						"Leaving friends and family behind",
+						"The cost of living in another country"
+					],
+					"correct": 2,
+					"explanation": "The story mentions 'I was worried about leaving my friends and family behind.'"
+				},
+				{
+					"question": "What was particularly challenging for the narrator after moving?",
+					"options": [
+						"Finding accommodation",
+						"The weather",
+						"The language barrier",
+						"The local food"
+					],
+					"correct": 2,
+					"explanation": "The story states 'The language barrier was particularly difficult to overcome...'."
+				},
+				{
+					"question": "How did the narrator make new friends?",
+					"options": [
+						"Through work colleagues",
+						"Through a local community club",
+						"By taking language classes",
+						"Through social media"
+					],
+					"correct": 1,
+					"explanation": "The text says 'I made new friends through a local community club...'"
+				}
+			],
+			"summary": "A personal account of someone who took a job in another country, overcame initial challenges, and eventually came to feel at home in the new place."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "personal experience",
+			"tags": ["story", "reading", "B1", "expatriate", "career"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"story": "The small town of Millfield has been in the news recently due to an unusual weather phenomenon. For the past week, it has been raining fish - small silver fish that appear to fall from the sky during otherwise normal rainstorms. Scientists believe this strange occurrence is the result of a waterspout, a type of tornado that forms over water, which might have sucked up fish from a nearby lake. When the waterspout loses energy, the fish fall back to the ground, sometimes kilometers away from their original habitat. Local residents have mixed reactions to this bizarre event. Some see it as a bad omen, while others have been collecting the fish for their dinner tables. The town's mayor has invited marine biologists to study the phenomenon, hoping to find a definitive explanation. Meanwhile, Millfield has seen a surge in tourism as people from neighboring areas come to witness the 'fish rain' for themselves.",
+			"questions": [
+				{
+					"question": "What is believed to be the cause of the fish rain?",
+					"options": [
+						"Climate change",
+						"A waterspout",
+						"Illegal fishing practices",
+						"Birds dropping their catch"
+					],
+					"correct": 1,
+					"explanation": "The story explains that 'Scientists believe this strange occurrence is the result of a waterspout...'"
+				},
+				{
+					"question": "How have some local residents responded to the falling fish?",
+					"options": [
+						"They have moved away",
+						"They have complained to authorities",
+						"They have collected them for food",
+						"They have built shelters"
+					],
+					"correct": 2,
+					"explanation": "The text states 'Some see it as a bad omen, while others have been collecting the fish for their dinner tables.'"
+				},
+				{
+					"question": "What effect has this event had on Millfield?",
+					"options": [
+						"The town has been evacuated",
+						"Tourism has increased",
+						"The local economy has collapsed",
+						"Fishing has been banned"
+					],
+					"correct": 1,
+					"explanation": "According to the story, 'Millfield has seen a surge in tourism as people from neighboring areas come to witness the 'fish rain' for themselves.'"
+				}
+			],
+			"summary": "A report about the unusual phenomenon of fish falling from the sky in a small town, its possible scientific explanation, and the various reactions of locals and visitors."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "unusual events",
+			"tags": ["story", "reading", "B1", "weather", "phenomenon"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"story": "The city's old library was scheduled for demolition to make way for a modern shopping center. This decision had sparked protests among local residents who valued the historical building as part of their cultural heritage. The library had been standing for over a century and featured impressive Victorian architecture. A group of concerned citizens formed the 'Save Our Library' committee and organized a petition that gathered thousands of signatures. They also raised funds to hire a lawyer who discovered that the building was eligible for protected status. After a lengthy legal battle, the city council finally agreed to reconsider their plans. Last week, they announced a compromise solution: the library's facade would be preserved and incorporated into the new development, while a smaller, modern library would be housed inside. While not everyone was satisfied with this outcome, most people agreed that it was better than losing the building entirely. The case has highlighted the ongoing tension between commercial development and historical preservation in many cities around the world.",
+			"questions": [
+				{
+					"question": "What was supposed to replace the old library?",
+					"options": [
+						"A hospital",
+						"A shopping center",
+						"A parking garage",
+						"A museum"
+					],
+					"correct": 1,
+					"explanation": "The story begins with 'The city's old library was scheduled for demolition to make way for a modern shopping center.'"
+				},
+				{
+					"question": "What did the 'Save Our Library' committee do to protect the building?",
+					"options": [
+						"They bought the building",
+						"They organized a petition and hired a lawyer",
+						"They occupied the building",
+						"They appealed to the national government"
+					],
+					"correct": 1,
+					"explanation": "The text states they 'organized a petition that gathered thousands of signatures. They also raised funds to hire a lawyer...'"
+				},
+				{
+					"question": "What was the final compromise reached?",
+					"options": [
+						"The library would be completely preserved",
+						"The demolition would be delayed by ten years",
+						"The facade would be preserved and a smaller library included in the new development",
+						"The shopping center would be built in a different location"
+					],
+					"correct": 2,
+					"explanation": "The story explains that 'the library's facade would be preserved and incorporated into the new development, while a smaller, modern library would be housed inside.'"
+				}
+			],
+			"summary": "An account of local citizens' successful campaign to partially preserve a historic library building that was scheduled for demolition to make way for commercial development."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "community action",
+			"tags": ["story", "reading", "B1", "heritage", "activism"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"story": "Marina had always dreamed of opening her own restaurant. After working as a chef in various establishments for over a decade, she finally saved enough money to make her dream a reality. She found a small premises on a quiet street, not in the city center but in an up-and-coming neighborhood. The rent was affordable, which was crucial for her limited budget. Marina decided to focus on traditional recipes from her grandmother, with a modern twist. She wanted her restaurant to feel warm and inviting, like eating in someone's home. Before opening, she painted the walls herself and decorated with family photographs and plants. Her friends helped her build simple wooden tables and chairs. The opening night was a modest affair with just family and friends, but word soon spread about the delicious, homemade food. Within six months, customers had to book tables weeks in advance. A food critic from a national newspaper visited and wrote a glowing review, praising Marina's authentic approach and reasonable prices. Now, two years later, Marina is thinking about expanding to a second location, but she's determined to maintain the quality and personal touch that made her first restaurant so successful.",
+			"questions": [
+				{
+					"question": "What type of food does Marina serve in her restaurant?",
+					"options": [
+						"Fast food",
+						"International cuisine",
+						"Traditional recipes with a modern twist",
+						"Fine dining"
+					],
+					"correct": 2,
+					"explanation": "The story mentions 'Marina decided to focus on traditional recipes from her grandmother, with a modern twist.'"
+				},
+				{
+					"question": "How did Marina decorate her restaurant?",
+					"options": [
+						"With expensive artwork",
+						"With family photographs and plants",
+						"With modern furniture",
+						"With antiques"
+					],
+					"correct": 1,
+					"explanation": "The text states she 'painted the walls herself and decorated with family photographs and plants.'"
+				},
+				{
+					"question": "What is Marina considering doing now?",
+					"options": [
+						"Retiring",
+						"Changing the menu",
+						"Opening a second restaurant",
+						"Selling the business"
+					],
+					"correct": 2,
+					"explanation": "The story concludes with 'Marina is thinking about expanding to a second location...'"
+				}
+			],
+			"summary": "The story of Marina, who fulfills her dream of opening a restaurant serving traditional recipes in a warm, homey atmosphere, and achieves success through hard work and authenticity."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "entrepreneurship",
+			"tags": ["story", "reading", "B1", "restaurant", "business"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"story": "Paul never expected to become friends with his elderly neighbor, Mrs. Wilson. When he first moved into the apartment building, he barely noticed her except to say hello in the hallway. One day, however, he saw her struggling to carry her groceries up the stairs because the elevator was out of order. He offered to help and she gratefully accepted. As they climbed the stairs together, she told him she had lived in the building for forty years. Over the next few weeks, Paul started checking on Mrs. Wilson regularly. He discovered that she had been a professional pianist and had traveled all over the world performing concerts. She had fascinating stories about meeting famous musicians and visiting exotic places. In return for his help with heavy shopping and occasional household repairs, Mrs. Wilson began teaching Paul to play the piano, something he had always wanted to learn. Their unlikely friendship has enriched both their lives. Paul has gained a musical education and a window into a different era, while Mrs. Wilson has companionship and practical support that allows her to continue living independently in the home she loves.",
+			"questions": [
+				{
+					"question": "How did Paul and Mrs. Wilson's friendship begin?",
+					"options": [
+						"They met at a concert",
+						"Paul helped her with her groceries",
+						"They were introduced by a mutual friend",
+						"They met in a music class"
+					],
+					"correct": 1,
+					"explanation": "The story says 'One day, however, he saw her struggling to carry her groceries up the stairs... He offered to help and she gratefully accepted.'"
+				},
+				{
+					"question": "What was Mrs. Wilson's former profession?",
+					"options": ["Teacher", "Doctor", "Pianist", "Lawyer"],
+					"correct": 2,
+					"explanation": "The text reveals 'She had been a professional pianist and had traveled all over the world performing concerts.'"
+				},
+				{
+					"question": "What does Paul receive in return for helping Mrs. Wilson?",
+					"options": ["Money", "Piano lessons", "Cooking lessons", "Books"],
+					"correct": 1,
+					"explanation": "The story states 'In return for his help with heavy shopping and occasional household repairs, Mrs. Wilson began teaching Paul to play the piano...'"
+				}
+			],
+			"summary": "A story about an unexpected friendship between a young man and his elderly neighbor, where both benefit from the relationship in different ways."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "relationships",
+			"tags": ["story", "reading", "B1", "friendship", "intergenerational"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"story": "Sophie decided to join a photography club at her school. She had always enjoyed taking pictures of nature, but she wanted to learn more about how to use a camera properly. At the club, Sophie met other students who shared her interest. Together, they went on trips to the park and the city center to practice taking photos. Sophie learned about lighting, angles, and how to edit her pictures on a computer. After a few months, the club organized a photo exhibition. Sophie was proud to see her best photo displayed on the wall. Her friends and family came to see the exhibition and congratulated her on her progress.",
+			"questions": [
+				{
+					"question": "Why did Sophie join the photography club?",
+					"options": [
+						"To win a competition",
+						"To learn more about using a camera",
+						"To travel with friends",
+						"To buy a new camera"
+					],
+					"correct": 1,
+					"explanation": "The story says Sophie wanted to learn more about how to use a camera properly."
+				},
+				{
+					"question": "What did the club organize after a few months?",
+					"options": [
+						"A picnic",
+						"A photo exhibition",
+						"A sports event",
+						"A concert"
+					],
+					"correct": 1,
+					"explanation": "The story says the club organized a photo exhibition."
+				}
+			],
+			"summary": "Sophie joins a photography club, learns new skills, and participates in an exhibition."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "hobbies",
+			"tags": ["story", "reading", "B1", "photography", "club"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"story": "After moving to a new city, Daniel found it difficult to make friends at first. He missed his old school and the people he used to see every day. One day, his neighbor invited him to join a local football team. Daniel was nervous but decided to give it a try. He soon discovered that playing football helped him feel less lonely. He became friends with his teammates and started to enjoy living in the new city. Daniel's parents were happy to see him smile again.",
+			"questions": [
+				{
+					"question": "Why did Daniel feel lonely after moving to a new city?",
+					"options": [
+						"He didn't like football",
+						"He missed his old friends",
+						"He didn't like the weather",
+						"He was busy studying"
+					],
+					"correct": 1,
+					"explanation": "The story says Daniel missed his old school and the people he used to see every day."
+				},
+				{
+					"question": "What helped Daniel make new friends?",
+					"options": [
+						"Joining a football team",
+						"Going to the library",
+						"Taking music lessons",
+						"Learning a new language"
+					],
+					"correct": 0,
+					"explanation": "Daniel became friends with his teammates after joining the football team."
+				}
+			],
+			"summary": "Daniel overcomes loneliness after moving by joining a football team and making new friends."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "friendship",
+			"tags": ["story", "reading", "B1", "moving", "football"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"story": "Maria wanted to improve her English, so she started watching movies with English subtitles. At first, it was hard for her to understand everything, but she didn't give up. She wrote down new words and looked them up in a dictionary. Over time, Maria's listening skills improved, and she felt more confident speaking with her classmates. She even joined an English conversation group at school, where she made new friends from other countries.",
+			"questions": [
+				{
+					"question": "How did Maria try to improve her English?",
+					"options": [
+						"By reading books",
+						"By watching movies with English subtitles",
+						"By listening to music",
+						"By traveling abroad"
+					],
+					"correct": 1,
+					"explanation": "The story says Maria started watching movies with English subtitles."
+				},
+				{
+					"question": "What did Maria do when she found new words?",
+					"options": [
+						"Ignored them",
+						"Asked her teacher",
+						"Looked them up in a dictionary",
+						"Forgot them"
+					],
+					"correct": 2,
+					"explanation": "Maria wrote down new words and looked them up in a dictionary."
+				}
+			],
+			"summary": "Maria improves her English by watching movies and joining a conversation group."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "language learning",
+			"tags": ["story", "reading", "B1", "English", "movies"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"story": "Aiden's family decided to go camping in the mountains during the summer holidays. They packed a tent, sleeping bags, and enough food for a week. At the campsite, Aiden learned how to start a fire and cook meals outdoors. He enjoyed hiking with his parents and watching the stars at night. On the last day, Aiden caught his first fish in the river, which made the trip unforgettable.",
+			"questions": [
+				{
+					"question": "Where did Aiden's family go for their holiday?",
+					"options": [
+						"To the beach",
+						"To the mountains",
+						"To a city",
+						"To a farm"
+					],
+					"correct": 1,
+					"explanation": "The story says Aiden's family went camping in the mountains."
+				},
+				{
+					"question": "What did Aiden learn to do at the campsite?",
+					"options": [
+						"Swim",
+						"Start a fire and cook meals",
+						"Ride a horse",
+						"Paint"
+					],
+					"correct": 1,
+					"explanation": "Aiden learned how to start a fire and cook meals outdoors."
+				}
+			],
+			"summary": "Aiden goes camping with his family and learns new outdoor skills."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "holidays",
+			"tags": ["story", "reading", "B1", "camping", "mountains"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+	{
+		"content": {
+			"story": "Emma wanted to buy a gift for her mother's birthday. She saved her pocket money for several weeks and finally had enough to buy a beautiful necklace she saw in a shop window. On her mother's birthday, Emma gave her the necklace, and her mother was very touched by the thoughtful present. Emma felt proud of her hard work and happy to see her mother's smile.",
+			"questions": [
+				{
+					"question": "How did Emma get the money to buy the gift?",
+					"options": [
+						"Her father gave it to her",
+						"She saved her pocket money",
+						"She won a prize",
+						"She sold her old toys"
+					],
+					"correct": 1,
+					"explanation": "The story says Emma saved her pocket money for several weeks."
+				},
+				{
+					"question": "What did Emma buy for her mother?",
+					"options": ["A book", "A cake", "A necklace", "A dress"],
+					"correct": 2,
+					"explanation": "Emma bought a beautiful necklace for her mother."
+				}
+			],
+			"summary": "Emma saves money to buy her mother a special birthday gift."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "family",
+			"tags": ["story", "reading", "B1", "birthday", "gift"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Luca started volunteering at the animal shelter on weekends. He loved animals and wanted to help take care of the dogs and cats waiting for new homes. At first, Luca was nervous because he had never worked with so many animals before. The staff taught him how to feed them, clean their cages, and play with the younger puppies. Over time, Luca became more confident and even helped new volunteers learn the rules. He felt proud every time a pet was adopted and went to a loving family.",
+			"questions": [
+				{
+					"question": "Why did Luca start volunteering at the animal shelter?",
+					"options": [
+						"To earn money",
+						"To help animals",
+						"To meet new people",
+						"To learn about medicine"
+					],
+					"correct": 1,
+					"explanation": "The story says Luca loved animals and wanted to help take care of them."
+				},
+				{
+					"question": "What did Luca help new volunteers with?",
+					"options": [
+						"Feeding the animals",
+						"Learning the rules",
+						"Walking the dogs",
+						"Cleaning the cages"
+					],
+					"correct": 1,
+					"explanation": "Luca helped new volunteers learn the rules."
+				}
+			],
+			"summary": "Luca volunteers at an animal shelter and helps both animals and new volunteers."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "volunteering",
+			"tags": ["story", "reading", "B1", "animal shelter", "volunteering"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Hannah's school organized a science fair, and she decided to build a model volcano for her project. She spent several evenings researching how volcanoes erupt and gathering materials for her model. On the day of the science fair, Hannah demonstrated her volcano by mixing baking soda and vinegar to create a realistic eruption. Her classmates were impressed, and the science teacher praised her creativity. Hannah felt excited to share what she had learned.",
+			"questions": [
+				{
+					"question": "What did Hannah build for the science fair?",
+					"options": [
+						"A robot",
+						"A bridge",
+						"A volcano model",
+						"A solar system"
+					],
+					"correct": 2,
+					"explanation": "The story says Hannah built a model volcano."
+				},
+				{
+					"question": "How did Hannah make her volcano erupt?",
+					"options": [
+						"With water and sand",
+						"With baking soda and vinegar",
+						"With glue and paint",
+						"With clay and paper"
+					],
+					"correct": 1,
+					"explanation": "She mixed baking soda and vinegar to create an eruption."
+				}
+			],
+			"summary": "Hannah builds a volcano for the science fair and demonstrates an eruption."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "school projects",
+			"tags": ["story", "reading", "B1", "science fair", "volcano"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Jasper wanted to learn how to play the guitar, so he signed up for lessons at a local music school. At first, his fingers hurt and he found the chords difficult. However, Jasper practiced every day after school. His teacher noticed his progress and encouraged him to keep going. After a few months, Jasper could play his favorite songs and even performed at the school talent show. He was proud of his achievement.",
+			"questions": [
+				{
+					"question": "Why did Jasper sign up for music lessons?",
+					"options": [
+						"To learn piano",
+						"To learn guitar",
+						"To learn drums",
+						"To learn violin"
+					],
+					"correct": 1,
+					"explanation": "Jasper wanted to learn how to play the guitar."
+				},
+				{
+					"question": "What did Jasper do every day after school?",
+					"options": [
+						"Watched TV",
+						"Practiced guitar",
+						"Played football",
+						"Did homework"
+					],
+					"correct": 1,
+					"explanation": "He practiced every day after school."
+				}
+			],
+			"summary": "Jasper learns guitar and performs at the school talent show."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "music",
+			"tags": ["story", "reading", "B1", "guitar", "talent show"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Priya's family moved to a new country because of her father's job. At first, Priya missed her old friends and found it hard to adjust to a different language and culture. She joined an art class at her new school, where she met classmates from many countries. Drawing and painting together helped Priya feel more comfortable. She soon made friends and started to enjoy her new life.",
+			"questions": [
+				{
+					"question": "Why did Priya's family move to a new country?",
+					"options": [
+						"For a holiday",
+						"For her father's job",
+						"For better weather",
+						"For school"
+					],
+					"correct": 1,
+					"explanation": "Priya's family moved because of her father's job."
+				},
+				{
+					"question": "What helped Priya adjust to her new life?",
+					"options": [
+						"Learning to cook",
+						"Joining an art class",
+						"Playing football",
+						"Reading books"
+					],
+					"correct": 1,
+					"explanation": "Joining an art class helped Priya make friends and feel comfortable."
+				}
+			],
+			"summary": "Priya adjusts to a new country by joining an art class and making friends."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "moving",
+			"tags": ["story", "reading", "B1", "art class", "moving"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Felix decided to take part in a charity run to raise money for a children's hospital. He trained for several weeks, running every morning before school. On the day of the event, Felix felt nervous but determined. He finished the race and raised a good amount of money for the hospital. Felix was happy to help others and learned that hard work pays off.",
+			"questions": [
+				{
+					"question": "Why did Felix participate in the charity run?",
+					"options": [
+						"To win a prize",
+						"To raise money for a hospital",
+						"To meet friends",
+						"To become famous"
+					],
+					"correct": 1,
+					"explanation": "Felix joined the run to raise money for a children's hospital."
+				},
+				{
+					"question": "How did Felix prepare for the event?",
+					"options": [
+						"He watched TV",
+						"He trained every morning",
+						"He read books",
+						"He ate a lot"
+					],
+					"correct": 1,
+					"explanation": "Felix trained for several weeks, running every morning."
+				}
+			],
+			"summary": "Felix trains for a charity run and raises money for a hospital."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "charity",
+			"tags": ["story", "reading", "B1", "charity", "running"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Isabella joined her school's debate team to improve her public speaking skills. At first, she was nervous about speaking in front of an audience, but her coach encouraged her to practice regularly. Isabella learned to research topics, organize her arguments, and listen carefully to her opponents. After a few months, she participated in her first debate competition and felt proud of her progress, even though her team didn't win the top prize.",
+			"questions": [
+				{
+					"question": "Why did Isabella join the debate team?",
+					"options": [
+						"To make new friends",
+						"To improve her public speaking skills",
+						"To travel",
+						"To win prizes"
+					],
+					"correct": 1,
+					"explanation": "The story says Isabella joined to improve her public speaking skills."
+				},
+				{
+					"question": "What did Isabella learn from being on the debate team?",
+					"options": [
+						"How to cook",
+						"How to organize arguments",
+						"How to play chess",
+						"How to paint"
+					],
+					"correct": 1,
+					"explanation": "She learned to organize her arguments and listen carefully."
+				}
+			],
+			"summary": "Isabella gains confidence and skills by joining the debate team."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "school activities",
+			"tags": ["story", "reading", "B1", "debate", "school"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Tomás wanted to surprise his grandmother for her birthday. He decided to bake her favorite chocolate cake, even though he had never baked before. Tomás watched videos online, followed the recipe carefully, and asked his mother for help with the oven. The cake turned out delicious, and his grandmother was touched by his effort. Tomás was happy to see her smile and felt more confident in the kitchen.",
+			"questions": [
+				{
+					"question": "What did Tomás do for his grandmother's birthday?",
+					"options": [
+						"Bought a gift",
+						"Baked a cake",
+						"Wrote a letter",
+						"Took her to a restaurant"
+					],
+					"correct": 1,
+					"explanation": "Tomás baked her favorite chocolate cake."
+				},
+				{
+					"question": "Who helped Tomás with the oven?",
+					"options": ["His sister", "His friend", "His mother", "His neighbor"],
+					"correct": 2,
+					"explanation": "He asked his mother for help with the oven."
+				}
+			],
+			"summary": "Tomás bakes a cake for his grandmother and gains confidence."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "family",
+			"tags": ["story", "reading", "B1", "baking", "birthday"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Sven and his friends organized a neighborhood clean-up day. They picked up litter in the park, painted benches, and planted flowers. The local newspaper wrote an article about their efforts, and more people joined the next time. Sven felt proud to help make his community a better place.",
+			"questions": [
+				{
+					"question": "What did Sven and his friends do for their neighborhood?",
+					"options": [
+						"Built a playground",
+						"Organized a clean-up day",
+						"Held a festival",
+						"Opened a shop"
+					],
+					"correct": 1,
+					"explanation": "They organized a clean-up day and improved the park."
+				},
+				{
+					"question": "What was the result of the newspaper article?",
+					"options": [
+						"Fewer people visited the park",
+						"More people joined the clean-up",
+						"The park was closed",
+						"The benches were removed"
+					],
+					"correct": 1,
+					"explanation": "More people joined the next clean-up after the article."
+				}
+			],
+			"summary": "Sven helps organize a clean-up and inspires others in his community."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "community action",
+			"tags": ["story", "reading", "B1", "clean-up", "community"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Aya moved to a new school and was worried about making friends. She joined the chess club and soon discovered that she shared a passion for the game with other students. Aya practiced regularly and even taught a new member how to play. She felt happy to be part of a group and learned that trying new things can lead to new friendships.",
+			"questions": [
+				{
+					"question": "How did Aya make friends at her new school?",
+					"options": [
+						"By joining the chess club",
+						"By playing football",
+						"By singing in the choir",
+						"By joining the art class"
+					],
+					"correct": 0,
+					"explanation": "Aya made friends by joining the chess club."
+				},
+				{
+					"question": "What did Aya do for a new member?",
+					"options": [
+						"Helped with homework",
+						"Taught them chess",
+						"Gave them a tour",
+						"Shared her lunch"
+					],
+					"correct": 1,
+					"explanation": "She taught a new member how to play chess."
+				}
+			],
+			"summary": "Aya finds friends and confidence through the chess club."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "friendship",
+			"tags": ["story", "reading", "B1", "chess", "school"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Mateo's family adopted a rescue dog from the animal shelter. At first, the dog was shy and afraid of loud noises. Mateo spent time playing gently and giving the dog treats. Gradually, the dog became more comfortable and started wagging its tail when Mateo came home from school. The whole family was happy to give the dog a loving home.",
+			"questions": [
+				{
+					"question": "Where did Mateo's family get their dog?",
+					"options": [
+						"From a pet shop",
+						"From a friend",
+						"From the animal shelter",
+						"From a farm"
+					],
+					"correct": 2,
+					"explanation": "They adopted the dog from the animal shelter."
+				},
+				{
+					"question": "How did Mateo help the dog feel comfortable?",
+					"options": [
+						"By playing gently and giving treats",
+						"By taking it to the park",
+						"By teaching tricks",
+						"By giving it a bath"
+					],
+					"correct": 0,
+					"explanation": "Mateo played gently and gave the dog treats."
+				}
+			],
+			"summary": "Mateo's family adopts a shy dog and helps it feel at home."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "pets",
+			"tags": ["story", "reading", "B1", "dog", "adoption"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Leah and her classmates decided to plant a vegetable garden at school. They prepared the soil, planted seeds, and watered the garden every day. Over time, the students watched their vegetables grow and learned about healthy eating. At the end of the term, they harvested the crops and made a salad together in class.",
+			"questions": [
+				{
+					"question": "What project did Leah and her classmates start?",
+					"options": [
+						"A painting project",
+						"A vegetable garden",
+						"A science experiment",
+						"A sports club"
+					],
+					"correct": 1,
+					"explanation": "They planted a vegetable garden at school."
+				},
+				{
+					"question": "What did the students do with the vegetables?",
+					"options": [
+						"Sold them",
+						"Threw them away",
+						"Made a salad",
+						"Fed them to animals"
+					],
+					"correct": 2,
+					"explanation": "They made a salad together in class."
+				}
+			],
+			"summary": "Leah and her classmates grow vegetables and learn about healthy eating."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "school projects",
+			"tags": ["story", "reading", "B1", "garden", "school"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Omar's family moved to a new apartment building. He was shy at first, but one day he met his neighbor, Lila, in the elevator. They discovered they both liked playing board games. Soon, they became good friends and started inviting other children from the building to join their games every weekend.",
+			"questions": [
+				{
+					"question": "How did Omar and Lila meet?",
+					"options": [
+						"At school",
+						"In the elevator",
+						"At the park",
+						"In the garden"
+					],
+					"correct": 1,
+					"explanation": "They met in the elevator of the new apartment building."
+				},
+				{
+					"question": "What did Omar and Lila do together?",
+					"options": [
+						"Played board games",
+						"Went swimming",
+						"Watched movies",
+						"Read books"
+					],
+					"correct": 0,
+					"explanation": "They liked playing board games together."
+				}
+			],
+			"summary": "Omar and Lila become friends through board games in their new apartment building."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "friendship",
+			"tags": ["story", "reading", "B1", "apartment", "games"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Julia wanted to improve her fitness, so she started jogging in the park every morning. At first, she could only run for a few minutes, but she gradually increased her distance. After a month, Julia felt stronger and more energetic. She even encouraged her brother to join her, and now they run together before school.",
+			"questions": [
+				{
+					"question": "Why did Julia start jogging?",
+					"options": [
+						"To prepare for a race",
+						"To improve her fitness",
+						"To meet friends",
+						"To win a prize"
+					],
+					"correct": 1,
+					"explanation": "Julia wanted to improve her fitness."
+				},
+				{
+					"question": "Who joined Julia on her runs?",
+					"options": ["Her mother", "Her friend", "Her brother", "Her teacher"],
+					"correct": 2,
+					"explanation": "Her brother joined her on the runs."
+				}
+			],
+			"summary": "Julia improves her fitness by jogging and inspires her brother to join."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "health",
+			"tags": ["story", "reading", "B1", "jogging", "fitness"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Carla's class went on a field trip to the city museum. She was fascinated by the ancient artifacts and asked the guide many questions. Carla wrote a report about her favorite exhibit, which her teacher praised for its detail and enthusiasm.",
+			"questions": [
+				{
+					"question": "Where did Carla's class go on a field trip?",
+					"options": [
+						"To the zoo",
+						"To the museum",
+						"To the theater",
+						"To the library"
+					],
+					"correct": 1,
+					"explanation": "They visited the city museum."
+				},
+				{
+					"question": "What did Carla do after the trip?",
+					"options": [
+						"Made a painting",
+						"Wrote a report",
+						"Took photos",
+						"Gave a speech"
+					],
+					"correct": 1,
+					"explanation": "She wrote a report about her favorite exhibit."
+				}
+			],
+			"summary": "Carla visits a museum and writes a detailed report about her favorite exhibit."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "school trips",
+			"tags": ["story", "reading", "B1", "museum", "field trip"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ethan wanted to learn how to cook, so he asked his grandmother to teach him her favorite soup recipe. Together, they went shopping for fresh vegetables and herbs. Ethan carefully followed each step, chopping and stirring as his grandmother explained the process. When the soup was ready, the whole family enjoyed it for dinner, and Ethan felt proud of his new skill.",
+			"questions": [
+				{
+					"question": "Who taught Ethan how to cook soup?",
+					"options": [
+						"His mother",
+						"His grandmother",
+						"His friend",
+						"His teacher"
+					],
+					"correct": 1,
+					"explanation": "Ethan's grandmother taught him her favorite soup recipe."
+				},
+				{
+					"question": "What did Ethan and his grandmother do together first?",
+					"options": [
+						"Cooked the soup",
+						"Went shopping for vegetables",
+						"Set the table",
+						"Cleaned the kitchen"
+					],
+					"correct": 1,
+					"explanation": "They went shopping for fresh vegetables and herbs."
+				}
+			],
+			"summary": "Ethan learns to cook soup with his grandmother and shares it with his family."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "family",
+			"tags": ["story", "reading", "B1", "cooking", "soup"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Maya joined a local theater group because she loved acting. She practiced her lines every evening and worked with the director to improve her performance. On the night of the play, Maya was nervous but remembered everything she had learned. The audience applauded, and Maya felt a great sense of accomplishment.",
+			"questions": [
+				{
+					"question": "Why did Maya join the theater group?",
+					"options": [
+						"To meet new people",
+						"Because she loved acting",
+						"To learn to sing",
+						"To travel"
+					],
+					"correct": 1,
+					"explanation": "Maya joined because she loved acting."
+				},
+				{
+					"question": "How did Maya prepare for the play?",
+					"options": [
+						"Practiced her lines",
+						"Watched movies",
+						"Read books",
+						"Painted scenery"
+					],
+					"correct": 0,
+					"explanation": "She practiced her lines every evening."
+				}
+			],
+			"summary": "Maya gains confidence and joy from acting in a theater group."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "hobbies",
+			"tags": ["story", "reading", "B1", "theater", "acting"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Lucas and his father built a birdhouse for their garden. Lucas learned how to use simple tools and paint the birdhouse in bright colors. After they placed it outside, they watched as birds started visiting their garden. Lucas enjoyed seeing the birds and felt proud of their project.",
+			"questions": [
+				{
+					"question": "What did Lucas and his father build?",
+					"options": ["A treehouse", "A birdhouse", "A bench", "A fence"],
+					"correct": 1,
+					"explanation": "They built a birdhouse for their garden."
+				},
+				{
+					"question": "What did Lucas enjoy after finishing the project?",
+					"options": [
+						"Watching birds visit",
+						"Playing football",
+						"Reading books",
+						"Planting flowers"
+					],
+					"correct": 0,
+					"explanation": "Lucas enjoyed watching birds visit the birdhouse."
+				}
+			],
+			"summary": "Lucas learns new skills building a birdhouse and enjoys watching birds in the garden."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "family",
+			"tags": ["story", "reading", "B1", "birdhouse", "garden"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Nina wanted to help her community, so she started collecting books for the local library. She asked her friends and neighbors to donate books they no longer needed. Nina organized the books by genre and delivered them to the library, where the staff thanked her for her hard work.",
+			"questions": [
+				{
+					"question": "What did Nina collect for the library?",
+					"options": ["Toys", "Books", "Clothes", "Games"],
+					"correct": 1,
+					"explanation": "Nina collected books for the local library."
+				},
+				{
+					"question": "How did Nina organize the books?",
+					"options": ["By author", "By genre", "By color", "By size"],
+					"correct": 1,
+					"explanation": "She organized the books by genre."
+				}
+			],
+			"summary": "Nina helps her community by collecting and organizing books for the library."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "community action",
+			"tags": ["story", "reading", "B1", "library", "books"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Lina started a recycling program at her school after learning about environmental issues in class. She placed bins in every classroom and explained to her classmates how to separate paper, plastic, and metal. Soon, the school reduced its waste, and Lina was invited to speak at a community event about her project.",
+			"questions": [
+				{
+					"question": "What did Lina start at her school?",
+					"options": [
+						"A sports club",
+						"A recycling program",
+						"A music band",
+						"A book club"
+					],
+					"correct": 1,
+					"explanation": "Lina started a recycling program at her school."
+				},
+				{
+					"question": "What was the result of Lina's project?",
+					"options": [
+						"The school reduced its waste",
+						"The school built a garden",
+						"The school held a concert",
+						"The school bought new books"
+					],
+					"correct": 0,
+					"explanation": "The school reduced its waste thanks to Lina's program."
+				}
+			],
+			"summary": "Lina helps her school recycle and shares her project with the community."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "environment",
+			"tags": ["story", "reading", "B1", "recycling", "school"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Owen learned how to swim last summer at the local pool. At first, he was afraid to put his head under water, but his instructor was patient and encouraging. After a few weeks, Owen could swim across the pool without stopping. He felt proud and excited to join his friends at the beach for the first time.",
+			"questions": [
+				{
+					"question": "What skill did Owen learn last summer?",
+					"options": [
+						"Riding a bike",
+						"Swimming",
+						"Playing football",
+						"Painting"
+					],
+					"correct": 1,
+					"explanation": "Owen learned how to swim last summer."
+				},
+				{
+					"question": "Who helped Owen learn to swim?",
+					"options": [
+						"His friend",
+						"His instructor",
+						"His father",
+						"His brother"
+					],
+					"correct": 1,
+					"explanation": "Owen's instructor was patient and encouraging."
+				}
+			],
+			"summary": "Owen learns to swim and overcomes his fear of water."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "sports",
+			"tags": ["story", "reading", "B1", "swimming", "learning"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Priya and her brother decided to build a treehouse in their backyard. They drew plans, gathered materials, and worked together every weekend. Their father helped with the difficult parts, and soon the treehouse was finished. Priya and her brother invited friends to play, and the treehouse became the favorite spot in the neighborhood.",
+			"questions": [
+				{
+					"question": "What did Priya and her brother build?",
+					"options": ["A garden", "A treehouse", "A swing", "A pond"],
+					"correct": 1,
+					"explanation": "They built a treehouse in their backyard."
+				},
+				{
+					"question": "Who helped with the difficult parts?",
+					"options": [
+						"Their mother",
+						"Their neighbor",
+						"Their father",
+						"Their teacher"
+					],
+					"correct": 2,
+					"explanation": "Their father helped with the difficult parts."
+				}
+			],
+			"summary": "Priya and her brother build a treehouse and make it a popular place for friends."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "family",
+			"tags": ["story", "reading", "B1", "treehouse", "siblings"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Sofia started a book club at her school. She invited classmates to read a new book each month and meet to discuss their favorite characters and scenes. The club became very popular, and even some teachers joined. Sofia was happy to see so many people enjoying reading together.",
+			"questions": [
+				{
+					"question": "What did Sofia start at her school?",
+					"options": [
+						"A sports team",
+						"A book club",
+						"A music band",
+						"A cooking class"
+					],
+					"correct": 1,
+					"explanation": "Sofia started a book club at her school."
+				},
+				{
+					"question": "Who joined the book club besides students?",
+					"options": ["Parents", "Teachers", "Neighbors", "Coaches"],
+					"correct": 1,
+					"explanation": "Even some teachers joined the book club."
+				}
+			],
+			"summary": "Sofia starts a book club that grows to include students and teachers."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "school activities",
+			"tags": ["story", "reading", "B1", "book club", "reading"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ben's family moved to a house with a big garden. Ben decided to plant sunflowers and watched them grow taller every week. He took photos to measure their progress and entered one in a local gardening contest. Ben won second place and was proud of his hard work.",
+			"questions": [
+				{
+					"question": "What did Ben plant in his garden?",
+					"options": ["Tomatoes", "Sunflowers", "Carrots", "Roses"],
+					"correct": 1,
+					"explanation": "Ben planted sunflowers and watched them grow."
+				},
+				{
+					"question": "What contest did Ben enter?",
+					"options": [
+						"A cooking contest",
+						"A gardening contest",
+						"A photo contest",
+						"A running race"
+					],
+					"correct": 1,
+					"explanation": "He entered a local gardening contest."
+				}
+			],
+			"summary": "Ben grows sunflowers and wins a prize in a gardening contest."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "hobbies",
+			"tags": ["story", "reading", "B1", "sunflowers", "gardening"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ella and her friends organized a bake sale to raise money for a school trip. They baked cookies, cakes, and muffins, and decorated the stall with colorful signs. The bake sale was a big success, and they raised enough money to pay for the whole class to go on the trip.",
+			"questions": [
+				{
+					"question": "Why did Ella and her friends organize a bake sale?",
+					"options": [
+						"To buy books",
+						"To raise money for a trip",
+						"To celebrate a birthday",
+						"To help a charity"
+					],
+					"correct": 1,
+					"explanation": "They organized a bake sale to raise money for a school trip."
+				},
+				{
+					"question": "What did they sell at the bake sale?",
+					"options": [
+						"Sandwiches",
+						"Cookies, cakes, and muffins",
+						"Fruit",
+						"Drinks"
+					],
+					"correct": 1,
+					"explanation": "They baked cookies, cakes, and muffins."
+				}
+			],
+			"summary": "Ella and friends raise money for a school trip with a successful bake sale."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "school activities",
+			"tags": ["story", "reading", "B1", "bake sale", "fundraising"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Hugo joined a chess tournament at the community center. He practiced every day after school and learned new strategies from his coach. During the tournament, Hugo won several matches and made new friends who shared his interest in chess.",
+			"questions": [
+				{
+					"question": "What tournament did Hugo join?",
+					"options": [
+						"A football tournament",
+						"A chess tournament",
+						"A music competition",
+						"A spelling bee"
+					],
+					"correct": 1,
+					"explanation": "Hugo joined a chess tournament at the community center."
+				},
+				{
+					"question": "What did Hugo gain besides winning matches?",
+					"options": ["Money", "New friends", "A trophy", "A new coach"],
+					"correct": 1,
+					"explanation": "He made new friends who shared his interest in chess."
+				}
+			],
+			"summary": "Hugo practices chess and makes new friends at a tournament."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "hobbies",
+			"tags": ["story", "reading", "B1", "chess", "tournament"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Mila's class adopted a stray cat that started visiting the schoolyard. The students took turns feeding and caring for the cat, and the teacher taught them about responsibility and kindness to animals. The cat became a beloved part of the school, and everyone looked forward to seeing her each day.",
+			"questions": [
+				{
+					"question": "What animal did Mila's class adopt?",
+					"options": ["A dog", "A cat", "A rabbit", "A bird"],
+					"correct": 1,
+					"explanation": "They adopted a stray cat that visited the schoolyard."
+				},
+				{
+					"question": "What did the teacher teach the students?",
+					"options": [
+						"Math",
+						"Responsibility and kindness to animals",
+						"History",
+						"Art"
+					],
+					"correct": 1,
+					"explanation": "The teacher taught them about responsibility and kindness to animals."
+				}
+			],
+			"summary": "Mila's class learns responsibility by caring for a stray cat at school."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "school life",
+			"tags": ["story", "reading", "B1", "cat", "responsibility"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	},
+
+	{
+		"content": {
+			"story": "Jin learned sign language so he could communicate with a new student in his class who was deaf. Jin practiced every evening and soon was able to have simple conversations. The new student was happy to have a friend, and the rest of the class became interested in learning sign language too.",
+			"questions": [
+				{
+					"question": "Why did Jin learn sign language?",
+					"options": [
+						"To become a teacher",
+						"To talk to a new student",
+						"To travel",
+						"To watch TV"
+					],
+					"correct": 1,
+					"explanation": "Jin learned sign language to communicate with a new student who was deaf."
+				},
+				{
+					"question": "What happened after Jin learned sign language?",
+					"options": [
+						"The class became interested in learning it",
+						"Jin moved to another school",
+						"The new student left",
+						"Jin forgot it"
+					],
+					"correct": 0,
+					"explanation": "The rest of the class became interested in learning sign language too."
+				}
+			],
+			"summary": "Jin makes a new friend and inspires his class by learning sign language."
+		},
+		"metadata": {
+			"englishLevel": "B1",
+			"difficulty": "medium",
+			"category": "reading",
+			"subCategory": "friendship",
+			"tags": ["story", "reading", "B1", "sign language", "inclusion"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 20,
+			"timeLimit": 200,
+			"difficultyMultiplier": 1.5
+		}
+	}
+]

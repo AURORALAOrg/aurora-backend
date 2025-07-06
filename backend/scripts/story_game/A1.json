@@ -1,0 +1,1923 @@
+[
+	{
+		"content": {
+			"story": "My name is Tom. I am 8 years old. I live in a small house with my family. I have a mother, a father, and a sister. My sister's name is Anna. She is 6 years old. We have a dog too. His name is Spot. Spot is black and white. Every morning, I wake up at 7 o'clock. I eat breakfast with my family. Then I go to school. I like school. My favorite subject is math. After school, I play with my friends. We play football in the park. In the evening, I do my homework and watch TV. I go to bed at 9 o'clock.",
+			"questions": [
+				{
+					"question": "How old is Tom?",
+					"options": [
+						"6 years old",
+						"7 years old",
+						"8 years old",
+						"9 years old"
+					],
+					"correct": 2,
+					"explanation": "The story says 'I am 8 years old.'"
+				},
+				{
+					"question": "What is Tom's sister's name?",
+					"options": ["Anna", "Sarah", "Emma", "Lisa"],
+					"correct": 0,
+					"explanation": "The story says 'My sister's name is Anna.'"
+				},
+				{
+					"question": "What color is Spot?",
+					"options": ["Brown", "Black and white", "White", "Black"],
+					"correct": 1,
+					"explanation": "The story says 'Spot is black and white.'"
+				}
+			],
+			"summary": "This is a simple story about a boy named Tom, his family, and his daily routine."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "daily life",
+			"tags": ["story", "reading", "A1", "daily routine"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+	{
+		"content": {
+			"story": "Sarah lives in a big city. She works in a hospital. She is a doctor. Sarah helps sick people get better. She works from Monday to Friday. She starts work at 8 o'clock in the morning. She finishes work at 5 o'clock in the afternoon. On Saturday and Sunday, Sarah doesn't work. She stays at home and reads books. She likes to read about travel. Sarah wants to visit many countries. Last year, she went to Japan. She loved the food and the people. Next year, she wants to go to Italy.",
+			"questions": [
+				{
+					"question": "What is Sarah's job?",
+					"options": ["Teacher", "Nurse", "Doctor", "Police officer"],
+					"correct": 2,
+					"explanation": "The story says 'She is a doctor.'"
+				},
+				{
+					"question": "When does Sarah work?",
+					"options": [
+						"Every day",
+						"Monday to Friday",
+						"Monday to Saturday",
+						"Only on weekends"
+					],
+					"correct": 1,
+					"explanation": "The story says 'She works from Monday to Friday.'"
+				},
+				{
+					"question": "What does Sarah like to read about?",
+					"options": ["Medicine", "Travel", "Food", "History"],
+					"correct": 1,
+					"explanation": "The story says 'She likes to read about travel.'"
+				}
+			],
+			"summary": "A story about Sarah, a doctor who works in a hospital and enjoys traveling during her free time."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "work life",
+			"tags": ["story", "reading", "A1", "jobs"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+	{
+		"content": {
+			"story": "This is Peter. Peter is a student. He goes to school from Monday to Friday. His school starts at 8:30 in the morning. Peter's favorite subject is science. He likes to learn about animals. After school, Peter does his homework. Then he helps his mother in the kitchen. In the evening, Peter plays with his toys. He has many toy cars. Sometimes, Peter and his father play football in the garden. Peter is happy when he plays football with his father.",
+			"questions": [
+				{
+					"question": "What is Peter's favorite subject?",
+					"options": ["Math", "Science", "English", "History"],
+					"correct": 1,
+					"explanation": "The story says 'Peter's favorite subject is science.'"
+				},
+				{
+					"question": "What toys does Peter have?",
+					"options": ["Dolls", "Books", "Cars", "Balls"],
+					"correct": 2,
+					"explanation": "The story says 'He has many toy cars.'"
+				},
+				{
+					"question": "What sport does Peter play with his father?",
+					"options": ["Basketball", "Football", "Tennis", "Baseball"],
+					"correct": 1,
+					"explanation": "The story says 'Sometimes, Peter and his father play football in the garden.'"
+				}
+			],
+			"summary": "A story about a boy named Peter, his school life, and activities he does after school."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "school life",
+			"tags": ["story", "reading", "A1", "school"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+	{
+		"content": {
+			"story": "Lisa goes to the zoo. She sees many animals. She sees elephants, tigers, and monkeys. Lisa likes the monkeys best. The monkeys jump from tree to tree. They are very funny. Lisa takes photos of the animals with her camera. She eats ice cream at the zoo. It is a hot day. Lisa is happy at the zoo. She wants to come again next week.",
+			"questions": [
+				{
+					"question": "Where does Lisa go?",
+					"options": ["Park", "School", "Zoo", "Beach"],
+					"correct": 2,
+					"explanation": "The story says 'Lisa goes to the zoo.'"
+				},
+				{
+					"question": "Which animals does Lisa like best?",
+					"options": ["Elephants", "Tigers", "Monkeys", "Lions"],
+					"correct": 2,
+					"explanation": "The story says 'Lisa likes the monkeys best.'"
+				},
+				{
+					"question": "What does Lisa eat at the zoo?",
+					"options": ["Sandwich", "Pizza", "Ice cream", "Fruit"],
+					"correct": 2,
+					"explanation": "The story says 'She eats ice cream at the zoo.'"
+				}
+			],
+			"summary": "A story about a girl named Lisa who visits the zoo and enjoys seeing the animals, especially the monkeys."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "leisure activities",
+			"tags": ["story", "reading", "A1", "zoo"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+	{
+		"content": {
+			"story": "Jack has a small shop. He sells fruits and vegetables. People come to his shop every day. They buy apples, oranges, potatoes, and carrots. Jack opens his shop at 7 in the morning. He closes his shop at 8 in the evening. Jack works hard. On Sunday, the shop is closed. Jack visits his parents on Sunday. His mother makes a nice lunch. Jack likes Sundays.",
+			"questions": [
+				{
+					"question": "What does Jack sell?",
+					"options": ["Clothes", "Toys", "Books", "Fruits and vegetables"],
+					"correct": 3,
+					"explanation": "The story says 'He sells fruits and vegetables.'"
+				},
+				{
+					"question": "When does Jack close his shop?",
+					"options": [
+						"7 in the morning",
+						"7 in the evening",
+						"8 in the morning",
+						"8 in the evening"
+					],
+					"correct": 3,
+					"explanation": "The story says 'He closes his shop at 8 in the evening.'"
+				},
+				{
+					"question": "What day is the shop closed?",
+					"options": ["Monday", "Friday", "Saturday", "Sunday"],
+					"correct": 3,
+					"explanation": "The story says 'On Sunday, the shop is closed.'"
+				}
+			],
+			"summary": "A story about Jack who owns a small shop selling fruits and vegetables, and visits his parents on Sundays when his shop is closed."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "work",
+			"tags": ["story", "reading", "A1", "shop", "work"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+	{
+		"content": {
+			"story": "Mary likes to cook. Today, she makes a cake. First, she puts flour, sugar, and eggs in a bowl. She mixes them well. Then, she puts the mix in the oven. The cake is ready after 30 minutes. It smells very good. Mary's children come home from school. They are happy to eat the cake. Mary is happy too.",
+			"questions": [
+				{
+					"question": "What does Mary make today?",
+					"options": ["Bread", "Cake", "Pizza", "Soup"],
+					"correct": 1,
+					"explanation": "The story says 'Today, she makes a cake.'"
+				},
+				{
+					"question": "How long does the cake take in the oven?",
+					"options": ["15 minutes", "20 minutes", "30 minutes", "45 minutes"],
+					"correct": 2,
+					"explanation": "The story says 'The cake is ready after 30 minutes.'"
+				},
+				{
+					"question": "How do Mary's children feel about the cake?",
+					"options": ["Sad", "Happy", "Angry", "Tired"],
+					"correct": 1,
+					"explanation": "The story says 'They are happy to eat the cake.'"
+				}
+			],
+			"summary": "A story about Mary who bakes a cake for her children to enjoy when they return from school."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "food and cooking",
+			"tags": ["story", "reading", "A1", "cooking", "food"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+	{
+		"content": {
+			"story": "Ben has a new bike. It is red and black. Ben rides his bike to school every day. It takes him 10 minutes to get to school on his bike. One day, it rains. Ben cannot ride his bike. He walks to school. It takes him 30 minutes to walk. Ben is late for school. His teacher is not happy. The next day, the sun shines. Ben rides his bike again. He is happy.",
+			"questions": [
+				{
+					"question": "What color is Ben's bike?",
+					"options": [
+						"Blue and white",
+						"Red and yellow",
+						"Green and black",
+						"Red and black"
+					],
+					"correct": 3,
+					"explanation": "The story says 'It is red and black.'"
+				},
+				{
+					"question": "Why can't Ben ride his bike one day?",
+					"options": [
+						"It is broken",
+						"It is raining",
+						"He is sick",
+						"The bike is stolen"
+					],
+					"correct": 1,
+					"explanation": "The story says 'One day, it rains. Ben cannot ride his bike.'"
+				},
+				{
+					"question": "How long does it take Ben to walk to school?",
+					"options": ["10 minutes", "20 minutes", "30 minutes", "40 minutes"],
+					"correct": 2,
+					"explanation": "The story says 'It takes him 30 minutes to walk.'"
+				}
+			],
+			"summary": "A story about a boy named Ben who rides his bike to school but has to walk when it rains, causing him to be late."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "transportation",
+			"tags": ["story", "reading", "A1", "transportation", "school"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+	{
+		"content": {
+			"story": "Emma and her family go to the beach. It is a sunny day. Emma builds a sandcastle. Her brother swims in the sea. Her parents sit on chairs and read books. Emma's dog runs on the sand. In the afternoon, they eat lunch. They have sandwiches and fruit. Emma's father buys ice cream for everyone. At 6 o'clock, they go home. It is a good day at the beach.",
+			"questions": [
+				{
+					"question": "What does Emma build at the beach?",
+					"options": ["A boat", "A sandcastle", "A house", "A tower"],
+					"correct": 1,
+					"explanation": "The story says 'Emma builds a sandcastle.'"
+				},
+				{
+					"question": "What do Emma's parents do at the beach?",
+					"options": ["Swim", "Play", "Read books", "Sleep"],
+					"correct": 2,
+					"explanation": "The story says 'Her parents sit on chairs and read books.'"
+				},
+				{
+					"question": "What do they have for lunch?",
+					"options": [
+						"Pasta and salad",
+						"Pizza and juice",
+						"Sandwiches and fruit",
+						"Chicken and rice"
+					],
+					"correct": 2,
+					"explanation": "The story says 'They have sandwiches and fruit.'"
+				}
+			],
+			"summary": "A story about Emma and her family spending a day at the beach, doing various activities and having lunch together."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "leisure activities",
+			"tags": ["story", "reading", "A1", "beach", "family"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+	{
+		"content": {
+			"story": "David is a farmer. He wakes up at 5 o'clock every morning. He has many animals on his farm. He has cows, chickens, and pigs. First, David feeds the animals. Then he collects eggs from the chickens. He gets milk from the cows. David works all day on his farm. In the evening, he is very tired. He goes to bed early. He likes his life on the farm.",
+			"questions": [
+				{
+					"question": "What time does David wake up?",
+					"options": ["4 o'clock", "5 o'clock", "6 o'clock", "7 o'clock"],
+					"correct": 1,
+					"explanation": "The story says 'He wakes up at 5 o'clock every morning.'"
+				},
+				{
+					"question": "What animals does David have?",
+					"options": [
+						"Dogs, cats, and birds",
+						"Horses, sheep, and goats",
+						"Cows, chickens, and pigs",
+						"Rabbits, ducks, and cows"
+					],
+					"correct": 2,
+					"explanation": "The story says 'He has cows, chickens, and pigs.'"
+				},
+				{
+					"question": "How does David feel in the evening?",
+					"options": ["Happy", "Sad", "Angry", "Tired"],
+					"correct": 3,
+					"explanation": "The story says 'In the evening, he is very tired.'"
+				}
+			],
+			"summary": "A story about David, a farmer who takes care of animals on his farm and works hard every day."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "occupation",
+			"tags": ["story", "reading", "A1", "farm", "animals"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+	{
+		"content": {
+			"story": "Jenny is 10 years old. She has a pet fish. The fish's name is Bubble. Bubble lives in a glass bowl. Every morning, Jenny gives food to Bubble. On Monday, Jenny's fish looks sick. It doesn't move much. Jenny is sad. Her mother takes her to the pet shop. They buy medicine for Bubble. Jenny puts the medicine in the water. The next day, Bubble swims around happily. Jenny is very happy.",
+			"questions": [
+				{
+					"question": "What pet does Jenny have?",
+					"options": ["A dog", "A cat", "A bird", "A fish"],
+					"correct": 3,
+					"explanation": "The story says 'She has a pet fish.'"
+				},
+				{
+					"question": "What is the name of Jenny's pet?",
+					"options": ["Splash", "Bubble", "Goldie", "Nemo"],
+					"correct": 1,
+					"explanation": "The story says 'The fish's name is Bubble.'"
+				},
+				{
+					"question": "What happens to Bubble on Monday?",
+					"options": [
+						"It jumps out of the bowl",
+						"It looks sick",
+						"It gets a new bowl",
+						"It changes color"
+					],
+					"correct": 1,
+					"explanation": "The story says 'On Monday, Jenny's fish looks sick.'"
+				}
+			],
+			"summary": "A story about a girl named Jenny whose pet fish gets sick, and how she helps it get better with medicine."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "pets",
+			"tags": ["story", "reading", "A1", "pets", "animals"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Anna loves to draw. Every day after school, she takes her colored pencils and draws pictures of her family and friends. Her favorite thing to draw is her cat, Whiskers. Anna gives her drawings to her parents and they put them on the fridge.",
+			"questions": [
+				{
+					"question": "What does Anna like to do after school?",
+					"options": [
+						"Read books",
+						"Draw pictures",
+						"Play football",
+						"Watch TV"
+					],
+					"correct": 1,
+					"explanation": "The story says 'Anna loves to draw.'"
+				},
+				{
+					"question": "What is Anna's cat's name?",
+					"options": ["Tiger", "Whiskers", "Snowball", "Shadow"],
+					"correct": 1,
+					"explanation": "The story says 'Her favorite thing to draw is her cat, Whiskers.'"
+				}
+			],
+			"summary": "A story about Anna, a girl who loves to draw, especially her cat Whiskers."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "hobbies",
+			"tags": ["story", "reading", "A1", "drawing", "hobbies"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Tom and his father go fishing on Sunday morning. They sit by the river and wait for fish. Tom catches a small fish and is very happy. His father takes a photo of Tom and the fish. After fishing, they eat sandwiches together.",
+			"questions": [
+				{
+					"question": "What do Tom and his father do on Sunday morning?",
+					"options": ["Go shopping", "Go fishing", "Go swimming", "Go running"],
+					"correct": 1,
+					"explanation": "The story says 'Tom and his father go fishing on Sunday morning.'"
+				},
+				{
+					"question": "What does Tom catch?",
+					"options": ["A big fish", "A small fish", "A crab", "Nothing"],
+					"correct": 1,
+					"explanation": "The story says 'Tom catches a small fish.'"
+				}
+			],
+			"summary": "Tom and his father spend Sunday morning fishing and eating sandwiches."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family activities",
+			"tags": ["story", "reading", "A1", "fishing", "family"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Maria wakes up early every morning. She makes her bed and eats breakfast with her brother. After breakfast, they walk to school together. Maria likes her teacher and enjoys learning new things every day.",
+			"questions": [
+				{
+					"question": "Who does Maria eat breakfast with?",
+					"options": ["Her sister", "Her brother", "Her mother", "Her friend"],
+					"correct": 1,
+					"explanation": "The story says 'She makes her bed and eats breakfast with her brother.'"
+				},
+				{
+					"question": "What does Maria do after breakfast?",
+					"options": [
+						"Plays games",
+						"Goes to school",
+						"Watches TV",
+						"Reads a book"
+					],
+					"correct": 1,
+					"explanation": "The story says 'After breakfast, they walk to school together.'"
+				}
+			],
+			"summary": "Maria and her brother have breakfast and walk to school every morning."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "daily routine",
+			"tags": ["story", "reading", "A1", "routine", "school"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Sam likes to help his grandmother in the garden. They plant flowers and water the plants. Sam learns the names of different flowers. He feels happy when the flowers bloom. His grandmother thanks him for his help.",
+			"questions": [
+				{
+					"question": "Who does Sam help in the garden?",
+					"options": [
+						"His mother",
+						"His grandmother",
+						"His sister",
+						"His friend"
+					],
+					"correct": 1,
+					"explanation": "The story says 'Sam likes to help his grandmother in the garden.'"
+				},
+				{
+					"question": "What do they plant in the garden?",
+					"options": ["Vegetables", "Trees", "Flowers", "Grass"],
+					"correct": 2,
+					"explanation": "The story says 'They plant flowers and water the plants.'"
+				}
+			],
+			"summary": "Sam helps his grandmother plant and water flowers in the garden."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family activities",
+			"tags": ["story", "reading", "A1", "garden", "family"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ella has a red ball. She plays with it in the park every afternoon. Sometimes, her friend Mia joins her. They run and throw the ball to each other. Ella loves playing outside with her friend.",
+			"questions": [
+				{
+					"question": "What color is Ella's ball?",
+					"options": ["Blue", "Green", "Red", "Yellow"],
+					"correct": 2,
+					"explanation": "The story says 'Ella has a red ball.'"
+				},
+				{
+					"question": "Who plays with Ella in the park?",
+					"options": [
+						"Her brother",
+						"Her mother",
+						"Her friend Mia",
+						"Her teacher"
+					],
+					"correct": 2,
+					"explanation": "The story says 'Sometimes, her friend Mia joins her.'"
+				}
+			],
+			"summary": "Ella and her friend Mia play with a red ball in the park."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "play",
+			"tags": ["story", "reading", "A1", "park", "play"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Liam goes to the library every Saturday. He likes to read books about animals. Liam borrows a new book each week. He tells his mother about the stories he reads. The librarian knows Liam and always helps him find new books.",
+			"questions": [
+				{
+					"question": "Where does Liam go every Saturday?",
+					"options": ["The park", "The library", "The zoo", "The shop"],
+					"correct": 1,
+					"explanation": "The story says 'Liam goes to the library every Saturday.'"
+				},
+				{
+					"question": "What kind of books does Liam like?",
+					"options": [
+						"Books about cars",
+						"Books about animals",
+						"Books about sports",
+						"Books about food"
+					],
+					"correct": 1,
+					"explanation": "The story says 'He likes to read books about animals.'"
+				}
+			],
+			"summary": "Liam visits the library every Saturday to read books about animals."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "hobbies",
+			"tags": ["story", "reading", "A1", "library", "books"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Noah has a pet dog named Max. Every morning, Noah takes Max for a walk in the park. Max likes to chase birds and run on the grass. After the walk, Noah gives Max some water and a treat. Noah loves his dog very much.",
+			"questions": [
+				{
+					"question": "What is the name of Noah's dog?",
+					"options": ["Max", "Buddy", "Charlie", "Rocky"],
+					"correct": 0,
+					"explanation": "The story says 'Noah has a pet dog named Max.'"
+				},
+				{
+					"question": "Where does Noah take Max every morning?",
+					"options": ["To school", "To the shop", "To the park", "To the vet"],
+					"correct": 2,
+					"explanation": "The story says 'Noah takes Max for a walk in the park.'"
+				}
+			],
+			"summary": "Noah takes his dog Max for a walk in the park every morning."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "pets",
+			"tags": ["story", "reading", "A1", "dog", "pets"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Olivia helps her mother cook dinner. She washes the vegetables and sets the table. Olivia learns how to make soup and salad. After dinner, she helps clean the dishes. Her mother is proud of her.",
+			"questions": [
+				{
+					"question": "What does Olivia help her mother do?",
+					"options": [
+						"Wash clothes",
+						"Cook dinner",
+						"Paint the house",
+						"Clean the car"
+					],
+					"correct": 1,
+					"explanation": "The story says 'Olivia helps her mother cook dinner.'"
+				},
+				{
+					"question": "What does Olivia learn to make?",
+					"options": [
+						"Cake and cookies",
+						"Soup and salad",
+						"Bread and butter",
+						"Rice and beans"
+					],
+					"correct": 1,
+					"explanation": "The story says 'Olivia learns how to make soup and salad.'"
+				}
+			],
+			"summary": "Olivia helps her mother cook dinner and learns to make soup and salad."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family activities",
+			"tags": ["story", "reading", "A1", "cooking", "family"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Lucas and his friends play football after school. They run, kick the ball, and try to score goals. Lucas is the goalkeeper. He likes to stop the ball and help his team win. After the game, they all drink water and go home together.",
+			"questions": [
+				{
+					"question": "What sport do Lucas and his friends play?",
+					"options": ["Basketball", "Tennis", "Football", "Baseball"],
+					"correct": 2,
+					"explanation": "The story says 'Lucas and his friends play football after school.'"
+				},
+				{
+					"question": "What is Lucas's position in the game?",
+					"options": ["Striker", "Goalkeeper", "Defender", "Coach"],
+					"correct": 1,
+					"explanation": "The story says 'Lucas is the goalkeeper.'"
+				}
+			],
+			"summary": "Lucas is the goalkeeper when he plays football with his friends after school."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "sports",
+			"tags": ["story", "reading", "A1", "football", "sports"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Sophie visits her grandparents every weekend. She helps her grandmother bake cookies and listens to her grandfather's stories. Sophie loves spending time with them and always learns something new.",
+			"questions": [
+				{
+					"question": "Who does Sophie visit every weekend?",
+					"options": [
+						"Her aunt",
+						"Her grandparents",
+						"Her cousin",
+						"Her friend"
+					],
+					"correct": 1,
+					"explanation": "The story says 'Sophie visits her grandparents every weekend.'"
+				},
+				{
+					"question": "What does Sophie help her grandmother do?",
+					"options": [
+						"Bake cookies",
+						"Wash clothes",
+						"Paint the house",
+						"Clean the garden"
+					],
+					"correct": 0,
+					"explanation": "The story says 'She helps her grandmother bake cookies.'"
+				}
+			],
+			"summary": "Sophie bakes cookies and listens to stories when she visits her grandparents."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family activities",
+			"tags": ["story", "reading", "A1", "grandparents", "family"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ava goes shopping with her mother on Saturday. They buy fruits, vegetables, and bread. Ava helps carry the bags. She chooses apples and bananas. After shopping, they go home and make a fruit salad together.",
+			"questions": [
+				{
+					"question": "Who does Ava go shopping with?",
+					"options": ["Her father", "Her mother", "Her brother", "Her friend"],
+					"correct": 1,
+					"explanation": "The story says 'Ava goes shopping with her mother on Saturday.'"
+				},
+				{
+					"question": "What fruit does Ava choose?",
+					"options": [
+						"Oranges and grapes",
+						"Apples and bananas",
+						"Pears and peaches",
+						"Plums and lemons"
+					],
+					"correct": 1,
+					"explanation": "The story says 'She chooses apples and bananas.'"
+				}
+			],
+			"summary": "Ava and her mother shop for fruit and make a fruit salad together."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "shopping",
+			"tags": ["story", "reading", "A1", "shopping", "food"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Henry likes to ride his bicycle in the park. He wears a helmet and rides carefully. Sometimes, his sister joins him. They race each other and laugh a lot. After riding, they rest on a bench and drink water.",
+			"questions": [
+				{
+					"question": "What does Henry like to do in the park?",
+					"options": ["Run", "Ride his bicycle", "Play football", "Read books"],
+					"correct": 1,
+					"explanation": "The story says 'Henry likes to ride his bicycle in the park.'"
+				},
+				{
+					"question": "Who sometimes joins Henry?",
+					"options": ["His friend", "His brother", "His sister", "His cousin"],
+					"correct": 2,
+					"explanation": "The story says 'Sometimes, his sister joins him.'"
+				}
+			],
+			"summary": "Henry and his sister ride bicycles and race in the park."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "sports",
+			"tags": ["story", "reading", "A1", "bicycle", "sports"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Mason likes to help his mother set the table for dinner. He puts the plates, forks, and glasses on the table. After dinner, Mason helps clear the table and washes his hands.",
+			"questions": [
+				{
+					"question": "What does Mason help his mother do?",
+					"options": [
+						"Cook dinner",
+						"Set the table",
+						"Wash clothes",
+						"Clean the room"
+					],
+					"correct": 1,
+					"explanation": "The story says 'Mason likes to help his mother set the table for dinner.'"
+				},
+				{
+					"question": "What does Mason do after dinner?",
+					"options": [
+						"Plays outside",
+						"Watches TV",
+						"Clears the table",
+						"Goes to bed"
+					],
+					"correct": 2,
+					"explanation": "The story says 'After dinner, Mason helps clear the table.'"
+				}
+			],
+			"summary": "Mason helps set and clear the table for dinner."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family activities",
+			"tags": ["story", "reading", "A1", "dinner", "family"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Zoe visits the playground after school. She likes to swing and climb the slide. Zoe meets her friend Lily at the playground. They play together until it is time to go home.",
+			"questions": [
+				{
+					"question": "Where does Zoe go after school?",
+					"options": ["The library", "The playground", "The shop", "The zoo"],
+					"correct": 1,
+					"explanation": "The story says 'Zoe visits the playground after school.'"
+				},
+				{
+					"question": "Who does Zoe play with at the playground?",
+					"options": [
+						"Her brother",
+						"Her cousin",
+						"Her friend Lily",
+						"Her teacher"
+					],
+					"correct": 2,
+					"explanation": "The story says 'Zoe meets her friend Lily at the playground.'"
+				}
+			],
+			"summary": "Zoe and her friend Lily play together at the playground."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "play",
+			"tags": ["story", "reading", "A1", "playground", "friends"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ethan has a blue backpack. He takes it to school every day. In his backpack, Ethan carries his books, pencils, and lunch. He likes to keep his things neat and tidy.",
+			"questions": [
+				{
+					"question": "What color is Ethan's backpack?",
+					"options": ["Red", "Green", "Blue", "Yellow"],
+					"correct": 2,
+					"explanation": "The story says 'Ethan has a blue backpack.'"
+				},
+				{
+					"question": "What does Ethan carry in his backpack?",
+					"options": ["Toys", "Books and lunch", "Shoes", "Clothes"],
+					"correct": 1,
+					"explanation": "The story says 'Ethan carries his books, pencils, and lunch.'"
+				}
+			],
+			"summary": "Ethan keeps his books and lunch in his blue backpack."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "school life",
+			"tags": ["story", "reading", "A1", "backpack", "school"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Grace has a pet rabbit named Snow. She feeds Snow carrots and lettuce. Grace likes to watch Snow hop around the garden. Sometimes, her brother plays with the rabbit too.",
+			"questions": [
+				{
+					"question": "What is the name of Grace's rabbit?",
+					"options": ["Fluffy", "Snow", "Bunny", "Cotton"],
+					"correct": 1,
+					"explanation": "The story says 'Grace has a pet rabbit named Snow.'"
+				},
+				{
+					"question": "What does Grace feed her rabbit?",
+					"options": [
+						"Bread and milk",
+						"Carrots and lettuce",
+						"Apples and bananas",
+						"Rice and beans"
+					],
+					"correct": 1,
+					"explanation": "The story says 'She feeds Snow carrots and lettuce.'"
+				}
+			],
+			"summary": "Grace feeds her pet rabbit Snow and watches it hop in the garden."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "pets",
+			"tags": ["story", "reading", "A1", "rabbit", "pets"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Jacob and his sister Emma build a snowman in winter. They use a carrot for the nose and stones for the eyes. Their mother takes a photo of them with the snowman. Jacob and Emma are proud of their work.",
+			"questions": [
+				{
+					"question": "What do Jacob and Emma build in winter?",
+					"options": ["A house", "A snowman", "A sandcastle", "A treehouse"],
+					"correct": 1,
+					"explanation": "The story says 'Jacob and his sister Emma build a snowman in winter.'"
+				},
+				{
+					"question": "What do they use for the snowman's nose?",
+					"options": ["A stick", "A carrot", "A stone", "An apple"],
+					"correct": 1,
+					"explanation": "The story says 'They use a carrot for the nose.'"
+				}
+			],
+			"summary": "Jacob and Emma build a snowman and take a photo with it."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "seasons",
+			"tags": ["story", "reading", "A1", "snowman", "winter"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Sofia likes to dance. She goes to dance class every Friday. Sofia wears a pink dress and dances with her friends. After class, they eat cookies and talk about their favorite songs.",
+			"questions": [
+				{
+					"question": "What does Sofia like to do?",
+					"options": ["Sing", "Dance", "Draw", "Swim"],
+					"correct": 1,
+					"explanation": "The story says 'Sofia likes to dance.'"
+				},
+				{
+					"question": "What does Sofia wear to dance class?",
+					"options": [
+						"Blue jeans",
+						"Pink dress",
+						"Green skirt",
+						"Yellow shirt"
+					],
+					"correct": 1,
+					"explanation": "The story says 'Sofia wears a pink dress.'"
+				}
+			],
+			"summary": "Sofia goes to dance class and wears a pink dress."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "hobbies",
+			"tags": ["story", "reading", "A1", "dance", "hobbies"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ryan goes to the bakery with his mother. He chooses a chocolate cake for his birthday. The baker puts candles on the cake. Ryan is excited to eat the cake with his family.",
+			"questions": [
+				{
+					"question": "Where does Ryan go with his mother?",
+					"options": ["The park", "The bakery", "The library", "The zoo"],
+					"correct": 1,
+					"explanation": "The story says 'Ryan goes to the bakery with his mother.'"
+				},
+				{
+					"question": "What does Ryan choose for his birthday?",
+					"options": ["Cookies", "Chocolate cake", "Ice cream", "Pie"],
+					"correct": 1,
+					"explanation": "The story says 'He chooses a chocolate cake for his birthday.'"
+				}
+			],
+			"summary": "Ryan chooses a chocolate cake for his birthday at the bakery."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "food and cooking",
+			"tags": ["story", "reading", "A1", "bakery", "birthday"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Leo waters the plants in his classroom every morning. He likes to see the flowers grow. Leo's teacher thanks him for helping. Sometimes, his friends help water the plants too.",
+			"questions": [
+				{
+					"question": "What does Leo do every morning?",
+					"options": [
+						"Reads a book",
+						"Waters the plants",
+						"Draws a picture",
+						"Feeds the fish"
+					],
+					"correct": 1,
+					"explanation": "The story says 'Leo waters the plants in his classroom every morning.'"
+				},
+				{
+					"question": "Who thanks Leo for helping?",
+					"options": ["His mother", "His teacher", "His friend", "His sister"],
+					"correct": 1,
+					"explanation": "The story says 'Leo's teacher thanks him for helping.'"
+				}
+			],
+			"summary": "Leo waters the classroom plants and is thanked by his teacher."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "school life",
+			"tags": ["story", "reading", "A1", "plants", "school"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Nina visits her aunt in the countryside. They pick strawberries in the garden. Nina eats some strawberries and puts the rest in a basket. She enjoys spending time with her aunt.",
+			"questions": [
+				{
+					"question": "Where does Nina visit her aunt?",
+					"options": [
+						"In the city",
+						"In the countryside",
+						"At the beach",
+						"At the zoo"
+					],
+					"correct": 1,
+					"explanation": "The story says 'Nina visits her aunt in the countryside.'"
+				},
+				{
+					"question": "What do Nina and her aunt pick?",
+					"options": ["Apples", "Strawberries", "Oranges", "Bananas"],
+					"correct": 1,
+					"explanation": "The story says 'They pick strawberries in the garden.'"
+				}
+			],
+			"summary": "Nina picks strawberries with her aunt in the countryside."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family activities",
+			"tags": ["story", "reading", "A1", "countryside", "family"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Owen and his father wash the car on Saturday. They use soap and water to make it clean. Owen likes to help and splash water. After washing the car, they go for a drive.",
+			"questions": [
+				{
+					"question": "What do Owen and his father do on Saturday?",
+					"options": [
+						"Go shopping",
+						"Wash the car",
+						"Bake a cake",
+						"Go swimming"
+					],
+					"correct": 1,
+					"explanation": "The story says 'Owen and his father wash the car on Saturday.'"
+				},
+				{
+					"question": "What do they do after washing the car?",
+					"options": [
+						"Go for a drive",
+						"Eat lunch",
+						"Go to bed",
+						"Play football"
+					],
+					"correct": 0,
+					"explanation": "The story says 'After washing the car, they go for a drive.'"
+				}
+			],
+			"summary": "Owen and his father wash the car and then go for a drive."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family activities",
+			"tags": ["story", "reading", "A1", "car", "family"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Chloe has a small goldfish in a bowl. She feeds the fish every morning. Chloe likes to watch the goldfish swim in circles. She sometimes talks to her fish and tells it stories.",
+			"questions": [
+				{
+					"question": "What pet does Chloe have?",
+					"options": ["A cat", "A dog", "A goldfish", "A rabbit"],
+					"correct": 2,
+					"explanation": "The story says 'Chloe has a small goldfish in a bowl.'"
+				},
+				{
+					"question": "What does Chloe do every morning?",
+					"options": [
+						"Plays with her fish",
+						"Feeds her fish",
+						"Cleans the bowl",
+						"Draws a picture"
+					],
+					"correct": 1,
+					"explanation": "The story says 'She feeds the fish every morning.'"
+				}
+			],
+			"summary": "Chloe feeds her goldfish every morning and watches it swim."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "pets",
+			"tags": ["story", "reading", "A1", "goldfish", "pets"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ella and her family go camping in the forest. They sleep in a tent and cook food on a fire. Ella collects sticks for the fire. At night, they look at the stars before going to bed.",
+			"questions": [
+				{
+					"question": "Where does Ella go camping?",
+					"options": [
+						"In the city",
+						"In the forest",
+						"At the beach",
+						"In the garden"
+					],
+					"correct": 1,
+					"explanation": "The story says 'Ella and her family go camping in the forest.'"
+				},
+				{
+					"question": "What does Ella collect for the fire?",
+					"options": ["Leaves", "Sticks", "Rocks", "Flowers"],
+					"correct": 1,
+					"explanation": "The story says 'Ella collects sticks for the fire.'"
+				}
+			],
+			"summary": "Ella collects sticks while camping with her family in the forest."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "leisure activities",
+			"tags": ["story", "reading", "A1", "camping", "family"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Jack and his friend Ben fly kites in the park. The wind is strong, and the kites go high in the sky. They laugh and run after the kites. When the sun sets, they go home tired but happy.",
+			"questions": [
+				{
+					"question": "What do Jack and Ben fly in the park?",
+					"options": ["Balloons", "Kites", "Planes", "Birds"],
+					"correct": 1,
+					"explanation": "The story says 'Jack and his friend Ben fly kites in the park.'"
+				},
+				{
+					"question": "When do they go home?",
+					"options": [
+						"At noon",
+						"When the sun sets",
+						"In the morning",
+						"After lunch"
+					],
+					"correct": 1,
+					"explanation": "The story says 'When the sun sets, they go home.'"
+				}
+			],
+			"summary": "Jack and Ben fly kites in the park and go home at sunset."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "leisure activities",
+			"tags": ["story", "reading", "A1", "kites", "park"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Isla bakes cookies with her mother on Sunday. She mixes the flour, sugar, and eggs. Isla shapes the cookies and puts them in the oven. When they are ready, she shares them with her family.",
+			"questions": [
+				{
+					"question": "What does Isla bake with her mother?",
+					"options": ["Bread", "Cake", "Cookies", "Pie"],
+					"correct": 2,
+					"explanation": "The story says 'Isla bakes cookies with her mother.'"
+				},
+				{
+					"question": "When does Isla bake cookies?",
+					"options": ["Monday", "Friday", "Saturday", "Sunday"],
+					"correct": 3,
+					"explanation": "The story says 'Isla bakes cookies with her mother on Sunday.'"
+				}
+			],
+			"summary": "Isla bakes cookies with her mother on Sunday and shares them."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "food and cooking",
+			"tags": ["story", "reading", "A1", "cookies", "cooking"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Mila waters the flowers in her garden every evening. She likes to see the colorful flowers grow. Mila's mother helps her plant new seeds in the spring. Mila is proud of her beautiful garden.",
+			"questions": [
+				{
+					"question": "What does Mila do every evening?",
+					"options": [
+						"Reads a book",
+						"Watches TV",
+						"Waters the flowers",
+						"Plays football"
+					],
+					"correct": 2,
+					"explanation": "The story says 'Mila waters the flowers in her garden every evening.'"
+				},
+				{
+					"question": "Who helps Mila plant new seeds?",
+					"options": ["Her friend", "Her mother", "Her teacher", "Her sister"],
+					"correct": 1,
+					"explanation": "The story says 'Mila's mother helps her plant new seeds.'"
+				}
+			],
+			"summary": "Mila waters flowers and plants seeds in her garden with her mother."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "hobbies",
+			"tags": ["story", "reading", "A1", "garden", "flowers"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ella helps her brother with his homework. She explains the math problems and reads stories with him. After finishing homework, they play a board game together.",
+			"questions": [
+				{
+					"question": "Who does Ella help with homework?",
+					"options": ["Her friend", "Her mother", "Her brother", "Her cousin"],
+					"correct": 2,
+					"explanation": "The story says 'Ella helps her brother with his homework.'"
+				},
+				{
+					"question": "What do they do after homework?",
+					"options": [
+						"Play a board game",
+						"Go outside",
+						"Eat dinner",
+						"Watch TV"
+					],
+					"correct": 0,
+					"explanation": "The story says 'After finishing homework, they play a board game together.'"
+				}
+			],
+			"summary": "Ella helps her brother with homework and plays a game with him."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family activities",
+			"tags": ["story", "reading", "A1", "homework", "family"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Adam goes to the swimming pool with his friends in summer. They swim, play, and splash water. Adam learns to swim better each time. After swimming, they eat ice cream together.",
+			"questions": [
+				{
+					"question": "Where does Adam go with his friends in summer?",
+					"options": [
+						"The park",
+						"The swimming pool",
+						"The zoo",
+						"The library"
+					],
+					"correct": 1,
+					"explanation": "The story says 'Adam goes to the swimming pool with his friends in summer.'"
+				},
+				{
+					"question": "What do they eat after swimming?",
+					"options": ["Sandwiches", "Ice cream", "Pizza", "Fruit"],
+					"correct": 1,
+					"explanation": "The story says 'After swimming, they eat ice cream together.'"
+				}
+			],
+			"summary": "Adam swims with friends and eats ice cream in summer."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "leisure activities",
+			"tags": ["story", "reading", "A1", "swimming", "summer"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Maya and her family visit the zoo. Maya sees lions, giraffes, and monkeys. She likes the monkeys best because they jump and play. Maya takes photos with her camera.",
+			"questions": [
+				{
+					"question": "Where does Maya visit with her family?",
+					"options": ["The park", "The zoo", "The beach", "The shop"],
+					"correct": 1,
+					"explanation": "The story says 'Maya and her family visit the zoo.'"
+				},
+				{
+					"question": "Which animals does Maya like best?",
+					"options": ["Lions", "Giraffes", "Monkeys", "Elephants"],
+					"correct": 2,
+					"explanation": "The story says 'She likes the monkeys best.'"
+				}
+			],
+			"summary": "Maya visits the zoo and likes the monkeys best."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "leisure activities",
+			"tags": ["story", "reading", "A1", "zoo", "animals"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "James helps his father in the kitchen. They make pancakes for breakfast. James mixes the eggs and milk. His father cooks the pancakes. James eats the pancakes with honey.",
+			"questions": [
+				{
+					"question": "What do James and his father make for breakfast?",
+					"options": ["Sandwiches", "Pancakes", "Soup", "Salad"],
+					"correct": 1,
+					"explanation": "The story says 'They make pancakes for breakfast.'"
+				},
+				{
+					"question": "What does James eat with the pancakes?",
+					"options": ["Jam", "Honey", "Butter", "Cheese"],
+					"correct": 1,
+					"explanation": "The story says 'James eats the pancakes with honey.'"
+				}
+			],
+			"summary": "James makes pancakes with his father and eats them with honey."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "food and cooking",
+			"tags": ["story", "reading", "A1", "pancakes", "cooking"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Samantha and her family visit the park on Sunday. They have a picnic under a big tree. Samantha plays on the swings and slides. Her parents watch her and take photos. After the picnic, they feed the ducks in the pond.",
+			"questions": [
+				{
+					"question": "Where does Samantha go with her family?",
+					"options": ["The zoo", "The park", "The beach", "The museum"],
+					"correct": 1,
+					"explanation": "The story says 'Samantha and her family visit the park on Sunday.'"
+				},
+				{
+					"question": "What do they do after the picnic?",
+					"options": [
+						"Go home",
+						"Feed the ducks",
+						"Play football",
+						"Buy ice cream"
+					],
+					"correct": 1,
+					"explanation": "The story says 'After the picnic, they feed the ducks in the pond.'"
+				}
+			],
+			"summary": "Samantha's family has a picnic and feeds ducks at the park."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family activities",
+			"tags": ["story", "reading", "A1", "picnic", "park"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Alex likes to read books about animals. He borrows books from the school library every week. Alex tells his friends about the animals he reads about. His favorite animal is the elephant.",
+			"questions": [
+				{
+					"question": "What kind of books does Alex like to read?",
+					"options": [
+						"Books about cars",
+						"Books about animals",
+						"Books about space",
+						"Books about food"
+					],
+					"correct": 1,
+					"explanation": "The story says 'Alex likes to read books about animals.'"
+				},
+				{
+					"question": "What is Alex's favorite animal?",
+					"options": ["Lion", "Dog", "Elephant", "Cat"],
+					"correct": 2,
+					"explanation": "The story says 'His favorite animal is the elephant.'"
+				}
+			],
+			"summary": "Alex loves reading animal books and likes elephants best."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "hobbies",
+			"tags": ["story", "reading", "A1", "library", "animals"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Ella helps her mother water the plants on the balcony. She fills the watering can and gives water to each flower. Ella likes to see the flowers grow tall and colorful.",
+			"questions": [
+				{
+					"question": "Where does Ella help her mother water the plants?",
+					"options": [
+						"In the garden",
+						"On the balcony",
+						"At school",
+						"In the park"
+					],
+					"correct": 1,
+					"explanation": "The story says 'Ella helps her mother water the plants on the balcony.'"
+				},
+				{
+					"question": "What does Ella use to water the plants?",
+					"options": ["A cup", "A watering can", "A bottle", "A bucket"],
+					"correct": 1,
+					"explanation": "The story says 'She fills the watering can.'"
+				}
+			],
+			"summary": "Ella waters balcony plants with her mother."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "family activities",
+			"tags": ["story", "reading", "A1", "plants", "balcony"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Liam goes to the swimming pool with his father. He wears blue swimming shorts and goggles. Liam swims from one side of the pool to the other. After swimming, they eat ice cream together.",
+			"questions": [
+				{
+					"question": "Where does Liam go with his father?",
+					"options": ["The park", "The swimming pool", "The zoo", "The shop"],
+					"correct": 1,
+					"explanation": "The story says 'Liam goes to the swimming pool with his father.'"
+				},
+				{
+					"question": "What does Liam wear at the pool?",
+					"options": [
+						"Red shorts",
+						"Blue swimming shorts",
+						"Green shirt",
+						"Yellow hat"
+					],
+					"correct": 1,
+					"explanation": "The story says 'He wears blue swimming shorts and goggles.'"
+				}
+			],
+			"summary": "Liam swims with his father and eats ice cream after."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "leisure activities",
+			"tags": ["story", "reading", "A1", "swimming", "family"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Sophie and her brother build a tower with blocks. They work together and make the tower very tall. Suddenly, the tower falls down and they laugh. Sophie and her brother build it again.",
+			"questions": [
+				{
+					"question": "What do Sophie and her brother build?",
+					"options": ["A house", "A tower", "A car", "A bridge"],
+					"correct": 1,
+					"explanation": "The story says 'Sophie and her brother build a tower with blocks.'"
+				},
+				{
+					"question": "What happens to the tower?",
+					"options": [
+						"It falls down",
+						"It gets bigger",
+						"It is painted",
+						"It is sold"
+					],
+					"correct": 0,
+					"explanation": "The story says 'Suddenly, the tower falls down and they laugh.'"
+				}
+			],
+			"summary": "Sophie and her brother build and rebuild a block tower."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "play",
+			"tags": ["story", "reading", "A1", "blocks", "siblings"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Noah and his friends go to the playground after lunch. They play on the seesaw and run around. Noah likes to climb the jungle gym. When it is time to go home, they say goodbye and wave.",
+			"questions": [
+				{
+					"question": "Where do Noah and his friends go after lunch?",
+					"options": ["The shop", "The playground", "The beach", "The zoo"],
+					"correct": 1,
+					"explanation": "The story says 'Noah and his friends go to the playground after lunch.'"
+				},
+				{
+					"question": "What does Noah like to climb?",
+					"options": ["A tree", "The jungle gym", "A wall", "The stairs"],
+					"correct": 1,
+					"explanation": "The story says 'Noah likes to climb the jungle gym.'"
+				}
+			],
+			"summary": "Noah plays with friends at the playground and climbs the jungle gym."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "play",
+			"tags": ["story", "reading", "A1", "playground", "friends"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Mia helps her father wash the dog. They use soap and water. The dog shakes and gets them both wet. Mia laughs and dries the dog with a towel. The dog is clean and happy.",
+			"questions": [
+				{
+					"question": "Who does Mia help wash?",
+					"options": ["Her cat", "Her dog", "Her brother", "Her car"],
+					"correct": 1,
+					"explanation": "The story says 'Mia helps her father wash the dog.'"
+				},
+				{
+					"question": "What happens when the dog shakes?",
+					"options": [
+						"Mia gets wet",
+						"The dog runs away",
+						"The dog barks",
+						"The dog sleeps"
+					],
+					"correct": 0,
+					"explanation": "The story says 'The dog shakes and gets them both wet.'"
+				}
+			],
+			"summary": "Mia and her father wash the dog and get wet."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "pets",
+			"tags": ["story", "reading", "A1", "dog", "washing"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	},
+
+	{
+		"content": {
+			"story": "Lucas eats breakfast with his family every morning. He likes toast with butter and jam. After breakfast, Lucas brushes his teeth and gets ready for school.",
+			"questions": [
+				{
+					"question": "What does Lucas eat for breakfast?",
+					"options": [
+						"Eggs",
+						"Toast with butter and jam",
+						"Pancakes",
+						"Cereal"
+					],
+					"correct": 1,
+					"explanation": "The story says 'He likes toast with butter and jam.'"
+				},
+				{
+					"question": "What does Lucas do after breakfast?",
+					"options": [
+						"Plays outside",
+						"Brushes his teeth",
+						"Reads a book",
+						"Goes to bed"
+					],
+					"correct": 1,
+					"explanation": "The story says 'After breakfast, Lucas brushes his teeth.'"
+				}
+			],
+			"summary": "Lucas eats breakfast and gets ready for school every morning."
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "reading",
+			"subCategory": "daily routine",
+			"tags": ["story", "reading", "A1", "breakfast", "routine"],
+			"type": "story_game"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 180,
+			"difficultyMultiplier": 1.0
+		}
+	}
+]

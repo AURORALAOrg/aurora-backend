@@ -1,0 +1,425 @@
+[
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "controversial",
+					"match": "causing disagreement or public discussion"
+				},
+				{
+					"word": "fundamental",
+					"match": "forming a necessary base or core of something"
+				},
+				{
+					"word": "inevitable",
+					"match": "certain to happen and unable to be avoided"
+				},
+				{
+					"word": "comprehensive",
+					"match": "including or dealing with all elements or aspects"
+				},
+				{
+					"word": "sophisticated",
+					"match": "having a refined knowledge of the ways of the world"
+				},
+				{
+					"word": "ambiguous",
+					"match": "open to more than one interpretation"
+				}
+			],
+			"difficulty": "upper-intermediate",
+			"category": "advanced adjectives"
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B2", "adjectives"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 90,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "clarify",
+					"match": "make a statement or situation less confused and more comprehensible"
+				},
+				{
+					"word": "interpret",
+					"match": "explain the meaning of information or actions"
+				},
+				{
+					"word": "negotiate",
+					"match": "try to reach an agreement or compromise by discussion"
+				},
+				{
+					"word": "emphasize",
+					"match": "give special importance or value to something in speaking or writing"
+				},
+				{
+					"word": "acknowledge",
+					"match": "accept or admit the existence or truth of something"
+				},
+				{
+					"word": "anticipate",
+					"match": "regard as probable; expect or predict"
+				}
+			],
+			"difficulty": "upper-intermediate",
+			"category": "complex verbs"
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B2", "verbs"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 90,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "perspective",
+					"match": "a particular attitude toward or way of regarding something"
+				},
+				{
+					"word": "phenomenon",
+					"match": "a fact or situation that is observed to exist or happen"
+				},
+				{
+					"word": "controversy",
+					"match": "prolonged public dispute or debate"
+				},
+				{
+					"word": "consequence",
+					"match": "a result or effect of an action or condition"
+				},
+				{
+					"word": "dilemma",
+					"match": "a situation requiring a choice between equally undesirable alternatives"
+				},
+				{
+					"word": "assumption",
+					"match": "something that is accepted as true without proof"
+				}
+			],
+			"difficulty": "upper-intermediate",
+			"category": "abstract concepts"
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B2", "abstract nouns"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 90,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "subsequently",
+					"match": "after something else has happened; afterwards"
+				},
+				{
+					"word": "presumably",
+					"match": "used to convey that what is asserted is very likely"
+				},
+				{
+					"word": "ultimately",
+					"match": "finally, after a series of events or considerations"
+				},
+				{
+					"word": "essentially",
+					"match": "relating to the most important characteristics or ideas of something"
+				},
+				{
+					"word": "relatively",
+					"match": "in relation or comparison to something else"
+				},
+				{
+					"word": "inevitably",
+					"match": "as is certain to happen; unavoidably"
+				}
+			],
+			"difficulty": "upper-intermediate",
+			"category": "advanced adverbs"
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B2", "adverbs"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 90,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "sustainability",
+					"match": "avoidance of depleting natural resources to maintain ecological balance"
+				},
+				{
+					"word": "globalization",
+					"match": "development of an increasingly integrated global economy"
+				},
+				{
+					"word": "biodiversity",
+					"match": "variety of plant and animal life in a particular habitat"
+				},
+				{
+					"word": "infrastructure",
+					"match": "basic physical structures needed for the operation of a society"
+				},
+				{
+					"word": "demographic",
+					"match": "relating to the structure of populations"
+				},
+				{
+					"word": "innovation",
+					"match": "introduction of new methods, ideas, or products"
+				}
+			],
+			"difficulty": "upper-intermediate",
+			"category": "global issues"
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B2", "global topics"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 90,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "hypothesis",
+					"match": "a proposed explanation made on the basis of limited evidence"
+				},
+				{
+					"word": "paradox",
+					"match": "a statement that seems self-contradictory but may be true"
+				},
+				{
+					"word": "criteria",
+					"match": "standards by which something is judged"
+				},
+				{
+					"word": "relevant",
+					"match": "closely connected or appropriate to what is being done"
+				},
+				{
+					"word": "allocate",
+					"match": "to distribute resources or duties for a particular purpose"
+				},
+				{ "word": "precede", "match": "to come before something in time" }
+			],
+			"difficulty": "upper-intermediate",
+			"category": "academic concepts"
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B2", "academics"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 90,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "implement",
+					"match": "to put a plan or system into operation"
+				},
+				{
+					"word": "facilitate",
+					"match": "to make an action or process easier"
+				},
+				{ "word": "elaborate", "match": "to explain in more detail" },
+				{
+					"word": "justify",
+					"match": "to show or prove to be right or reasonable"
+				},
+				{
+					"word": "contradict",
+					"match": "to assert the opposite of a statement"
+				},
+				{
+					"word": "derive",
+					"match": "to obtain something from a specified source"
+				}
+			],
+			"difficulty": "upper-intermediate",
+			"category": "verbs and actions"
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B2", "verbs"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 90,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "subsequent",
+					"match": "coming after something in time; following"
+				},
+				{
+					"word": "notion",
+					"match": "a conception of or belief about something"
+				},
+				{
+					"word": "approximate",
+					"match": "close to the actual, but not completely accurate"
+				},
+				{
+					"word": "attribute",
+					"match": "a quality or feature regarded as a characteristic"
+				},
+				{ "word": "coherent", "match": "logical and consistent" },
+				{
+					"word": "constrain",
+					"match": "to severely restrict the scope or extent of something"
+				}
+			],
+			"difficulty": "upper-intermediate",
+			"category": "logic and reasoning"
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B2", "logic"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 90,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "diversity", "match": "the state of being diverse; variety" },
+				{ "word": "emerge", "match": "to become apparent or prominent" },
+				{
+					"word": "enhance",
+					"match": "to improve the quality, amount, or strength of something"
+				},
+				{
+					"word": "minimize",
+					"match": "to reduce something to the smallest possible amount"
+				},
+				{
+					"word": "overlap",
+					"match": "to cover part of the same area as another thing"
+				},
+				{
+					"word": "precedent",
+					"match": "an earlier event that is regarded as an example"
+				}
+			],
+			"difficulty": "upper-intermediate",
+			"category": "diversity and change"
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B2", "change"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 90,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{ "word": "legitimate", "match": "conforming to the law or to rules" },
+				{ "word": "sufficient", "match": "enough; adequate" },
+				{ "word": "viable", "match": "capable of working successfully" },
+				{ "word": "adjacent", "match": "next to or adjoining something else" },
+				{
+					"word": "arbitrary",
+					"match": "based on random choice or personal whim"
+				},
+				{
+					"word": "conversely",
+					"match": "introducing a statement that contrasts with a previous one"
+				}
+			],
+			"difficulty": "upper-intermediate",
+			"category": "advanced vocabulary"
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "B2", "advanced"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 90,
+			"difficultyMultiplier": 1.8
+		}
+	}
+]

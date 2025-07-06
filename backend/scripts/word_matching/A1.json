@@ -1,0 +1,92 @@
+[
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "dog",
+					"match": "an animal that barks"
+				},
+				{
+					"word": "cat",
+					"match": "an animal that meows"
+				},
+				{
+					"word": "house",
+					"match": "a place where people live"
+				},
+				{
+					"word": "school",
+					"match": "a place where children learn"
+				},
+				{
+					"word": "car",
+					"match": "a vehicle with four wheels"
+				},
+				{
+					"word": "book",
+					"match": "something to read"
+				}
+			],
+			"difficulty": "easy",
+			"category": "animals and objects"
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "A1"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 10,
+			"timeLimit": 60,
+			"difficultyMultiplier": 1.0
+		}
+	},
+	{
+		"content": {
+			"pairs": [
+				{
+					"word": "happy",
+					"match": "feeling joy"
+				},
+				{
+					"word": "sad",
+					"match": "feeling unhappy"
+				},
+				{
+					"word": "big",
+					"match": "large in size"
+				},
+				{
+					"word": "small",
+					"match": "not big"
+				},
+				{
+					"word": "hot",
+					"match": "having a high temperature"
+				},
+				{
+					"word": "cold",
+					"match": "having a low temperature"
+				}
+			],
+			"difficulty": "easy",
+			"category": "feelings and descriptions"
+		},
+		"metadata": {
+			"englishLevel": "A1",
+			"difficulty": "easy",
+			"category": "vocabulary",
+			"subCategory": "matching",
+			"tags": ["vocabulary", "matching", "A1", "adjectives"],
+			"type": "word_matching"
+		},
+		"gameMetadata": {
+			"pointsValue": 10,
+			"timeLimit": 60,
+			"difficultyMultiplier": 1.0
+		}
+	}
+]

@@ -1,0 +1,596 @@
+[
+	{
+		"content": {
+			"word": "controversial",
+			"scrambled": "sialvercontro",
+			"hint": "Causing disagreement or discussion",
+			"explanation": "Controversial describes something that causes public disagreement between different people or groups who hold strong opinions about it.",
+			"contextSentence": "The new policy on immigration has proven to be highly controversial."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "B2", "debate"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "sophisticated",
+			"scrambled": "edsophisticat",
+			"hint": "Advanced or complex, showing great knowledge",
+			"explanation": "Sophisticated describes something that is developed to a high degree of complexity or someone who has a lot of worldly experience and knowledge.",
+			"contextSentence": "The restaurant features sophisticated cuisine influenced by French techniques."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "B2", "descriptions"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "enthusiastic",
+			"scrambled": "tichusiasentc",
+			"hint": "Showing intense and eager enjoyment or interest",
+			"explanation": "Enthusiastic describes someone who shows strong excitement and interest about something.",
+			"contextSentence": "The audience was enthusiastic about the new play, giving a standing ovation."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "B2", "emotions"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "qualification",
+			"scrambled": "tionqualifica",
+			"hint": "An official record showing you have finished a training course or have the necessary skills",
+			"explanation": "A qualification is an official record showing that you have finished a training course or have the necessary skills for a job.",
+			"contextSentence": "You need specific qualifications to apply for this teaching position."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "education",
+			"tags": ["vocabulary", "word-scramble", "B2", "career"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "phenomenon",
+			"scrambled": "omenonphen",
+			"hint": "A fact or event that can be observed",
+			"explanation": "A phenomenon is a fact or situation that is observed to exist or happen, especially one whose cause or explanation is in question.",
+			"contextSentence": "Scientists are studying the phenomenon of bioluminescence in deep-sea creatures."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B2", "science"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "convenient",
+			"scrambled": "entconveni",
+			"hint": "Suitable or easy to use without difficulty",
+			"explanation": "Convenient means fitting in well with a person's needs, activities, and plans, or causing the least difficulty.",
+			"contextSentence": "The hotel is in a convenient location near the train station."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "B2", "descriptions"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "consequence",
+			"scrambled": "cequenceons",
+			"hint": "The result of something that happened earlier",
+			"explanation": "A consequence is a result or effect of an action or condition.",
+			"contextSentence": "As a consequence of the drought, food prices have risen sharply."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B2", "cause-effect"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "perspective",
+			"scrambled": "veperspetci",
+			"hint": "A particular way of considering something",
+			"explanation": "A perspective is a particular way of thinking about something, influenced by your beliefs or experiences.",
+			"contextSentence": "The book offers a unique perspective on historical events."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B2", "cognition"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "comprehensive",
+			"scrambled": "vecomprehenis",
+			"hint": "Including everything or nearly everything",
+			"explanation": "Comprehensive means including or dealing with all or nearly all elements or aspects of something.",
+			"contextSentence": "The report provides a comprehensive analysis of market trends."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "B2", "descriptions"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "speculation",
+			"scrambled": "tionspecula",
+			"hint": "The forming of a theory without firm evidence",
+			"explanation": "Speculation is the forming of a theory or conjecture without firm evidence.",
+			"contextSentence": "There's been a lot of speculation about why the CEO resigned so suddenly."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B2", "thinking"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "acknowledgment",
+			"scrambled": "mentacknowledg",
+			"hint": "Acceptance of the truth or existence of something",
+			"explanation": "Acknowledgment is the acceptance or recognition of the existence or truth of something.",
+			"contextSentence": "His acknowledgment of the mistake was appreciated by everyone."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B2", "communication"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "circumstance",
+			"scrambled": "stancecircum",
+			"hint": "A condition or fact connected with an event",
+			"explanation": "A circumstance is a fact or condition connected with or relevant to an event or action.",
+			"contextSentence": "Under the circumstances, I think we made the right decision."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B2", "situations"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "exceptional",
+			"scrambled": "nalexceptio",
+			"hint": "Unusually good, or much better than average",
+			"explanation": "Exceptional means unusual or extraordinary, typically to a significantly high standard.",
+			"contextSentence": "The student's work was truly exceptional, far exceeding expectations."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "B2", "descriptions"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "considerate",
+			"scrambled": "teconsidera",
+			"hint": "Careful not to cause inconvenience or hurt to others",
+			"explanation": "Considerate describes someone who is careful not to inconvenience or harm others.",
+			"contextSentence": "It was considerate of him to call ahead before visiting."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "B2", "personality"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "negotiate",
+			"scrambled": "tenegotia",
+			"hint": "To try to reach an agreement by discussion",
+			"explanation": "To negotiate means to try to reach an agreement or compromise by discussion.",
+			"contextSentence": "The two companies will negotiate the terms of the contract next week."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "verbs",
+			"tags": ["vocabulary", "word-scramble", "B2", "business"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "collaborate",
+			"scrambled": "oratecollab",
+			"hint": "To work together with someone to achieve something",
+			"explanation": "To collaborate means to work jointly with others, especially in an intellectual endeavor.",
+			"contextSentence": "The two companies will collaborate on the new project."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "verbs",
+			"tags": ["vocabulary", "word-scramble", "B2", "work"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "interpretation",
+			"scrambled": "tioninterpretat",
+			"hint": "The act of explaining the meaning of something",
+			"explanation": "Interpretation is the act of explaining or understanding the meaning of something.",
+			"contextSentence": "Her interpretation of the poem was very insightful."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B2", "analysis"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "initiative",
+			"scrambled": "tiveinitia",
+			"hint": "The ability to assess and start things independently",
+			"explanation": "Initiative is the ability to assess and initiate things independently.",
+			"contextSentence": "She took the initiative to organize the meeting."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B2", "leadership"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "contribution",
+			"scrambled": "butioncontri",
+			"hint": "Something that you give or do to help achieve something",
+			"explanation": "A contribution is something that you give or do to help achieve something or make it successful.",
+			"contextSentence": "Everyone made a valuable contribution to the discussion."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B2", "helping"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "substantial",
+			"scrambled": "tialsubstans",
+			"hint": "Large in amount, value, or importance",
+			"explanation": "Substantial means large in amount, value, or importance.",
+			"contextSentence": "They made a substantial investment in new technology."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "B2", "amount"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "alternative",
+			"scrambled": "tivealterna",
+			"hint": "One of two or more available possibilities",
+			"explanation": "An alternative is one of two or more available possibilities.",
+			"contextSentence": "We need to find an alternative solution to this problem."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B2", "choices"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "persuade",
+			"scrambled": "suaeperd",
+			"hint": "To make someone do or believe something by giving them a good reason",
+			"explanation": "To persuade means to cause someone to do something through reasoning or argument.",
+			"contextSentence": "He managed to persuade his friends to try the new restaurant."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "verbs",
+			"tags": ["vocabulary", "word-scramble", "B2", "communication"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "consideration",
+			"scrambled": "tionconsidera",
+			"hint": "Careful thought, typically over a period of time",
+			"explanation": "Consideration is careful thought, typically over a period of time.",
+			"contextSentence": "After careful consideration, she accepted the job offer."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B2", "thinking"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "fundamental",
+			"scrambled": "mentalfunda",
+			"hint": "Forming a necessary base or core; of central importance",
+			"explanation": "Fundamental means forming a necessary base or core; of central importance.",
+			"contextSentence": "Understanding grammar is fundamental to learning a language."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "B2", "basics"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "demonstrate",
+			"scrambled": "stratedemon",
+			"hint": "To show clearly how something works or is done",
+			"explanation": "To demonstrate means to show clearly how something works or is done.",
+			"contextSentence": "The teacher will demonstrate the experiment to the class."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "verbs",
+			"tags": ["vocabulary", "word-scramble", "B2", "teaching"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "significance",
+			"scrambled": "nificancesig",
+			"hint": "The quality of being worthy of attention; importance",
+			"explanation": "Significance means the quality of being important or having a special meaning.",
+			"contextSentence": "The discovery is of great significance for science."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "nouns",
+			"tags": ["vocabulary", "word-scramble", "B2", "meaning"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	},
+	{
+		"content": {
+			"word": "reliable",
+			"scrambled": "liabler",
+			"hint": "Consistently good in quality or performance; able to be trusted",
+			"explanation": "Reliable means consistently good in quality or performance; able to be trusted.",
+			"contextSentence": "He is a reliable friend who always keeps his promises."
+		},
+		"metadata": {
+			"englishLevel": "B2",
+			"difficulty": "upper-intermediate",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "B2", "trust"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 25,
+			"timeLimit": 50,
+			"difficultyMultiplier": 1.8
+		}
+	}
+]

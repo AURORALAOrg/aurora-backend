@@ -1,0 +1,574 @@
+[
+	{
+		"content": {
+			"word": "weather",
+			"scrambled": "rehwtae",
+			"hint": "The condition of the atmosphere at a particular place and time",
+			"explanation": "Weather refers to the state of the atmosphere, including temperature, humidity, precipitation, and wind.",
+			"contextSentence": "The weather forecast says it will rain tomorrow."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "environment",
+			"tags": ["vocabulary", "word-scramble", "A2", "weather"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "vacation",
+			"scrambled": "noacitva",
+			"hint": "A period of time when you don't work and often travel",
+			"explanation": "A vacation is a period of leisure time when people take a break from work or studies.",
+			"contextSentence": "We're going to the beach for our summer vacation."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "travel",
+			"tags": ["vocabulary", "word-scramble", "A2", "holiday"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "weekend",
+			"scrambled": "kendwee",
+			"hint": "Saturday and Sunday together",
+			"explanation": "The weekend is the period from Friday evening through Sunday, traditionally a time of rest.",
+			"contextSentence": "I usually meet my friends on the weekend."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "time",
+			"tags": ["vocabulary", "word-scramble", "A2", "time"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "birthday",
+			"scrambled": "thaybird",
+			"hint": "The anniversary of the day someone was born",
+			"explanation": "A birthday is the annual celebration of the date of one's birth.",
+			"contextSentence": "We're having a party for my brother's birthday on Saturday."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "celebrations",
+			"tags": ["vocabulary", "word-scramble", "A2", "events"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "television",
+			"scrambled": "siontelevi",
+			"hint": "A device for watching shows and programs",
+			"explanation": "A television is an electronic device for receiving broadcast signals and displaying them as images with sound.",
+			"contextSentence": "My family watches the news on television every evening."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "technology",
+			"tags": ["vocabulary", "word-scramble", "A2", "entertainment"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "restaurant",
+			"scrambled": "tauranrest",
+			"hint": "A place where people pay to sit and eat meals",
+			"explanation": "A restaurant is a business that prepares and serves food and drinks to customers.",
+			"contextSentence": "We had dinner at an Italian restaurant last night."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "food",
+			"tags": ["vocabulary", "word-scramble", "A2", "dining"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "shopping",
+			"scrambled": "gshoppin",
+			"hint": "The activity of buying things from stores",
+			"explanation": "Shopping is the activity of visiting stores to examine and purchase goods.",
+			"contextSentence": "She enjoys going shopping for clothes on the weekend."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "activities",
+			"tags": ["vocabulary", "word-scramble", "A2", "commerce"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "computer",
+			"scrambled": "putermco",
+			"hint": "An electronic device for processing information",
+			"explanation": "A computer is an electronic device that can store, retrieve, and process data.",
+			"contextSentence": "I use my computer to write emails and browse the internet."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "technology",
+			"tags": ["vocabulary", "word-scramble", "A2", "devices"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "bathroom",
+			"scrambled": "thoombar",
+			"hint": "A room with a toilet and usually a bath or shower",
+			"explanation": "A bathroom is a room containing a toilet and often a bathtub or shower.",
+			"contextSentence": "Excuse me, where is the bathroom, please?"
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "house",
+			"tags": ["vocabulary", "word-scramble", "A2", "rooms"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "breakfast",
+			"scrambled": "fastbkrea",
+			"hint": "The first meal of the day",
+			"explanation": "Breakfast is the first meal of the day, typically eaten in the morning.",
+			"contextSentence": "I usually have cereal and fruit for breakfast."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "food",
+			"tags": ["vocabulary", "word-scramble", "A2", "meals"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "neighbor",
+			"scrambled": "ghbornei",
+			"hint": "A person who lives near you",
+			"explanation": "A neighbor is someone who lives next to or close to your house or apartment.",
+			"contextSentence": "Our new neighbors invited us over for dinner."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "people",
+			"tags": ["vocabulary", "word-scramble", "A2", "community"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "yesterday",
+			"scrambled": "erdayyest",
+			"hint": "The day before today",
+			"explanation": "Yesterday refers to the day before the current day.",
+			"contextSentence": "I went to the cinema yesterday afternoon."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "time",
+			"tags": ["vocabulary", "word-scramble", "A2", "adverbs"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "supermarket",
+			"scrambled": "rmarketsupe",
+			"hint": "A large store where you can buy food and household items",
+			"explanation": "A supermarket is a large self-service store selling groceries and household goods.",
+			"contextSentence": "I need to go to the supermarket to buy some milk and bread."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "shopping",
+			"tags": ["vocabulary", "word-scramble", "A2", "places"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "passport",
+			"scrambled": "ssporpat",
+			"hint": "An official document for traveling to other countries",
+			"explanation": "A passport is an official document issued by a government, certifying the holder's identity and citizenship.",
+			"contextSentence": "Don't forget to bring your passport when we travel abroad."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "travel",
+			"tags": ["vocabulary", "word-scramble", "A2", "documents"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "stadium",
+			"scrambled": "diutsam",
+			"hint": "A large building for sports events",
+			"explanation": "A stadium is a large sports venue with tiered seating for spectators.",
+			"contextSentence": "Thousands of fans watched the football match at the stadium."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "sports",
+			"tags": ["vocabulary", "word-scramble", "A2", "places"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "airport",
+			"scrambled": "troiapr",
+			"hint": "A place where airplanes take off and land",
+			"explanation": "An airport is a place where aircraft regularly take off and land, with buildings for passengers to wait and for aircraft to be serviced.",
+			"contextSentence": "We arrived at the airport two hours before our flight."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "places",
+			"tags": ["vocabulary", "word-scramble", "A2", "travel"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "library",
+			"scrambled": "rarylib",
+			"hint": "A place where you can borrow books",
+			"explanation": "A library is a building or room containing a collection of books that can be borrowed or read.",
+			"contextSentence": "She goes to the library every Saturday to study."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "places",
+			"tags": ["vocabulary", "word-scramble", "A2", "education"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "ticket",
+			"scrambled": "kettic",
+			"hint": "A piece of paper that allows you to enter a place or travel",
+			"explanation": "A ticket is a piece of paper or card that gives you the right to enter a place, travel by public transport, etc.",
+			"contextSentence": "He bought a train ticket to London."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "travel",
+			"tags": ["vocabulary", "word-scramble", "A2", "transport"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "garden",
+			"scrambled": "dnegar",
+			"hint": "An area of ground where you grow plants or flowers",
+			"explanation": "A garden is a piece of ground next to or near a house where flowers, shrubs, vegetables, or fruit are grown.",
+			"contextSentence": "We planted tomatoes in our garden this year."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "nature",
+			"tags": ["vocabulary", "word-scramble", "A2", "plants"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "teacher",
+			"scrambled": "herteac",
+			"hint": "A person who helps students learn",
+			"explanation": "A teacher is a person whose job is to help students to learn at a school, college, or university.",
+			"contextSentence": "Our English teacher is very friendly and helpful."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "people",
+			"tags": ["vocabulary", "word-scramble", "A2", "school"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "holiday",
+			"scrambled": "daliho",
+			"hint": "A special day when you do not have to work or go to school",
+			"explanation": "A holiday is a day when most people do not have to work, usually for a special reason.",
+			"contextSentence": "Christmas is my favorite holiday."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "celebrations",
+			"tags": ["vocabulary", "word-scramble", "A2", "events"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "pencil",
+			"scrambled": "cilpen",
+			"hint": "A tool for writing or drawing, made of wood and graphite",
+			"explanation": "A pencil is an instrument for writing or drawing, consisting of a thin stick of graphite inside a long thin piece of wood.",
+			"contextSentence": "Please use a pencil to complete the test."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "school",
+			"tags": ["vocabulary", "word-scramble", "A2", "stationery"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "window",
+			"scrambled": "dowwin",
+			"hint": "An opening in a wall with glass that lets in light",
+			"explanation": "A window is an opening in the wall of a building, fitted with glass, to let in light or air and to allow people to see out.",
+			"contextSentence": "She opened the window to let in some fresh air."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "house",
+			"tags": ["vocabulary", "word-scramble", "A2", "home"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "doctor",
+			"scrambled": "ctrood",
+			"hint": "A person who helps sick people get better",
+			"explanation": "A doctor is a person with a medical degree whose job is to treat people who are ill or injured.",
+			"contextSentence": "The doctor gave me some medicine for my cough."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "people",
+			"tags": ["vocabulary", "word-scramble", "A2", "health"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "mountain",
+			"scrambled": "tainmoun",
+			"hint": "A very high hill, often with steep sides",
+			"explanation": "A mountain is a large natural elevation of the earth's surface rising abruptly from the surrounding level.",
+			"contextSentence": "We went hiking in the mountains during our trip."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "nature",
+			"tags": ["vocabulary", "word-scramble", "A2", "geography"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	},
+	{
+		"content": {
+			"word": "bicycle",
+			"scrambled": "cyclebi",
+			"hint": "A vehicle with two wheels that you ride by pushing pedals",
+			"explanation": "A bicycle is a vehicle with two wheels that you ride by pushing its pedals with your feet.",
+			"contextSentence": "He rides his bicycle to school every day."
+		},
+		"metadata": {
+			"englishLevel": "A2",
+			"difficulty": "easy-intermediate",
+			"category": "vocabulary",
+			"subCategory": "transport",
+			"tags": ["vocabulary", "word-scramble", "A2", "vehicles"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 15,
+			"timeLimit": 40,
+			"difficultyMultiplier": 1.2
+		}
+	}
+]

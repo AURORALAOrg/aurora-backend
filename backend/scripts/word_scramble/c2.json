@@ -1,0 +1,266 @@
+[
+	{
+		"content": {
+			"word": "intransigent",
+			"scrambled": "NTSIEIRNAGT",
+			"hint": "Unwilling to change one's views",
+			"explanation": "Intransigent means unwilling or refusing to change one's views or to agree.",
+			"contextSentence": "The union remained intransigent in their demands."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "abstract",
+			"tags": ["vocabulary", "word-scramble", "C2", "abstract"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 55,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"word": "obfuscate",
+			"scrambled": "FUBOASTCE",
+			"hint": "To make unclear or obscure",
+			"explanation": "Obfuscate means to deliberately make something unclear or difficult to understand.",
+			"contextSentence": "The report was written in a way that could obfuscate the facts."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "verbs",
+			"tags": ["vocabulary", "word-scramble", "C2", "verbs"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 55,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"word": "ephemeral",
+			"scrambled": "EMPHALERE",
+			"hint": "Lasting a very short time",
+			"explanation": "Ephemeral means lasting for a very short time.",
+			"contextSentence": "The beauty of the sunset was ephemeral."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "C2", "adjectives"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 55,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"word": "recalcitrant",
+			"scrambled": "ALNTRCTIRECA",
+			"hint": "Having an uncooperative attitude",
+			"explanation": "Recalcitrant means having an obstinately uncooperative attitude.",
+			"contextSentence": "The recalcitrant student refused to obey the rules."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "traits",
+			"tags": ["vocabulary", "word-scramble", "C2", "traits"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 55,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"word": "pellucid",
+			"scrambled": "LUCPEILD",
+			"hint": "Transparently clear in style or meaning",
+			"explanation": "Pellucid means transparently clear in style or meaning.",
+			"contextSentence": "The author's pellucid prose made the book easy to read."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "C2", "adjectives"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 55,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"word": "antediluvian",
+			"scrambled": "VANTIDELUAIN",
+			"hint": "Ridiculously old-fashioned",
+			"explanation": "Antediluvian means ridiculously old-fashioned.",
+			"contextSentence": "He has some antediluvian notions about the role of women."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "C2", "adjectives"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 55,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"word": "pulchritude",
+			"scrambled": "CDEHIRTULPU",
+			"hint": "Physical beauty",
+			"explanation": "Pulchritude means physical beauty.",
+			"contextSentence": "The pulchritude of the landscape took their breath away."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "abstract",
+			"tags": ["vocabulary", "word-scramble", "C2", "abstract"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 55,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"word": "quixotic",
+			"scrambled": "TIXOQUIC",
+			"hint": "Exceedingly idealistic; unrealistic and impractical",
+			"explanation": "Quixotic means exceedingly idealistic; unrealistic and impractical.",
+			"contextSentence": "His quixotic plans were unlikely to succeed."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "C2", "adjectives"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 55,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"word": "recondite",
+			"scrambled": "EDTRECION",
+			"hint": "Little known; abstruse",
+			"explanation": "Recondite means little known or abstruse.",
+			"contextSentence": "The professor's lectures were full of recondite information."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "adjectives",
+			"tags": ["vocabulary", "word-scramble", "C2", "adjectives"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 55,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"word": "sagacity",
+			"scrambled": "GASACITY",
+			"hint": "Acuteness of mental discernment",
+			"explanation": "Sagacity means acuteness of mental discernment and soundness of judgment.",
+			"contextSentence": "Her sagacity in business matters was well known."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "traits",
+			"tags": ["vocabulary", "word-scramble", "C2", "traits"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 55,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"word": "vicissitude",
+			"scrambled": "CITIVSUIDE",
+			"hint": "A change of circumstances or fortune",
+			"explanation": "Vicissitude means a change of circumstances or fortune, typically one that is unwelcome or unpleasant.",
+			"contextSentence": "He endured the vicissitudes of a turbulent career."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "abstract",
+			"tags": ["vocabulary", "word-scramble", "C2", "abstract"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 55,
+			"difficultyMultiplier": 2.3
+		}
+	},
+	{
+		"content": {
+			"word": "obstreperous",
+			"scrambled": "STROUSOEPREB",
+			"hint": "Noisy and difficult to control",
+			"explanation": "Obstreperous means noisy and difficult to control.",
+			"contextSentence": "The obstreperous crowd was hard to manage."
+		},
+		"metadata": {
+			"englishLevel": "C2",
+			"difficulty": "proficient",
+			"category": "vocabulary",
+			"subCategory": "traits",
+			"tags": ["vocabulary", "word-scramble", "C2", "traits"],
+			"type": "word_scramble"
+		},
+		"gameMetadata": {
+			"pointsValue": 35,
+			"timeLimit": 55,
+			"difficultyMultiplier": 2.3
+		}
+	}
+]

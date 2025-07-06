@@ -19,7 +19,7 @@ const pool = new Pool({
 const connectDB = async () => {
   try {
     const client = await pool.connect();
-    console.log("📦 Connected to the PostgreSQL database successfully!");
+    console.log("📦 Connected to the Supabase database successfully!");
     client.release();
   } catch (error) {
     console.error("❌ Database connection error:", error);
