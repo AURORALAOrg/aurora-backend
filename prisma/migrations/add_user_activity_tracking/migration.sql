@@ -1,6 +1,11 @@
 -- Add activity tracking fields to User table
-ALTER TABLE "User" ADD COLUMN "lastLoginAt" TIMESTAMP(3);
-ALTER TABLE "User" ADD COLUMN "lastActivityAt" TIMESTAMP(3);
+ALTER TABLE "User" 
+  ADD COLUMN "lastLoginAt"   TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  ADD COLUMN "lastActivityAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP;
+
+-- Performance index for inactivity look-ups
+CREATE INDEX "user_lastActivityAt_idx" ON "User"("lastActivityAt");
+CREATE INDEX "user_lastLoginAt_idx" ON "User"("lastLoginAt");
 
 -- Create ReminderHistory table
 CREATE TABLE "reminder_history" (
