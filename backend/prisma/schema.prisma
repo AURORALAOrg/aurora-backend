@@ -14,10 +14,10 @@ enum Status {
 }
 
 enum QuestionType {
-  MULTIPLE_CHOICE    @map("multiple_choice")
-  SENTENCE_BUILDER   @map("sentence_builder")
-  FILL_IN_BLANKS     @map("fill_in_blanks")
-  IDIOM_CHALLENGE    @map("idiom_challenge")
+  MULTIPLE_CHOICE  @map("multiple_choice")
+  SENTENCE_BUILDER @map("sentence_builder")
+  FILL_IN_BLANKS   @map("fill_in_blanks")
+  IDIOM_CHALLENGE  @map("idiom_challenge")
 }
 
 enum DifficultyLevel {
@@ -27,19 +27,37 @@ enum DifficultyLevel {
 }
 
 model User {
-  id             String    @id @default(uuid())
-  email          String    @unique
-  password       String
-  isEmailVerified  Boolean @default(false)
-  firstName      String?
-  lastName       String?
-  phoneNumber    String?
-  profileImage   String?
-  status        Status     @default(INACTIVE)
-  createdAt      DateTime  @default(now())
-  updatedAt      DateTime  @updatedAt
-  wallet         Wallet?
-  questions      Question[]
+  id              String         @id @default(uuid())
+  email           String         @unique
+  password        String
+  isEmailVerified Boolean        @default(false)
+  firstName       String?
+  lastName        String?
+  phoneNumber     String?
+  profileImage    String?
+  status          Status         @default(INACTIVE)
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  wallet          Wallet?
+  questions       Question[]
+  totalXP         Int            @default(0)
+  dailyXP         Int            @default(0)
+  weeklyXP        Int            @default(0)
+  currentStreak   Int            @default(0)
+  longestStreak   Int            @default(0)
+  lastStreakDate  DateTime?
+  lastActivityAt  DateTime?
+  UserActivity    UserActivity[]
+}
+
+model UserActivity {
+  id                 String   @id @default(uuid())
+  userId             String
+  user               User     @relation(fields: [id], references: [id])
+  activityDate       DateTime
+  xpEarned           Int
+  questionsCompleted Int
+  createdAt          DateTime @default(now())
 }
 
 model Wallet {
@@ -54,19 +72,19 @@ model Wallet {
 }
 
 model WalletVerificationChallenge {
-  id            String    @id @default(uuid())
-  walletAddress String    @unique
+  id            String   @id @default(uuid())
+  walletAddress String   @unique
   message       String
   nonce         String
-  createdAt     DateTime  @default(now())
+  createdAt     DateTime @default(now())
   expiresAt     DateTime
 }
 
 model Question {
   id            String   @id @default(uuid())
-  content       Json     // Will contain question-specific content
-  metadata      Json     // Will contain type and other metadata
-  gameMetadata  Json     // Will contain game-specific metadata
+  content       Json // Will contain question-specific content
+  metadata      Json // Will contain type and other metadata
+  gameMetadata  Json // Will contain game-specific metadata
   createdBy     String
   status        Status   @default(ACTIVE)
   createdAt     DateTime @default(now())

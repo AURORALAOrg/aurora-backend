@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import { createQuestionValidation, updateQuestionValidation } from '../models/validations/question.validators';
 import QuestionService from '../services/question.service';
 import { BadRequestError, InternalError } from '../core/api/ApiError';
+import { GamificationController } from './gamification.controller';
 
 interface AuthenticatedRequest extends Request {
     user?: {

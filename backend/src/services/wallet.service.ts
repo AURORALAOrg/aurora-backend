@@ -1,7 +1,5 @@
-import { PrismaClient, Status } from "@prisma/client";
+import prisma from "@prisma/client";
 import { InternalError } from "../core/api/ApiError";
-
-const prisma = new PrismaClient();
 
 class WalletService {
   public static async createWallet(userId: string, walletAddress: string) {
@@ -30,7 +28,6 @@ class WalletService {
     nonce: string
   ) {
     try {
-      // Create or update wallet challenge
       await prisma.walletVerificationChallenge.upsert({
         where: { walletAddress },
         update: {
