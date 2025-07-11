@@ -32,7 +32,7 @@ export class StreakService {
         where: { id: userId },
         data: {
           currentStreak: newStreak,
-          longestStreak: Math.max(user.longestStreak, newStreak),
+          longestStreak: Math.max(user.longestStreak || 0, newStreak),
           lastStreakDate: today
         }
       });

@@ -1,5 +1,5 @@
-import { Request, Response } from 'express';
-import { XPService } from '../services/xp.service';
+import { Request, Response } from "express";
+import { XPService } from "../services/xp.service";
 import prisma from "@prisma/client";
 
 export class GamificationController {
@@ -18,7 +18,7 @@ export class GamificationController {
 
       const user = await prisma.user.findUnique({
         where: { id: userId },
-        select: { totalXP: true, currentStreak: true }
+        select: { totalXP: true, currentStreak: true },
       });
 
       res.json({
@@ -30,11 +30,15 @@ export class GamificationController {
           currentStreak: user?.currentStreak || 0,
           streakBonus: true,
           timeBonus: timeSpent < timeLimit * 0.5,
-          levelUp: false
-        }
+          levelUp: false,
+        },
       });
     } catch (error) {
-      res.status(500).json({ success: false, message: error.message });
+      console.error("Gamification error:", error);
+      res.status(500).json({
+        success: false,
+        message: "An error occurred while processing your request",
+      });
     }
   }
 
@@ -48,24 +52,27 @@ export class GamificationController {
           dailyXP: true,
           weeklyXP: true,
           currentStreak: true,
-          longestStreak: true
-        }
+          longestStreak: true,
+        },
       });
 
-      if (!user) throw new Error('User not found');
+      if (!user) throw new Error("User not found");
 
       const activities = await prisma.userActivity.findMany({
         where: { userId },
-        select: { questionsCompleted: true }
+        select: { questionsCompleted: true },
       });
 
       res.json({
         success: true,
         data: {
           ...user,
-          questionsCompleted: activities.reduce((sum, a) => sum + a.questionsCompleted, 0),
-          accuracy: 87.5 // Placeholder
-        }
+          questionsCompleted: activities.reduce(
+            (sum, a) => sum + a.questionsCompleted,
+            0
+          ),
+          accuracy: 87.5, // Placeholder
+        },
       });
     } catch (error) {
       res.status(500).json({ success: false, message: error.message });

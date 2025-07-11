@@ -1,4 +1,4 @@
-import prisma from "@prisma/client";
+import prisma, { Status } from "@prisma/client";
 import { InternalError } from "../core/api/ApiError";
 
 class WalletService {
