@@ -9,7 +9,7 @@ export const generateWalletChallenge = asyncHandler(
   async (req: Request, res: Response) => {
     const { walletAddress } = req.body;
 
-    // 🔑 Validate Stellar public key format (starts with 'G' and is valid Ed25519) 
+    
     if (!StrKey.isValidEd25519PublicKey(walletAddress)) {
       throw new BadRequestError("Invalid Stellar public key format. Expected a valid G... address");
     }

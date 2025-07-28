@@ -8,7 +8,7 @@ import WalletService from "../services/wallet.service"
 import serverSettings from "../core/config/settings"
 import EmailNotifier from "../utils/service/emailNotifier"
 import Bcrypt from "../utils/security/bcrypt"
-import { StrKey } from "@stellar/stellar-sdk"
+import { ethers } from "ethers"
 
 export const register = asyncHandler(async (req: Request, res: Response) => {
   const { email, password, firstName, lastName, walletAddress } = req.body
@@ -16,8 +16,8 @@ export const register = asyncHandler(async (req: Request, res: Response) => {
   const existingUser = await UserService.readUserByEmail(email)
   if (existingUser) throw new BadRequestError("Email already registered")
 
-  if (!StrKey.isValidEd25519PublicKey(walletAddress)) {
-    throw new BadRequestError("Invalid Stellar public key format. Expected a valid G... address")
+  if (!ethers.isAddress(walletAddress)) {
+    throw new BadRequestError("Invalid wallet address")
   }
 
   const existingWallet = await WalletService.readWalletByWalletAddress(walletAddress)
