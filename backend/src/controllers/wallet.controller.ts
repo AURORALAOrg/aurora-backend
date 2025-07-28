@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { ethers } from "ethers";
+import { Keypair, StrKey } from "@stellar/stellar-sdk";
 import asyncHandler from "../middlewares/async";
 import { SuccessResponse } from "../core/api/ApiResponse";
 import { BadRequestError } from "../core/api/ApiError";
@@ -9,15 +9,13 @@ export const generateWalletChallenge = asyncHandler(
   async (req: Request, res: Response) => {
     const { walletAddress } = req.body;
 
-    // Validate wallet address format
-    if (!ethers.isAddress(walletAddress)) {
-      throw new BadRequestError("Invalid wallet address format");
+    // 🔑 Validate Stellar public key format (starts with 'G' and is valid Ed25519) 
+    if (!StrKey.isValidEd25519PublicKey(walletAddress)) {
+      throw new BadRequestError("Invalid Stellar public key format. Expected a valid G... address");
     }
 
-    // Generate a random nonce
     const nonce = Math.floor(Math.random() * 1000000).toString();
 
-    // Create the challenge message
     const message = `Verify ownership of wallet address ${walletAddress} for AURORA Platform. Nonce: ${nonce}`;
 
     // Store the challenge in the database
@@ -59,12 +57,14 @@ export const verifyWalletSignature = asyncHandler(
     }
 
     try {
-      // Verify signature
-      const messageHash = ethers.hashMessage(challenge.message);
-      const recoveredAddress = ethers.recoverAddress(messageHash, signature);
-
-      // Check if the recovered address matches the claimed wallet address
-      if (recoveredAddress.toLowerCase() !== walletAddress.toLowerCase()) {
+      
+      const keypair = Keypair.fromPublicKey(walletAddress);
+      const messageBuffer = Buffer.from(challenge.message, 'utf8');
+      const signatureBuffer = Buffer.from(signature, 'base64');
+      
+      const isValid = keypair.verify(messageBuffer, signatureBuffer);
+      
+      if (!isValid) {
         throw new BadRequestError("Invalid signature");
       }
 
