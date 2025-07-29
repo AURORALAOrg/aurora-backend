@@ -34,7 +34,6 @@ export const verifyWalletSignature = asyncHandler(
     const { walletAddress, signature } = req.body;
     const userId = res.locals.account.id;
 
-    // Get the wallet from the database
     const wallet = await WalletService.readWalletByWalletAddress(walletAddress);
 
     if (!wallet) {
@@ -47,7 +46,7 @@ export const verifyWalletSignature = asyncHandler(
       );
     }
 
-    // Get the challenge from the database
+ 
     const challenge = await WalletService.getWalletChallenge(walletAddress);
 
     if (!challenge) {
@@ -58,14 +57,33 @@ export const verifyWalletSignature = asyncHandler(
 
     try {
       
-      const keypair = Keypair.fromPublicKey(walletAddress);
+      let keypair;
+      try {
+        keypair = Keypair.fromPublicKey(walletAddress);
+      } catch (err) {
+        throw new BadRequestError("Invalid Stellar public key. Unable to construct Keypair.");
+      }
+
+     
+      if (!/^[A-Za-z0-9+/=]+$/.test(signature)) {
+        throw new BadRequestError("Signature is not valid base64 format.");
+      }
+      let signatureBuffer;
+      try {
+        signatureBuffer = Buffer.from(signature, 'base64');
+      } catch (err) {
+        throw new BadRequestError("Failed to decode signature from base64.");
+      }
       const messageBuffer = Buffer.from(challenge.message, 'utf8');
-      const signatureBuffer = Buffer.from(signature, 'base64');
-      
-      const isValid = keypair.verify(messageBuffer, signatureBuffer);
-      
+
+      let isValid = false;
+      try {
+        isValid = keypair.verify(messageBuffer, signatureBuffer);
+      } catch (err) {
+        throw new BadRequestError("Signature verification failed: " + (err instanceof Error ? err.message : 'Unknown error'));
+      }
       if (!isValid) {
-        throw new BadRequestError("Invalid signature");
+        throw new BadRequestError("Invalid signature: signature does not match the message and public key.");
       }
 
       // Mark the wallet as verified
@@ -79,8 +97,12 @@ export const verifyWalletSignature = asyncHandler(
         verified: true,
       }).send(res);
     } catch (error) {
-      console.error("Wallet verification error:", error);
-      throw new BadRequestError("Failed to verify wallet signature");
+      if (error instanceof BadRequestError) {
+        // Already a handled, specific error
+        throw error;
+      }
+      console.error("Wallet verification unexpected error:", error);
+      throw new BadRequestError("Unexpected error during wallet verification.");
     }
   }
 );
