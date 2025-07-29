@@ -64,9 +64,9 @@ export const verifyWalletSignature = asyncHandler(
         throw new BadRequestError("Invalid Stellar public key. Unable to construct Keypair.");
       }
 
-     
+      
       if (!/^[A-Za-z0-9+/=]+$/.test(signature)) {
-        throw new BadRequestError("Signature is not valid base64 format.");
+        throw new BadRequestError("Invalid signature format. Signature is not valid base64 format.");
       }
       let signatureBuffer;
       try {
