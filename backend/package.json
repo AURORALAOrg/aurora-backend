@@ -17,11 +17,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-<<<<<<< HEAD
     "@stellar/stellar-sdk": "^13.3.0",
-=======
-    "@stellar/stellar-sdk": "13.3.0",
->>>>>>> 3935e89620563f96fbd92184e3990af1fd474255
     "@types/compression": "^1.7.5",
     "axios": "^1.7.7",
     "bcrypt": "^6.0.0",
