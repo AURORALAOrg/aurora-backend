@@ -8,7 +8,7 @@ import WalletService from "../services/wallet.service"
 import serverSettings from "../core/config/settings"
 import EmailNotifier from "../utils/service/emailNotifier"
 import Bcrypt from "../utils/security/bcrypt"
-import { ethers } from "ethers"
+import { StrKey } from "@stellar/stellar-sdk"
 
 export const register = asyncHandler(async (req: Request, res: Response) => {
   const { email, password, firstName, lastName, walletAddress } = req.body
@@ -16,8 +16,8 @@ export const register = asyncHandler(async (req: Request, res: Response) => {
   const existingUser = await UserService.readUserByEmail(email)
   if (existingUser) throw new BadRequestError("Email already registered")
 
-  if (!ethers.isAddress(walletAddress)) {
-    throw new BadRequestError("Invalid wallet address")
+  if (!StrKey.isValidEd25519PublicKey(walletAddress)) {
+    throw new BadRequestError("Invalid Stellar wallet address")
   }
 
   const existingWallet = await WalletService.readWalletByWalletAddress(walletAddress)
@@ -38,6 +38,8 @@ export const register = asyncHandler(async (req: Request, res: Response) => {
   const verificationToken = Jwt.issue({ userId: result.id }, "1d")
 
   const verificationLink = `${serverSettings.auroraWebApp.baseUrl}/verify-email?token=${verificationToken}`
+
+  console.log('verificationLink:', verificationLink);
   EmailNotifier.sendAccountActivationEmail(email, verificationLink)
 
   const userResponse = {
