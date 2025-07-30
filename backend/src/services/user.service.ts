@@ -57,6 +57,84 @@ class UserService {
       where: { id },
     });
   }
+
+  public static async updateLastLogin(userId: string) {
+    try {
+      return await prisma.user.update({
+        where: { id: userId },
+        data: {
+          lastLoginAt: new Date(),
+          lastActivityAt: new Date()
+        },
+      });
+    } catch (error) {
+      console.error("Failed to update last login:", error);
+      throw new InternalError("Failed to update last login");
+    }
+  }
+
+  public static async updateLastActivity(userId: string) {
+    try {
+      return await prisma.user.update({
+        where: { id: userId },
+        data: { lastActivityAt: new Date() },
+      });
+    } catch (error) {
+      console.error("Failed to update last activity:", error);
+      // Don't throw error for activity tracking to avoid breaking requests
+    }
+  }
+
+  public static async findInactiveUsers(days: number) {
+    const cutoffDate = new Date();
+    cutoffDate.setDate(cutoffDate.getDate() - days);
+
+    try {
+      return await prisma.user.findMany({
+        where: {
+          status: Status.ACTIVE,
+          isEmailVerified: true,
+          OR: [
+            {
+              lastActivityAt: {
+                lte: cutoffDate,
+              },
+            },
+            {
+              lastActivityAt: null,
+              createdAt: {
+                lte: cutoffDate,
+              },
+            },
+          ],
+        },
+        select: {
+          id: true,
+          email: true,
+          firstName: true,
+          lastName: true,
+          lastActivityAt: true,
+          lastReminderSent: true,
+          createdAt: true,
+        },
+      });
+    } catch (error) {
+      console.error("Failed to find inactive users:", error);
+      throw new InternalError("Failed to find inactive users");
+    }
+  }
+
+  public static async updateReminderSent(userId: string) {
+    try {
+      return await prisma.user.update({
+        where: { id: userId },
+        data: { lastReminderSent: new Date() },
+      });
+    } catch (error) {
+      console.error("Failed to update reminder sent:", error);
+      throw new InternalError("Failed to update reminder sent");
+    }
+  }
 }
 
 export default UserService;
