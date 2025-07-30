@@ -116,7 +116,6 @@ class UserReminderJob {
       console.log(`✅ Updated reminder timestamps for ${userIds.length} users`);
     } catch (error) {
       console.error("❌ Failed to update reminder timestamps:", error);
-      // Don't throw here as emails were already sent successfully
     }
   }
 
@@ -137,13 +136,10 @@ class UserReminderJob {
     nextRun?: string;
   }> {
     try {
-      // In a real implementation, you might store job execution history
-      // For now, we'll just check if the services are accessible
       await NotificationService.getReminderStats();
 
       return {
         isHealthy: true,
-        // These would come from job execution history in a real implementation
         lastRun: new Date(),
         nextRun: "Based on CRON schedule",
       };

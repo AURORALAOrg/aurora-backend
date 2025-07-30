@@ -18,17 +18,14 @@ JobSchedulerService.initializeJobs();
 
 
 // Graceful shutdown
-process.on('SIGTERM', () => {
-  console.log('SIGTERM received, shutting down gracefully');
+const gracefulShutdown = (signal: string) => {
+  console.log(`${signal} received, shutting down gracefully`);
   JobSchedulerService.shutdown();
   process.exit(0);
-});
+};
 
-process.on('SIGINT', () => {
-  console.log('SIGINT received, shutting down gracefully');
-  JobSchedulerService.shutdown();
-  process.exit(0);
-});
+process.on('SIGTERM', () => gracefulShutdown('SIGTERM'));
+process.on('SIGINT', () => gracefulShutdown('SIGINT'));
 
 server.listen(port, () => {
   console.log(`🚀🚀🚀 Aurora's server is running at http://localhost:${port} 🚀🚀🚀`);
