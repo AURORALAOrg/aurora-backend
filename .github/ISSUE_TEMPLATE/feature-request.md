@@ -19,11 +19,6 @@ assignees: ''
 - 
 - 
 
-## 🔍 Evidence
-<!-- Provide screenshots, GIFs, or videos demonstrating the changes -->
-### Screenshots/Videos
-<!-- Drag and drop images here or use markdown syntax -->
-
 ## ✅ Checklist
 - [ ] Changes have been tested locally
 - [ ] Tests have been added/updated if necessary
