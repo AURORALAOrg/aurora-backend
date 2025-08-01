@@ -30,7 +30,7 @@ export const isAuthorized = () => {
       res.locals.account = user
       next()
     } catch (err) {
-      logger.error('Auth middleware error', { error: err instanceof Error ? err.message : String(err) });
+      logger.error('Auth middleware error', { error: err instanceof Error ? err.name : "UnknownError" });
       next(new UnauthorizedError("Unauthorized"))
     }
   }
