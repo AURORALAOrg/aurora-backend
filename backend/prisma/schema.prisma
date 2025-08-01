@@ -26,6 +26,28 @@ enum DifficultyLevel {
   ADVANCED     @map("advanced")
 }
 
+enum AchievementCategory {
+  GENERAL      @map("general")
+  XP           @map("xp")
+  STREAK       @map("streak")
+  MASTERY      @map("mastery")
+  SPECIAL      @map("special")
+}
+
+enum AchievementRequirementType {
+  XP_TOTAL     @map("xp_total")
+  STREAK_DAYS  @map("streak_days")
+  MASTERY      @map("mastery")
+  SPECIAL      @map("special")
+}
+
+enum AchievementRarity {
+  COMMON       @map("common")
+  RARE         @map("rare")
+  EPIC         @map("epic")
+  LEGENDARY    @map("legendary")
+}
+
 model User {
   id             String    @id @default(uuid())
   email          String    @unique
@@ -36,10 +58,13 @@ model User {
   phoneNumber    String?
   profileImage   String?
   status        Status     @default(INACTIVE)
+  xp            Int        @default(0)
+  streak        Int        @default(0)
   createdAt      DateTime  @default(now())
   updatedAt      DateTime  @updatedAt
   wallet         Wallet?
   questions      Question[]
+  userAchievements UserAchievement[]
 }
 
 model Wallet {
@@ -74,4 +99,35 @@ model Question {
   createdByUser User     @relation(fields: [createdBy], references: [id])
 
   @@map("questions")
+}
+
+model Achievement {
+  id               String   @id @default(uuid())
+  name             String   @unique
+  description      String
+  category         AchievementCategory
+  requirementType  AchievementRequirementType
+  requirementValue Int
+  xpBonus          Int      @default(0)
+  badgeUrl         String?
+  rarity           AchievementRarity   @default(COMMON)
+  isActive         Boolean  @default(true)
+  createdAt        DateTime @default(now())
+  userAchievements UserAchievement[]
+
+  @@index([isActive])
+}
+
+model UserAchievement {
+  id             String     @id @default(uuid())
+  userId         String
+  achievementId  String
+  earnedAt       DateTime   @default(now())
+  /// remainingProgress: 0 means achievement completed, >0 means in-progress
+  remainingProgress  Int        @default(0)
+  isNotified     Boolean    @default(false)
+  user           User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievement    Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+  @@unique([userId, achievementId])
+  @@index([remainingProgress])
 }
