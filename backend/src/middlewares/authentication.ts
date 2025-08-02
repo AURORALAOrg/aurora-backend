@@ -25,6 +25,9 @@ export const isAuthorized = () => {
       const user = await UserService.readUserById(decoded.payload.id)
       if (!user) return next(new UnauthorizedError("Unauthorized - User not found"))
 
+      // Track user activity
+      await UserService.updateLastActivity(user.id);
+
       req.user = user
       res.locals.account = user
       next()
