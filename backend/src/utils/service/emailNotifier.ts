@@ -8,6 +8,20 @@ interface ReminderEmailData {
 }
 
 class EmailNotifier {
+  private static getValidatedAppUrl(): string {
+    const url = process.env.AURORA_WEB_APP_BASE_URL;
+    if (!url) {
+      throw new Error('AURORA_WEB_APP_BASE_URL is not configured');
+    }
+
+    try {
+      new URL(url); // Validates URL format
+      return url;
+    } catch {
+      throw new Error('AURORA_WEB_APP_BASE_URL is not a valid URL');
+    }
+  }
+
   public static async sendAccountActivationEmail(email: string, link: string) {
     const message = `Welcome to AURORA. Click on this to activate your account: ${link}`;
     const subject = "Activate your account";
@@ -28,7 +42,7 @@ class EmailNotifier {
 
 We noticed you haven't been active on AURORA for ${daysSinceActivity} days. We miss you!
 
-Log back in and continue your progress: ${process.env.AURORA_WEB_APP_BASE_URL}
+Log back in and continue your progress: ${this.getValidatedAppUrl()}
 
 Keep learning!
 The AURORA Team`
@@ -41,7 +55,7 @@ The AURORA Team`
 
 It's been ${daysSinceActivity} days since we last saw you on AURORA. We hope you're doing well!
 
-Pick up where you left off: ${process.env.AURORA_WEB_APP_BASE_URL}
+Pick up where you left off: ${this.getValidatedAppUrl()}
 
 We believe in your potential!
 The AURORA Team`
@@ -54,7 +68,7 @@ The AURORA Team`
 
 We haven't seen you on AURORA for ${daysSinceActivity} days, and we want to help you get back on track!
 
-Your skills are waiting to be unlocked: ${process.env.AURORA_WEB_APP_BASE_URL}
+Your skills are waiting to be unlocked: ${this.getValidatedAppUrl()}
 
 Let's restart your journey together!
 The AURORA Team`
@@ -70,7 +84,7 @@ It's been ${daysSinceActivity} days since you last visited AURORA. We truly miss
 This is our final reminder, but we want you to know that your account and progress are still here waiting for you. 
 
 
-Give AURORA one more try: ${process.env.AURORA_WEB_APP_BASE_URL}
+Give AURORA one more try: ${this.getValidatedAppUrl()}
 
 
 Wishing you success in all your endeavors,
@@ -95,11 +109,12 @@ The AURORA Team`
     }
   }
 
-  public static async sendReminderEmails(reminders: ReminderEmailData[], maxRetries: number = 2, retryIntervalHours: number = 24) {
+  public static async sendReminderEmails(reminders: ReminderEmailData[], maxRetries: number = 2, retryDelayMs: number = 5000) {
     const results = {
       success: 0,
       failed: 0,
-      errors: [] as Array<{ email: string; error: string }>
+      errors: [] as Array<{ email: string; error: string }>,
+      successfulEmails: [] as string[]
     };
 
     for (const reminder of reminders) {
@@ -110,12 +125,12 @@ The AURORA Team`
         try {
           if (attempts > 0) {
             console.log(`🔄 Retry attempt ${attempts} for ${reminder.email}`);
-            // In a real scenario, you'd want to implement actual delay
-            // For now, we'll just log the retry attempt
+            await new Promise(resolve => setTimeout(resolve, retryDelayMs));
           }
 
           await this.sendReminderEmail(reminder);
           results.success++;
+          results.successfulEmails.push(reminder.email);
           success = true;
         } catch (error) {
           attempts++;

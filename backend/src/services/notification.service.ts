@@ -22,7 +22,7 @@ class NotificationService {
    */
   private static daysBetween(date1: Date, date2: Date): number {
     const diffTime = Math.abs(date2.getTime() - date1.getTime());
-    return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    return Math.floor(diffTime / (1000 * 60 * 60 * 24))
   }
 
   /**
@@ -104,8 +104,9 @@ class NotificationService {
     breakdown: Record<string, number>;
   }> {
     try {
-      const inactiveUsers = await UserService.findInactiveUsers(7);
       const candidates = await this.findReminderCandidates();
+      // Get total inactive count from the candidates or make a separate count query
+      const totalInactive = await UserService.countInactiveUsers(7);
 
       const breakdown = candidates.reduce((acc, candidate) => {
         acc[candidate.reminderType] = (acc[candidate.reminderType] || 0) + 1;
@@ -113,7 +114,7 @@ class NotificationService {
       }, {} as Record<string, number>);
 
       return {
-        totalInactive: inactiveUsers.length,
+        totalInactive,
         candidatesFound: candidates.length,
         breakdown,
       };

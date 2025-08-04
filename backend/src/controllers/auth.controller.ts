@@ -90,8 +90,11 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
   const isPasswordValid = await Bcrypt.compare(password, user.password)
   if (!isPasswordValid) throw new BadRequestError("Invalid credentials")
 
-  // Update login and activity timestamps
-  await UserService.updateLastLogin(user.id)
+  try {
+    await UserService.updateLastLogin(user.id)
+  } catch (err) {
+    console.error(`Couldn't update last login:`, err)
+  }
 
   const token = Jwt.issue({ id: user.id }, "1d")
 

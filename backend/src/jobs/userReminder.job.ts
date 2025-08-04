@@ -61,10 +61,14 @@ class UserReminderJob {
       const emailResults = await EmailNotifier.sendReminderEmails(reminderEmails, maxRetries);
 
       // Update lastReminderSent for successfully sent emails
-      const successfulEmails = reminderEmails.slice(0, emailResults.success);
-      await this.updateReminderSentTimestamps(successfulEmails.map(email =>
-        candidates.find(c => c.email === email.email)!.id
-      ));
+      const successfulEmails = emailResults.successfulEmails || [];
+      const userIdsToUpdate = successfulEmails
+        .map(email => candidates.find(c => c.email === email)?.id)
+        .filter(id => id !== undefined) as string[];
+
+      if (userIdsToUpdate.length > 0) {
+        await this.updateReminderSentTimestamps(userIdsToUpdate);
+      }
 
       const executionTime = Date.now() - startTime;
 
@@ -108,11 +112,7 @@ class UserReminderJob {
    */
   private static async updateReminderSentTimestamps(userIds: string[]): Promise<void> {
     try {
-      const updatePromises = userIds.map(userId =>
-        UserService.updateReminderSent(userId)
-      );
-
-      await Promise.all(updatePromises);
+      await UserService.updateReminderSentBatch(userIds);
       console.log(`✅ Updated reminder timestamps for ${userIds.length} users`);
     } catch (error) {
       console.error("❌ Failed to update reminder timestamps:", error);

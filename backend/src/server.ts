@@ -14,14 +14,33 @@ const port = settings.serverPort || 8000;
 connectDB();
 
 // Initialize scheduled jobs
-JobSchedulerService.initializeJobs();
-
+try {
+  JobSchedulerService.initializeJobs();
+  console.log("✅ Scheduled jobs initialized successfully");
+} catch (error) {
+  console.error("❌ Failed to initialize scheduled jobs:", error);
+}
 
 // Graceful shutdown
-const gracefulShutdown = (signal: string) => {
+const gracefulShutdown = async (signal: string) => {
   console.log(`${signal} received, shutting down gracefully`);
-  JobSchedulerService.shutdown();
-  process.exit(0);
+
+  // Set a timeout for forced shutdown
+  const forceShutdown = setTimeout(() => {
+    console.log("Force shutdown after timeout");
+    process.exit(1);
+  }, 10000);
+
+  try {
+    await JobSchedulerService.shutdown();
+    console.log("Jobs shut down successfully");
+    clearTimeout(forceShutdown);
+    process.exit(0);
+  } catch (error) {
+    console.error("Error during shutdown:", error);
+    clearTimeout(forceShutdown);
+    process.exit(1);
+  }
 };
 
 process.on('SIGTERM', () => gracefulShutdown('SIGTERM'));

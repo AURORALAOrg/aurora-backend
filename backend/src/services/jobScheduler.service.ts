@@ -25,6 +25,7 @@ class JobSchedulerService {
    */
   private static scheduleUserReminderJob(): void {
     const cronSchedule = settings.reminders.cronSchedule;
+    let isRunning = false;
 
     if (!cron.validate(cronSchedule)) {
       console.error(`❌ Invalid CRON schedule: ${cronSchedule}`);
@@ -32,6 +33,12 @@ class JobSchedulerService {
     }
 
     const job = cron.schedule(cronSchedule, async () => {
+      if (isRunning) {
+        console.log("⏭️ Skipping user reminder job - previous execution still running");
+        return;
+      }
+
+      isRunning = true;
       try {
         console.log("⏰ Running scheduled user reminder job...");
         const result = await UserReminderJob.checkInactiveUsers(settings.reminders.maxRetries);
@@ -43,6 +50,8 @@ class JobSchedulerService {
         }
       } catch (error) {
         console.error("❌ Scheduled reminder job error:", error);
+      } finally {
+        isRunning = false;
       }
     }, {
       timezone: "UTC",

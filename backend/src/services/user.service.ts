@@ -124,6 +124,36 @@ class UserService {
     }
   }
 
+  public static async countInactiveUsers(days: number): Promise<number> {
+    const cutoffDate = new Date();
+    cutoffDate.setDate(cutoffDate.getDate() - days);
+
+    try {
+      return await prisma.user.count({
+        where: {
+          status: Status.ACTIVE,
+          isEmailVerified: true,
+          OR: [
+            {
+              lastActivityAt: {
+                lte: cutoffDate,
+              },
+            },
+            {
+              lastActivityAt: null,
+              createdAt: {
+                lte: cutoffDate,
+              },
+            },
+          ],
+        },
+      });
+    } catch (error) {
+      console.error("Failed to count inactive users:", error);
+      throw new InternalError("Failed to count inactive users");
+    }
+  }
+
   public static async updateReminderSent(userId: string) {
     try {
       return await prisma.user.update({
@@ -133,6 +163,22 @@ class UserService {
     } catch (error) {
       console.error("Failed to update reminder sent:", error);
       throw new InternalError("Failed to update reminder sent");
+    }
+  }
+
+  public static async updateReminderSentBatch(userIds: string[]): Promise<void> {
+    try {
+      await prisma.$transaction(
+        userIds.map(userId =>
+          prisma.user.update({
+            where: { id: userId },
+            data: { lastReminderSent: new Date() }
+          })
+        )
+      );
+    } catch (error) {
+      console.error("Failed to batch update reminder sent:", error);
+      throw new InternalError("Failed to batch update reminder sent");
     }
   }
 }
