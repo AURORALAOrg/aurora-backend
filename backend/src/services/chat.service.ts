@@ -50,7 +50,7 @@ class ChatService {
       const { message, practiceLevel, conversationContext = [], conversationType = "general", conversationId, userId } = request;
 
       const systemPrompt = this.getPracticeLevelSystemPrompt(practiceLevel);
-      
+
       const messages: OpenAI.Chat.Completions.ChatCompletionMessageParam[] = [
         { role: "system", content: systemPrompt },
         ...conversationContext.map(ctx => ({
@@ -78,57 +78,61 @@ class ChatService {
       const timestamp = new Date().toISOString();
 
       if (conversationId) {
-        const existingConversation = await prisma.conversation.findUnique({
-          where: { id: conversationId, userId },
-        });
+        await prisma.$transaction(async (tx) => {
+          const existingConversation = await tx.conversation.findUnique({
+            where: { id: conversationId, userId },
+          });
 
-        if (!existingConversation) {
-          throw new Error("Conversation not found or unauthorized");
-        }
+          if (!existingConversation) {
+            throw new Error("Conversation not found or unauthorized");
+          }
 
-        await prisma.message.createMany({
-          data: [
-            {
-              conversationId,
-              role: "USER",
-              content: message,
-              timestamp: new Date(),
-            },
-            {
-              conversationId,
-              role: "ASSISTANT",
-              content: aiResponse,
-              timestamp: new Date(),
-            },
-          ],
+          await tx.message.createMany({
+            data: [
+              {
+                conversationId,
+                role: "USER",
+                content: message,
+                timestamp: new Date(),
+              },
+              {
+                conversationId,
+                role: "ASSISTANT",
+                content: aiResponse,
+                timestamp: new Date(),
+              },
+            ],
+          });
         });
       } else {
-        finalConversationId = uuidv4();
-        
-        const conversation = await prisma.conversation.create({
-          data: {
-            id: finalConversationId,
-            userId,
-            practiceLevel: practiceLevel as any,
-            conversationType,
-          },
-        });
+        await prisma.$transaction(async (tx) => {
+          finalConversationId = uuidv4();
 
-        await prisma.message.createMany({
-          data: [
-            {
-              conversationId: conversation.id,
-              role: "USER",
-              content: message,
-              timestamp: new Date(),
+          const conversation = await tx.conversation.create({
+            data: {
+              id: finalConversationId,
+              userId,
+              practiceLevel: practiceLevel,
+              conversationType,
             },
-            {
-              conversationId: conversation.id,
-              role: "ASSISTANT",
-              content: aiResponse,
-              timestamp: new Date(),
-            },
-          ],
+          });
+
+          await tx.message.createMany({
+            data: [
+              {
+                conversationId: conversation.id,
+                role: "USER",
+                content: message,
+                timestamp: new Date(),
+              },
+              {
+                conversationId: conversation.id,
+                role: "ASSISTANT",
+                content: aiResponse,
+                timestamp: new Date(),
+              },
+            ],
+          });
         });
       }
 
@@ -141,7 +145,7 @@ class ChatService {
       };
     } catch (error: any) {
       logger.error("Error in ChatService.sendMessage:", error);
-      
+
       if (error.status === 429) {
         throw new Error("OpenAI API rate limit exceeded. Please try again later.");
       } else if (error.status === 401) {

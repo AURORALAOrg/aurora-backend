@@ -224,9 +224,19 @@ describe("ChatService", () => {
     });
 
     it("should generate appropriate system prompts for different levels", () => {
-      const service = new (ChatService.constructor as any)();
-      
-      const a1Prompt = service.getPracticeLevelSystemPrompt("A1");
+
+      // Verify through OpenAI API calls in sendMessage tests
+      expect(mockOpenAIInstance.chat.completions.create).toHaveBeenCalledWith(
+        expect.objectContaining({
+          messages: expect.arrayContaining([
+            expect.objectContaining({
+              role: "system",
+              content: expect.stringContaining("beginners (A1 level)")
+            })
+          ])
+        })
+      );
+
       const c2Prompt = service.getPracticeLevelSystemPrompt("C2");
 
       expect(a1Prompt).toContain("beginners (A1 level)");

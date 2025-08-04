@@ -1,13 +1,12 @@
 import request from "supertest";
 import express from "express";
 import { faker } from "@faker-js/faker";
-import { PrismaClient } from "@prisma/client";
+import { prisma } from "../../src/db";
 import { sendMessage, getConversationHistory, getUserConversations } from "../../src/controllers/chat.controller";
 import ChatService from "../../src/services/chat.service";
 import UserService from "../../src/services/user.service";
 import Jwt from "../../src/utils/security/jwt";
 
-const prisma = new PrismaClient();
 
 jest.mock("../../src/services/chat.service");
 const mockChatService = ChatService as jest.Mocked<typeof ChatService>;

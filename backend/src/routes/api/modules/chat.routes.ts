@@ -43,8 +43,8 @@ const chatHistoryRateLimit = rateLimit({
 
 router.post(
   "/ai",
-  chatRateLimit,
   isAuthorized(),
+  chatRateLimit,
   validateRequest(sendMessageValidation),
   sendMessage
 );
