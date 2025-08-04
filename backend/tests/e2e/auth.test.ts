@@ -11,6 +11,7 @@ import UserService from "../../src/services/user.service";
 import Bcrypt from "../../src/utils/security/bcrypt";
 import Jwt from "../../src/utils/security/jwt";
 import { PrismaClient } from "@prisma/client";
+import { generateUniqueWalletAddress } from "../helpers/testUtils";
 
 // Create a Prisma client for cleanup
 const prisma = new PrismaClient();
@@ -74,7 +75,7 @@ describe("Authentication Endpoints", () => {
         password: "StrongPassword123!",
         firstName: faker.person.firstName(),
         lastName: faker.person.lastName(),
-        walletAddress: "0x1234567890123456789012345678901234567890",
+        walletAddress: generateUniqueWalletAddress(),
       };
 
       const response = await request(app).post("/register").send(userData);
@@ -98,8 +99,8 @@ describe("Authentication Endpoints", () => {
       }
 
       expect(response.status).toBe(200);
-      expect(response.body.data).toHaveProperty("email", userData.email);
-      expect(response.body.data).not.toHaveProperty("password");
+      expect(response.body.data.user).toHaveProperty("email", userData.email);
+      expect(response.body.data.user).not.toHaveProperty("password");
     });
   });
 
@@ -112,7 +113,7 @@ describe("Authentication Endpoints", () => {
         hashedPassword: await Bcrypt.hashPassword("password"),
         firstName: "Test",
         lastName: "User",
-        walletAddress: "0x1234567890123456789012345678901234567890",
+        walletAddress: generateUniqueWalletAddress(),
       });
 
       // Track the created user
@@ -142,7 +143,7 @@ describe("Authentication Endpoints", () => {
         password: "StrongPassword123!",
         firstName: faker.person.firstName(),
         lastName: faker.person.lastName(),
-        walletAddress: "0x1234567890123456789012345678901234567890",
+        walletAddress: generateUniqueWalletAddress(),
       };
 
       // Register the user first
@@ -166,12 +167,9 @@ describe("Authentication Endpoints", () => {
       });
 
       expect(response.status).toBe(200);
-      expect(response.body.data).toHaveProperty("authenticationToken");
-      expect(response.body.data.userResponse).toHaveProperty(
-        "email",
-        userData.email
-      );
-      expect(response.body.data.userResponse).not.toHaveProperty("password");
+      expect(response.body.data).toHaveProperty("token");
+      expect(response.body.data.user).toHaveProperty("email", userData.email);
+      expect(response.body.data.user).not.toHaveProperty("password");
     });
   });
 
