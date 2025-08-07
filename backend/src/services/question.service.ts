@@ -50,6 +50,12 @@ interface IQuestionQuery {
     difficulty?: string;
 }
 
+interface IPaginationOptions {
+    page: number;
+    limit: number;
+    offset: number;
+}
+
 class QuestionService {
     public static async createQuestion(data: IQuestionCreate): Promise<Question> {
         try {
@@ -154,7 +160,7 @@ class QuestionService {
         }
     }
 
-    public static async getQuestions(query: IQuestionQuery = {}): Promise<Question[]> {
+    public static async getQuestions(query: IQuestionQuery = {}, pagination?: IPaginationOptions): Promise<Question[]> {
         try {
             const where: any = { status: Status.ACTIVE };
 
@@ -202,7 +208,15 @@ class QuestionService {
                 };
             }
 
-            return await prisma.question.findMany({ where });
+            const findManyOptions: any = { where };
+
+            // Add pagination if provided
+            if (pagination) {
+                findManyOptions.skip = pagination.offset;
+                findManyOptions.take = pagination.limit;
+            }
+
+            return await prisma.question.findMany(findManyOptions);
         } catch (error) {
             console.error("Error fetching questions:", error);
             throw new InternalError("Failed to fetch questions");
