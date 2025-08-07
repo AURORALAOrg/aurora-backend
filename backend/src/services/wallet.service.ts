@@ -80,6 +80,24 @@ class WalletService {
     return true;
   }
 
+  public static async cleanupExpiredChallenges() {
+    try {
+      const result = await prisma.walletVerificationChallenge.deleteMany({
+        where: {
+          expiresAt: {
+            lt: new Date(),
+          },
+        },
+      });
+
+      console.log(`Cleaned up ${result.count} expired wallet verification challenges`);
+      return result.count;
+    } catch (error) {
+      console.error("Error cleaning up expired challenges:", error);
+      throw new InternalError("Failed to cleanup expired challenges");
+    }
+  }
+
 
   public static async verifyWallet(walletAddress: string) {
     try {
