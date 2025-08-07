@@ -4,9 +4,9 @@ import { InternalError } from "../core/api/ApiError";
 const prisma = new PrismaClient();
 
 class WalletService {
-  public static async createWallet(userId: string, walletAddress: string) {
-    return await prisma.$transaction(async (tx) => {
-      const wallet = await tx.wallet.create({
+  public static async createWallet(userId: string, walletAddress: string, tx?: any) {
+    const walletOperation = async (transaction: any) => {
+      const wallet = await transaction.wallet.create({
         data: {
           userId,
           walletAddress,
@@ -15,7 +15,15 @@ class WalletService {
       });
 
       return wallet;
-    });
+    };
+
+    if (tx) {
+      return await walletOperation(tx);
+    } else {
+      return await prisma.$transaction(async (transaction) => {
+        return await walletOperation(transaction);
+      });
+    }
   }
 
   public static async readWalletByWalletAddress(walletAddress: string) {
