@@ -18,6 +18,9 @@ export const generateWalletChallenge = asyncHandler(
 
     const message = `Verify ownership of wallet address ${walletAddress} for AURORA Platform. Nonce: ${nonce}`;
 
+    // Cleanup expired challenges before generating new ones
+    await WalletService.cleanupExpiredChallenges();
+
     // Store the challenge in the database
     await WalletService.storeWalletChallenge(walletAddress, message, nonce);
 
@@ -91,6 +94,9 @@ export const verifyWalletSignature = asyncHandler(
 
       // Remove the challenge after verification
       await WalletService.removeWalletChallenge(walletAddress);
+
+      // Cleanup expired challenges after successful verification
+      await WalletService.cleanupExpiredChallenges();
 
       return new SuccessResponse("Wallet verified successfully", {
         walletAddress,
