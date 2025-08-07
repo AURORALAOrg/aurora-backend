@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { StrKey, Keypair } from "@stellar/stellar-sdk";
+import { Keypair, StrKey } from "@stellar/stellar-sdk";
 import asyncHandler from "../middlewares/async";
 import { SuccessResponse } from "../core/api/ApiResponse";
 import { BadRequestError } from "../core/api/ApiError";
@@ -9,15 +9,13 @@ export const generateWalletChallenge = asyncHandler(
   async (req: Request, res: Response) => {
     const { walletAddress } = req.body;
 
-    // Validate Stellar wallet address format
+    
     if (!StrKey.isValidEd25519PublicKey(walletAddress)) {
-      throw new BadRequestError("Invalid Stellar wallet address format");
+      throw new BadRequestError("Invalid Stellar public key format. Expected a valid G... address");
     }
 
-    // Generate a random nonce
     const nonce = Math.floor(Math.random() * 1000000).toString();
 
-    // Create the challenge message
     const message = `Verify ownership of wallet address ${walletAddress} for AURORA Platform. Nonce: ${nonce}`;
 
     // Store the challenge in the database
@@ -36,7 +34,6 @@ export const verifyWalletSignature = asyncHandler(
     const { walletAddress, signature } = req.body;
     const userId = res.locals.account.id;
 
-    // Get the wallet from the database
     const wallet = await WalletService.readWalletByWalletAddress(walletAddress);
 
     if (!wallet) {
@@ -49,7 +46,7 @@ export const verifyWalletSignature = asyncHandler(
       );
     }
 
-    // Get the challenge from the database
+ 
     const challenge = await WalletService.getWalletChallenge(walletAddress);
 
     if (!challenge) {
@@ -59,14 +56,34 @@ export const verifyWalletSignature = asyncHandler(
     }
 
     try {
-      // Verify Stellar signature
-      const keypair = Keypair.fromPublicKey(walletAddress);
-      const messageBuffer = Buffer.from(challenge.message);
-      const signatureBuffer = Buffer.from(signature, 'base64');
-      const isValid = keypair.verify(messageBuffer, signatureBuffer);
+      
+      let keypair;
+      try {
+        keypair = Keypair.fromPublicKey(walletAddress);
+      } catch (err) {
+        throw new BadRequestError("Invalid Stellar public key. Unable to construct Keypair.");
+      }
 
+      
+      if (!/^[A-Za-z0-9+/=]+$/.test(signature)) {
+        throw new BadRequestError("Invalid signature format. Signature is not valid base64 format.");
+      }
+      let signatureBuffer;
+      try {
+        signatureBuffer = Buffer.from(signature, 'base64');
+      } catch (err) {
+        throw new BadRequestError("Failed to decode signature from base64.");
+      }
+      const messageBuffer = Buffer.from(challenge.message, 'utf8');
+
+      let isValid = false;
+      try {
+        isValid = keypair.verify(messageBuffer, signatureBuffer);
+      } catch (err) {
+        throw new BadRequestError("Signature verification failed: " + (err instanceof Error ? err.message : 'Unknown error'));
+      }
       if (!isValid) {
-        throw new BadRequestError("Invalid signature");
+        throw new BadRequestError("Invalid signature: signature does not match the message and public key.");
       }
 
       // Mark the wallet as verified
@@ -80,8 +97,12 @@ export const verifyWalletSignature = asyncHandler(
         verified: true,
       }).send(res);
     } catch (error) {
-      console.error("Wallet verification error:", error);
-      throw new BadRequestError("Failed to verify wallet signature");
+      if (error instanceof BadRequestError) {
+        // Already a handled, specific error
+        throw error;
+      }
+      console.error("Wallet verification unexpected error:", error);
+      throw new BadRequestError("Unexpected error during wallet verification.");
     }
   }
 );
