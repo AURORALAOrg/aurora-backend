@@ -223,6 +223,61 @@ class QuestionService {
         }
     }
 
+    public static async getTotalCount(query: IQuestionQuery = {}): Promise<number> {
+        try {
+            const where: any = { status: Status.ACTIVE };
+
+            // Add type filter if specified
+            if (query.type) {
+                where.metadata = {
+                    path: ['type'],
+                    equals: query.type
+                };
+            }
+
+            // Add category filter if specified
+            if (query.category) {
+                where.metadata = {
+                    ...where.metadata,
+                    path: ['category'],
+                    equals: query.category
+                };
+            }
+
+            // Add subCategory filter if specified
+            if (query.subCategory) {
+                where.metadata = {
+                    ...where.metadata,
+                    path: ['subCategory'],
+                    equals: query.subCategory
+                };
+            }
+
+            // Add englishLevel filter if specified
+            if (query.englishLevel) {
+                where.metadata = {
+                    ...where.metadata,
+                    path: ['englishLevel'],
+                    equals: query.englishLevel
+                };
+            }
+
+            // Add difficulty filter if specified
+            if (query.difficulty) {
+                where.metadata = {
+                    ...where.metadata,
+                    path: ['difficulty'],
+                    equals: query.difficulty
+                };
+            }
+
+            return await prisma.question.count({ where });
+        } catch (error) {
+            console.error("Error fetching total count:", error);
+            throw new InternalError("Failed to fetch total count");
+        }
+    }
+
     public static async deleteQuestion(id: string): Promise<Question> {
         try {
             return await prisma.question.update({

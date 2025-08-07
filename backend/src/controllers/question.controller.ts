@@ -119,7 +119,11 @@ class QuestionController {
             const limit = parseInt(queryParams.limit as string) || 20;
             const offset = (page - 1) * limit;
 
-            const questions = await QuestionService.getQuestions(filterOptions, { page, limit, offset });
+            // Get questions and total count
+            const [questions, totalCount] = await Promise.all([
+                QuestionService.getQuestions(filterOptions, { page, limit, offset }),
+                QuestionService.getTotalCount(filterOptions)
+            ]);
 
             res.status(200).json({
                 status: 'success',
@@ -127,7 +131,9 @@ class QuestionController {
                 pagination: {
                     page,
                     limit,
-                    total: questions.length
+                    count: questions.length,
+                    total: totalCount,
+                    totalPages: Math.ceil(totalCount / limit)
                 }
             });
         } catch (error) {
