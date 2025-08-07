@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { createQuestionValidation, updateQuestionValidation } from '../models/validations/question.validators';
 import QuestionService from '../services/question.service';
-import { BadRequestError, InternalError } from '../core/api/ApiError';
+import { BadRequestError, InternalError, NotFoundError } from '../core/api/ApiError';
 import asyncHandler from '../middlewares/async';
 import { SuccessResponse, BadRequestResponse, CreatedResponse } from '../core/api/ApiResponse';
 
@@ -47,7 +47,7 @@ class QuestionController {
     public static getQuestionById = asyncHandler(async (req: Request, res: Response) => {
         const question = await QuestionService.getQuestionById(req.params.id);
         if (!question) {
-            throw new BadRequestError('Question not found');
+            throw new NotFoundError('Question not found');
         }
 
         return new SuccessResponse('Question retrieved successfully', question).send(res);
