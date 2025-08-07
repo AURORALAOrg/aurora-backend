@@ -117,11 +117,10 @@ class QuestionController {
             // Add pagination options
             const page = parseInt(queryParams.page as string) || 1;
             const limit = parseInt(queryParams.limit as string) || 20;
-            const offset = (page - 1) * limit;
 
             // Get questions and total count
             const [questions, totalCount] = await Promise.all([
-                QuestionService.getQuestions(filterOptions, { page, limit, offset }),
+                QuestionService.getQuestions(filterOptions, { page, limit }),
                 QuestionService.getTotalCount(filterOptions)
             ]);
 
