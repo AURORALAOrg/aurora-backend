@@ -36,6 +36,9 @@ model User {
   phoneNumber    String?
   profileImage   String?
   status        Status     @default(INACTIVE)
+  lastLoginAt    DateTime?
+  lastActivityAt DateTime?
+  lastReminderSent DateTime?
   createdAt      DateTime  @default(now())
   updatedAt      DateTime  @updatedAt
   wallet         Wallet?
