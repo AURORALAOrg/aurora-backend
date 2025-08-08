@@ -73,7 +73,7 @@ export const verifyEmail = asyncHandler(async (req: Request, res: Response) => {
 
     return new SuccessResponse("Email verified successfully", {}).send(res)
   } catch (err) {
-    logger.error('Email verification error', { error: err instanceof Error ? err.message : String(err) });
+    logger.error('Email verification error', { error: err instanceof Error ? err.name : "Unknown error" });
     throw new BadRequestError("Invalid token")
   }
 })
