@@ -33,8 +33,6 @@ export const register = asyncHandler(async (req: Request, res: Response) => {
     walletAddress,
   })
 
-  await WalletService.createWallet(result.id, walletAddress)
-
   const verificationToken = Jwt.issue({ userId: result.id }, "1d")
 
   const verificationLink = `${serverSettings.auroraWebApp.baseUrl}/verify-email?token=${verificationToken}`
