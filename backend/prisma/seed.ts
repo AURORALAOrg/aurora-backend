@@ -37,6 +37,35 @@ async function main() {
       walletAddress: wallet.walletAddress,
     },
   });
+
+  // Seed basic topics
+  await prisma.topic.createMany({
+    data: [
+      {
+        name: "Food & Restaurants",
+        description: "Practice ordering food and restaurant conversations",
+        category: "daily_life",
+        englishLevel: "A1",
+        // @ts-ignore
+        prompts: [
+          "You are at a restaurant. Order your favorite meal.",
+          "Describe your favorite food to a friend.",
+        ],
+      },
+      {
+        name: "Travel",
+        description: "Practice talking about trips and transportation",
+        category: "daily_life",
+        englishLevel: "B1",
+        // @ts-ignore
+        prompts: [
+          "Plan a trip to a city you have never visited before.",
+          "Ask for directions to a famous landmark.",
+        ],
+      },
+    ],
+    skipDuplicates: true,
+  });
 }
 
 main()

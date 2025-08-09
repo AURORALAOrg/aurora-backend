@@ -75,3 +75,15 @@ model Question {
 
   @@map("questions")
 }
+
+/// Conversation topics for AI practice, linked conceptually to question categories/levels
+model Topic {
+  id           String   @id @default(uuid())
+  name         String
+  description  String?
+  category     String   // should align with question metadata.category
+  englishLevel String   // A1, A2, B1, B2, C1, C2
+  prompts      Json     // array of strings
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
