@@ -1,5 +1,5 @@
 import { PrismaClient, Topic, Prisma } from "@prisma/client";
-import { InternalError, BadRequestError } from "../core/api/ApiError";
+import { InternalError, BadRequestError, NotFoundError } from "../core/api/ApiError";
 
 const prisma = new PrismaClient();
 
@@ -7,7 +7,7 @@ interface CreateTopicDTO {
   name: string;
   description?: string;
   category: string;
-  englishLevel: string;
+  englishLevel: Topic["englishLevel"];
   prompts: string[];
 }
 
@@ -51,7 +51,7 @@ export default class TopicService {
     } catch (error: any) {
       console.error("Error updating topic:", error);
       if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === "P2025") {
-        throw new BadRequestError("Topic not found");
+        throw new NotFoundError("Topic not found");
       }
       throw new InternalError("Failed to update topic");
     }
@@ -63,7 +63,7 @@ export default class TopicService {
     } catch (error: any) {
       console.error("Error deleting topic:", error);
       if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === "P2025") {
-        throw new BadRequestError("Topic not found");
+        throw new NotFoundError("Topic not found");
       }
       throw new InternalError("Failed to delete topic");
     }
@@ -81,7 +81,7 @@ export default class TopicService {
   public static async listTopics(filter?: { level?: string; category?: string }): Promise<Topic[]> {
     try {
       const where: Prisma.TopicWhereInput = {};
-      if (filter?.level) where.englishLevel = filter.level as any;
+      if (filter?.level) where.englishLevel = filter.level as Topic["englishLevel"];
       if (filter?.category) where.category = filter.category;
       return await prisma.topic.findMany({ where, orderBy: { createdAt: "desc" } });
     } catch (error) {

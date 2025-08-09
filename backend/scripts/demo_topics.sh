@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
+cd "$(dirname "$0")/.."
 
 BASE_URL="http://localhost:8000"
 DB_CONTAINER="aurora-db"
@@ -59,10 +60,10 @@ if [[ -n "${NEW_ID}" ]]; then
 fi
 
 echo "[8/8] Show database evidence (topics rows) via docker psql..."
-docker exec -t "${DB_CONTAINER}" psql -U postgres -d aurora_db -c 'SELECT id, name, category, englishlevel, prompts FROM "Topic" ORDER BY "createdAt" DESC LIMIT 5;' || true
+docker exec -t "${DB_CONTAINER}" psql -U postgres -d aurora_db -c 'SELECT id, name, category, "englishLevel", prompts FROM "Topic" ORDER BY "createdAt" DESC LIMIT 5;' || true
 
 echo "[BONUS] Generate a chat prompt from first topic..."
-node -e "const {PrismaClient}=require('@prisma/client');const ChatService=require('./build/src/services/chat.service').default;(async()=>{const p=new PrismaClient();const t=await p.topic.findFirst();console.log('Topic:',t?.name);console.log('Prompt:\n',ChatService.buildPromptFromTopic(t));await p.$disconnect();})();"
+node -e "const {PrismaClient}=require('@prisma/client');const ChatService=require('./build/src/services/chat.service').default;(async()=>{const p=new PrismaClient();const t=await p.topic.findFirst();console.log('Topic:',t?.name);console.log('Prompt:\n',ChatService.buildPromptFromTopic(t));await p.\$disconnect();})();"
 
 echo "\nDemo complete. Artifacts saved under /tmp (login_response.json, topics_*.json, topic_*.json)."
 

@@ -5,10 +5,19 @@ import path from "path";
 dotenv.config({ path: path.join(__dirname, "../../../.env") });
 
 // Create a connection pool
-const shouldUseSSL = (process.env.DB_SSL || "false").toLowerCase() === "true";
+const sslEnv = (process.env.DB_SSL || "false").toLowerCase();
+const sslConfig =
+  sslEnv === "true" || sslEnv === "require"
+    ? {
+        rejectUnauthorized:
+          (process.env.DB_SSL_REJECT_UNAUTHORIZED || "true").toLowerCase() === "true",
+        ...(process.env.DB_SSL_CA ? { ca: process.env.DB_SSL_CA.replace(/\\n/g, "\n") } : {}),
+      }
+    : false;
+
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
-  ssl: shouldUseSSL ? { rejectUnauthorized: false } : false,
+  ssl: sslConfig,
   max: 20, // Maximum number of clients in the pool
   idleTimeoutMillis: 30000, // How long a client is allowed to remain idle before being closed
   connectionTimeoutMillis: 2000, // How long to wait before timing out when connecting a new client
