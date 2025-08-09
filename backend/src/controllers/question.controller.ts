@@ -1,6 +1,8 @@
 import { Request, Response } from 'express';
 import { createQuestionValidation, updateQuestionValidation } from '../models/validations/question.validators';
 import QuestionService from '../services/question.service';
+import { XPService } from '../services/xp.service';
+import { PrismaClient } from '@prisma/client';
 import { BadRequestError, InternalError } from '../core/api/ApiError';
 
 interface AuthenticatedRequest extends Request {
@@ -8,6 +10,8 @@ interface AuthenticatedRequest extends Request {
         id: string;
     };
 }
+
+const prisma = new PrismaClient();
 
 class QuestionController {
     public static async createQuestion(req: AuthenticatedRequest, res: Response) {
@@ -145,6 +149,54 @@ class QuestionController {
             }
         }
     }
+
+public static async submitAnswer(req: AuthenticatedRequest, res: Response) {
+    console.log('Submit answer request:', req.body);
+    try {
+      if (!req.user?.id) throw new BadRequestError('User not authenticated');
+
+      const { questionId, answer, timeSpent } = req.body;
+      if (!questionId || !answer || timeSpent == null) {
+        throw new BadRequestError('Missing required fields: questionId, answer, timeSpent');
+      }
+
+      // Fetch question
+      const question = await prisma.question.findUnique({
+        where: { id: questionId },
+        select: { content: true, gameMetadata: true },
+      });
+      if (!question) throw new BadRequestError('Question not found');
+
+      // Validate answer
+      const content = question.content as any;
+      const isCorrect = content.correctAnswer === answer;
+      const timeLimit = (question.gameMetadata as any).timeLimit;
+
+      // Award XP
+      const xpResult = await XPService.awardXP(req.user.id, {
+        questionId,
+        isCorrect,
+        timeSpent,
+        timeLimit,
+      });
+      console.log('XP awarded:', xpResult);
+
+      res.status(200).json({
+        status: 'success',
+        data: {
+          isCorrect,
+          xpResult,
+        },
+      });
+    } catch (error) {
+      console.error('Submit answer error:', error);
+      if (error instanceof BadRequestError) {
+        res.status(400).json({ status: 'error', message: error.message });
+      } else {
+        res.status(500).json({ status: 'error', message: 'Internal server error' });
+      }
+    }
+  }
 }
 
-export default QuestionController; 
+export default QuestionController;

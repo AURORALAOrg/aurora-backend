@@ -1,4 +1,3 @@
-
 import express from 'express';
 import { GamificationController } from '../../../controllers/gamification.controller';
 import { isAuthorized } from '../../../middlewares/authentication';
@@ -18,6 +17,17 @@ router.get(
   '/stats',
   isAuthorized(),
   GamificationController.getUserStats
+);
+
+router.get(
+  '/leaderboard',
+  GamificationController.getLeaderboard
+);
+
+router.get(
+  '/streak-history',
+  isAuthorized(),
+  GamificationController.getStreakHistory
 );
 
 export default router;
