@@ -1,5 +1,5 @@
-import { PrismaClient, Topic } from "@prisma/client";
-import { InternalError } from "../core/api/ApiError";
+import { PrismaClient, Topic, Prisma } from "@prisma/client";
+import { InternalError, BadRequestError } from "../core/api/ApiError";
 
 const prisma = new PrismaClient();
 
@@ -23,12 +23,15 @@ export default class TopicService {
           name: data.name,
           description: data.description ?? null,
           category: data.category,
-          englishLevel: data.englishLevel,
-          prompts: data.prompts as any,
+          englishLevel: data.englishLevel as any,
+          prompts: data.prompts,
         },
       });
-    } catch (error) {
+    } catch (error: any) {
       console.error("Error creating topic:", error);
+      if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === "P2002") {
+        throw new BadRequestError("Topic with the same unique field already exists");
+      }
       throw new InternalError("Failed to create topic");
     }
   }
@@ -41,12 +44,15 @@ export default class TopicService {
           ...(data.name && { name: data.name }),
           ...(data.description !== undefined && { description: data.description }),
           ...(data.category && { category: data.category }),
-          ...(data.englishLevel && { englishLevel: data.englishLevel }),
-          ...(data.prompts && { prompts: data.prompts as any }),
+          ...(data.englishLevel && { englishLevel: data.englishLevel as any }),
+          ...(data.prompts && { prompts: data.prompts }),
         },
       });
-    } catch (error) {
+    } catch (error: any) {
       console.error("Error updating topic:", error);
+      if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === "P2025") {
+        throw new BadRequestError("Topic not found");
+      }
       throw new InternalError("Failed to update topic");
     }
   }
@@ -54,8 +60,11 @@ export default class TopicService {
   public static async deleteTopic(id: string): Promise<Topic> {
     try {
       return await prisma.topic.delete({ where: { id } });
-    } catch (error) {
+    } catch (error: any) {
       console.error("Error deleting topic:", error);
+      if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === "P2025") {
+        throw new BadRequestError("Topic not found");
+      }
       throw new InternalError("Failed to delete topic");
     }
   }
@@ -71,8 +80,8 @@ export default class TopicService {
 
   public static async listTopics(filter?: { level?: string; category?: string }): Promise<Topic[]> {
     try {
-      const where: any = {};
-      if (filter?.level) where.englishLevel = filter.level;
+      const where: Prisma.TopicWhereInput = {};
+      if (filter?.level) where.englishLevel = filter.level as any;
       if (filter?.category) where.category = filter.category;
       return await prisma.topic.findMany({ where, orderBy: { createdAt: "desc" } });
     } catch (error) {

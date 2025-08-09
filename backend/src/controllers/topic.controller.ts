@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { SuccessResponse } from "../core/api/ApiResponse";
-import { BadRequestError } from "../core/api/ApiError";
+import { BadRequestError, NotFoundError } from "../core/api/ApiError";
 import TopicService from "../services/topic.service";
 import asyncHandler from "../middlewares/async";
 
@@ -35,7 +35,7 @@ export default class TopicController {
 
   static getById = asyncHandler(async (req: Request, res: Response) => {
     const topic = await TopicService.getTopicById(req.params.id);
-    if (!topic) throw new BadRequestError("Topic not found");
+    if (!topic) throw new NotFoundError("Topic not found");
     return new SuccessResponse("Topic retrieved successfully", { topic }).send(res);
   });
 }
