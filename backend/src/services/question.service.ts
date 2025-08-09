@@ -50,7 +50,41 @@ interface IQuestionQuery {
     difficulty?: string;
 }
 
+interface IPaginationOptions {
+    page: number;
+    limit: number;
+}
+
 class QuestionService {
+    private static buildWhereClause(query: IQuestionQuery): any {
+        const where: any = { status: Status.ACTIVE };
+        
+        // Build array of metadata filters
+        const metadataFilters: any[] = [];
+        
+        if (query.type) {
+            metadataFilters.push({ path: ['type'], equals: query.type });
+        }
+        if (query.category) {
+            metadataFilters.push({ path: ['category'], equals: query.category });
+        }
+        if (query.subCategory) {
+            metadataFilters.push({ path: ['subCategory'], equals: query.subCategory });
+        }
+        if (query.englishLevel) {
+            metadataFilters.push({ path: ['englishLevel'], equals: query.englishLevel });
+        }
+        if (query.difficulty) {
+            metadataFilters.push({ path: ['difficulty'], equals: query.difficulty });
+        }
+        
+        if (metadataFilters.length > 0) {
+            where.AND = metadataFilters.map(filter => ({ metadata: filter }));
+        }
+        
+        return where;
+    }
+
     public static async createQuestion(data: IQuestionCreate): Promise<Question> {
         try {
             // Validate content based on type
@@ -154,58 +188,32 @@ class QuestionService {
         }
     }
 
-    public static async getQuestions(query: IQuestionQuery = {}): Promise<Question[]> {
+    public static async getQuestions(query: IQuestionQuery = {}, pagination?: IPaginationOptions): Promise<Question[]> {
         try {
-            const where: any = { status: Status.ACTIVE };
+            const where = this.buildWhereClause(query);
+            const findManyOptions: any = { where };
 
-            // Add type filter if specified
-            if (query.type) {
-                where.metadata = {
-                    path: ['type'],
-                    equals: query.type
-                };
+            // Add pagination if provided
+            if (pagination) {
+                const offset = (pagination.page - 1) * pagination.limit;
+                findManyOptions.skip = offset;
+                findManyOptions.take = pagination.limit;
             }
 
-            // Add category filter if specified
-            if (query.category) {
-                where.metadata = {
-                    ...where.metadata,
-                    path: ['category'],
-                    equals: query.category
-                };
-            }
-
-            // Add subCategory filter if specified
-            if (query.subCategory) {
-                where.metadata = {
-                    ...where.metadata,
-                    path: ['subCategory'],
-                    equals: query.subCategory
-                };
-            }
-
-            // Add englishLevel filter if specified
-            if (query.englishLevel) {
-                where.metadata = {
-                    ...where.metadata,
-                    path: ['englishLevel'],
-                    equals: query.englishLevel
-                };
-            }
-
-            // Add difficulty filter if specified
-            if (query.difficulty) {
-                where.metadata = {
-                    ...where.metadata,
-                    path: ['difficulty'],
-                    equals: query.difficulty
-                };
-            }
-
-            return await prisma.question.findMany({ where });
+            return await prisma.question.findMany(findManyOptions);
         } catch (error) {
             console.error("Error fetching questions:", error);
             throw new InternalError("Failed to fetch questions");
+        }
+    }
+
+    public static async getTotalCount(query: IQuestionQuery = {}): Promise<number> {
+        try {
+            const where = this.buildWhereClause(query);
+            return await prisma.question.count({ where });
+        } catch (error) {
+            console.error("Error fetching total count:", error);
+            throw new InternalError("Failed to fetch total count");
         }
     }
 

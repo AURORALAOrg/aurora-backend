@@ -5,6 +5,7 @@ import validateRequest from '../../../middlewares/validator';
 import {
     createQuestionValidation,
     updateQuestionValidation,
+    getAllQuestionsValidation,
 } from '../../../models/validations/question.validators';
 
 const router = Router();
@@ -14,7 +15,7 @@ const router = Router();
 
 // Question routes
 router.post('/', isAuthorized(), validateRequest(createQuestionValidation), QuestionController.createQuestion);
-router.get('/', QuestionController.getAllQuestions);
+router.get('/', validateRequest(getAllQuestionsValidation), QuestionController.getAllQuestions);
 router.get('/:id', QuestionController.getQuestionById);
 router.put('/:id', isAuthorized(), validateRequest(updateQuestionValidation), QuestionController.updateQuestion);
 router.delete('/:id', QuestionController.deleteQuestion);

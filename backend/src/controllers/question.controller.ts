@@ -107,17 +107,33 @@ class QuestionController {
             const queryParams = req.query;
             const filterOptions: any = {};
 
+            // Add validated filter options
             if (queryParams.type) filterOptions.type = queryParams.type;
             if (queryParams.category) filterOptions.category = queryParams.category;
             if (queryParams.subCategory) filterOptions.subCategory = queryParams.subCategory;
             if (queryParams.englishLevel) filterOptions.englishLevel = queryParams.englishLevel;
             if (queryParams.difficulty) filterOptions.difficulty = queryParams.difficulty;
 
-            const questions = await QuestionService.getQuestions(filterOptions);
+            // Add pagination options
+            const page = parseInt(queryParams.page as string) || 1;
+            const limit = parseInt(queryParams.limit as string) || 20;
+
+            // Get questions and total count
+            const [questions, totalCount] = await Promise.all([
+                QuestionService.getQuestions(filterOptions, { page, limit }),
+                QuestionService.getTotalCount(filterOptions)
+            ]);
 
             res.status(200).json({
                 status: 'success',
-                data: questions
+                data: questions,
+                pagination: {
+                    page,
+                    limit,
+                    count: questions.length,
+                    total: totalCount,
+                    totalPages: Math.ceil(totalCount / limit)
+                }
             });
         } catch (error) {
             res.status(500).json({
