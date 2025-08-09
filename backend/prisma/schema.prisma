@@ -75,3 +75,27 @@ model Question {
 
   @@map("questions")
 }
+
+/// Conversation topics for AI practice, linked conceptually to question categories/levels
+model Topic {
+  id           String   @id @default(uuid())
+  name         String
+  description  String?
+  category     String   // should align with question metadata.category
+  englishLevel EnglishLevel
+  prompts      String[]
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@unique([name, category, englishLevel], name: "topic_unique_name_category_level")
+  @@index([englishLevel, category], name: "topic_level_category_idx")
+}
+
+enum EnglishLevel {
+  A1
+  A2
+  B1
+  B2
+  C1
+  C2
+}
