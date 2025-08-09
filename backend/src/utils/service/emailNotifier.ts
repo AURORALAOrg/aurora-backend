@@ -9,6 +9,14 @@ class EmailNotifier {
     await mailer.sendTextEmail(email, subject, message);
   }
 
+  public static async sendMotivationalEmail(email: string, message: string) {
+    const defaultMessage = "Keep up the great work! Stay motivated and continue to achieve your goals.";
+    message = message || defaultMessage;
+    const subject = "Keep up the great work!";
+    
+    const mailer = new ZohoMailer();
+    await mailer.sendTextEmail(email, subject, message);
+  }
 }
 
 export default EmailNotifier;
