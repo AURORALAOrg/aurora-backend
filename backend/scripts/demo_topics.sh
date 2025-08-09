@@ -3,26 +3,35 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 BASE_URL="http://localhost:8000"
+HEALTH_URL="${HEALTH_URL:-${BASE_URL}}"
 DB_CONTAINER="aurora-db"
 
 echo "[1/8] Ensuring API server is running..."
-if ! curl -sSf "${BASE_URL}" >/dev/null 2>&1; then
-  echo "Server not responding on ${BASE_URL}. Starting server..."
+if ! curl -sSf "${HEALTH_URL}" >/dev/null 2>&1; then
+  echo "Server not responding on ${HEALTH_URL}. Starting server..."
   nohup npm run start:prod >/tmp/aurora_server.log 2>&1 &
   echo "Waiting for server to become ready..."
-  for i in {1..30}; do
-    if curl -sSf "${BASE_URL}" >/dev/null 2>&1; then
+  ready=0
+  for _ in {1..30}; do
+    if curl -sSf "${HEALTH_URL}" >/dev/null 2>&1; then
+      ready=1
       break
     fi
     sleep 1
   done
+  if [[ "${ready}" -ne 1 ]]; then
+    echo "ERROR: Server did not become ready within timeout." >&2
+    exit 1
+  fi
 fi
 echo "Server is up."
 
 echo "[2/8] Logging in to get JWT token..."
-LOGIN_JSON=$(curl -s -X POST "${BASE_URL}/api/v1/auth/login" \
+LOGIN_EMAIL="${LOGIN_EMAIL:-customer@aurora.com}"
+LOGIN_PASSWORD="${LOGIN_PASSWORD:-password123!}"
+LOGIN_JSON=$(curl -sfS -X POST "${BASE_URL}/api/v1/auth/login" \
   -H 'Content-Type: application/json' \
-  --data '{"email":"customer@aurora.com","password":"password123!"}')
+  --data "{\"email\":\"${LOGIN_EMAIL}\",\"password\":\"${LOGIN_PASSWORD}\"}")
 echo "$LOGIN_JSON" | jq . >/tmp/login_response.json || true
 TOKEN=$(node -e 'const fs=require("fs");try{const j=JSON.parse(fs.readFileSync("/tmp/login_response.json","utf8"));console.log(j.data.token||j.token||"")}catch(e){console.log("")}')
 if [[ -z "${TOKEN}" ]]; then
