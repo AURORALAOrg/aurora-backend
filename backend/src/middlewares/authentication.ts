@@ -1,7 +1,8 @@
-import Jwt from "../utils/security/jwt";
-import { Request, Response, NextFunction } from "express";
-import { UnauthorizedError } from "../core/api/ApiError";
-import UserService from "../services/user.service";
+import Jwt from "../utils/security/jwt"
+import { Request, Response, NextFunction } from "express"
+import { UnauthorizedError } from "../core/api/ApiError"
+import UserService from "../services/user.service"
+import logger from "../core/config/logger"
 
 interface AuthenticatedRequest extends Request {
   user?: any;
@@ -52,12 +53,12 @@ export const isAuthorized = () => {
       }
 
       // Attach user to request
-      req.user = user;
-      res.locals.account = user;
-      next();
-    } catch (err: any) {
-      console.error("❌ Auth middleware error:", err.name, err.message);
-      return next(new UnauthorizedError(`Unauthorized - ${err.message}`));
+      req.user = user
+      res.locals.account = user
+      next()
+    } catch (err) {
+      logger.error('Auth middleware error', { error: err instanceof Error ? err.name : "UnknownError" });
+      next(new UnauthorizedError("Unauthorized"))
     }
   };
 };
