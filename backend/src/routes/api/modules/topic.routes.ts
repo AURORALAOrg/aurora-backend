@@ -18,11 +18,10 @@ router.post("/", isAuthorized(), validateRequest(createTopicValidation), TopicCo
 router.put("/:id", isAuthorized(), validateRequest(updateTopicValidation), TopicController.update);
 router.delete("/:id", isAuthorized(), validateRequest(deleteTopicValidation), TopicController.remove);
 
-// Public read endpoints
+// Read endpoints (auth required)
 router.get("/", isAuthorized(), validateRequest(getTopicsQueryValidation), TopicController.list);
-// Place the id route before the level route to avoid shadowing
 router.get("/id/:id", isAuthorized(), validateRequest(getTopicByIdValidation), TopicController.getById);
-router.get("/:level", isAuthorized(), validateRequest(getTopicsByLevelValidation), TopicController.getByLevel);
+router.get("/level/:level", isAuthorized(), validateRequest(getTopicsByLevelValidation), TopicController.getByLevel);
 
 export default router;
 

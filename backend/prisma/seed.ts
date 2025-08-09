@@ -38,34 +38,52 @@ async function main() {
     },
   });
 
-  // Seed basic topics
-  await prisma.topic.createMany({
-    data: [
-      {
-        name: "Food & Restaurants",
-        description: "Practice ordering food and restaurant conversations",
-        category: "daily_life",
-        englishLevel: "A1",
-        // @ts-ignore
-        prompts: [
-          "You are at a restaurant. Order your favorite meal.",
-          "Describe your favorite food to a friend.",
-        ],
+  // Seed basic topics (idempotent)
+  const topics = [
+    {
+      name: "Food & Restaurants",
+      description: "Practice ordering food and restaurant conversations",
+      category: "daily_life",
+      englishLevel: "A1",
+      prompts: [
+        "You are at a restaurant. Order your favorite meal.",
+        "Describe your favorite food to a friend.",
+      ],
+    },
+    {
+      name: "Travel",
+      description: "Practice talking about trips and transportation",
+      category: "daily_life",
+      englishLevel: "B1",
+      prompts: [
+        "Plan a trip to a city you have never visited before.",
+        "Ask for directions to a famous landmark.",
+      ],
+    },
+  ];
+
+  for (const t of topics) {
+    await prisma.topic.upsert({
+      where: {
+        topic_unique_name_category_level: {
+          name: t.name,
+          category: t.category,
+          englishLevel: t.englishLevel as any,
+        },
       },
-      {
-        name: "Travel",
-        description: "Practice talking about trips and transportation",
-        category: "daily_life",
-        englishLevel: "B1",
-        // @ts-ignore
-        prompts: [
-          "Plan a trip to a city you have never visited before.",
-          "Ask for directions to a famous landmark.",
-        ],
+      update: {
+        description: t.description,
+        prompts: t.prompts as any,
       },
-    ],
-    skipDuplicates: true,
-  });
+      create: {
+        name: t.name,
+        description: t.description,
+        category: t.category,
+        englishLevel: t.englishLevel as any,
+        prompts: t.prompts as any,
+      },
+    });
+  }
 }
 
 main()
