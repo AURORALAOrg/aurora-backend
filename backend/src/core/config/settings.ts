@@ -22,6 +22,12 @@ const envVarsSchema = Joi.object()
     AURORA_WEB_APP_BASE_URL: Joi.string()
       .required()
       .description("Base URL for Aurora Web App"),
+    OPENAI_API_KEY: Joi.string()
+      .required()
+      .description("OpenAI API Key"),
+    OPENAI_MODEL: Joi.string()
+      .default("gpt-3.5-turbo")
+      .description("OpenAI Model to use"),
   })
   .unknown();
 
@@ -43,6 +49,10 @@ const serverSettings = {
     username: envVars.EMAIL_USERNAME,
     password: envVars.EMAIL_PASSWORD,
     fromAddress: envVars.EMAIL_FROM_ADDRESS,
+  },
+  openai: {
+    apiKey: envVars.OPENAI_API_KEY,
+    model: envVars.OPENAI_MODEL,
   },
 };
 
