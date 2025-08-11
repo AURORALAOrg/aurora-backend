@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { createQuestionValidation, updateQuestionValidation } from '../models/validations/question.validators';
 import QuestionService from '../services/question.service';
-import { BadRequestError, InternalError, NotFoundError } from '../core/api/ApiError';
+import { BadRequestError, InternalError, NotFoundError, UnauthorizedError } from '../core/api/ApiError';
 import asyncHandler from '../middlewares/async';
 import { SuccessResponse, BadRequestResponse, CreatedResponse, PaginatedResponse } from '../core/api/ApiResponse';
 
@@ -19,7 +19,7 @@ class QuestionController {
         }
 
         if (!req.user?.id) {
-            throw new BadRequestError('User not authenticated');
+            throw new UnauthorizedError('User not authenticated');
         }
 
         const question = await QuestionService.createQuestion({
