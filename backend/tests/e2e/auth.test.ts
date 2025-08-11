@@ -74,7 +74,7 @@ describe("Authentication Endpoints", () => {
         password: "StrongPassword123!",
         firstName: faker.person.firstName(),
         lastName: faker.person.lastName(),
-        walletAddress: "0x1234567890123456789012345678901234567890",
+        walletAddress: "GCKFBEIYTKP6RSTVMHQITDBQMZJ7MHKA3PJEBIGKB3XVTBJ2YJYIVMZK",
       };
 
       const response = await request(app).post("/register").send(userData);
@@ -112,7 +112,7 @@ describe("Authentication Endpoints", () => {
         hashedPassword: await Bcrypt.hashPassword("password"),
         firstName: "Test",
         lastName: "User",
-        walletAddress: "0x1234567890123456789012345678901234567890",
+        walletAddress: "GCKFBEIYTKP6RSTVMHQITDBQMZJ7MHKA3PJEBIGKB3XVTBJ2YJYIVMZK",
       });
 
       // Track the created user
@@ -142,7 +142,7 @@ describe("Authentication Endpoints", () => {
         password: "StrongPassword123!",
         firstName: faker.person.firstName(),
         lastName: faker.person.lastName(),
-        walletAddress: "0x1234567890123456789012345678901234567890",
+        walletAddress: "GCKFBEIYTKP6RSTVMHQITDBQMZJ7MHKA3PJEBIGKB3XVTBJ2YJYIVMZK",
       };
 
       // Register the user first

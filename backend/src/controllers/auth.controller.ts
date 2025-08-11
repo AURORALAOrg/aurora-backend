@@ -9,6 +9,7 @@ import serverSettings from "../core/config/settings"
 import EmailNotifier from "../utils/service/emailNotifier"
 import Bcrypt from "../utils/security/bcrypt"
 import { StrKey } from "@stellar/stellar-sdk"
+import logger from "../core/config/logger"
 
 export const register = asyncHandler(async (req: Request, res: Response) => {
   const { email, password, firstName, lastName, walletAddress } = req.body
@@ -33,13 +34,10 @@ export const register = asyncHandler(async (req: Request, res: Response) => {
     walletAddress,
   })
 
-  await WalletService.createWallet(result.id, walletAddress)
-
   const verificationToken = Jwt.issue({ userId: result.id }, "1d")
 
   const verificationLink = `${serverSettings.auroraWebApp.baseUrl}/verify-email?token=${verificationToken}`
 
-  console.log('verificationLink:', verificationLink);
   EmailNotifier.sendAccountActivationEmail(email, verificationLink)
 
   const userResponse = {
@@ -73,7 +71,7 @@ export const verifyEmail = asyncHandler(async (req: Request, res: Response) => {
 
     return new SuccessResponse("Email verified successfully", {}).send(res)
   } catch (err) {
-    console.log(err)
+    logger.error('Email verification error', { error: err instanceof Error ? err.name : "Unknown error" });
     throw new BadRequestError("Invalid token")
   }
 })
