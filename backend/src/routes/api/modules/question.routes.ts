@@ -7,6 +7,14 @@ import {
     updateQuestionValidation,
     getAllQuestionsValidation,
 } from '../../../models/validations/question.validators';
+import { z } from 'zod';
+const submitAnswerValidation = z.object({
+    body: z.object({
+        questionId: z.string().uuid(),
+        answer: z.string().min(1),
+        timeSpent: z.number().min(0),
+    }),
+});
 
 const router = Router();
 
@@ -19,5 +27,11 @@ router.get('/', validateRequest(getAllQuestionsValidation), QuestionController.g
 router.get('/:id', QuestionController.getQuestionById);
 router.put('/:id', isAuthorized(), validateRequest(updateQuestionValidation), QuestionController.updateQuestion);
 router.delete('/:id', QuestionController.deleteQuestion);
+router.post(
+    '/submit-answer',
+    isAuthorized(),
+    validateRequest(submitAnswerValidation),
+    QuestionController.submitAnswer
+);
 
 export default router; 

@@ -38,8 +38,29 @@ model User {
   status        Status     @default(INACTIVE)
   createdAt      DateTime  @default(now())
   updatedAt      DateTime  @updatedAt
+  totalXP        Int            @default(0) @map("total_xp")
+  dailyXP        Int            @default(0) @map("daily_xp")
+  weeklyXP       Int            @default(0) @map("weekly_xp")
+  currentStreak  Int            @default(0) @map("current_streak")
+  longestStreak  Int            @default(0) @map("longest_streak")
+  lastStreakDate  DateTime?
+  lastActivityAt  DateTime?
   wallet         Wallet?
   questions      Question[]
+  activities      UserActivity[]
+}
+
+model UserActivity {
+  id                 String    @id @default(uuid())
+  userId             String    @map("user_id")
+  activityDate       DateTime
+  xpEarned           Int
+  questionsCompleted Int
+  createdAt         DateTime  @default(now())
+  user               User     @relation(fields: [userId], references: [id])
+
+  @@map("user_activities")
+  @@unique([userId, activityDate], name: "userId_activityDate")
 }
 
 model Wallet {
