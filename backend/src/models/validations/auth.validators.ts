@@ -1,13 +1,50 @@
 import Joi from "joi";
 
+// Password complexity regex patterns
+const passwordRegex = {
+  minLength: /.{8,}/, // Minimum 8 characters
+  uppercase: /[A-Z]/, // At least one uppercase letter
+  lowercase: /[a-z]/, // At least one lowercase letter
+  number: /\d/, // At least one number
+  special: /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/, // At least one special character
+};
+
+// Custom password validation function
+const passwordValidation = (value: string, helpers: any) => {
+  const errors = [];
+  
+  if (!passwordRegex.minLength.test(value)) {
+    errors.push("at least 8 characters long");
+  }
+  if (!passwordRegex.uppercase.test(value)) {
+    errors.push("at least one uppercase letter");
+  }
+  if (!passwordRegex.lowercase.test(value)) {
+    errors.push("at least one lowercase letter");
+  }
+  if (!passwordRegex.number.test(value)) {
+    errors.push("at least one number");
+  }
+  if (!passwordRegex.special.test(value)) {
+    errors.push("at least one special character (!@#$%^&*()_+-=[]{}|;':\",./<>?)");
+  }
+  
+  if (errors.length > 0) {
+    return helpers.error('string.pattern.base', { 
+      message: `Password must contain ${errors.join(", ")}` 
+    });
+  }
+  
+  return value;
+};
+
 export const registerValidation = {
   body: Joi.object().keys({
     email: Joi.string().email().required().messages({
       "string.email": "Please provide a valid email address",
       "any.required": "Email is required",
     }),
-    password: Joi.string().min(8).required().messages({
-      "string.min": "Password must be at least 8 characters long",
+    password: Joi.string().custom(passwordValidation).required().messages({
       "any.required": "Password is required",
     }),
     firstName: Joi.string().required().messages({
@@ -58,8 +95,7 @@ export const resetPasswordValidation = {
     token: Joi.string().required().messages({
       "any.required": "Reset token is required",
     }),
-    newPassword: Joi.string().min(8).required().messages({
-      "string.min": "Password must be at least 8 characters long",
+    newPassword: Joi.string().custom(passwordValidation).required().messages({
       "any.required": "New password is required",
     }),
   }),
