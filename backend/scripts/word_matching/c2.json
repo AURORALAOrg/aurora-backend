@@ -30,7 +30,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "C2", "abstract"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -66,7 +66,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "C2", "adjectives"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -105,7 +105,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "C2", "traits"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -135,7 +135,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "C2", "adjectives"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -162,7 +162,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "C2", "traits"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -201,7 +201,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "C2", "abstract"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -237,7 +237,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "C2", "characteristics"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -267,7 +267,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "C2", "advanced"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -297,7 +297,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "C2", "misc"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -327,7 +327,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "C2", "advanced"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -363,7 +363,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "C2", "logic"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -402,7 +402,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "C2", "logic"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -438,7 +438,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "C2", "misc"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,

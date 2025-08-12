@@ -34,7 +34,7 @@
 			"category": "reading",
 			"subCategory": "ethics and technology",
 			"tags": ["story", "reading", "C2", "AI", "ethics"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -77,7 +77,7 @@
 			"category": "reading",
 			"subCategory": "economics and policy",
 			"tags": ["story", "reading", "C2", "economics", "policy"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -120,7 +120,7 @@
 			"category": "reading",
 			"subCategory": "history and discovery",
 			"tags": ["story", "reading", "C2", "history", "research"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -163,7 +163,7 @@
 			"category": "reading",
 			"subCategory": "science and technology",
 			"tags": ["story", "reading", "C2", "neuroscience", "technology"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -206,7 +206,7 @@
 			"category": "reading",
 			"subCategory": "arts and literature",
 			"tags": ["story", "reading", "C2", "poetry", "innovation"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -249,7 +249,7 @@
 			"category": "reading",
 			"subCategory": "science and policy",
 			"tags": ["story", "reading", "C2", "epidemiology", "policy"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -292,7 +292,7 @@
 			"category": "reading",
 			"subCategory": "philosophy and science",
 			"tags": ["story", "reading", "C2", "philosophy", "neuroscience"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -335,7 +335,7 @@
 			"category": "reading",
 			"subCategory": "mathematics and technology",
 			"tags": ["story", "reading", "C2", "quantum computing", "algorithm"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -378,7 +378,7 @@
 			"category": "reading",
 			"subCategory": "literature and society",
 			"tags": ["story", "reading", "C2", "literature", "postmodernism"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -421,7 +421,7 @@
 			"category": "reading",
 			"subCategory": "sociology and urbanism",
 			"tags": ["story", "reading", "C2", "sociology", "urban studies"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -464,7 +464,7 @@
 			"category": "reading",
 			"subCategory": "technology and language",
 			"tags": ["story", "reading", "C2", "AI", "translation"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -507,7 +507,7 @@
 			"category": "reading",
 			"subCategory": "law and society",
 			"tags": ["story", "reading", "C2", "privacy", "law"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -550,7 +550,7 @@
 			"category": "reading",
 			"subCategory": "science and environment",
 			"tags": ["story", "reading", "C2", "climate", "sea level"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -593,7 +593,7 @@
 			"category": "reading",
 			"subCategory": "philosophy and ethics",
 			"tags": ["story", "reading", "C2", "philosophy", "ethics"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -636,7 +636,7 @@
 			"category": "reading",
 			"subCategory": "arts and innovation",
 			"tags": ["story", "reading", "C2", "music", "technology"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -679,7 +679,7 @@
 			"category": "reading",
 			"subCategory": "linguistics and society",
 			"tags": ["story", "reading", "C2", "sociolinguistics", "workplace"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -722,7 +722,7 @@
 			"category": "reading",
 			"subCategory": "economics and policy",
 			"tags": ["story", "reading", "C2", "economics", "UBI"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -765,7 +765,7 @@
 			"category": "reading",
 			"subCategory": "history and society",
 			"tags": ["story", "reading", "C2", "history", "reform"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -808,7 +808,7 @@
 			"category": "reading",
 			"subCategory": "neuroscience and technology",
 			"tags": ["story", "reading", "C2", "neuroscience", "interfaces"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -851,7 +851,7 @@
 			"category": "reading",
 			"subCategory": "arts and technology",
 			"tags": ["story", "reading", "C2", "poetry", "digital"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -894,7 +894,7 @@
 			"category": "reading",
 			"subCategory": "philosophy and technology",
 			"tags": ["story", "reading", "C2", "ethics", "autonomous vehicles"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -937,7 +937,7 @@
 			"category": "reading",
 			"subCategory": "biology and environment",
 			"tags": ["story", "reading", "C2", "synthetic biology", "plastics"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -980,7 +980,7 @@
 			"category": "reading",
 			"subCategory": "literature and technology",
 			"tags": ["story", "reading", "C2", "authorship", "AI"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -1023,7 +1023,7 @@
 			"category": "reading",
 			"subCategory": "economics and environment",
 			"tags": ["story", "reading", "C2", "economics", "climate"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -1066,7 +1066,7 @@
 			"category": "reading",
 			"subCategory": "neuroscience and arts",
 			"tags": ["story", "reading", "C2", "creativity", "neuroscience"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -1109,7 +1109,7 @@
 			"category": "reading",
 			"subCategory": "law and technology",
 			"tags": ["story", "reading", "C2", "law", "digital evidence"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -1152,7 +1152,7 @@
 			"category": "reading",
 			"subCategory": "history and technology",
 			"tags": ["story", "reading", "C2", "history", "digital humanities"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -1195,7 +1195,7 @@
 			"category": "reading",
 			"subCategory": "sociology and work",
 			"tags": ["story", "reading", "C2", "sociology", "remote work"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -1238,7 +1238,7 @@
 			"category": "reading",
 			"subCategory": "linguistics and culture",
 			"tags": ["story", "reading", "C2", "sign language", "archives"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -1281,7 +1281,7 @@
 			"category": "reading",
 			"subCategory": "ethics and medicine",
 			"tags": ["story", "reading", "C2", "ethics", "vaccine"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -1324,7 +1324,7 @@
 			"category": "reading",
 			"subCategory": "literature and migration",
 			"tags": ["story", "reading", "C2", "poetry", "migration"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -1373,7 +1373,7 @@
 				"behavioral economics",
 				"sustainability"
 			],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -1416,7 +1416,7 @@
 			"category": "reading",
 			"subCategory": "genetics and evolution",
 			"tags": ["story", "reading", "C2", "genetics", "epigenetics"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -1459,7 +1459,7 @@
 			"category": "reading",
 			"subCategory": "law and technology",
 			"tags": ["story", "reading", "C2", "cyberlaw", "privacy"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -1502,7 +1502,7 @@
 			"category": "reading",
 			"subCategory": "history and society",
 			"tags": ["story", "reading", "C2", "history", "postcolonial"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,
@@ -1545,7 +1545,7 @@
 			"category": "reading",
 			"subCategory": "engineering and environment",
 			"tags": ["story", "reading", "C2", "engineering", "climate adaptation"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 35,

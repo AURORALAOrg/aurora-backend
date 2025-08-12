@@ -36,7 +36,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "A1"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 10,
@@ -81,7 +81,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "A1", "adjectives"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 10,

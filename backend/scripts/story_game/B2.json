@@ -45,7 +45,7 @@
 			"category": "reading",
 			"subCategory": "current affairs",
 			"tags": ["story", "reading", "B2", "urban development", "environment"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -99,7 +99,7 @@
 			"category": "reading",
 			"subCategory": "science",
 			"tags": ["story", "reading", "B2", "neuroscience", "research"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -148,7 +148,7 @@
 			"category": "reading",
 			"subCategory": "business",
 			"tags": ["story", "reading", "B2", "agriculture", "sustainability"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -202,7 +202,7 @@
 			"category": "reading",
 			"subCategory": "work trends",
 			"tags": ["story", "reading", "B2", "remote work", "architecture"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -256,7 +256,7 @@
 			"category": "reading",
 			"subCategory": "art and culture",
 			"tags": ["story", "reading", "B2", "art", "perception"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -299,7 +299,7 @@
 			"category": "reading",
 			"subCategory": "environment",
 			"tags": ["story", "reading", "B2", "climate", "water conservation"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -348,7 +348,7 @@
 			"category": "reading",
 			"subCategory": "urban life",
 			"tags": ["story", "reading", "B2", "transportation", "environment"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -391,7 +391,7 @@
 			"category": "reading",
 			"subCategory": "personal growth",
 			"tags": ["story", "reading", "B2", "study abroad", "adaptation"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -434,7 +434,7 @@
 			"category": "reading",
 			"subCategory": "arts and culture",
 			"tags": ["story", "reading", "B2", "theater", "community"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -477,7 +477,7 @@
 			"category": "reading",
 			"subCategory": "technology",
 			"tags": ["story", "reading", "B2", "technology", "environment"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -520,7 +520,7 @@
 			"category": "reading",
 			"subCategory": "community",
 			"tags": ["story", "reading", "B2", "volunteering", "environment"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -563,7 +563,7 @@
 			"category": "reading",
 			"subCategory": "technology",
 			"tags": ["story", "reading", "B2", "innovation", "energy"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -606,7 +606,7 @@
 			"category": "reading",
 			"subCategory": "food and health",
 			"tags": ["story", "reading", "B2", "restaurant", "local food"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -649,7 +649,7 @@
 			"category": "reading",
 			"subCategory": "science and nature",
 			"tags": ["story", "reading", "B2", "discovery", "rainforest"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -692,7 +692,7 @@
 			"category": "reading",
 			"subCategory": "education and innovation",
 			"tags": ["story", "reading", "B2", "robotics", "teamwork"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -730,7 +730,7 @@
 			"category": "reading",
 			"subCategory": "community and environment",
 			"tags": ["story", "reading", "B2", "disaster", "community"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -773,7 +773,7 @@
 			"category": "reading",
 			"subCategory": "science and innovation",
 			"tags": ["story", "reading", "B2", "packaging", "environment"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -816,7 +816,7 @@
 			"category": "reading",
 			"subCategory": "sports and society",
 			"tags": ["story", "reading", "B2", "sports", "resilience"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -859,7 +859,7 @@
 			"category": "reading",
 			"subCategory": "education and technology",
 			"tags": ["story", "reading", "B2", "digital skills", "education"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -902,7 +902,7 @@
 			"category": "reading",
 			"subCategory": "nature and environment",
 			"tags": ["story", "reading", "B2", "photography", "conservation"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
