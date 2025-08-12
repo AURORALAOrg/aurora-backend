@@ -104,14 +104,14 @@ curl -s -X POST http://localhost:8000/api/v1/topics \
 
 - Update topic (replace NEW_ID)
 ```bash
-curl -s -X PUT http://localhost:8000/api/v1/topics/NEW_ID \
+curl -s -X PUT http://localhost:8000/api/v1/topics/id/NEW_ID \
   -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json' \
   --data '{"description":"Office and remote work conversations"}'
 ```
 
 - Delete topic (replace NEW_ID)
 ```bash
-curl -s -X DELETE http://localhost:8000/api/v1/topics/NEW_ID \
+curl -s -X DELETE http://localhost:8000/api/v1/topics/id/NEW_ID \
   -H "Authorization: Bearer $TOKEN"
 ```
 

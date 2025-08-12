@@ -5,7 +5,7 @@ const prisma = new PrismaClient();
 
 interface CreateTopicDTO {
   name: string;
-  description?: string;
+  description?: Topic["description"]; // string | null | undefined
   category: string;
   englishLevel: Topic["englishLevel"];
   prompts: Topic["prompts"];
