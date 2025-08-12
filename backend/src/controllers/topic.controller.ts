@@ -22,14 +22,20 @@ export default class TopicController {
 
   static list = asyncHandler(async (req: Request, res: Response) => {
     const { level, category } = req.query as { level?: string; category?: string };
-    const topics = await TopicService.listTopics({ level, category });
+    const topics = await TopicService.listTopics({ 
+      level: level as any, 
+      category 
+    });
     return new SuccessResponse("Topics retrieved successfully", { topics }).send(res);
   });
 
   static getByLevel = asyncHandler(async (req: Request, res: Response) => {
     const { level } = req.params as { level: string };
     const { category } = req.query as { category?: string };
-    const topics = await TopicService.listTopics({ level, category });
+    const topics = await TopicService.listTopics({ 
+      level: level as any, 
+      category 
+    });
     return new SuccessResponse("Topics retrieved successfully", { topics }).send(res);
   });
 
