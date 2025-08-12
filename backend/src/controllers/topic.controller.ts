@@ -3,7 +3,7 @@ import { SuccessResponse } from "../core/api/ApiResponse";
 import { BadRequestError, NotFoundError } from "../core/api/ApiError";
 import TopicService from "../services/topic.service";
 import asyncHandler from "../middlewares/async";
-import { EnglishLevel } from "@prisma/client";
+import { EnglishLevel, Category } from "@prisma/client";
 
 export default class TopicController {
   static create = asyncHandler(async (req: Request, res: Response) => {
@@ -22,19 +22,23 @@ export default class TopicController {
   });
 
   static list = asyncHandler(async (req: Request, res: Response) => {
-    const { level, category } = req.query as { level?: string; category?: string };
+    const { level: rawLevel, category: rawCategory } = req.query as { level?: string; category?: string };
+    const level = rawLevel ? (rawLevel.toUpperCase() as EnglishLevel) : undefined;
+    const category = rawCategory ? (rawCategory.toUpperCase() as Category) : undefined;
     const topics = await TopicService.listTopics({
-      level: level as EnglishLevel,
+      level,
       category,
     });
     return new SuccessResponse("Topics retrieved successfully", { topics }).send(res);
   });
 
   static getByLevel = asyncHandler(async (req: Request, res: Response) => {
-    const { level } = req.params as { level: string };
-    const { category } = req.query as { level?: string; category?: string };
+    const { level: levelParam } = req.params as { level: string };
+    const { category: rawCategory } = req.query as { category?: string };
+    const level = levelParam.toUpperCase() as EnglishLevel;
+    const category = rawCategory ? (rawCategory.toUpperCase() as Category) : undefined;
     const topics = await TopicService.listTopics({
-      level: level as EnglishLevel,
+      level,
       category,
     });
     return new SuccessResponse("Topics retrieved successfully", { topics }).send(res);
