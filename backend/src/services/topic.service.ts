@@ -23,7 +23,7 @@ export default class TopicService {
           name: data.name,
           description: data.description ?? null,
           category: data.category,
-          englishLevel: data.englishLevel as any,
+          englishLevel: data.englishLevel,
           prompts: data.prompts,
         },
       });
@@ -44,7 +44,7 @@ export default class TopicService {
           ...(data.name && { name: data.name }),
           ...(data.description !== undefined && { description: data.description }),
           ...(data.category && { category: data.category }),
-          ...(data.englishLevel && { englishLevel: data.englishLevel as any }),
+          ...(data.englishLevel && { englishLevel: data.englishLevel }),
           ...(data.prompts && { prompts: data.prompts }),
         },
       });
