@@ -43,8 +43,8 @@ async function main() {
     {
       name: "Food & Restaurants",
       description: "Practice ordering food and restaurant conversations",
-      category: "daily_life",
-      englishLevel: "A1",
+      category: "FOOD" as const,
+      englishLevel: "A1" as const,
       prompts: [
         "You are at a restaurant. Order your favorite meal.",
         "Describe your favorite food to a friend.",
@@ -53,8 +53,8 @@ async function main() {
     {
       name: "Travel",
       description: "Practice talking about trips and transportation",
-      category: "daily_life",
-      englishLevel: "B1",
+      category: "TRAVEL" as const,
+      englishLevel: "B1" as const,
       prompts: [
         "Plan a trip to a city you have never visited before.",
         "Ask for directions to a famous landmark.",
@@ -62,26 +62,26 @@ async function main() {
     },
   ];
 
-  for (const t of topics) {
+    for (const t of topics) {
     await prisma.topic.upsert({
       where: {
-        topic_unique_name_category_level: {
+        name_category_englishLevel: {
           name: t.name,
           category: t.category,
-          englishLevel: t.englishLevel as any,
+          englishLevel: t.englishLevel,
         },
       },
       update: {
         description: t.description,
         prompts: t.prompts,
       },
-              create: {
-          name: t.name,
-          description: t.description,
-          category: t.category,
-          englishLevel: t.englishLevel as any,
-          prompts: t.prompts,
-        },
+      create: {
+        name: t.name,
+        description: t.description,
+        category: t.category,
+        englishLevel: t.englishLevel,
+        prompts: t.prompts,
+      },
     });
   }
 }

@@ -78,8 +78,7 @@ Icon?
 # Backup files
 *.bak
 
-# Testing documentation (not for production)
-TESTING_INSTRUCTIONS.md
+
 
 # IntelliJ IDEA
 *.iml

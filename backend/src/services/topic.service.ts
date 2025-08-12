@@ -1,4 +1,4 @@
-import { PrismaClient, Topic, Prisma } from "@prisma/client";
+import { PrismaClient, Topic, Prisma, Category } from "@prisma/client";
 import { InternalError, BadRequestError, NotFoundError } from "../core/api/ApiError";
 
 const prisma = new PrismaClient();
@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 interface CreateTopicDTO {
   name: string;
   description?: Topic["description"]; // string | null | undefined
-  category: string;
+  category: Category;
   englishLevel: Topic["englishLevel"];
   prompts: Topic["prompts"];
 }
@@ -98,7 +98,7 @@ export default class TopicService {
     }
   }
 
-  public static async listTopics(filter?: { level?: Topic["englishLevel"]; category?: string }): Promise<Topic[]> {
+  public static async listTopics(filter?: { level?: Topic["englishLevel"]; category?: Category }): Promise<Topic[]> {
     try {
       const where: Prisma.TopicWhereInput = {};
       if (filter?.level) where.englishLevel = filter.level;
