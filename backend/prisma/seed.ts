@@ -73,15 +73,15 @@ async function main() {
       },
       update: {
         description: t.description,
-        prompts: t.prompts as any,
+        prompts: t.prompts,
       },
-      create: {
-        name: t.name,
-        description: t.description,
-        category: t.category,
-        englishLevel: t.englishLevel as any,
-        prompts: t.prompts as any,
-      },
+              create: {
+          name: t.name,
+          description: t.description,
+          category: t.category,
+          englishLevel: t.englishLevel as any,
+          prompts: t.prompts,
+        },
     });
   }
 }
