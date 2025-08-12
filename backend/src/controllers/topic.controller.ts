@@ -3,6 +3,7 @@ import { SuccessResponse } from "../core/api/ApiResponse";
 import { BadRequestError, NotFoundError } from "../core/api/ApiError";
 import TopicService from "../services/topic.service";
 import asyncHandler from "../middlewares/async";
+import { EnglishLevel } from "@prisma/client";
 
 export default class TopicController {
   static create = asyncHandler(async (req: Request, res: Response) => {
@@ -22,19 +23,19 @@ export default class TopicController {
 
   static list = asyncHandler(async (req: Request, res: Response) => {
     const { level, category } = req.query as { level?: string; category?: string };
-    const topics = await TopicService.listTopics({ 
-      level: level as any, 
-      category 
+    const topics = await TopicService.listTopics({
+      level: level as EnglishLevel,
+      category,
     });
     return new SuccessResponse("Topics retrieved successfully", { topics }).send(res);
   });
 
   static getByLevel = asyncHandler(async (req: Request, res: Response) => {
     const { level } = req.params as { level: string };
-    const { category } = req.query as { category?: string };
-    const topics = await TopicService.listTopics({ 
-      level: level as any, 
-      category 
+    const { category } = req.query as { level?: string; category?: string };
+    const topics = await TopicService.listTopics({
+      level: level as EnglishLevel,
+      category,
     });
     return new SuccessResponse("Topics retrieved successfully", { topics }).send(res);
   });

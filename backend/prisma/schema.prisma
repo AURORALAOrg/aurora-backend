@@ -69,7 +69,7 @@ model Topic {
   createdAt    DateTime     @default(now())
   updatedAt    DateTime     @updatedAt
 
-  @@unique([name, category, englishLevel], name: "topic_unique_name_category_level")
+                    @@unique([name, category, englishLevel], map: "topic_unique_name_category_level")
   @@index([englishLevel, category], map: "topic_level_category_idx")
 }
 
