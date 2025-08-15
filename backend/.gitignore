@@ -78,6 +78,9 @@ Icon?
 # Backup files
 *.bak
 
+# Testing instructions (not for git)
+TESTING_INSTRUCTIONS.md
+
 
 
 # IntelliJ IDEA
