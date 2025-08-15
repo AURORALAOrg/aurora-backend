@@ -45,11 +45,11 @@ AUTH_HEADER=( -H "Authorization: Bearer ${TOKEN}" )
 echo "[3/8] List all topics..."
 curl -s "${BASE_URL}/api/v1/topics" "${AUTH_HEADER[@]}" | tee /tmp/topics_all.json | jq . >/dev/null || true
 
-echo "[4/8] Filter topics by level=A1 & category=daily_life..."
-curl -s "${BASE_URL}/api/v1/topics?level=A1&category=daily_life" "${AUTH_HEADER[@]}" | tee /tmp/topics_filter.json | jq . >/dev/null || true
+echo "[4/8] Filter topics by level=A1 & category=DAILY_LIFE..."
+curl -s "${BASE_URL}/api/v1/topics?level=A1&category=DAILY_LIFE" "${AUTH_HEADER[@]}" | tee /tmp/topics_filter.json | jq . >/dev/null || true
 
 echo "[5/8] Get topics by level (A1)..."
-curl -s "${BASE_URL}/api/v1/topics/A1" "${AUTH_HEADER[@]}" | tee /tmp/topics_level.json | jq . >/dev/null || true
+curl -s "${BASE_URL}/api/v1/topics/level/A1" "${AUTH_HEADER[@]}" | tee /tmp/topics_level.json | jq . >/dev/null || true
 
 TOPIC_ID=$(node -e 'const fs=require("fs");try{const j=JSON.parse(fs.readFileSync("/tmp/topics_all.json","utf8"));const t=(j.data&&j.data.topics)||[];console.log(t[0]?.id||"")}catch(e){console.log("")}')
 if [[ -n "${TOPIC_ID}" ]]; then
@@ -59,7 +59,7 @@ fi
 
 echo "[7/8] Create, Update and Delete a topic..."
 CREATE_JSON=$(curl -s -X POST "${BASE_URL}/api/v1/topics" "${AUTH_HEADER[@]}" -H 'Content-Type: application/json' \
-  --data '{"name":"Work","description":"Office conversations","category":"daily_life","englishLevel":"B1","prompts":["Talk about your job role.","Describe a typical day at work."]}')
+  --data '{"name":"Work","description":"Office conversations","category":"WORK","englishLevel":"B1","prompts":["Talk about your job role.","Describe a typical day at work."]}')
 echo "$CREATE_JSON" | jq . >/tmp/topic_create.json || true
 NEW_ID=$(node -e 'const fs=require("fs");try{const j=JSON.parse(fs.readFileSync("/tmp/topic_create.json","utf8"));console.log((j.data&&j.data.topic&&j.data.topic.id)||"")}catch(e){console.log("")}')
 if [[ -n "${NEW_ID}" ]]; then
