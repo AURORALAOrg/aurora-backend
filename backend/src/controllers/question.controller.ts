@@ -1,12 +1,15 @@
 import { Request, Response } from 'express';
 import { createQuestionValidation, updateQuestionValidation } from '../models/validations/question.validators';
 import QuestionService from '../services/question.service';
+import { AchievementService } from '../services/achievement.service';
+const achievementService = new AchievementService();
 import { BadRequestError, InternalError } from '../core/api/ApiError';
 
 interface AuthenticatedRequest extends Request {
     user?: {
         id: string;
     };
+    // body: any; // Removed for type safety. Use Request.body or define a specific type if needed.
 }
 
 class QuestionController {
@@ -25,6 +28,14 @@ class QuestionController {
                 ...req.body,
                 createdBy: req.user.id
             });
+
+            // Achievement integration: check for mastery/progress achievements after question completion
+            try {
+                await achievementService.checkAchievementsForUser(req.user.id);
+            } catch (err) {
+                // Log error but do not block main response
+                console.error('Achievement check error:', err);
+            }
 
             res.status(201).json({
                 status: 'success',
