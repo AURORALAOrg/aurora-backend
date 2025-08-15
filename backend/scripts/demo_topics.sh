@@ -63,16 +63,26 @@ CREATE_JSON=$(curl -s -X POST "${BASE_URL}/api/v1/topics" "${AUTH_HEADER[@]}" -H
 echo "$CREATE_JSON" | jq . >/tmp/topic_create.json || true
 NEW_ID=$(node -e 'const fs=require("fs");try{const j=JSON.parse(fs.readFileSync("/tmp/topic_create.json","utf8"));console.log((j.data&&j.data.topic&&j.data.topic.id)||"")}catch(e){console.log("")}')
 if [[ -n "${NEW_ID}" ]]; then
-  curl -s -X PUT "${BASE_URL}/api/v1/topics/${NEW_ID}" "${AUTH_HEADER[@]}" -H 'Content-Type: application/json' \
+  curl -s -X PUT "${BASE_URL}/api/v1/topics/id/${NEW_ID}" "${AUTH_HEADER[@]}" -H 'Content-Type: application/json' \
     --data '{"description":"Office and remote work conversations"}' | jq . >/tmp/topic_update.json || true
-  curl -s -X DELETE "${BASE_URL}/api/v1/topics/${NEW_ID}" "${AUTH_HEADER[@]}" | jq . >/tmp/topic_delete.json || true
+  curl -s -X DELETE "${BASE_URL}/api/v1/topics/id/${NEW_ID}" "${AUTH_HEADER[@]}" | jq . >/tmp/topic_delete.json || true
 fi
 
-echo "[8/8] Show database evidence (topics rows) via docker psql..."
-docker exec -t "${DB_CONTAINER}" psql -U postgres -d aurora_db -c 'SELECT id, name, category, "englishLevel", prompts FROM "Topic" ORDER BY "createdAt" DESC LIMIT 5;' || true
+echo "[8/8] Database check..."
+# Try Docker first (for local development)
+if command -v docker >/dev/null 2>&1 && docker ps | grep -q "${DB_CONTAINER}"; then
+  echo "Using Docker database connection..."
+  docker exec -t "${DB_CONTAINER}" psql -U postgres -d aurora_db -c 'SELECT id, name, category, "englishLevel", prompts FROM "Topic" ORDER BY "createdAt" DESC LIMIT 5;' || true
+else
+  echo "Docker not available or container not running."
+  echo "📊 For Supabase users: Check your database dashboard at https://supabase.com/dashboard"
+  echo "   Navigate to Table Editor > Topic table to see the data"
+  echo "   Or use the API response above to verify data creation"
+fi
 
 echo "[BONUS] Generate a chat prompt from first topic..."
 node -e "const {PrismaClient}=require('@prisma/client');const ChatService=require('./build/src/services/chat.service').default;(async()=>{const p=new PrismaClient();const t=await p.topic.findFirst();console.log('Topic:',t?.name);console.log('Prompt:\n',ChatService.buildPromptFromTopic(t));await p.\$disconnect();})();"
 
 echo "\nDemo complete. Artifacts saved under /tmp (login_response.json, topics_*.json, topic_*.json)."
+echo "📊 Database data: Check Supabase dashboard or use the API responses above."
 
