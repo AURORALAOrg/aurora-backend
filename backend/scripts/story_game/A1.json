@@ -35,7 +35,7 @@
 			"category": "reading",
 			"subCategory": "daily life",
 			"tags": ["story", "reading", "A1", "daily routine"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -79,7 +79,7 @@
 			"category": "reading",
 			"subCategory": "work life",
 			"tags": ["story", "reading", "A1", "jobs"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -118,7 +118,7 @@
 			"category": "reading",
 			"subCategory": "school life",
 			"tags": ["story", "reading", "A1", "school"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -157,7 +157,7 @@
 			"category": "reading",
 			"subCategory": "leisure activities",
 			"tags": ["story", "reading", "A1", "zoo"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -201,7 +201,7 @@
 			"category": "reading",
 			"subCategory": "work",
 			"tags": ["story", "reading", "A1", "shop", "work"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -240,7 +240,7 @@
 			"category": "reading",
 			"subCategory": "food and cooking",
 			"tags": ["story", "reading", "A1", "cooking", "food"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -289,7 +289,7 @@
 			"category": "reading",
 			"subCategory": "transportation",
 			"tags": ["story", "reading", "A1", "transportation", "school"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -333,7 +333,7 @@
 			"category": "reading",
 			"subCategory": "leisure activities",
 			"tags": ["story", "reading", "A1", "beach", "family"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -377,7 +377,7 @@
 			"category": "reading",
 			"subCategory": "occupation",
 			"tags": ["story", "reading", "A1", "farm", "animals"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -421,7 +421,7 @@
 			"category": "reading",
 			"subCategory": "pets",
 			"tags": ["story", "reading", "A1", "pets", "animals"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -460,7 +460,7 @@
 			"category": "reading",
 			"subCategory": "hobbies",
 			"tags": ["story", "reading", "A1", "drawing", "hobbies"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -494,7 +494,7 @@
 			"category": "reading",
 			"subCategory": "family activities",
 			"tags": ["story", "reading", "A1", "fishing", "family"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -533,7 +533,7 @@
 			"category": "reading",
 			"subCategory": "daily routine",
 			"tags": ["story", "reading", "A1", "routine", "school"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -572,7 +572,7 @@
 			"category": "reading",
 			"subCategory": "family activities",
 			"tags": ["story", "reading", "A1", "garden", "family"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -611,7 +611,7 @@
 			"category": "reading",
 			"subCategory": "play",
 			"tags": ["story", "reading", "A1", "park", "play"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -650,7 +650,7 @@
 			"category": "reading",
 			"subCategory": "hobbies",
 			"tags": ["story", "reading", "A1", "library", "books"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -684,7 +684,7 @@
 			"category": "reading",
 			"subCategory": "pets",
 			"tags": ["story", "reading", "A1", "dog", "pets"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -728,7 +728,7 @@
 			"category": "reading",
 			"subCategory": "family activities",
 			"tags": ["story", "reading", "A1", "cooking", "family"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -762,7 +762,7 @@
 			"category": "reading",
 			"subCategory": "sports",
 			"tags": ["story", "reading", "A1", "football", "sports"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -806,7 +806,7 @@
 			"category": "reading",
 			"subCategory": "family activities",
 			"tags": ["story", "reading", "A1", "grandparents", "family"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -845,7 +845,7 @@
 			"category": "reading",
 			"subCategory": "shopping",
 			"tags": ["story", "reading", "A1", "shopping", "food"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -879,7 +879,7 @@
 			"category": "reading",
 			"subCategory": "sports",
 			"tags": ["story", "reading", "A1", "bicycle", "sports"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -923,7 +923,7 @@
 			"category": "reading",
 			"subCategory": "family activities",
 			"tags": ["story", "reading", "A1", "dinner", "family"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -962,7 +962,7 @@
 			"category": "reading",
 			"subCategory": "play",
 			"tags": ["story", "reading", "A1", "playground", "friends"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -996,7 +996,7 @@
 			"category": "reading",
 			"subCategory": "school life",
 			"tags": ["story", "reading", "A1", "backpack", "school"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1035,7 +1035,7 @@
 			"category": "reading",
 			"subCategory": "pets",
 			"tags": ["story", "reading", "A1", "rabbit", "pets"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1069,7 +1069,7 @@
 			"category": "reading",
 			"subCategory": "seasons",
 			"tags": ["story", "reading", "A1", "snowman", "winter"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1108,7 +1108,7 @@
 			"category": "reading",
 			"subCategory": "hobbies",
 			"tags": ["story", "reading", "A1", "dance", "hobbies"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1142,7 +1142,7 @@
 			"category": "reading",
 			"subCategory": "food and cooking",
 			"tags": ["story", "reading", "A1", "bakery", "birthday"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1181,7 +1181,7 @@
 			"category": "reading",
 			"subCategory": "school life",
 			"tags": ["story", "reading", "A1", "plants", "school"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1220,7 +1220,7 @@
 			"category": "reading",
 			"subCategory": "family activities",
 			"tags": ["story", "reading", "A1", "countryside", "family"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1264,7 +1264,7 @@
 			"category": "reading",
 			"subCategory": "family activities",
 			"tags": ["story", "reading", "A1", "car", "family"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1303,7 +1303,7 @@
 			"category": "reading",
 			"subCategory": "pets",
 			"tags": ["story", "reading", "A1", "goldfish", "pets"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1342,7 +1342,7 @@
 			"category": "reading",
 			"subCategory": "leisure activities",
 			"tags": ["story", "reading", "A1", "camping", "family"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1381,7 +1381,7 @@
 			"category": "reading",
 			"subCategory": "leisure activities",
 			"tags": ["story", "reading", "A1", "kites", "park"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1415,7 +1415,7 @@
 			"category": "reading",
 			"subCategory": "food and cooking",
 			"tags": ["story", "reading", "A1", "cookies", "cooking"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1454,7 +1454,7 @@
 			"category": "reading",
 			"subCategory": "hobbies",
 			"tags": ["story", "reading", "A1", "garden", "flowers"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1493,7 +1493,7 @@
 			"category": "reading",
 			"subCategory": "family activities",
 			"tags": ["story", "reading", "A1", "homework", "family"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1532,7 +1532,7 @@
 			"category": "reading",
 			"subCategory": "leisure activities",
 			"tags": ["story", "reading", "A1", "swimming", "summer"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1566,7 +1566,7 @@
 			"category": "reading",
 			"subCategory": "leisure activities",
 			"tags": ["story", "reading", "A1", "zoo", "animals"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1600,7 +1600,7 @@
 			"category": "reading",
 			"subCategory": "food and cooking",
 			"tags": ["story", "reading", "A1", "pancakes", "cooking"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1639,7 +1639,7 @@
 			"category": "reading",
 			"subCategory": "family activities",
 			"tags": ["story", "reading", "A1", "picnic", "park"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1678,7 +1678,7 @@
 			"category": "reading",
 			"subCategory": "hobbies",
 			"tags": ["story", "reading", "A1", "library", "animals"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1717,7 +1717,7 @@
 			"category": "reading",
 			"subCategory": "family activities",
 			"tags": ["story", "reading", "A1", "plants", "balcony"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1756,7 +1756,7 @@
 			"category": "reading",
 			"subCategory": "leisure activities",
 			"tags": ["story", "reading", "A1", "swimming", "family"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1795,7 +1795,7 @@
 			"category": "reading",
 			"subCategory": "play",
 			"tags": ["story", "reading", "A1", "blocks", "siblings"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1829,7 +1829,7 @@
 			"category": "reading",
 			"subCategory": "play",
 			"tags": ["story", "reading", "A1", "playground", "friends"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1868,7 +1868,7 @@
 			"category": "reading",
 			"subCategory": "pets",
 			"tags": ["story", "reading", "A1", "dog", "washing"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -1912,7 +1912,7 @@
 			"category": "reading",
 			"subCategory": "daily routine",
 			"tags": ["story", "reading", "A1", "breakfast", "routine"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,

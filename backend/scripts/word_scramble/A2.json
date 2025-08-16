@@ -13,7 +13,7 @@
 			"category": "vocabulary",
 			"subCategory": "environment",
 			"tags": ["vocabulary", "word-scramble", "A2", "weather"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -35,7 +35,7 @@
 			"category": "vocabulary",
 			"subCategory": "travel",
 			"tags": ["vocabulary", "word-scramble", "A2", "holiday"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -57,7 +57,7 @@
 			"category": "vocabulary",
 			"subCategory": "time",
 			"tags": ["vocabulary", "word-scramble", "A2", "time"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -79,7 +79,7 @@
 			"category": "vocabulary",
 			"subCategory": "celebrations",
 			"tags": ["vocabulary", "word-scramble", "A2", "events"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -101,7 +101,7 @@
 			"category": "vocabulary",
 			"subCategory": "technology",
 			"tags": ["vocabulary", "word-scramble", "A2", "entertainment"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -123,7 +123,7 @@
 			"category": "vocabulary",
 			"subCategory": "food",
 			"tags": ["vocabulary", "word-scramble", "A2", "dining"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -145,7 +145,7 @@
 			"category": "vocabulary",
 			"subCategory": "activities",
 			"tags": ["vocabulary", "word-scramble", "A2", "commerce"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -167,7 +167,7 @@
 			"category": "vocabulary",
 			"subCategory": "technology",
 			"tags": ["vocabulary", "word-scramble", "A2", "devices"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -189,7 +189,7 @@
 			"category": "vocabulary",
 			"subCategory": "house",
 			"tags": ["vocabulary", "word-scramble", "A2", "rooms"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -211,7 +211,7 @@
 			"category": "vocabulary",
 			"subCategory": "food",
 			"tags": ["vocabulary", "word-scramble", "A2", "meals"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -233,7 +233,7 @@
 			"category": "vocabulary",
 			"subCategory": "people",
 			"tags": ["vocabulary", "word-scramble", "A2", "community"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -255,7 +255,7 @@
 			"category": "vocabulary",
 			"subCategory": "time",
 			"tags": ["vocabulary", "word-scramble", "A2", "adverbs"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -277,7 +277,7 @@
 			"category": "vocabulary",
 			"subCategory": "shopping",
 			"tags": ["vocabulary", "word-scramble", "A2", "places"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -299,7 +299,7 @@
 			"category": "vocabulary",
 			"subCategory": "travel",
 			"tags": ["vocabulary", "word-scramble", "A2", "documents"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -321,7 +321,7 @@
 			"category": "vocabulary",
 			"subCategory": "sports",
 			"tags": ["vocabulary", "word-scramble", "A2", "places"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -343,7 +343,7 @@
 			"category": "vocabulary",
 			"subCategory": "places",
 			"tags": ["vocabulary", "word-scramble", "A2", "travel"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -365,7 +365,7 @@
 			"category": "vocabulary",
 			"subCategory": "places",
 			"tags": ["vocabulary", "word-scramble", "A2", "education"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -387,7 +387,7 @@
 			"category": "vocabulary",
 			"subCategory": "travel",
 			"tags": ["vocabulary", "word-scramble", "A2", "transport"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -409,7 +409,7 @@
 			"category": "vocabulary",
 			"subCategory": "nature",
 			"tags": ["vocabulary", "word-scramble", "A2", "plants"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -431,7 +431,7 @@
 			"category": "vocabulary",
 			"subCategory": "people",
 			"tags": ["vocabulary", "word-scramble", "A2", "school"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -453,7 +453,7 @@
 			"category": "vocabulary",
 			"subCategory": "celebrations",
 			"tags": ["vocabulary", "word-scramble", "A2", "events"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -475,7 +475,7 @@
 			"category": "vocabulary",
 			"subCategory": "school",
 			"tags": ["vocabulary", "word-scramble", "A2", "stationery"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -497,7 +497,7 @@
 			"category": "vocabulary",
 			"subCategory": "house",
 			"tags": ["vocabulary", "word-scramble", "A2", "home"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -519,7 +519,7 @@
 			"category": "vocabulary",
 			"subCategory": "people",
 			"tags": ["vocabulary", "word-scramble", "A2", "health"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -541,7 +541,7 @@
 			"category": "vocabulary",
 			"subCategory": "nature",
 			"tags": ["vocabulary", "word-scramble", "A2", "geography"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -563,7 +563,7 @@
 			"category": "vocabulary",
 			"subCategory": "transport",
 			"tags": ["vocabulary", "word-scramble", "A2", "vehicles"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,

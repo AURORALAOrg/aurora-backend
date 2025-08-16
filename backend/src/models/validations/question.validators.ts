@@ -7,7 +7,7 @@ const commonMetadataSchema = Joi.object({
     category: Joi.string().required(),
     subCategory: Joi.string().required(),
     tags: Joi.array().items(Joi.string()).required(),
-    type: Joi.string().valid('multiple-choice', 'sentence-builder', 'fill-in-blanks', 'idiom-challenge').required()
+    type: Joi.string().valid('multiple-choice', 'sentence-builder', 'fill-in-blanks', 'idiom-challenge', 'word-scramble', 'word-matching', 'story-game').required()
 });
 
 // Common game metadata schema
@@ -84,7 +84,7 @@ export const updateQuestionValidation = {
 // Query parameter validation for getAllQuestions
 export const getAllQuestionsValidation = {
     query: Joi.object({
-        type: Joi.string().valid('multiple-choice', 'sentence-builder', 'fill-in-blanks', 'idiom-challenge').optional(),
+        type: Joi.string().valid('multiple-choice', 'sentence-builder', 'fill-in-blanks', 'idiom-challenge', 'word-scramble', 'word-matching', 'story-game').optional(),
         category: Joi.string().min(1).max(100).optional(),
         subCategory: Joi.string().min(1).max(100).optional(),
         englishLevel: Joi.string().valid('A1', 'A2', 'B1', 'B2', 'C1', 'C2').optional(),

@@ -24,7 +24,7 @@
     "category": "reading",
     "subCategory": "language and cognition",
     "tags": ["story", "reading", "C1", "linguistics", "cognition"],
-    "type": "story_game"
+    "type": "story-game"
   },
   "gameMetadata": {
     "pointsValue": 30,
@@ -57,7 +57,7 @@
     "category": "reading",
     "subCategory": "current affairs",
     "tags": ["story", "reading", "C1", "business", "ethics"],
-    "type": "story_game"
+    "type": "story-game"
   },
   "gameMetadata": {
     "pointsValue": 30,
@@ -90,7 +90,7 @@
     "category": "reading",
     "subCategory": "medicine and innovation",
     "tags": ["story", "reading", "C1", "medicine", "innovation"],
-    "type": "story_game"
+    "type": "story-game"
   },
   "gameMetadata": {
     "pointsValue": 30,
@@ -123,7 +123,7 @@
     "category": "reading",
     "subCategory": "science and environment",
     "tags": ["story", "reading", "C1", "climate", "science communication"],
-    "type": "story_game"
+    "type": "story-game"
   },
   "gameMetadata": {
     "pointsValue": 30,
@@ -156,7 +156,7 @@
     "category": "reading",
     "subCategory": "arts and literature",
     "tags": ["story", "reading", "C1", "literature", "innovation"],
-    "type": "story_game"
+    "type": "story-game"
   },
   "gameMetadata": {
     "pointsValue": 30,
@@ -190,7 +190,7 @@
       "category": "reading",
       "subCategory": "architecture and environment",
       "tags": ["story", "reading", "C1", "architecture", "sustainability"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -223,7 +223,7 @@
       "category": "reading",
       "subCategory": "society and culture",
       "tags": ["story", "reading", "C1", "refugee", "documentary"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -256,7 +256,7 @@
       "category": "reading",
       "subCategory": "media and ethics",
       "tags": ["story", "reading", "C1", "journalism", "sports"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -289,7 +289,7 @@
       "category": "reading",
       "subCategory": "science and health",
       "tags": ["story", "reading", "C1", "neuroscience", "meditation"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -322,7 +322,7 @@
       "category": "reading",
       "subCategory": "technology and business",
       "tags": ["story", "reading", "C1", "entrepreneurship", "AI"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -356,7 +356,7 @@
       "category": "reading",
       "subCategory": "science and environment",
       "tags": ["story", "reading", "C1", "marine biology", "climate change"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -389,7 +389,7 @@
       "category": "reading",
       "subCategory": "social innovation",
       "tags": ["story", "reading", "C1", "entrepreneurship", "food waste"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -422,7 +422,7 @@
       "category": "reading",
       "subCategory": "history and politics",
       "tags": ["story", "reading", "C1", "history", "biography"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -455,7 +455,7 @@
       "category": "reading",
       "subCategory": "psychology and health",
       "tags": ["story", "reading", "C1", "psychology", "therapy"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -488,7 +488,7 @@
       "category": "reading",
       "subCategory": "arts and society",
       "tags": ["story", "reading", "C1", "theater", "privacy"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -522,7 +522,7 @@
       "category": "reading",
       "subCategory": "linguistics and culture",
       "tags": ["story", "reading", "C1", "linguistics", "preservation"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -555,7 +555,7 @@
       "category": "reading",
       "subCategory": "economics and environment",
       "tags": ["story", "reading", "C1", "finance", "green tech"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -588,7 +588,7 @@
       "category": "reading",
       "subCategory": "medicine and innovation",
       "tags": ["story", "reading", "C1", "medicine", "diagnostics"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -621,7 +621,7 @@
       "category": "reading",
       "subCategory": "science and society",
       "tags": ["story", "reading", "C1", "climate", "urban planning"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -654,7 +654,7 @@
       "category": "reading",
       "subCategory": "literature and innovation",
       "tags": ["story", "reading", "C1", "novel", "narrative"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -688,7 +688,7 @@
       "category": "reading",
       "subCategory": "photography and environment",
       "tags": ["story", "reading", "C1", "photography", "indigenous"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -721,7 +721,7 @@
       "category": "reading",
       "subCategory": "technology and health",
       "tags": ["story", "reading", "C1", "mental health", "app"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -754,7 +754,7 @@
       "category": "reading",
       "subCategory": "politics and technology",
       "tags": ["story", "reading", "C1", "politics", "social media"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -787,7 +787,7 @@
       "category": "reading",
       "subCategory": "food and innovation",
       "tags": ["story", "reading", "C1", "chef", "plant-based"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -820,7 +820,7 @@
       "category": "reading",
       "subCategory": "education and society",
       "tags": ["story", "reading", "C1", "education", "pandemic"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -853,7 +853,7 @@
       "category": "reading",
       "subCategory": "film and environment",
       "tags": ["story", "reading", "C1", "film", "urban farming"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -886,7 +886,7 @@
       "category": "reading",
       "subCategory": "mathematics and technology",
       "tags": ["story", "reading", "C1", "mathematics", "energy"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -919,7 +919,7 @@
       "category": "reading",
       "subCategory": "literature and science",
       "tags": ["story", "reading", "C1", "novel", "STEM"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -952,7 +952,7 @@
       "category": "reading",
       "subCategory": "health and society",
       "tags": ["story", "reading", "C1", "public health", "vaccination"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -985,7 +985,7 @@
       "category": "reading",
       "subCategory": "theater and society",
       "tags": ["story", "reading", "C1", "play", "migration"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -1018,7 +1018,7 @@
       "category": "reading",
       "subCategory": "media and ethics",
       "tags": ["story", "reading", "C1", "journalism", "whistleblower"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -1051,7 +1051,7 @@
       "category": "reading",
       "subCategory": "biotechnology and society",
       "tags": ["story", "reading", "C1", "biotech", "food security"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -1084,7 +1084,7 @@
       "category": "reading",
       "subCategory": "law and society",
       "tags": ["story", "reading", "C1", "law", "restorative justice"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -1117,7 +1117,7 @@
       "category": "reading",
       "subCategory": "engineering and environment",
       "tags": ["story", "reading", "C1", "engineering", "solar energy"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
@@ -1150,7 +1150,7 @@
       "category": "reading",
       "subCategory": "psychology and education",
       "tags": ["story", "reading", "C1", "psychology", "resilience"],
-      "type": "story_game"
+      "type": "story-game"
     },
     "gameMetadata": {
       "pointsValue": 30,
