@@ -35,7 +35,7 @@ LOGIN_PASSWORD="${LOGIN_PASSWORD:-password123!}"
 
 echo "🔑 Attempting login with: ${LOGIN_EMAIL}"
 
-LOGIN_JSON=$(curl -sfS -X POST "${BASE_URL}/api/v1/auth/login" \
+LOGIN_JSON=$(curl -sS -X POST "${BASE_URL}/api/v1/auth/login" \
   -H 'Content-Type: application/json' \
   --data "{\"email\":\"${LOGIN_EMAIL}\",\"password\":\"${LOGIN_PASSWORD}\"}" \
   -w "\nHTTP_STATUS:%{http_code}")
@@ -110,7 +110,7 @@ fi
 echo "[7/8] Create, Update and Delete a topic..."
 echo "➕ Creating new topic..."
 CREATE_JSON=$(curl -s -X POST "${BASE_URL}/api/v1/topics" "${AUTH_HEADER[@]}" -H 'Content-Type: application/json' \
-  --data '{"name":"Work","description":"Office conversations","category":"WORK","englishLevel":"B1","prompts":["Talk about your job role.","Describe a typical day at work."]}')
+  --data '{"name":"Test Work Topic","description":"Office conversations","category":"WORK","englishLevel":"B1","prompts":["Talk about your job role.","Describe a typical day at work."]}')
 
 echo "$CREATE_JSON" | jq . >/tmp/topic_create.json 2>/dev/null || echo "$CREATE_JSON" >/tmp/topic_create.json
 
@@ -120,11 +120,11 @@ NEW_ID=$(node -e 'const fs=require("fs");try{const j=JSON.parse(fs.readFileSync(
 
 if [[ -n "${NEW_ID}" ]]; then
   echo "✏️ Updating topic ${NEW_ID}..."
-  curl -s -X PUT "${BASE_URL}/api/v1/topics/id/${NEW_ID}" "${AUTH_HEADER[@]}" -H 'Content-Type: application/json' \
+    curl -s -X PUT "${BASE_URL}/api/v1/topics/${NEW_ID}" "${AUTH_HEADER[@]}" -H 'Content-Type: application/json' \
     --data '{"description":"Office and remote work conversations"}' | jq . >/tmp/topic_update.json 2>/dev/null || true
-  
+
   echo "🗑️ Deleting topic ${NEW_ID}..."
-  curl -s -X DELETE "${BASE_URL}/api/v1/topics/id/${NEW_ID}" "${AUTH_HEADER[@]}" | jq . >/tmp/topic_delete.json 2>/dev/null || true
+  curl -s -X DELETE "${BASE_URL}/api/v1/topics/${NEW_ID}" "${AUTH_HEADER[@]}" | jq . >/tmp/topic_delete.json 2>/dev/null || true
 else
   echo "⚠️ Could not create topic, skipping update/delete"
 fi
