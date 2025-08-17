@@ -42,7 +42,7 @@ LOGIN_JSON=$(curl -sfS -X POST "${BASE_URL}/api/v1/auth/login" \
 
 # Extract HTTP status and response body
 HTTP_STATUS=$(echo "$LOGIN_JSON" | tail -n1 | sed 's/.*HTTP_STATUS://')
-RESPONSE_BODY=$(echo "$LOGIN_JSON" | head -n -1)
+RESPONSE_BODY=$(echo "$LOGIN_JSON" | sed '$d')
 
 echo "$RESPONSE_BODY" | jq . >/tmp/login_response.json 2>/dev/null || echo "$RESPONSE_BODY" >/tmp/login_response.json
 
