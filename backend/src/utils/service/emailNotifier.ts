@@ -9,13 +9,15 @@ class EmailNotifier {
     await mailer.sendTextEmail(email, subject, message);
   }
 
-  public static async sendMotivationalEmail(email: string, message: string) {
-    const defaultMessage = "HI {firstName}, We noticed you missed a day of learning. Your streak is waiting for you! Answer a question today to get back on track and earn more XP.";
-    message = message || defaultMessage;
+  public static async sendMotivationalEmail(email: string, firstName?: string, message?: string) {
+    const defaultMessage =
+      `Hi ${firstName ?? "there"}, we noticed you missed a day of learning. ` +
+      `Your streak is waiting for you! Answer a question today to get back on track and earn more XP.`;
+    const body = message ?? defaultMessage;
     const subject = "Start Learning Now";
-    
+
     const mailer = new ZohoMailer();
-    await mailer.sendTextEmail(email, subject, message);
+    await mailer.sendTextEmail(email, subject, body);
   }
 }
 

@@ -2,16 +2,13 @@ import { Request, Response } from 'express';
 import { createQuestionValidation, updateQuestionValidation } from '../models/validations/question.validators';
 import QuestionService from '../services/question.service';
 import { XPService } from '../services/xp.service';
-import { PrismaClient } from '@prisma/client';
-import { BadRequestError, InternalError } from '../core/api/ApiError';
+import { BadRequestError, UnauthorizedError } from '../core/api/ApiError';
 
 interface AuthenticatedRequest extends Request {
     user?: {
         id: string;
     };
 }
-
-const prisma = new PrismaClient();
 
 class QuestionController {
     public static async createQuestion(req: AuthenticatedRequest, res: Response) {
@@ -167,46 +164,42 @@ class QuestionController {
     }
 
 public static async submitAnswer(req: AuthenticatedRequest, res: Response) {
-    console.log('Submit answer request:', req.body);
+     // logger.debug('Submit answer', { userId: req.user?.id, questionId: req.body?.questionId }); 
     try {
-      if (!req.user?.id) throw new BadRequestError('User not authenticated');
-
-      const { questionId, answer, timeSpent } = req.body;
-      if (!questionId || !answer || timeSpent == null) {
-        throw new BadRequestError('Missing required fields: questionId, answer, timeSpent');
+      if (!req.user?.id) {
+        throw new UnauthorizedError('Unauthorized - User not authenticated');
       }
 
-      // Fetch question
-      const question = await prisma.question.findUnique({
-        where: { id: questionId },
-        select: { content: true, gameMetadata: true },
-      });
-      if (!question) throw new BadRequestError('Question not found');
+      const { questionId, answer, timeSpent } = req.body ?? {};
+      if (!questionId || typeof answer === 'undefined' || timeSpent == null) {
+        throw new BadRequestError('Missing required fields: questionId, answer, timeSpent');
+      }
+      if (typeof timeSpent !== 'number' || timeSpent < 0) {
+        throw new BadRequestError('Invalid timeSpent');
+      }
 
-      // Validate answer
-      const content = question.content as any;
-      const isCorrect = content.correctAnswer === answer;
-      const timeLimit = (question.gameMetadata as any).timeLimit;
+      // Fetch question via service (reuse shared Prisma client)
+      const q = await QuestionService.getQuestionById(questionId);
+      if (!q) throw new BadRequestError('Question not found');
 
-      // Award XP
-      const xpResult = await XPService.awardXP(req.user.id, {
-        questionId,
-        isCorrect,
-        timeSpent,
-        timeLimit,
-      });
-      console.log('XP awarded:', xpResult);
+      const content = q.content as any;
+      const isCorrect = content?.correctAnswer === answer;
+
+      // Pull timeLimit from gameMetadata; use a safe fallback
+      const meta = (q.gameMetadata as any) ?? {};
+      const timeLimit: number = typeof meta.timeLimit === 'number' && meta.timeLimit > 0 ? meta.timeLimit : 30;
+
+      // Award XP (5-arg signature)
+      const xpResult = await XPService.awardXP(req.user.id, questionId, isCorrect, timeSpent, timeLimit);
 
       res.status(200).json({
         status: 'success',
-        data: {
-          isCorrect,
-          xpResult,
-        },
+        data: { isCorrect, xpResult },
       });
     } catch (error) {
-      console.error('Submit answer error:', error);
-      if (error instanceof BadRequestError) {
+      if (error instanceof UnauthorizedError) {
+        res.status(401).json({ status: 'error', message: error.message });
+      } else if (error instanceof BadRequestError) {
         res.status(400).json({ status: 'error', message: error.message });
       } else {
         res.status(500).json({ status: 'error', message: 'Internal server error' });

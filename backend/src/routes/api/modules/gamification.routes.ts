@@ -1,21 +1,22 @@
 import express from 'express';
 import { GamificationController } from '../../../controllers/gamification.controller';
-import { isAuthorized } from '../../../middlewares/authentication';
+import { isAuthorized, requireRole } from '../../../middlewares/authentication';
 import { awardXPValidation } from '../../../models/validations/xp.validator';
 import validateRequest from '../../../middlewares/validator';
 
 const router = express.Router();
 
+router.use(isAuthorized());
+
 router.post(
   '/award-xp',
-  isAuthorized(),
+  requireRole("admin"),
   validateRequest(awardXPValidation),
   GamificationController.awardXP
 );
 
 router.get(
   '/stats',
-  isAuthorized(),
   GamificationController.getUserStats
 );
 
@@ -26,7 +27,6 @@ router.get(
 
 router.get(
   '/streak-history',
-  isAuthorized(),
   GamificationController.getStreakHistory
 );
 

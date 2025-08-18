@@ -3,8 +3,8 @@ import serverSettings from "../../core/config/settings";
 
 class Jwt {
   public static issue(payload: any, expires: any): any {
-    return jwt.sign(payload, serverSettings.jwtSecretKey as any, {
-      expiresIn: expires || "1d",
+    return jwt.sign(payload, serverSettings.jwtSecretKey as string, {
+      expiresIn: expires ?? "1d",
     });
   }
 

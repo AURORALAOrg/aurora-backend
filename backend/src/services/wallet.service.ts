@@ -1,7 +1,6 @@
-import { PrismaClient, Status } from "@prisma/client";
+import { Status } from "@prisma/client";
 import { InternalError } from "../core/api/ApiError";
-
-const prisma = new PrismaClient();
+import { prisma } from "../lib/prisma";
 
 class WalletService {
   public static async createWallet(userId: string, walletAddress: string, tx?: any) {

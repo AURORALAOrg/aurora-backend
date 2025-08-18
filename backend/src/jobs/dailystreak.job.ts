@@ -1,78 +1,109 @@
-import { schedule } from 'node-cron';
-import { PrismaClient } from '@prisma/client';
-import { StreakService } from '../services/streak.service';
-import EmailNotifier from '../utils/service/emailNotifier';
+import { schedule } from "node-cron";
+import type { User } from "@prisma/client";
+import { prisma } from "../lib/prisma";
+import EmailNotifier from "../utils/service/emailNotifier";
 
-const prisma = new PrismaClient();
+const HOURS = (n: number) => n * 60 * 60 * 1000;
 
 export class DailyStreakJob {
-  static async updateAllUserStreaks() {
-    console.log('Running daily streak update at', new Date().toISOString());
-    try {
-      const users = await prisma.user.findMany({ select: { id: true } });
-      for (const user of users) {
-        await StreakService.updateUserStreak(user.id);
-      }
-      console.log('Streaks updated for', users.length, 'users');
-    } catch (error) {
-      console.error('Error updating streaks:', error);
-      throw error;
-    }
+  static async resetDailyCounters(): Promise<number> {
+    const res = await prisma.user.updateMany({ data: { dailyXP: 0 } });
+    return res.count; // how many rows were updated
   }
 
-  static async resetDailyCounters() {
-    console.log('Resetting daily XP at', new Date().toISOString());
-    try {
-      await prisma.user.updateMany({
-        data: { dailyXP: 0 },
+  static async resetBrokenStreaks(now: Date): Promise<number> {
+    const cutoff = new Date(now.getTime() - HOURS(26));
+    const batchSize = 1000;
+    let cursor: string | null = null;
+    let total = 0;
+
+    for (;;) {
+      const users: Array<Pick<User, "id">> = await prisma.user.findMany({
+        where: { lastActivityAt: { lt: cutoff }, currentStreak: { gt: 0 } },
+        select: { id: true },
+        take: batchSize,
+        ...(cursor ? { skip: 1, cursor: { id: cursor } } : {}),
+        orderBy: { id: "asc" },
       });
-      console.log('Daily XP reset for all users');
-    } catch (error) {
-      console.error('Error resetting daily XP:', error);
-      throw error;
+      if (users.length === 0) break;
+
+      await prisma.$transaction(
+        users.map(({ id }) =>
+          prisma.user.update({ where: { id }, data: { currentStreak: 0 } })
+        )
+      );
+
+      total += users.length;
+      cursor = users[users.length - 1].id;
     }
+    return total;
   }
 
-  static async sendMotivationEmails() {
-    console.log('Sending motivational emails at', new Date().toISOString());
-    try {
-      const today = new Date();
-      today.setHours(0, 0, 0, 0);
-      const users = await prisma.user.findMany({
-        where: {
-          lastStreakDate: {
-            lt: new Date(today.getTime() - 24 * 60 * 60 * 1000),
-          },
-          isEmailVerified: true,
-        },
-        select: { id: true, email: true, firstName: true },
-      });
-      for (const user of users) {
-        if (!user.email || !user.firstName) continue;
-        await EmailNotifier.sendMotivationalEmail(user.email, user.firstName);
+  static async sendMotivationEmails(now: Date): Promise<{ sent: number; failed: number; total: number }> {
+    const inactiveSince = new Date(now.getTime() - HOURS(24));
+    const users: Array<Pick<User, "id" | "email" | "firstName">> = await prisma.user.findMany({
+      where: { lastActivityAt: { lt: inactiveSince }, isEmailVerified: true },
+      select: { id: true, email: true, firstName: true },
+    });
+
+    let sent = 0;
+    let failed = 0;
+
+    for (const u of users) {
+      if (!u.email || !u.firstName) continue;
+      try {
+        await EmailNotifier.sendMotivationalEmail(u.email, undefined, u.firstName);
+        sent++;
+      } catch (e) {
+        failed++;
+        console.error("Motivational email failed", { userId: u.id, error: e });
       }
-      console.log('Motivational emails sent to', users.length, 'users');
-    } catch (error) {
-      console.error('Error sending motivational emails:', error);
-      throw error;
     }
+    return { sent, failed, total: users.length };
+  }
+
+  static async runOnce(opts: { now?: Date; dryRun?: boolean } = {}) {
+    const now = opts.now ?? new Date();
+    const dry = !!opts.dryRun;
+
+    const dailyCount = dry
+      ? await prisma.user.count({ where: {} })
+      : await this.resetDailyCounters();
+
+    const streakWhere = { lastActivityAt: { lt: new Date(now.getTime() - HOURS(26)) }, currentStreak: { gt: 0 } };
+    const brokeCount = dry
+      ? await prisma.user.count({ where: streakWhere })
+      : await this.resetBrokenStreaks(now);
+
+    // motivational emails
+    const emailWhere = { lastActivityAt: { lt: new Date(now.getTime() - HOURS(24)) }, isEmailVerified: true };
+    const emailTotal = await prisma.user.count({ where: emailWhere });
+    const emailResult = dry ? { sent: 0, failed: 0, total: emailTotal } : await this.sendMotivationEmails(now);
+
+    return {
+      now: now.toISOString(),
+      dryRun: dry,
+      resetDailyXP: dailyCount,
+      resetBrokenStreaks: dry ? brokeCount : brokeCount,
+      emails: dry ? { sent: 0, failed: 0, total: emailTotal } : emailResult,
+    };
   }
 }
 
-// Schedule at 00:05 UTC
-schedule('5 0 * * *', async () => {
-  console.log('Starting daily CRON job');
-  try {
-    await DailyStreakJob.updateAllUserStreaks();
-    await DailyStreakJob.resetDailyCounters();
-    await DailyStreakJob.sendMotivationEmails();
-  } catch (error) {
-    console.error('CRON job error:', error);
-  }
-});
+schedule(
+  process.env.DAILY_STREAK_CRON ?? "5 0 * * *",
+  async () => {
+    console.log("Starting daily CRON job");
+    try {
+      await DailyStreakJob.runOnce({ now: new Date(), dryRun: false });
+    } catch (error: unknown) {
+      console.error("CRON job error:", error);
+    }
+  },
+  { timezone: process.env.CRON_TZ ?? "UTC" }
+);
 
-// Ensure graceful shutdown
-process.on('SIGTERM', async () => {
+process.on("SIGTERM", async () => {
   await prisma.$disconnect();
   process.exit(0);
 });

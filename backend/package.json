@@ -10,7 +10,8 @@
     "start:prod": "node build/src/server.js",
     "build": "rimraf ./build && tsc",
     "start": "npm run build && node build/src/server.js",
-    "import:questions": "ts-node --project tsconfig.json scripts/importQuestions.ts"
+    "import:questions": "ts-node --project tsconfig.json scripts/importQuestions.ts",
+    "test:dailystreak": "ts-node --project tsconfig.json scripts/run.dailystreak.ts"
   },
   "keywords": [],
   "author": "",
@@ -45,7 +46,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^9.5.0",
-    "@prisma/client": "^6.13.0",
+    "@prisma/client": "^6.14.0",
     "@types/bcrypt": "^5.0.2",
     "@types/cookie-parser": "^1.4.6",
     "@types/cors": "^2.8.19",
@@ -68,7 +69,7 @@
     "jest-mock-extended": "^4.0.0-beta1",
     "nodemon": "^3.0.2",
     "prettier": "^3.1.1",
-    "prisma": "^6.13.0",
+    "prisma": "^6.14.0",
     "supertest": "^7.0.0",
     "ts-jest": "^29.2.6",
     "ts-node": "^10.9.2",

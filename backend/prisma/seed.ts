@@ -1,10 +1,26 @@
-import { PrismaClient } from "@prisma/client";
+import { Prisma, PrismaClient } from "@prisma/client";
 import bcrypt from "bcrypt";
 import dotenv from "dotenv";
 
 dotenv.config();
 
 const prisma = new PrismaClient();
+
+type GameMetadata = {
+  pointsValue: number;
+  timeLimit: number;
+  difficultyMultiplier: number;
+};
+
+// UTC helpers
+function utcStartOfDay(d = new Date()): Date {
+  return new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()));
+}
+function daysAgoUTC(n: number): Date {
+  const d = new Date();
+  d.setUTCDate(d.getUTCDate() - n);
+  return utcStartOfDay(d);
+}
 
 async function main() {
   // Hash password
@@ -19,6 +35,7 @@ async function main() {
       lastName: "Admin",
       isEmailVerified: true,
       status: "ACTIVE",
+      role: "admin",
       totalXP: 0,
       dailyXP: 0,
       weeklyXP: 0,
@@ -39,73 +56,76 @@ async function main() {
   
 
   // Create questions
-  const questions = await prisma.question.createMany({
+    await prisma.question.createMany({
     data: [
       {
         content: {
-          question: "What is the capital of France?",
-          correctAnswer: "Paris",
-          wrongAnswers: ["London", "Berlin", "Madrid"],
-          explanation: "Paris is the capital city of France.",
-        },
+          question: 'What is the capital of France?',
+          correctAnswer: 'Paris',
+          wrongAnswers: ['London', 'Berlin', 'Madrid'],
+          explanation: 'Paris is the capital city of France.',
+        } as Prisma.InputJsonValue,
         metadata: {
-          englishLevel: "intermediate",
-          difficulty: "easy",
-          category: "geography",
-          subCategory: "capitals",
-          tags: ["geography", "europe"],
-          type: "multiple-choice",
-        },
+          englishLevel: 'intermediate',
+          difficulty: 'easy',
+          category: 'geography',
+          subCategory: 'capitals',
+          tags: ['geography', 'europe'],
+          type: 'multiple-choice',
+        } as Prisma.InputJsonValue,
         gameMetadata: {
           pointsValue: 100,
           timeLimit: 30,
           difficultyMultiplier: 1.5,
-        },
+        } as Prisma.InputJsonValue,
         createdBy: user.id,
       },
       {
         content: {
-          sentence: "The cat ___ on the mat.",
-          correctAnswer: "sat",
-          hint: "Past tense of sit.",
+          sentence: 'The cat ___ on the mat.',
+          correctAnswer: 'sat',
+          hint: 'Past tense of sit.',
           explanation: "The correct word is 'sat', the past tense of 'sit'.",
-        },
+        } as Prisma.InputJsonValue,
         metadata: {
-          englishLevel: "beginner",
-          difficulty: "easy",
-          category: "grammar",
-          subCategory: "verbs",
-          tags: ["grammar", "verbs"],
-          type: "fill-in-blanks",
-        },
+          englishLevel: 'beginner',
+          difficulty: 'easy',
+          category: 'grammar',
+          subCategory: 'verbs',
+          tags: ['grammar', 'verbs'],
+          type: 'fill-in-blanks',
+        } as Prisma.InputJsonValue,
         gameMetadata: {
           pointsValue: 80,
           timeLimit: 20,
           difficultyMultiplier: 1.2,
-        },
+        } as Prisma.InputJsonValue,
         createdBy: user.id,
       },
     ],
   });
 
-  // Fetch created questions to get their IDs
+  // Fetch created questions to get IDs, deterministically
   const createdQuestions = await prisma.question.findMany({
     where: { createdBy: user.id },
     select: { id: true, gameMetadata: true },
+    orderBy: { id: 'asc' }, // deterministic; change to { createdAt: 'asc' } if your model has createdAt
   });
 
-  // Simulate XP awards
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const yesterday = new Date(today);
-  yesterday.setDate(today.getDate() - 1);
+  if (createdQuestions.length < 2) {
+    throw new Error('Expected at least 2 seeded questions');
+  }
+
+  // UTC dates for activities
+  const today = utcStartOfDay();
+  const yesterday = daysAgoUTC(1);
 
   let totalXP = 0;
   let currentStreak = 0;
 
   // Award XP for first question (today)
   const question1 = createdQuestions[0];
-  const gameMetadata1 = question1.gameMetadata as any;
+  const gameMetadata1 = question1.gameMetadata as unknown as GameMetadata;
   const baseXP1 = gameMetadata1.pointsValue * gameMetadata1.difficultyMultiplier; // 100 * 1.5 = 150
   const timeBonus1 = 1.2; // Assume timeSpent < timeLimit * 0.5
   const xpAwarded1 = Math.round(baseXP1 * timeBonus1); // 150 * 1.2 = 180
@@ -123,7 +143,7 @@ async function main() {
 
   // Award XP for second question (yesterday, to simulate streak)
   const question2 = createdQuestions[1];
-  const gameMetadata2 = question2.gameMetadata as any;
+  const gameMetadata2 = question2.gameMetadata as unknown as GameMetadata;
   const baseXP2 = gameMetadata2.pointsValue * gameMetadata2.difficultyMultiplier; // 80 * 1.2 = 96
   const timeBonus2 = 1.0; // No time bonus
   const streakMultiplier2 = 1.1; // Streak of 1
@@ -145,11 +165,12 @@ async function main() {
     where: { id: user.id },
     data: {
       totalXP,
-      dailyXP: xpAwarded1, // Today's XP
-      weeklyXP: totalXP, // Assume within the same week
+      dailyXP: xpAwarded1,
+      weeklyXP: totalXP,
       currentStreak,
       longestStreak: currentStreak,
       lastActivityAt: today,
+      lastStreakDate: today,
     },
   });
 

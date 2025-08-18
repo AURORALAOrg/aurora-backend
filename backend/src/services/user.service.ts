@@ -1,8 +1,7 @@
-import { PrismaClient, Status } from "@prisma/client";
+import { Status } from "@prisma/client";
 import { InternalError } from "../core/api/ApiError";
 import WalletService from "./wallet.service";
-
-const prisma = new PrismaClient();
+import { prisma } from "../lib/prisma";
 
 class UserService {
   public static async registerUser(userData: {
@@ -53,12 +52,49 @@ class UserService {
   public static async readUserByEmail(email: string) {
     return await prisma.user.findUnique({
       where: { email },
+      select: {
+        id: true,
+        email: true,
+        firstName: true,
+        lastName: true,
+        isEmailVerified: true,
+        status: true,
+        role: true,
+        createdAt: true,
+      },
+    });
+  }
+
+    public static async readUserByEmailForAuth(email: string) {
+    return prisma.user.findUnique({
+      where: { email },
+      select: {
+        id: true,
+        email: true,
+        firstName: true,
+        lastName: true,
+        isEmailVerified: true,
+        status: true,
+        role: true,
+        createdAt: true,
+        password: true,
+      },
     });
   }
 
   public static async readUserById(id: string) {
     return await prisma.user.findUnique({
       where: { id },
+      select: {
+        id: true,
+        email: true,
+        firstName: true,
+        lastName: true,
+        isEmailVerified: true,
+        status: true,
+        role: true,
+        createdAt: true,
+      },
     });
   }
 }
