@@ -95,7 +95,7 @@ export const login = asyncHandler(async (req: Request, res: Response) => {
   const isPasswordValid = await Bcrypt.compare(password, user.password);
   if (!isPasswordValid) throw new BadRequestError("Invalid credentials");
 
-  const token = Jwt.issue({ id: user.id }, "1d")
+  const token = Jwt.issue({ sub: user.id, role: user.role }, "1d")
 
   const userResponse = {
     id: user.id,

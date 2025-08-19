@@ -10,8 +10,8 @@
     "start:prod": "node build/src/server.js",
     "build": "rimraf ./build && tsc",
     "start": "npm run build && node build/src/server.js",
-    "import:questions": "ts-node --project tsconfig.json scripts/importQuestions.ts",
-    "test:dailystreak": "ts-node --project tsconfig.json scripts/run.dailystreak.ts"
+    "import:questions": "npm run build && node build/src/scripts/importQuestions.js",
+    "test:dailystreak": "npm run build && node build/src/scripts/run.dailystreak.js"
   },
   "keywords": [],
   "author": "",
