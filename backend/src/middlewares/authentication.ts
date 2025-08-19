@@ -5,8 +5,16 @@ import UserService from "../services/user.service"
 import logger from "../core/config/logger"
 
 
+interface AuthUser {
+  id: string;
+  email: string;
+  role: 'admin' | 'user';
+  firstName?: string;
+  lastName?: string;
+}
+
 interface AuthenticatedRequest extends Request {
-  user?: any;
+  user?: AuthUser;
 }
 
 export const requireRole = (required: 'admin' | 'user' | Array<'admin' | 'user'>) => {
@@ -19,6 +27,9 @@ export const requireRole = (required: 'admin' | 'user' | Array<'admin' | 'user'>
     return next();
   };
 };
+
+// Use TokenClaims type from Jwt utility
+import type { TokenClaims } from "../utils/security/jwt";
 
 export const isAuthorized = () => {
   return async (req: AuthenticatedRequest, res: Response, next: NextFunction) => {
@@ -38,9 +49,9 @@ export const isAuthorized = () => {
       }
 
       // Verify token
-      let decoded: unknown;
+      let decoded: TokenClaims;
       try {
-        decoded = Jwt.verify(token);
+        decoded = Jwt.verify<TokenClaims>(token);
       } catch (err: unknown) {
         const e = err as { name?: string; message?: string };
         logger.warn("JWT verification failed", { name: e?.name, message: e?.message });
@@ -51,16 +62,11 @@ export const isAuthorized = () => {
         );
       }
 
+      const userId = decoded.sub;
 
-      // Extract user ID (handle both flat and nested payload structures)
-      const payload = decoded as { id?: string; payload?: { id?: string } };
-      const userId = payload?.payload?.id ?? payload?.id;
       if (!userId) {
-        const keys = decoded && typeof decoded === 'object'
-          ? Object.keys(decoded as Record<string, unknown>)
-          : [];
-        logger.warn("Invalid token payload (no user id)", { keys });
-        return next(new UnauthorizedError("Unauthorized - Invalid token payload"));
+        logger.warn("Invalid token payload (no 'sub' claim)");
+        return next(new UnauthorizedError("Unauthorized - Invalid token payload: missing 'sub' claim"));
       }
 
       // Fetch user
@@ -71,9 +77,9 @@ export const isAuthorized = () => {
       }
 
       // Attach user to request
-      req.user = user
-      res.locals.account = user
-      next()
+      req.user = user as AuthUser;
+      res.locals.account = user;
+      next();
     } catch (err) {
       logger.error('Auth middleware error', { error: err instanceof Error ? err.name : "UnknownError" });
       next(new UnauthorizedError("Unauthorized"));

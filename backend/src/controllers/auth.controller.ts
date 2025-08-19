@@ -67,8 +67,11 @@ export const verifyEmail = asyncHandler(async (req: Request, res: Response) => {
       throw new BadRequestError("Verification token is required")
     }
 
-    const decoded = Jwt.verify(token)
-    const userId = (decoded as any).userId
+    const decoded = Jwt.verify<{ userId?: string; id?: string; sub?: string }>(token);
+    const userId = decoded.userId ?? decoded.id ?? decoded.sub;
+    if (!userId) {
+      throw new BadRequestError("Invalid token payload");
+    }
 
     const updatedUser = await UserService.activateEmail(userId)
     if (!updatedUser) throw new BadRequestError("User not found")
