@@ -7,14 +7,14 @@ import {
     updateQuestionValidation,
     getAllQuestionsValidation,
 } from '../../../models/validations/question.validators';
-import { z } from 'zod';
-const submitAnswerValidation = z.object({
-    body: z.object({
-        questionId: z.string().uuid(),
-        answer: z.string().min(1),
-        timeSpent: z.number().min(0),
+import Joi from 'joi';
+export const submitAnswerValidation = {
+    body: Joi.object({
+        questionId: Joi.string().uuid().required(),
+        answer: Joi.string().min(1).required(),
+        timeSpent: Joi.number().min(0).required(),
     }),
-});
+};
 
 const router = Router();
 
@@ -27,7 +27,7 @@ router.get('/', validateRequest(getAllQuestionsValidation), QuestionController.g
 router.get('/:id', QuestionController.getQuestionById);
 router.put('/:id', isAuthorized(), validateRequest(updateQuestionValidation), QuestionController.updateQuestion);
 router.delete('/:id', isAuthorized(),
-  validateRequest({ params: z.object({ id: z.string().uuid() }) }),
+  validateRequest({ params: Joi.object({ id: Joi.string().uuid().required() }) }),
   QuestionController.deleteQuestion
 );
 router.post(
