@@ -92,4 +92,18 @@ export const getAllQuestionsValidation = {
         page: Joi.number().integer().min(1).default(1).optional(),
         limit: Joi.number().integer().min(1).max(100).default(20).optional()
     })
-}; 
+};
+
+export const idParamValidation = {
+    params: Joi.object({
+        id: Joi.string().uuid().required(),
+    }).unknown(false),
+};
+
+export const submitAnswerValidation = {
+    body: Joi.object({
+        questionId: Joi.string().uuid().required(),
+        answer: Joi.string().trim().min(1).max(2000).required(),
+        timeSpent: Joi.number().min(0).required(),
+    }).unknown(false),
+};
