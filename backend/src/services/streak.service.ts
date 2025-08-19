@@ -16,7 +16,7 @@ export class StreakService {
 
     const isSameDay = !!(lastStreak && lastStreak.getTime() === today.getTime());
     const yesterday = new Date(today);
-    yesterday.setDate(today.getDate() - 1);
+    yesterday.setUTCDate(today.getUTCDate() - 1);
     const isYesterday = !!(lastStreak && lastStreak.getTime() === yesterday.getTime());
     const now = new Date();
     const isWithinGracePeriod = !!(
@@ -63,7 +63,11 @@ export class StreakService {
           lastStreakDate: today,
         },
       });
-      console.log('Streak reset:', updatedUser);
+      console.log('Streak reset', {
+        userId,
+        currentStreak: updatedUser.currentStreak,
+        lastStreakDate: updatedUser.lastStreakDate?.toISOString?.(),
+      });
     }
   }
 }

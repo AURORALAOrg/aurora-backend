@@ -1,10 +1,11 @@
 import "dotenv/config";
+
+
 import app from "./app";
 import settings from "./core/config/settings";
 import { connectDB } from "./db";
 import { prisma } from "./lib/prisma";
 
-import "./jobs/dailystreak.job";
 
 
 const server = app;

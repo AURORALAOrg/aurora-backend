@@ -68,7 +68,7 @@ export const verifyEmail = asyncHandler(async (req: Request, res: Response) => {
     }
 
     const decoded = Jwt.verify(token)
-    const userId = (decoded as any).payload.userId
+    const userId = (decoded as any).userId
 
     const updatedUser = await UserService.activateEmail(userId)
     if (!updatedUser) throw new BadRequestError("User not found")

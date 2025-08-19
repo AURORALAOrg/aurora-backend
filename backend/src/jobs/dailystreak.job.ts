@@ -2,6 +2,7 @@ import { schedule } from "node-cron";
 import type { User } from "@prisma/client";
 import { prisma } from "../lib/prisma";
 import EmailNotifier from "../utils/service/emailNotifier";
+import pLimit from "p-limit";
 
 const HOURS = (n: number) => n * 60 * 60 * 1000;
 
@@ -46,19 +47,18 @@ export class DailyStreakJob {
       select: { id: true, email: true, firstName: true },
     });
 
-    let sent = 0;
-    let failed = 0;
-
-    for (const u of users) {
-      if (!u.email || !u.firstName) continue;
+    const limit = pLimit(10);
+    let sent = 0, failed = 0;
+    await Promise.all(users.map(u => limit(async () => {
+      if (!u.email || !u.firstName) return;
       try {
-        await EmailNotifier.sendMotivationalEmail(u.email, undefined, u.firstName);
+        await EmailNotifier.sendMotivationalEmail(u.email, u.firstName);
         sent++;
       } catch (e) {
         failed++;
-        console.error("Motivational email failed", { userId: u.id, error: e });
+        console.error('Motivational email failed', { userId: u.id, error: e });
       }
-    }
+    })));
     return { sent, failed, total: users.length };
   }
 

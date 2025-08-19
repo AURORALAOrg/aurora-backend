@@ -26,7 +26,10 @@ router.post('/', isAuthorized(), validateRequest(createQuestionValidation), Ques
 router.get('/', validateRequest(getAllQuestionsValidation), QuestionController.getAllQuestions);
 router.get('/:id', QuestionController.getQuestionById);
 router.put('/:id', isAuthorized(), validateRequest(updateQuestionValidation), QuestionController.updateQuestion);
-router.delete('/:id', QuestionController.deleteQuestion);
+router.delete('/:id', isAuthorized(),
+  validateRequest({ params: z.object({ id: z.string().uuid() }) }),
+  QuestionController.deleteQuestion
+);
 router.post(
     '/submit-answer',
     isAuthorized(),

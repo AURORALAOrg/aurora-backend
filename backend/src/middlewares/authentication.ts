@@ -56,7 +56,10 @@ export const isAuthorized = () => {
       const payload = decoded as { id?: string; payload?: { id?: string } };
       const userId = payload?.payload?.id ?? payload?.id;
       if (!userId) {
-        logger.warn("Invalid token payload (no user id)", { decoded: typeof decoded === "object" ? decoded : String(decoded) });
+        const keys = decoded && typeof decoded === 'object'
+          ? Object.keys(decoded as Record<string, unknown>)
+          : [];
+        logger.warn("Invalid token payload (no user id)", { keys });
         return next(new UnauthorizedError("Unauthorized - Invalid token payload"));
       }
 

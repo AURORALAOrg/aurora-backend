@@ -3,6 +3,7 @@ import { z } from 'zod';
 import { prisma } from '../lib/prisma';
 import { XPService } from '../services/xp.service';
 import { BadRequestError, UnauthorizedError } from '../core/api/ApiError';
+import logger from '../core/config/logger';
 
 interface AuthenticatedRequest extends Request {
   user?: { id: string; role?: string };
@@ -81,9 +82,9 @@ export class GamificationController {
   }
 
   public static async getUserStats(req: AuthenticatedRequest, res: Response) {
-    console.log('Get stats request:', req.user);
+    logger.debug('Get stats request', { userId: req.user?.id });
     try {
-      if (!req.user?.id) throw new BadRequestError('User not authenticated');
+      if (!req.user?.id) throw new UnauthorizedError('Unauthorized - User not authenticated');
 
       const stats = await XPService.getUserStats(req.user.id);
       return res.status(200).json({ status: "success", data: stats });
@@ -96,7 +97,7 @@ export class GamificationController {
   }
 
   public static async getLeaderboard(req: Request, res: Response) {
-    console.log('Get leaderboard request');
+    logger.debug('Get leaderboard request');
     try {
       const { limit, offset } = parseLimitOffset(req.query, 10, 0);
 
@@ -131,9 +132,9 @@ export class GamificationController {
   }
 
   public static async getStreakHistory(req: AuthenticatedRequest, res: Response) {
-    console.log('Get streak history request:', req.user);
+    logger.debug('Get streak history request', { userId: req.user?.id });
     try {
-      if (!req.user?.id) throw new BadRequestError('User not authenticated');
+      if (!req.user?.id) throw new UnauthorizedError('Unauthorized - User not authenticated');
       const { limit, offset } = parseLimitOffset(req.query, 30, 0);
 
       const streakHistory = await prisma.userActivity.findMany({
