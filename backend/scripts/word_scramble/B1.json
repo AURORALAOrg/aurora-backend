@@ -13,7 +13,7 @@
 			"category": "vocabulary",
 			"subCategory": "time management",
 			"tags": ["vocabulary", "word-scramble", "B1", "scheduling"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -35,7 +35,7 @@
 			"category": "vocabulary",
 			"subCategory": "nature",
 			"tags": ["vocabulary", "word-scramble", "B1", "ecology"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -57,7 +57,7 @@
 			"category": "vocabulary",
 			"subCategory": "abstract nouns",
 			"tags": ["vocabulary", "word-scramble", "B1", "career"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -79,7 +79,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "B1", "negations"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -101,7 +101,7 @@
 			"category": "vocabulary",
 			"subCategory": "activities",
 			"tags": ["vocabulary", "word-scramble", "B1", "experiences"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -123,7 +123,7 @@
 			"category": "vocabulary",
 			"subCategory": "abstract nouns",
 			"tags": ["vocabulary", "word-scramble", "B1", "career"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -145,7 +145,7 @@
 			"category": "vocabulary",
 			"subCategory": "events",
 			"tags": ["vocabulary", "word-scramble", "B1", "social"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -167,7 +167,7 @@
 			"category": "vocabulary",
 			"subCategory": "communication",
 			"tags": ["vocabulary", "word-scramble", "B1", "ideas"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -189,7 +189,7 @@
 			"category": "vocabulary",
 			"subCategory": "entertainment",
 			"tags": ["vocabulary", "word-scramble", "B1", "media"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -211,7 +211,7 @@
 			"category": "vocabulary",
 			"subCategory": "abstract nouns",
 			"tags": ["vocabulary", "word-scramble", "B1", "success"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -233,7 +233,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "B1", "descriptions"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -255,7 +255,7 @@
 			"category": "vocabulary",
 			"subCategory": "abstract nouns",
 			"tags": ["vocabulary", "word-scramble", "B1", "relationships"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -277,7 +277,7 @@
 			"category": "vocabulary",
 			"subCategory": "verbs",
 			"tags": ["vocabulary", "word-scramble", "B1", "cognition"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -299,7 +299,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "B1", "descriptions"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -321,7 +321,7 @@
 			"category": "vocabulary",
 			"subCategory": "emotions",
 			"tags": ["vocabulary", "word-scramble", "B1", "feelings"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -343,7 +343,7 @@
 			"category": "vocabulary",
 			"subCategory": "verbs",
 			"tags": ["vocabulary", "word-scramble", "B1", "activities"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -365,7 +365,7 @@
 			"category": "vocabulary",
 			"subCategory": "communication",
 			"tags": ["vocabulary", "word-scramble", "B1", "advice"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -387,7 +387,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B1", "travel"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -409,7 +409,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B1", "feelings"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -431,7 +431,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B1", "helping"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -453,7 +453,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B1", "fun"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -475,7 +475,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "B1", "qualities"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -497,7 +497,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B1", "society"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -519,7 +519,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B1", "duties"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -541,7 +541,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B1", "study"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -563,7 +563,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B1", "helping"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,

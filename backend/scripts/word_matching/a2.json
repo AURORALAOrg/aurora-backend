@@ -36,7 +36,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "A2", "daily life"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -81,7 +81,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "A2", "adjectives"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -126,7 +126,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "A2", "places"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -171,7 +171,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "A2", "adverbs"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -216,7 +216,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "A2", "emotions"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -246,7 +246,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "A2", "people"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -279,7 +279,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "A2", "food"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -312,7 +312,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "A2", "transport"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -351,7 +351,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "A2", "jobs"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,
@@ -384,7 +384,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "A2", "seasons"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 15,

@@ -45,7 +45,7 @@
 			"category": "reading",
 			"subCategory": "personal experience",
 			"tags": ["story", "reading", "B1", "expatriate", "career"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -99,7 +99,7 @@
 			"category": "reading",
 			"subCategory": "unusual events",
 			"tags": ["story", "reading", "B1", "weather", "phenomenon"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -153,7 +153,7 @@
 			"category": "reading",
 			"subCategory": "community action",
 			"tags": ["story", "reading", "B1", "heritage", "activism"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -207,7 +207,7 @@
 			"category": "reading",
 			"subCategory": "entrepreneurship",
 			"tags": ["story", "reading", "B1", "restaurant", "business"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -251,7 +251,7 @@
 			"category": "reading",
 			"subCategory": "relationships",
 			"tags": ["story", "reading", "B1", "friendship", "intergenerational"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -294,7 +294,7 @@
 			"category": "reading",
 			"subCategory": "hobbies",
 			"tags": ["story", "reading", "B1", "photography", "club"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -337,7 +337,7 @@
 			"category": "reading",
 			"subCategory": "friendship",
 			"tags": ["story", "reading", "B1", "moving", "football"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -380,7 +380,7 @@
 			"category": "reading",
 			"subCategory": "language learning",
 			"tags": ["story", "reading", "B1", "English", "movies"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -423,7 +423,7 @@
 			"category": "reading",
 			"subCategory": "holidays",
 			"tags": ["story", "reading", "B1", "camping", "mountains"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -461,7 +461,7 @@
 			"category": "reading",
 			"subCategory": "family",
 			"tags": ["story", "reading", "B1", "birthday", "gift"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -505,7 +505,7 @@
 			"category": "reading",
 			"subCategory": "volunteering",
 			"tags": ["story", "reading", "B1", "animal shelter", "volunteering"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -549,7 +549,7 @@
 			"category": "reading",
 			"subCategory": "school projects",
 			"tags": ["story", "reading", "B1", "science fair", "volcano"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -593,7 +593,7 @@
 			"category": "reading",
 			"subCategory": "music",
 			"tags": ["story", "reading", "B1", "guitar", "talent show"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -637,7 +637,7 @@
 			"category": "reading",
 			"subCategory": "moving",
 			"tags": ["story", "reading", "B1", "art class", "moving"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -681,7 +681,7 @@
 			"category": "reading",
 			"subCategory": "charity",
 			"tags": ["story", "reading", "B1", "charity", "running"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -725,7 +725,7 @@
 			"category": "reading",
 			"subCategory": "school activities",
 			"tags": ["story", "reading", "B1", "debate", "school"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -764,7 +764,7 @@
 			"category": "reading",
 			"subCategory": "family",
 			"tags": ["story", "reading", "B1", "baking", "birthday"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -808,7 +808,7 @@
 			"category": "reading",
 			"subCategory": "community action",
 			"tags": ["story", "reading", "B1", "clean-up", "community"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -852,7 +852,7 @@
 			"category": "reading",
 			"subCategory": "friendship",
 			"tags": ["story", "reading", "B1", "chess", "school"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -896,7 +896,7 @@
 			"category": "reading",
 			"subCategory": "pets",
 			"tags": ["story", "reading", "B1", "dog", "adoption"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -940,7 +940,7 @@
 			"category": "reading",
 			"subCategory": "school projects",
 			"tags": ["story", "reading", "B1", "garden", "school"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -984,7 +984,7 @@
 			"category": "reading",
 			"subCategory": "friendship",
 			"tags": ["story", "reading", "B1", "apartment", "games"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -1023,7 +1023,7 @@
 			"category": "reading",
 			"subCategory": "health",
 			"tags": ["story", "reading", "B1", "jogging", "fitness"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -1067,7 +1067,7 @@
 			"category": "reading",
 			"subCategory": "school trips",
 			"tags": ["story", "reading", "B1", "museum", "field trip"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -1111,7 +1111,7 @@
 			"category": "reading",
 			"subCategory": "family",
 			"tags": ["story", "reading", "B1", "cooking", "soup"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -1155,7 +1155,7 @@
 			"category": "reading",
 			"subCategory": "hobbies",
 			"tags": ["story", "reading", "B1", "theater", "acting"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -1194,7 +1194,7 @@
 			"category": "reading",
 			"subCategory": "family",
 			"tags": ["story", "reading", "B1", "birdhouse", "garden"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -1228,7 +1228,7 @@
 			"category": "reading",
 			"subCategory": "community action",
 			"tags": ["story", "reading", "B1", "library", "books"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -1272,7 +1272,7 @@
 			"category": "reading",
 			"subCategory": "environment",
 			"tags": ["story", "reading", "B1", "recycling", "school"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -1316,7 +1316,7 @@
 			"category": "reading",
 			"subCategory": "sports",
 			"tags": ["story", "reading", "B1", "swimming", "learning"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -1355,7 +1355,7 @@
 			"category": "reading",
 			"subCategory": "family",
 			"tags": ["story", "reading", "B1", "treehouse", "siblings"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -1394,7 +1394,7 @@
 			"category": "reading",
 			"subCategory": "school activities",
 			"tags": ["story", "reading", "B1", "book club", "reading"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -1433,7 +1433,7 @@
 			"category": "reading",
 			"subCategory": "hobbies",
 			"tags": ["story", "reading", "B1", "sunflowers", "gardening"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -1477,7 +1477,7 @@
 			"category": "reading",
 			"subCategory": "school activities",
 			"tags": ["story", "reading", "B1", "bake sale", "fundraising"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -1516,7 +1516,7 @@
 			"category": "reading",
 			"subCategory": "hobbies",
 			"tags": ["story", "reading", "B1", "chess", "tournament"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -1555,7 +1555,7 @@
 			"category": "reading",
 			"subCategory": "school life",
 			"tags": ["story", "reading", "B1", "cat", "responsibility"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -1599,7 +1599,7 @@
 			"category": "reading",
 			"subCategory": "friendship",
 			"tags": ["story", "reading", "B1", "sign language", "inclusion"],
-			"type": "story_game"
+			"type": "story-game"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,

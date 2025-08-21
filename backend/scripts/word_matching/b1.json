@@ -36,7 +36,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B1", "abstract nouns"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -81,7 +81,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B1", "verbs"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -126,7 +126,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B1", "adjectives"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -171,7 +171,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B1", "society"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -216,7 +216,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B1", "adverbs"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -261,7 +261,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B1", "problem solving"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -291,7 +291,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B1", "adverbs"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -336,7 +336,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B1", "personality"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -375,7 +375,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B1", "education"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,
@@ -408,7 +408,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B1", "problems"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 20,

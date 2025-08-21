@@ -7,7 +7,7 @@ const commonMetadataSchema = Joi.object({
     category: Joi.string().required(),
     subCategory: Joi.string().required(),
     tags: Joi.array().items(Joi.string()).required(),
-    type: Joi.string().valid('multiple-choice', 'sentence-builder', 'fill-in-blanks', 'idiom-challenge').required()
+    type: Joi.string().valid('multiple-choice', 'sentence-builder', 'fill-in-blanks', 'idiom-challenge', 'word-scramble', 'word-matching', 'story-game').required()
 });
 
 // Common game metadata schema
@@ -78,5 +78,18 @@ export const updateQuestionValidation = {
         content: contentSchema,
         metadata: commonMetadataSchema,
         gameMetadata: commonGameMetadataSchema
+    })
+};
+
+// Query parameter validation for getAllQuestions
+export const getAllQuestionsValidation = {
+    query: Joi.object({
+        type: Joi.string().valid('multiple-choice', 'sentence-builder', 'fill-in-blanks', 'idiom-challenge', 'word-scramble', 'word-matching', 'story-game').optional(),
+        category: Joi.string().min(1).max(100).optional(),
+        subCategory: Joi.string().min(1).max(100).optional(),
+        englishLevel: Joi.string().valid('A1', 'A2', 'B1', 'B2', 'C1', 'C2').optional(),
+        difficulty: Joi.string().valid('easy', 'medium', 'hard', 'beginner', 'intermediate', 'advanced').optional(),
+        page: Joi.number().integer().min(1).default(1).optional(),
+        limit: Joi.number().integer().min(1).max(100).default(20).optional()
     })
 }; 

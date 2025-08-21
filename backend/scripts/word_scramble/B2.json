@@ -13,7 +13,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "B2", "debate"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -35,7 +35,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "B2", "descriptions"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -57,7 +57,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "B2", "emotions"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -79,7 +79,7 @@
 			"category": "vocabulary",
 			"subCategory": "education",
 			"tags": ["vocabulary", "word-scramble", "B2", "career"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -101,7 +101,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B2", "science"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -123,7 +123,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "B2", "descriptions"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -145,7 +145,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B2", "cause-effect"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -167,7 +167,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B2", "cognition"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -189,7 +189,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "B2", "descriptions"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -211,7 +211,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B2", "thinking"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -233,7 +233,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B2", "communication"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -255,7 +255,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B2", "situations"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -277,7 +277,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "B2", "descriptions"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -299,7 +299,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "B2", "personality"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -321,7 +321,7 @@
 			"category": "vocabulary",
 			"subCategory": "verbs",
 			"tags": ["vocabulary", "word-scramble", "B2", "business"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -343,7 +343,7 @@
 			"category": "vocabulary",
 			"subCategory": "verbs",
 			"tags": ["vocabulary", "word-scramble", "B2", "work"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -365,7 +365,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B2", "analysis"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -387,7 +387,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B2", "leadership"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -409,7 +409,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B2", "helping"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -431,7 +431,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "B2", "amount"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -453,7 +453,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B2", "choices"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -475,7 +475,7 @@
 			"category": "vocabulary",
 			"subCategory": "verbs",
 			"tags": ["vocabulary", "word-scramble", "B2", "communication"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -497,7 +497,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B2", "thinking"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -519,7 +519,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "B2", "basics"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -541,7 +541,7 @@
 			"category": "vocabulary",
 			"subCategory": "verbs",
 			"tags": ["vocabulary", "word-scramble", "B2", "teaching"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -563,7 +563,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "B2", "meaning"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -585,7 +585,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "B2", "trust"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,

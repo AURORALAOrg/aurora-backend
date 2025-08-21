@@ -36,7 +36,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B2", "adjectives"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -81,7 +81,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B2", "verbs"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -126,7 +126,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B2", "abstract nouns"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -171,7 +171,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B2", "adverbs"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -216,7 +216,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B2", "global topics"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -258,7 +258,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B2", "academics"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -300,7 +300,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B2", "verbs"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -342,7 +342,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B2", "logic"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -381,7 +381,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B2", "change"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,
@@ -414,7 +414,7 @@
 			"category": "vocabulary",
 			"subCategory": "matching",
 			"tags": ["vocabulary", "matching", "B2", "advanced"],
-			"type": "word_matching"
+			"type": "word-matching"
 		},
 		"gameMetadata": {
 			"pointsValue": 25,

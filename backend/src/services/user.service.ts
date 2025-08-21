@@ -1,5 +1,6 @@
 import { PrismaClient, Status } from "@prisma/client";
 import { InternalError } from "../core/api/ApiError";
+import WalletService from "./wallet.service";
 
 const prisma = new PrismaClient();
 
@@ -25,6 +26,9 @@ class UserService {
             isEmailVerified: false,
           },
         });
+
+        await WalletService.createWallet(newUser.id, walletAddress, tx);
+
         return newUser;
       });
 

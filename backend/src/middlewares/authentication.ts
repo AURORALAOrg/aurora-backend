@@ -2,6 +2,7 @@ import Jwt from "../utils/security/jwt"
 import { Request, Response, NextFunction } from "express"
 import { UnauthorizedError } from "../core/api/ApiError"
 import UserService from "../services/user.service"
+import logger from "../core/config/logger"
 
 interface AuthenticatedRequest extends Request {
   user?: any;
@@ -32,7 +33,7 @@ export const isAuthorized = () => {
       res.locals.account = user
       next()
     } catch (err) {
-      console.error("❌ Auth middleware error:", err)
+      logger.error('Auth middleware error', { error: err instanceof Error ? err.name : "UnknownError" });
       next(new UnauthorizedError("Unauthorized"))
     }
   }
