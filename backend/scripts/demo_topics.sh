@@ -1,18 +1,29 @@
 #!/usr/bin/env bash
 set -euo pipefail
+
+# Ensure script runs from backend root before npm/node lookups
 cd "$(dirname "$0")/.."
 
+# Set seed credentials (can be overridden by user)
+export LOGIN_EMAIL="${LOGIN_EMAIL:-customer@aurora.com}"
+export LOGIN_PASSWORD="${LOGIN_PASSWORD:-password123!}"
+export LOGIN_FIRST_NAME="${LOGIN_FIRST_NAME:-Aurora}"
+export LOGIN_LAST_NAME="${LOGIN_LAST_NAME:-Admin}"
+
+# Configuration
 BASE_URL="http://localhost:8000"
 HEALTH_URL="${HEALTH_URL:-${BASE_URL}}"
-DB_CONTAINER="aurora-db"
+DB_CONTAINER="aurora_db"
 
 echo "🚀 AURORA Topic System Demo Script"
 echo "=================================="
-
 echo "[1/8] Ensuring API server is running..."
+
+# Check if server is already running
 if ! curl -sSf "${HEALTH_URL}" >/dev/null 2>&1; then
   echo "Server not responding on ${HEALTH_URL}. Starting server..."
   nohup npm run start:prod >/tmp/aurora_server.log 2>&1 &
+  
   echo "Waiting for server to become ready..."
   ready=0
   for _ in {1..30}; do
@@ -22,20 +33,19 @@ if ! curl -sSf "${HEALTH_URL}" >/dev/null 2>&1; then
     fi
     sleep 1
   done
+  
   if [[ "${ready}" -ne 1 ]]; then
     echo "ERROR: Server did not become ready within timeout." >&2
     exit 1
   fi
+else
+  echo "✅ Server is up."
 fi
-echo "✅ Server is up."
 
 echo "[2/8] Logging in to get JWT token..."
-LOGIN_EMAIL="${LOGIN_EMAIL:-customer@aurora.com}"
-LOGIN_PASSWORD="${LOGIN_PASSWORD:-password123!}"
-
 echo "🔑 Attempting login with: ${LOGIN_EMAIL}"
 
-LOGIN_JSON=$(curl -sS -X POST "${BASE_URL}/api/v1/auth/login" \
+LOGIN_JSON=$(curl -sfS -X POST "${BASE_URL}/api/v1/auth/login" \
   -H 'Content-Type: application/json' \
   --data "{\"email\":\"${LOGIN_EMAIL}\",\"password\":\"${LOGIN_PASSWORD}\"}" \
   -w "\nHTTP_STATUS:%{http_code}")
@@ -120,9 +130,9 @@ NEW_ID=$(node -e 'const fs=require("fs");try{const j=JSON.parse(fs.readFileSync(
 
 if [[ -n "${NEW_ID}" ]]; then
   echo "✏️ Updating topic ${NEW_ID}..."
-    curl -s -X PUT "${BASE_URL}/api/v1/topics/${NEW_ID}" "${AUTH_HEADER[@]}" -H 'Content-Type: application/json' \
+  curl -s -X PUT "${BASE_URL}/api/v1/topics/${NEW_ID}" "${AUTH_HEADER[@]}" -H 'Content-Type: application/json' \
     --data '{"description":"Office and remote work conversations"}' | jq . >/tmp/topic_update.json 2>/dev/null || true
-
+  
   echo "🗑️ Deleting topic ${NEW_ID}..."
   curl -s -X DELETE "${BASE_URL}/api/v1/topics/${NEW_ID}" "${AUTH_HEADER[@]}" | jq . >/tmp/topic_delete.json 2>/dev/null || true
 else

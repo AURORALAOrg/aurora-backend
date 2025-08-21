@@ -4,25 +4,38 @@ import bcrypt from "bcrypt";
 const prisma = new PrismaClient();
 
 async function main() {
-  const hashedPassword = await bcrypt.hash("password123!", 10);
+  // Production guard to prevent accidental seeding
+  if (process.env.NODE_ENV === "production" && process.env.ALLOW_PROD_SEED !== "true") {
+    throw new Error(
+      "Seeding is disabled in production. Set ALLOW_PROD_SEED=true to override."
+    );
+  }
+
+  // Read seed values from environment variables with safe defaults
+  const SEED_EMAIL = process.env.LOGIN_EMAIL ?? "customer@aurora.com";
+  const SEED_FIRST_NAME = process.env.LOGIN_FIRST_NAME ?? "Aurora";
+  const SEED_LAST_NAME = process.env.LOGIN_LAST_NAME ?? "Admin";
+  const SEED_PASSWORD = process.env.LOGIN_PASSWORD ?? "password123!";
+
+  const hashedPassword = await bcrypt.hash(SEED_PASSWORD, 10);
 
   // Create or update user (idempotent)
   const user = await prisma.user.upsert({
     where: {
-      email: "customer@aurora.com",
+      email: SEED_EMAIL,
     },
     update: {
       password: hashedPassword,
-      firstName: "Aurora",
-      lastName: "Admin",
+      firstName: SEED_FIRST_NAME,
+      lastName: SEED_LAST_NAME,
       isEmailVerified: true,
       status: "ACTIVE",
     },
     create: {
-      email: "customer@aurora.com",
+      email: SEED_EMAIL,
       password: hashedPassword,
-      firstName: "Aurora",
-      lastName: "Admin",
+      firstName: SEED_FIRST_NAME,
+      lastName: SEED_LAST_NAME,
       isEmailVerified: true,
       status: "ACTIVE",
     },
@@ -108,10 +121,8 @@ async function main() {
 }
 
 main()
-  .catch((e) => {
+  .catch(async (e) => {
     console.error("❌ Seeding failed:", e);
-    process.exit(1);
-  })
-  .finally(async () => {
     await prisma.$disconnect();
+    process.exit(1);
   });

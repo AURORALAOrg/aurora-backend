@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
+
+# Ensure script runs from backend root
 cd "$(dirname "$0")/.."
+
+# Set seed credentials (can be overridden by user)
+export LOGIN_EMAIL="${LOGIN_EMAIL:-customer@aurora.com}"
+export LOGIN_PASSWORD="${LOGIN_PASSWORD:-password123!}"
+export LOGIN_FIRST_NAME="${LOGIN_FIRST_NAME:-Aurora}"
+export LOGIN_LAST_NAME="${LOGIN_LAST_NAME:-Admin}"
 
 echo "🚀 AURORA Topic System Demo Setup"
 echo "=================================="
@@ -14,6 +22,7 @@ fi
 echo "✅ Database connection successful"
 
 echo "[2/4] Seeding database with test user and topics..."
+echo "🔑 Using credentials: ${LOGIN_EMAIL} / ${LOGIN_PASSWORD}"
 if ! npx prisma db seed >/dev/null 2>&1; then
   echo "❌ Database seeding failed. Please check the error above."
   exit 1
@@ -54,8 +63,8 @@ echo ""
 echo "🎉 Setup Complete! 🎉"
 echo "====================="
 echo "📊 Test user created:"
-echo "   • Email: customer@aurora.com"
-echo "   • Password: password123!"
+echo "   • Email: ${LOGIN_EMAIL}"
+echo "   • Password: ${LOGIN_PASSWORD}"
 echo ""
 echo "🚀 Server running on: http://localhost:8000"
 echo "📋 Server logs: tail -f /tmp/aurora_server.log"
@@ -66,6 +75,6 @@ echo ""
 echo "🔍 Or test manually:"
 echo "   curl -X POST http://localhost:8000/api/v1/auth/login \\"
 echo "     -H 'Content-Type: application/json' \\"
-echo "     -d '{\"email\":\"customer@aurora.com\",\"password\":\"password123!\"}'"
+echo "     -d '{\"email\":\"${LOGIN_EMAIL}\",\"password\":\"${LOGIN_PASSWORD}\"}'"
 echo ""
 echo "✅ Everything is ready for testing!"
