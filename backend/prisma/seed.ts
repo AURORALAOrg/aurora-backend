@@ -16,6 +16,7 @@ async function main() {
   const SEED_FIRST_NAME = process.env.LOGIN_FIRST_NAME ?? "Aurora";
   const SEED_LAST_NAME = process.env.LOGIN_LAST_NAME ?? "Admin";
   const SEED_PASSWORD = process.env.LOGIN_PASSWORD ?? "password123!";
+  const SEED_WALLET_ADDRESS = process.env.LOGIN_WALLET_ADDRESS ?? "0x1234567890123456789012345678901234567890";
 
   const hashedPassword = await bcrypt.hash(SEED_PASSWORD, 10);
 
@@ -47,13 +48,13 @@ async function main() {
       userId: user.id,
     },
     update: {
-      walletAddress: "0x1234567890123456789012345678901234567890",
+      walletAddress: SEED_WALLET_ADDRESS,
       isVerified: true,
       status: "ACTIVE",
     },
     create: {
       userId: user.id,
-      walletAddress: "0x1234567890123456789012345678901234567890",
+      walletAddress: SEED_WALLET_ADDRESS,
       isVerified: true,
       status: "ACTIVE",
     },
