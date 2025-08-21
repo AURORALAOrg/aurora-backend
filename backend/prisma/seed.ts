@@ -6,8 +6,19 @@ const prisma = new PrismaClient();
 async function main() {
   const hashedPassword = await bcrypt.hash("password123!", 10);
 
-  const user = await prisma.user.create({
-    data: {
+  // Create or update user (idempotent)
+  const user = await prisma.user.upsert({
+    where: {
+      email: "customer@aurora.com",
+    },
+    update: {
+      password: hashedPassword,
+      firstName: "Aurora",
+      lastName: "Admin",
+      isEmailVerified: true,
+      status: "ACTIVE",
+    },
+    create: {
       email: "customer@aurora.com",
       password: hashedPassword,
       firstName: "Aurora",
@@ -17,9 +28,17 @@ async function main() {
     },
   });
 
-  // Create a wallet for the user separately
-  const wallet = await prisma.wallet.create({
-    data: {
+  // Create or update wallet for the user (idempotent)
+  const wallet = await prisma.wallet.upsert({
+    where: {
+      userId: user.id,
+    },
+    update: {
+      walletAddress: "0x1234567890123456789012345678901234567890",
+      isVerified: true,
+      status: "ACTIVE",
+    },
+    create: {
       userId: user.id,
       walletAddress: "0x1234567890123456789012345678901234567890",
       isVerified: true,
@@ -62,7 +81,7 @@ async function main() {
     },
   ];
 
-    for (const t of topics) {
+  for (const t of topics) {
     await prisma.topic.upsert({
       where: {
         name_category_englishLevel: {
@@ -84,11 +103,13 @@ async function main() {
       },
     });
   }
+
+  console.log("✅ Database seeded successfully!");
 }
 
 main()
   .catch((e) => {
-    console.error(e);
+    console.error("❌ Seeding failed:", e);
     process.exit(1);
   })
   .finally(async () => {
