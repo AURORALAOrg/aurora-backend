@@ -20,7 +20,7 @@ const connectDB = async () => {
     console.log("📦 Connected to the Supabase database successfully!");
     client.release();
   } catch (error) {
-    console.error("❌ Database connection error:", error);
+    console.error("❌ Database connection errors:", error);
     process.exit(1); // Exit the process if the connection fails
   }
 };
