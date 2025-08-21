@@ -62,10 +62,11 @@ export const isAuthorized = () => {
         );
       }
 
-      const userId = decoded.sub;
+      const userId = decoded.sub ?? decoded.userId ?? decoded.id;
 
       if (!userId) {
-        logger.warn("Invalid token payload (no 'sub' claim)");
+        const keys = typeof decoded === 'object' && decoded ? Object.keys(decoded as Record<string, unknown>) : [];
+        logger.warn("Invalid token payload (no 'sub'/'userId'/'id' claim)", { keys });
         return next(new UnauthorizedError("Unauthorized - Invalid token payload: missing 'sub' claim"));
       }
 
