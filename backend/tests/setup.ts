@@ -1,0 +1,13 @@
+process.env.NODE_ENV = "test";
+process.env.SERVER_ENVIRONMENT = "TEST";
+process.env.SERVER_PORT = "8000";
+process.env.JWT_SECRET_KEY = "test-jwt-secret-key";
+process.env.BCRYPT_SALT_ROUNDS = "10";
+process.env.EMAIL_USERNAME = "test@example.com";
+process.env.EMAIL_PASSWORD = "test-password";
+process.env.EMAIL_FROM_ADDRESS = "test@example.com";
+process.env.AURORA_WEB_APP_BASE_URL = "http://localhost:3000";
+process.env.DEEPSEEK_API_KEY = "test-deepseek-api-key";
+process.env.DEEPSEEK_MODEL = "deepseek-chat";
+process.env.DEEPSEEK_API_BASE = "https://api.deepseek.com/v1";
+process.env.DATABASE_URL = "postgresql://test:test@localhost:5432/test_db";

@@ -69,10 +69,41 @@ model Topic {
   createdAt    DateTime     @default(now())
   updatedAt    DateTime     @updatedAt
 
-                  @@unique([name, category, englishLevel], map: "topic_unique_name_category_level")
+  @@unique([name, category, englishLevel], map: "topic_unique_name_category_level")
   @@index([englishLevel, category], map: "topic_level_category_idx")
   @@index([englishLevel], map: "topic_level_idx")
   @@index([category], map: "topic_category_idx")
+}
+
+model Conversation {
+  id               String        @id @default(uuid())
+  userId           String
+  practiceLevel    EnglishLevel   // unificado con EnglishLevel
+  conversationType String?       @default("general")
+  status           Status        @default(ACTIVE)
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+  user             User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  messages         Message[]
+
+  @@map("conversations")
+}
+
+model Message {
+  id             String       @id @default(uuid())
+  conversationId String
+  role           MessageRole
+  content        String
+  timestamp      DateTime     @default(now())
+  conversation   Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  @@map("messages")
+}
+
+enum MessageRole {
+  USER      @map("user")
+  ASSISTANT @map("assistant")
+  SYSTEM    @map("system")
 }
 
 enum Status {
@@ -94,12 +125,12 @@ enum DifficultyLevel {
 }
 
 enum EnglishLevel {
-  A1
-  A2
-  B1
-  B2
-  C1
-  C2
+  A1 @map("a1")
+  A2 @map("a2")
+  B1 @map("b1")
+  B2 @map("b2")
+  C1 @map("c1")
+  C2 @map("c2")
 }
 
 enum Category {
@@ -116,3 +147,4 @@ enum Category {
   BUSINESS
   CURRENT_EVENTS
 }
+

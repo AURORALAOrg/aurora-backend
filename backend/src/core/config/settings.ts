@@ -22,6 +22,15 @@ const envVarsSchema = Joi.object()
     AURORA_WEB_APP_BASE_URL: Joi.string()
       .required()
       .description("Base URL for Aurora Web App"),
+    DEEPSEEK_API_KEY: Joi.string()
+      .required()
+      .description("DeepSeek API Key"),
+    DEEPSEEK_MODEL: Joi.string()
+      .default("deepseek-chat")
+      .description("DeepSeek Model to use"),
+    DEEPSEEK_API_BASE: Joi.string()
+      .default("https://api.deepseek.com/v1")
+      .description("DeepSeek API Base URL"),
   })
   .unknown();
 
@@ -43,6 +52,11 @@ const serverSettings = {
     username: envVars.EMAIL_USERNAME,
     password: envVars.EMAIL_PASSWORD,
     fromAddress: envVars.EMAIL_FROM_ADDRESS,
+  },
+  deepseek: {
+    apiKey: envVars.DEEPSEEK_API_KEY,
+    model: envVars.DEEPSEEK_MODEL,
+    apiBase: envVars.DEEPSEEK_API_BASE,
   },
 };
 

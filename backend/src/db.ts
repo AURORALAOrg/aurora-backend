@@ -1,8 +1,12 @@
 import { Pool } from "pg";
+import { PrismaClient } from "@prisma/client";
 import dotenv from "dotenv";
 import path from "path";
 
 dotenv.config({ path: path.join(__dirname, "../../../.env") });
+
+// Create Prisma client instance
+export const prisma = new PrismaClient();
 
 // Create a connection pool
 const sslEnv = (process.env.DB_SSL || "false").toLowerCase();
