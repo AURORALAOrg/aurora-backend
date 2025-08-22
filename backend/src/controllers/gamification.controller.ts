@@ -1,23 +1,12 @@
 import { Request, Response } from 'express';
+import type { AuthenticatedRequest } from '../middlewares/authentication';
 import Joi from 'joi';
 import { prisma } from '../lib/prisma';
 import { XPService } from '../services/xp.service';
 import { BadRequestError, UnauthorizedError } from '../core/api/ApiError';
 import logger from '../core/config/logger';
+import { awardXPSchema } from '../models/validations/xp.validator';
 
-
-interface AuthenticatedRequest extends Request {
-  user?: { id: string; role?: string };
-}
-
-// --- Validation ---
-const awardXPSchema = Joi.object({
-  questionId: Joi.string().min(1).required(),
-  isCorrect: Joi.boolean().required(),
-  timeSpent: Joi.number().integer().min(0).required(),
-  timeLimit: Joi.number().integer().min(1).required(),
-  targetUserId: Joi.string().uuid().optional(),
-});
 
 // --- Helpers ---
 const MAX_LIMIT = 100;
@@ -90,6 +79,9 @@ export class GamificationController {
       const stats = await XPService.getUserStats(req.user.id);
       return res.status(200).json({ status: "success", data: stats });
     } catch (error) {
+      if (error instanceof UnauthorizedError) {
+        return res.status(401).json({ status: "error", message: error.message });
+      }
       if (error instanceof BadRequestError) {
         return res.status(400).json({ status: "error", message: error.message });
       }
@@ -110,7 +102,11 @@ export class GamificationController {
           totalXP: true,
           currentStreak: true,
         },
-        orderBy: { totalXP: 'desc' },
+        orderBy: [
+          { totalXP: 'desc' },
+          { lastName: 'asc' },
+          { firstName: 'asc' },
+        ],
         take: limit,
         skip: offset,
       });

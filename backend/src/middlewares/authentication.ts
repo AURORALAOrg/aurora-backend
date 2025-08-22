@@ -18,9 +18,8 @@ export interface AuthenticatedRequest extends Request {
 }
 
 export const requireRole = (required: 'admin' | 'user' | Array<'admin' | 'user'>) => {
-  const allowed = new Set(
-    Array.isArray(required) ? required : [required].map(r => r.toLowerCase() as 'admin' | 'user')
-  );
+  const roles = Array.isArray(required) ? required : [required];
+  const allowed = new Set(roles.map(r => r.toLowerCase() as 'admin' | 'user'));
   return (req: AuthenticatedRequest, _res: Response, next: NextFunction) => {
     const normalizedRole = req.user?.role?.toLowerCase() as "admin" | "user" | undefined;
     if (!normalizedRole) {
@@ -88,12 +87,12 @@ export const isAuthorized = () => {
       const authUser: AuthUser = {
         id: String(user.id),
         email: user.email,
-        role: (user.role as 'admin' | 'user'),
+        role: String(user.role).toLowerCase() === 'admin' ? 'admin' : 'user',
         firstName: user.firstName,
         lastName: user.lastName,
       };
       req.user = authUser;
-      res.locals.account = user;
+      res.locals.accountId = user.id;
       next();
     } catch (err) {
       logger.error("Auth middleware error", {

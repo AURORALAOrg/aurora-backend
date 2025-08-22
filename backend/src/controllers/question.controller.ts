@@ -5,11 +5,14 @@ import { XPService } from '../services/xp.service';
 import { BadRequestError, NotFoundError, UnauthorizedError } from '../core/api/ApiError';
 import asyncHandler from '../middlewares/async';
 import { SuccessResponse, BadRequestResponse, CreatedResponse, PaginatedResponse } from '../core/api/ApiResponse';
+import type { AuthenticatedRequest } from '../middlewares/authentication';
 
-interface AuthenticatedRequest extends Request {
-    user?: {
-        id: string;
-    };
+
+interface QuestionContent {
+    correctAnswer?: string | number
+}
+interface GameMeta {
+    timeLimit?: number
 }
 
 class QuestionController {
@@ -66,8 +69,9 @@ class QuestionController {
         if (queryParams.difficulty) filterOptions.difficulty = queryParams.difficulty;
 
         // Add pagination options
-        const page = parseInt(queryParams.page as string) || 1;
-        const limit = parseInt(queryParams.limit as string) || 20;
+        const page = Math.max(1, Number.parseInt(queryParams.page as string, 10) || 1);
+        const limitRaw = Number.parseInt(queryParams.limit as string, 10);
+        const limit = Math.min(100, isNaN(limitRaw) ? 20 : Math.max(1, limitRaw));
 
         // Get questions and total count
         const [questions, totalCount] = await Promise.all([
@@ -76,13 +80,13 @@ class QuestionController {
         ]);
 
         return new PaginatedResponse("Questions retrieved successfully", questions, {
-      page,
-      limit,
-      count: questions.length,
-      total: totalCount,
-      totalPages: Math.ceil(totalCount / limit),
-    }).send(res);
-  });
+            page,
+            limit,
+            count: questions.length,
+            total: totalCount,
+            totalPages: Math.ceil(totalCount / limit),
+        }).send(res);
+    });
 
 public static deleteQuestion = asyncHandler(async (req: Request, res: Response) => {
     await QuestionService.deleteQuestion(req.params.id);
@@ -104,10 +108,11 @@ public static deleteQuestion = asyncHandler(async (req: Request, res: Response) 
     const q = await QuestionService.getQuestionById(questionId);
     if (!q) throw new NotFoundError("Question not found");
 
-    const content: any = q.content;
-    const isCorrect = content?.correctAnswer === answer;
-
-    const meta: any = q.gameMetadata ?? {};
+    const content = q.content as Partial<QuestionContent>;
+    const normalize = (v: unknown) => (typeof v === 'string' ? v.trim().toLowerCase() : v);
+    const isCorrect = normalize(content?.correctAnswer) === normalize(answer);
+    
+    const meta = (q.gameMetadata ?? {}) as Partial<GameMeta>;
     const timeLimit: number = typeof meta.timeLimit === "number" && meta.timeLimit > 0 ? meta.timeLimit : 30;
 
     const xpResult = await XPService.awardXP(req.user.id, questionId, isCorrect, timeSpent, timeLimit);
