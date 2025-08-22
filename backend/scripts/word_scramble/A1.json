@@ -13,7 +13,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "A1", "housing"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 10,
@@ -35,7 +35,7 @@
 			"category": "vocabulary",
 			"subCategory": "nouns",
 			"tags": ["vocabulary", "word-scramble", "A1", "education"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 10,
@@ -57,7 +57,7 @@
 			"category": "vocabulary",
 			"subCategory": "food",
 			"tags": ["vocabulary", "word-scramble", "A1", "fruits"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 10,

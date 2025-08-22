@@ -13,7 +13,7 @@
 			"category": "vocabulary",
 			"subCategory": "abstract",
 			"tags": ["vocabulary", "word-scramble", "C1", "abstract"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 30,
@@ -35,7 +35,7 @@
 			"category": "vocabulary",
 			"subCategory": "verbs",
 			"tags": ["vocabulary", "word-scramble", "C1", "verbs"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 30,
@@ -57,7 +57,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "C1", "adjectives"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 30,
@@ -79,7 +79,7 @@
 			"category": "vocabulary",
 			"subCategory": "abstract",
 			"tags": ["vocabulary", "word-scramble", "C1", "abstract"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 30,
@@ -101,7 +101,7 @@
 			"category": "vocabulary",
 			"subCategory": "abstract",
 			"tags": ["vocabulary", "word-scramble", "C1", "abstract"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 30,
@@ -123,7 +123,7 @@
 			"category": "vocabulary",
 			"subCategory": "verbs",
 			"tags": ["vocabulary", "word-scramble", "C1", "verbs"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 30,
@@ -145,7 +145,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "C1", "adjectives"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 30,
@@ -167,7 +167,7 @@
 			"category": "vocabulary",
 			"subCategory": "abstract",
 			"tags": ["vocabulary", "word-scramble", "C1", "abstract"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 30,
@@ -189,7 +189,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "C1", "adjectives"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 30,
@@ -211,7 +211,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "C1", "adjectives"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 30,
@@ -233,7 +233,7 @@
 			"category": "vocabulary",
 			"subCategory": "adjectives",
 			"tags": ["vocabulary", "word-scramble", "C1", "adjectives"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 30,
@@ -255,7 +255,7 @@
 			"category": "vocabulary",
 			"subCategory": "abstract",
 			"tags": ["vocabulary", "word-scramble", "C1", "abstract"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 30,
@@ -277,7 +277,7 @@
 			"category": "vocabulary",
 			"subCategory": "traits",
 			"tags": ["vocabulary", "word-scramble", "C1", "traits"],
-			"type": "word_scramble"
+			"type": "word-scramble"
 		},
 		"gameMetadata": {
 			"pointsValue": 30,

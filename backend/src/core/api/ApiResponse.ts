@@ -128,3 +128,23 @@ export class ConflictResponse<T> extends ApiResponse {
     super(false, ResponseStatus.CONFLICT, message);
   }
 }
+
+export class PaginatedResponse<T> extends ApiResponse {
+  constructor(
+    message: string,
+    private data: T[],
+    private pagination: {
+      page: number;
+      limit: number;
+      count: number;
+      total: number;
+      totalPages: number;
+    }
+  ) {
+    super(true, ResponseStatus.SUCCESS, message);
+  }
+
+  send(res: Response): Response {
+    return super.prepare<PaginatedResponse<T>>(res, this);
+  }
+}

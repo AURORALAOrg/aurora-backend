@@ -5,7 +5,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-const allowedQuestionTypes = ['multiple-choice', 'sentence-builder', 'fill-in-blanks', 'idiom-challenge'];
+const allowedQuestionTypes = ['multiple-choice', 'sentence-builder', 'fill-in-blanks', 'idiom-challenge', 'word-scramble', 'word-matching', 'story-game'];
 const allowedEnglishLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 
 interface ImportResults {
@@ -15,7 +15,7 @@ interface ImportResults {
   errors: string[];
 }
 
-type QuestionType = 'multiple-choice' | 'sentence-builder' | 'fill-in-blanks' | 'idiom-challenge';
+type QuestionType = 'multiple-choice' | 'sentence-builder' | 'fill-in-blanks' | 'idiom-challenge' | 'word-scramble' | 'word-matching' | 'story-game';
 
 const questionTypeStructures: Record<QuestionType, { content: Record<string, string> }> = {
   'multiple-choice': {
@@ -50,6 +50,29 @@ const questionTypeStructures: Record<QuestionType, { content: Record<string, str
       explanation: 'string (required)',
       tips: 'string[] (required)'
     }
+  },
+  'word-scramble': {
+    content: {
+      word: 'string (required)',
+      scrambled: 'string (required)',
+      hint: 'string (required)',
+      explanation: 'string (required)',
+      contextSentence: 'string (required)'
+    }
+  },
+  'word-matching': {
+    content: {
+      pairs: 'object[] (required, min 3 items with word and match)',
+      difficulty: 'string (required)',
+      category: 'string (required)'
+    }
+  },
+  'story-game': {
+    content: {
+      story: 'string (required)',
+      questions: 'object[] (required, min 1 item)',
+      summary: 'string (required)'
+    }
   }
 };
 
@@ -59,7 +82,7 @@ const commonMetadataStructure = {
   category: 'string (required)',
   subCategory: 'string (required)',
   tags: 'string[] (required)',
-  type: 'string (required, one of: multiple-choice, sentence-builder, fill-in-blanks, idiom-challenge)'
+  type: 'string (required, one of: multiple-choice, sentence-builder, fill-in-blanks, idiom-challenge, word-scramble, word-matching, story-game)'
 };
 
 const gameMetadataStructure = {
@@ -82,6 +105,11 @@ function validateQuestion(questionData: any): void {
   if (!content) throw new Error('Missing required field: content');
   if (!metadata) throw new Error('Missing required field: metadata');
   if (!gameMetadata) throw new Error('Missing required field: gameMetadata');
+
+  // Convert underscores to hyphens in type for consistency
+  if (metadata.type) {
+    metadata.type = metadata.type.replace(/_/g, '-');
+  }
 
   // Validate question type
   if (!allowedQuestionTypes.includes(metadata.type)) {
@@ -124,6 +152,39 @@ function validateQuestion(questionData: any): void {
       if (typeof content.correct !== 'number') throw new Error('content.correct must be a number');
       if (!Array.isArray(content.tips)) throw new Error('content.tips must be an array');
       if (!content.explanation) throw new Error('Missing required field: content.explanation');
+      break;
+
+    case 'word-scramble':
+      if (!content.word) throw new Error('Missing required field: content.word');
+      if (!content.scrambled) throw new Error('Missing required field: content.scrambled');
+      if (!content.hint) throw new Error('Missing required field: content.hint');
+      if (!content.explanation) throw new Error('Missing required field: content.explanation');
+      if (!content.contextSentence) throw new Error('Missing required field: content.contextSentence');
+      break;
+
+    case 'word-matching':
+      if (!Array.isArray(content.pairs)) throw new Error('content.pairs must be an array');
+      if (content.pairs.length < 3) throw new Error('content.pairs must have at least 3 items');
+      for (const pair of content.pairs) {
+        if (!pair.word) throw new Error('Missing required field: pair.word');
+        if (!pair.match) throw new Error('Missing required field: pair.match');
+      }
+      if (!content.difficulty) throw new Error('Missing required field: content.difficulty');
+      if (!content.category) throw new Error('Missing required field: content.category');
+      break;
+
+    case 'story-game':
+      if (!content.story) throw new Error('Missing required field: content.story');
+      if (!Array.isArray(content.questions)) throw new Error('content.questions must be an array');
+      if (content.questions.length < 1) throw new Error('content.questions must have at least 1 item');
+      for (const question of content.questions) {
+        if (!question.question) throw new Error('Missing required field: question.question');
+        if (!Array.isArray(question.options)) throw new Error('question.options must be an array');
+        if (question.options.length < 2) throw new Error('question.options must have at least 2 items');
+        if (typeof question.correct !== 'number') throw new Error('question.correct must be a number');
+        if (!question.explanation) throw new Error('Missing required field: question.explanation');
+      }
+      if (!content.summary) throw new Error('Missing required field: content.summary');
       break;
   }
 
