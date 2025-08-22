@@ -11,6 +11,7 @@ build/
 .env.development.local
 .env.test.local
 .env.production.local
+.env.backup
 
 # Logs
 logs
@@ -76,6 +77,11 @@ Icon?
 
 # Backup files
 *.bak
+
+# Testing instructions (not for git)
+TESTING_INSTRUCTIONS.md
+
+
 
 # IntelliJ IDEA
 *.iml
