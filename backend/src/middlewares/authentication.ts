@@ -1,28 +1,33 @@
 import Jwt from "../utils/security/jwt"
-import { Request, Response, NextFunction } from "express"
+import type { Request, Response, NextFunction } from "express"
 import { ForbiddenError, UnauthorizedError } from "../core/api/ApiError"
 import UserService from "../services/user.service"
 import logger from "../core/config/logger"
 
 
-interface AuthUser {
+export interface AuthUser {
   id: string;
   email: string;
   role: 'admin' | 'user';
-  firstName?: string;
-  lastName?: string;
+  firstName?: string | null;
+  lastName?: string | null;
 }
 
-interface AuthenticatedRequest extends Request {
+export interface AuthenticatedRequest extends Request {
   user?: AuthUser;
 }
 
 export const requireRole = (required: 'admin' | 'user' | Array<'admin' | 'user'>) => {
-  const allowed = new Set(Array.isArray(required) ? required : [required]);
+  const allowed = new Set(
+    Array.isArray(required) ? required : [required].map(r => r.toLowerCase() as 'admin' | 'user')
+  );
   return (req: AuthenticatedRequest, _res: Response, next: NextFunction) => {
-    const role = req.user?.role;
-    if (!role || !allowed.has(role as any)) {
-      return next(new ForbiddenError('Forbidden - Insufficient role'));
+    const normalizedRole = req.user?.role?.toLowerCase() as "admin" | "user" | undefined;
+    if (!normalizedRole) {
+      return next(new UnauthorizedError("Unauthorized"));
+    }
+    if (!allowed.has(normalizedRole)) {
+      return next(new ForbiddenError("Forbidden - Insufficient role"));
     }
     return next();
   };
@@ -67,7 +72,9 @@ export const isAuthorized = () => {
       if (!userId) {
         const keys = typeof decoded === 'object' && decoded ? Object.keys(decoded as Record<string, unknown>) : [];
         logger.warn("Invalid token payload (no 'sub'/'userId'/'id' claim)", { keys });
-        return next(new UnauthorizedError("Unauthorized - Invalid token payload: missing 'sub' claim"));
+        return next(new UnauthorizedError(
+          "Unauthorized - Invalid token payload: missing identifier claim ('sub'|'userId'|'id')"
+        ));
       }
 
       // Fetch user
@@ -78,12 +85,23 @@ export const isAuthorized = () => {
       }
 
       // Attach user to request
-      req.user = user as AuthUser;
+      const authUser: AuthUser = {
+        id: String(user.id),
+        email: user.email,
+        role: (user.role as 'admin' | 'user'),
+        firstName: user.firstName,
+        lastName: user.lastName,
+      };
+      req.user = authUser;
       res.locals.account = user;
       next();
     } catch (err) {
-      logger.error('Auth middleware error', { error: err instanceof Error ? err.name : "UnknownError" });
-      next(new UnauthorizedError("Unauthorized"));
+      logger.error("Auth middleware error", {
+        path: req.path,
+        method: req.method,
+        error: err instanceof Error ? { name: err.name, message: err.message } : String(err),
+      });
+      return next(new UnauthorizedError("Unauthorized"));
     }
   };
 };

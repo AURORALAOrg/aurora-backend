@@ -16,7 +16,7 @@
     "run:dailyStreak:build": "node build/src/scripts/run.dailyStreak.js",
     "prisma:generate": "prisma generate",
     "postinstall": "prisma generate",
-    "prepare": "husky install"
+    "prepare": "cd.. &&husky install"
   },
   "keywords": [],
   "author": "",
@@ -28,7 +28,6 @@
   "dependencies": {
     "@prisma/client": "^6.14.0",
     "@stellar/stellar-sdk": "^13.3.0",
-    "@types/compression": "^1.7.5",
     "axios": "^1.7.7",
     "bcrypt": "^6.0.0",
     "compression": "^1.8.0",
@@ -48,8 +47,7 @@
     "nodemailer": "^6.10.1",
     "pg": "^8.14.1",
     "urijs": "^1.19.11",
-    "winston": "^3.11.0",
-    "zod": "^3.25.76"
+    "winston": "^3.11.0"
   },
   "devDependencies": {
     "@faker-js/faker": "^9.5.0",
@@ -65,10 +63,10 @@
     "@types/lodash": "^4.14.202",
     "@types/morgan": "^1.9.9",
     "@types/node": "^20.19.11",
+    "@types/nodemailer": "^7.0.1",
     "@types/pg": "^8.11.11",
     "@types/supertest": "^6.0.2",
     "@types/urijs": "^1.19.25",
-    "rimraf": "^6.0.1",
     "eslint": "^9.9.0",
     "husky": "^8.0.3",
     "jest": "^29.7.0",
@@ -76,6 +74,7 @@
     "nodemon": "^3.0.2",
     "prettier": "^3.1.1",
     "prisma": "^6.14.0",
+    "rimraf": "^6.0.1",
     "supertest": "^7.0.0",
     "ts-jest": "^29.2.6",
     "ts-node": "^10.9.2",
