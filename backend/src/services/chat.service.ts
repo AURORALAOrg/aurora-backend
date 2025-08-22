@@ -1,4 +1,5 @@
-import OpenAI from "openai";
+import { createDeepSeek } from "@ai-sdk/deepseek";
+import * as AI from "ai";
 import serverSettings from "../core/config/settings";
 import { prisma } from "../db";
 import logger from "../core/config/logger";
@@ -25,11 +26,12 @@ interface SendMessageResponse {
 }
 
 class ChatService {
-  private openai: OpenAI;
+  private deepseekClient;
 
   constructor() {
-    this.openai = new OpenAI({
-      apiKey: serverSettings.openai.apiKey,
+    this.deepseekClient = createDeepSeek({
+      apiKey: serverSettings.deepseek.apiKey,
+      baseURL: serverSettings.deepseek.apiBase,
     });
   }
 
@@ -51,34 +53,36 @@ class ChatService {
 
       const systemPrompt = this.getPracticeLevelSystemPrompt(practiceLevel);
 
-      const messages: OpenAI.Chat.Completions.ChatCompletionMessageParam[] = [
-        { role: "system", content: systemPrompt },
-        ...conversationContext.map(ctx => ({
-          role: ctx.role as "user" | "assistant" | "system",
-          content: ctx.content,
-        })),
-        { role: "user", content: message },
-      ];
+      // Format messages for DeepSeek AI SDK
+      let prompt = `${systemPrompt}\n\n`;
+      
+      // Add conversation context
+      for (const ctx of conversationContext) {
+        if (ctx.role === "user") {
+          prompt += `User: ${ctx.content}\n`;
+        } else if (ctx.role === "assistant") {
+          prompt += `Assistant: ${ctx.content}\n`;
+        }
+      }
+      
+      // Add current message
+      prompt += `User: ${message}\n\nAssistant: `;
 
-      const response = await this.openai.chat.completions.create({
-        model: serverSettings.openai.model,
-        messages,
-        max_tokens: 500,
+      const { text: aiResponse } = await AI.generateText({
+        model: this.deepseekClient(serverSettings.deepseek.model),
+        prompt,
         temperature: 0.7,
-        presence_penalty: 0.1,
-        frequency_penalty: 0.1,
+        maxTokens: 500,
       });
-
-      const aiResponse = response.choices[0]?.message?.content;
       if (!aiResponse) {
-        throw new Error("No response from OpenAI");
+        throw new Error("No response from DeepSeek AI");
       }
 
       let finalConversationId = conversationId;
       const timestamp = new Date().toISOString();
 
       if (conversationId) {
-        await prisma.$transaction(async (tx) => {
+        await prisma.$transaction(async (tx: any) => {
           const existingConversation = await tx.conversation.findUnique({
             where: { id: conversationId, userId },
           });
@@ -105,7 +109,7 @@ class ChatService {
           });
         });
       } else {
-        await prisma.$transaction(async (tx) => {
+        await prisma.$transaction(async (tx: any) => {
           finalConversationId = uuidv4();
 
           const conversation = await tx.conversation.create({
@@ -144,18 +148,15 @@ class ChatService {
         timestamp,
       };
     } catch (error: any) {
-      logger.error("Error in ChatService.sendMessage:", error);
-
+      logger.error(`DeepSeek API error: ${error.message}`);
       if (error.status === 429) {
-        throw new Error("OpenAI API rate limit exceeded. Please try again later.");
-      } else if (error.status === 401) {
-        throw new Error("OpenAI API authentication failed.");
+        throw new Error("DeepSeek API rate limit exceeded. Please try again later.");
       } else if (error.status === 400) {
-        throw new Error("Invalid request to OpenAI API.");
+        throw new Error("Invalid request to DeepSeek API.");
       } else if (error.message?.includes("Conversation not found")) {
         throw error;
       } else {
-        throw new Error("Failed to process chat message. Please try again.");
+        throw new Error("Failed to generate response. Please try again later.");
       }
     }
   }

@@ -22,12 +22,15 @@ const envVarsSchema = Joi.object()
     AURORA_WEB_APP_BASE_URL: Joi.string()
       .required()
       .description("Base URL for Aurora Web App"),
-    OPENAI_API_KEY: Joi.string()
+    DEEPSEEK_API_KEY: Joi.string()
       .required()
-      .description("OpenAI API Key"),
-    OPENAI_MODEL: Joi.string()
-      .default("gpt-3.5-turbo")
-      .description("OpenAI Model to use"),
+      .description("DeepSeek API Key"),
+    DEEPSEEK_MODEL: Joi.string()
+      .default("deepseek-chat")
+      .description("DeepSeek Model to use"),
+    DEEPSEEK_API_BASE: Joi.string()
+      .default("https://api.deepseek.com/v1")
+      .description("DeepSeek API Base URL"),
   })
   .unknown();
 
@@ -50,9 +53,10 @@ const serverSettings = {
     password: envVars.EMAIL_PASSWORD,
     fromAddress: envVars.EMAIL_FROM_ADDRESS,
   },
-  openai: {
-    apiKey: envVars.OPENAI_API_KEY,
-    model: envVars.OPENAI_MODEL,
+  deepseek: {
+    apiKey: envVars.DEEPSEEK_API_KEY,
+    model: envVars.DEEPSEEK_MODEL,
+    apiBase: envVars.DEEPSEEK_API_BASE,
   },
 };
 
