@@ -40,8 +40,11 @@ const AI = {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${apiKey}`
       },
+      // Derive the model id safely from the handle or string
       body: JSON.stringify({
-        model: "deepseek-chat",
+        model: (typeof options.model === 'string'
+          ? options.model
+          : (options.model?._model || 'deepseek-chat')),
         messages: [
           {
             role: 'user',
@@ -71,7 +74,7 @@ const AI = {
     console.log('API response:', JSON.stringify(data, null, 2));
     
     return {
-      text: data.choices[0]?.message?.content || ''
+      text: data.choices?.[0]?.message?.content || ''
     };
   }
 };

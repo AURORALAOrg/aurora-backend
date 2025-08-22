@@ -1,5 +1,6 @@
 import { createDeepSeek } from "@ai-sdk/deepseek";
 import * as AI from "ai";
+import type { Prisma, PracticeLevel } from "@prisma/client";
 import serverSettings from "../core/config/settings";
 import { prisma } from "../db";
 import logger from "../core/config/logger";
@@ -51,6 +52,17 @@ class ChatService {
     try {
       const { message, practiceLevel, conversationContext = [], conversationType = "general", conversationId, userId } = request;
 
+      // Fast guard: verify conversation ownership before external API calls
+      if (conversationId) {
+        const ok = await prisma.conversation.findFirst({
+          where: { id: conversationId, userId },
+          select: { id: true },
+        });
+        if (!ok) {
+          throw new Error("Conversation not found or unauthorized");
+        }
+      }
+
       const systemPrompt = this.getPracticeLevelSystemPrompt(practiceLevel);
 
       // Format messages for DeepSeek AI SDK
@@ -82,9 +94,9 @@ class ChatService {
       const timestamp = new Date().toISOString();
 
       if (conversationId) {
-        await prisma.$transaction(async (tx: any) => {
+        await prisma.$transaction(async (tx: Prisma.TransactionClient) => {
           const existingConversation = await tx.conversation.findUnique({
-            where: { id: conversationId, userId },
+            where: { id: conversationId },
           });
 
           if (!existingConversation) {
@@ -163,7 +175,7 @@ class ChatService {
 
   async getConversationHistory(conversationId: string, userId: string) {
     try {
-      const conversation = await prisma.conversation.findUnique({
+      const conversation = await prisma.conversation.findFirst({
         where: {
           id: conversationId,
           userId,

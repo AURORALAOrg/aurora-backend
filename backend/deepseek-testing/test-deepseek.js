@@ -14,14 +14,17 @@ console.log('DEEPSEEK_API_KEY:', process.env.DEEPSEEK_API_KEY ? '[REDACTED]' : '
 const AI = {
   generateText: async function(options) {
     console.log('Generating text with options:', {
-      model: options.model._model || 'unknown',
-      prompt: options.prompt.substring(0, 50) + '...',
+      model: typeof options.model === 'string' ? options.model : (options.model?._model || 'unknown'),
+      prompt: String(options.prompt || '').substring(0, 50) + '...',
       temperature: options.temperature,
       maxTokens: options.maxTokens
     });
     
     // Simulate API delay
     await new Promise(resolve => setTimeout(resolve, 500));
+
+    // Return a mocked response shaped like the real call
+    return { text: '[mocked] Here is a short joke for you 😄' };
   }
 };
 
