@@ -3,44 +3,25 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
   directUrl = env("DIRECT_URL")
 }
 
-enum Status {
-  ACTIVE   @map("active")
-  INACTIVE @map("inactive")
-}
-
-enum QuestionType {
-  MULTIPLE_CHOICE    @map("multiple_choice")
-  SENTENCE_BUILDER   @map("sentence_builder")
-  FILL_IN_BLANKS     @map("fill_in_blanks")
-  IDIOM_CHALLENGE    @map("idiom_challenge")
-}
-
-enum DifficultyLevel {
-  BEGINNER     @map("beginner")
-  INTERMEDIATE @map("intermediate")
-  ADVANCED     @map("advanced")
-}
-
 model User {
-  id             String    @id @default(uuid())
-  email          String    @unique
-  password       String
-  isEmailVerified  Boolean @default(false)
-  firstName      String?
-  lastName       String?
-  phoneNumber    String?
-  profileImage   String?
-  status        Status     @default(INACTIVE)
-  createdAt      DateTime  @default(now())
-  updatedAt      DateTime  @updatedAt
-  wallet         Wallet?
-  questions      Question[]
-  conversations  Conversation[]
+  id              String     @id @default(uuid())
+  email           String     @unique
+  password        String
+  isEmailVerified Boolean    @default(false)
+  firstName       String?
+  lastName        String?
+  phoneNumber     String?
+  profileImage    String?
+  status          Status     @default(INACTIVE)
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
+  wallet          Wallet?
+  questions       Question[]
 }
 
 model Wallet {
@@ -55,19 +36,19 @@ model Wallet {
 }
 
 model WalletVerificationChallenge {
-  id            String    @id @default(uuid())
-  walletAddress String    @unique
+  id            String   @id @default(uuid())
+  walletAddress String   @unique
   message       String
   nonce         String
-  createdAt     DateTime  @default(now())
+  createdAt     DateTime @default(now())
   expiresAt     DateTime
 }
 
 model Question {
   id            String   @id @default(uuid())
-  content       Json     // Will contain question-specific content
-  metadata      Json     // Will contain type and other metadata
-  gameMetadata  Json     // Will contain game-specific metadata
+  content       Json
+  metadata      Json
+  gameMetadata  Json
   createdBy     String
   status        Status   @default(ACTIVE)
   createdAt     DateTime @default(now())
@@ -77,25 +58,27 @@ model Question {
   @@map("questions")
 }
 
-enum PracticeLevel {
-  A1 @map("a1")
-  A2 @map("a2")
-  B1 @map("b1")
-  B2 @map("b2")
-  C1 @map("c1")
-  C2 @map("c2")
-}
+/// Conversation topics for AI practice, linked conceptually to question categories/levels
+model Topic {
+  id           String       @id @default(uuid())
+  name         String
+  description  String?
+  category     Category
+  englishLevel EnglishLevel
+  prompts      String[]
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
 
-enum MessageRole {
-  USER      @map("user")
-  ASSISTANT @map("assistant")
-  SYSTEM    @map("system")
+  @@unique([name, category, englishLevel], map: "topic_unique_name_category_level")
+  @@index([englishLevel, category], map: "topic_level_category_idx")
+  @@index([englishLevel], map: "topic_level_idx")
+  @@index([category], map: "topic_category_idx")
 }
 
 model Conversation {
   id               String        @id @default(uuid())
   userId           String
-  practiceLevel    PracticeLevel
+  practiceLevel    EnglishLevel   // unificado con EnglishLevel
   conversationType String?       @default("general")
   status           Status        @default(ACTIVE)
   createdAt        DateTime      @default(now())
@@ -116,3 +99,52 @@ model Message {
 
   @@map("messages")
 }
+
+enum MessageRole {
+  USER      @map("user")
+  ASSISTANT @map("assistant")
+  SYSTEM    @map("system")
+}
+
+enum Status {
+  ACTIVE   @map("active")
+  INACTIVE @map("inactive")
+}
+
+enum QuestionType {
+  MULTIPLE_CHOICE  @map("multiple_choice")
+  SENTENCE_BUILDER @map("sentence_builder")
+  FILL_IN_BLANKS   @map("fill_in_blanks")
+  IDIOM_CHALLENGE  @map("idiom_challenge")
+}
+
+enum DifficultyLevel {
+  BEGINNER     @map("beginner")
+  INTERMEDIATE @map("intermediate")
+  ADVANCED     @map("advanced")
+}
+
+enum EnglishLevel {
+  A1 @map("a1")
+  A2 @map("a2")
+  B1 @map("b1")
+  B2 @map("b2")
+  C1 @map("c1")
+  C2 @map("c2")
+}
+
+enum Category {
+  GRAMMAR
+  VOCABULARY
+  DAILY_LIFE
+  TRAVEL
+  WORK
+  HOBBIES
+  FOOD
+  FAMILY
+  SHOPPING
+  CULTURE
+  BUSINESS
+  CURRENT_EVENTS
+}
+

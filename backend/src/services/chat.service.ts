@@ -1,6 +1,6 @@
 import { createDeepSeek } from "@ai-sdk/deepseek";
 import * as AI from "ai";
-import type { Prisma, PracticeLevel } from "@prisma/client";
+import type { Prisma, EnglishLevel, Topic } from "@prisma/client";
 import serverSettings from "../core/config/settings";
 import { prisma } from "../db";
 import logger from "../core/config/logger";
@@ -13,11 +13,12 @@ interface ConversationContext {
 
 interface SendMessageRequest {
   message: string;
-  practiceLevel: "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
+  practiceLevel: EnglishLevel;
   conversationContext?: ConversationContext[];
   conversationType?: string;
   conversationId?: string;
   userId: string;
+  topicId?: string; // opcional para prompts basados en Topic
 }
 
 interface SendMessageResponse {
@@ -36,8 +37,11 @@ class ChatService {
     });
   }
 
-  private getPracticeLevelSystemPrompt(level: string): string {
-    const prompts = {
+  /**
+   * Prompt genérico para niveles de inglés (A1–C2)
+   */
+  private getPracticeLevelSystemPrompt(level: EnglishLevel): string {
+    const prompts: Record<EnglishLevel, string> = {
       A1: "You are a helpful English conversation partner for beginners (A1 level). Use simple vocabulary, short sentences, and speak clearly. Help the user practice basic English conversation topics like greetings, family, hobbies, and daily activities. Be patient and encouraging.",
       A2: "You are a helpful English conversation partner for elementary learners (A2 level). Use common vocabulary and simple grammatical structures. Help with topics like travel, shopping, food, and personal experiences. Provide gentle corrections when needed.",
       B1: "You are a helpful English conversation partner for intermediate learners (B1 level). Use more varied vocabulary and grammar structures. Discuss topics like work, education, opinions, and experiences. Help the user express ideas more clearly and naturally.",
@@ -45,14 +49,27 @@ class ChatService {
       C1: "You are a helpful English conversation partner for advanced learners (C1 level). Use a wide range of vocabulary and complex grammar. Discuss nuanced topics, academic subjects, and professional matters. Help refine subtle aspects of language use.",
       C2: "You are a helpful English conversation partner for proficient speakers (C2 level). Use native-level language with idioms, colloquialisms, and sophisticated expressions. Engage in complex debates, literary discussions, and specialized topics. Focus on perfecting nuanced language skills.",
     };
-    return prompts[level as keyof typeof prompts] || prompts.B1;
+    return prompts[level] || prompts.B1;
+  }
+
+  /**
+   * Construcción de prompt basada en un Topic (fusionado de la otra versión)
+   */
+  private static buildPromptFromTopic(topic: Topic, userContext?: { name?: string }) {
+    const header = `You are an English practice partner. Topic: ${topic.name} (Level: ${topic.englishLevel}).`;
+    const instructions = `Have a short conversation with the user on this topic. Keep responses appropriate for the level.`;
+    const seed = Array.isArray(topic.prompts) && topic.prompts.length > 0
+      ? topic.prompts[0]
+      : "Start a conversation on this topic.";
+    const context = userContext?.name ? `User name: ${userContext.name}.` : "";
+    return [header, instructions, context, `Prompt: ${seed}`].filter(Boolean).join("\n");
   }
 
   async sendMessage(request: SendMessageRequest): Promise<SendMessageResponse> {
     try {
-      const { message, practiceLevel, conversationContext = [], conversationType = "general", conversationId, userId } = request;
+      const { message, practiceLevel, conversationContext = [], conversationType = "general", conversationId, userId, topicId } = request;
 
-      // Fast guard: verify conversation ownership before external API calls
+      // Validar conversación existente
       if (conversationId) {
         const ok = await prisma.conversation.findFirst({
           where: { id: conversationId, userId },
@@ -63,12 +80,20 @@ class ChatService {
         }
       }
 
-      const systemPrompt = this.getPracticeLevelSystemPrompt(practiceLevel);
+      // Construcción del prompt base
+      let systemPrompt = this.getPracticeLevelSystemPrompt(practiceLevel);
 
-      // Format messages for DeepSeek AI SDK
+      // Si hay un topic asociado, usarlo como refuerzo
+      if (topicId) {
+        const topic = await prisma.topic.findUnique({ where: { id: topicId } });
+        if (topic) {
+          systemPrompt += "\n\n" + ChatService.buildPromptFromTopic(topic, { name: userId });
+        }
+      }
+
       let prompt = `${systemPrompt}\n\n`;
-      
-      // Add conversation context
+
+      // Añadir contexto conversacional
       for (const ctx of conversationContext) {
         if (ctx.role === "user") {
           prompt += `User: ${ctx.content}\n`;
@@ -76,10 +101,11 @@ class ChatService {
           prompt += `Assistant: ${ctx.content}\n`;
         }
       }
-      
-      // Add current message
+
+      // Añadir el mensaje actual
       prompt += `User: ${message}\n\nAssistant: `;
 
+      // Llamada a DeepSeek
       const { text: aiResponse } = await AI.generateText({
         model: this.deepseekClient(serverSettings.deepseek.model),
         prompt,
@@ -93,60 +119,33 @@ class ChatService {
       let finalConversationId = conversationId;
       const timestamp = new Date().toISOString();
 
+      // Guardar en BD
       if (conversationId) {
         await prisma.$transaction(async (tx: Prisma.TransactionClient) => {
-          const existingConversation = await tx.conversation.findUnique({
-            where: { id: conversationId },
-          });
-
-          if (!existingConversation) {
-            throw new Error("Conversation not found or unauthorized");
-          }
-
           await tx.message.createMany({
             data: [
-              {
-                conversationId,
-                role: "USER",
-                content: message,
-                timestamp: new Date(),
-              },
-              {
-                conversationId,
-                role: "ASSISTANT",
-                content: aiResponse,
-                timestamp: new Date(),
-              },
+              { conversationId, role: "USER", content: message, timestamp: new Date() },
+              { conversationId, role: "ASSISTANT", content: aiResponse, timestamp: new Date() },
             ],
           });
         });
       } else {
-        await prisma.$transaction(async (tx: any) => {
+        await prisma.$transaction(async (tx) => {
           finalConversationId = uuidv4();
 
-          const conversation = await tx.conversation.create({
+          await tx.conversation.create({
             data: {
               id: finalConversationId,
               userId,
-              practiceLevel: practiceLevel,
+              practiceLevel,
               conversationType,
             },
           });
 
           await tx.message.createMany({
             data: [
-              {
-                conversationId: conversation.id,
-                role: "USER",
-                content: message,
-                timestamp: new Date(),
-              },
-              {
-                conversationId: conversation.id,
-                role: "ASSISTANT",
-                content: aiResponse,
-                timestamp: new Date(),
-              },
+              { conversationId: finalConversationId, role: "USER", content: message, timestamp: new Date() },
+              { conversationId: finalConversationId, role: "ASSISTANT", content: aiResponse, timestamp: new Date() },
             ],
           });
         });
@@ -174,58 +173,27 @@ class ChatService {
   }
 
   async getConversationHistory(conversationId: string, userId: string) {
-    try {
-      const conversation = await prisma.conversation.findFirst({
-        where: {
-          id: conversationId,
-          userId,
-        },
-        include: {
-          messages: {
-            orderBy: {
-              timestamp: "asc",
-            },
-          },
-        },
-      });
+    const conversation = await prisma.conversation.findFirst({
+      where: { id: conversationId, userId },
+      include: { messages: { orderBy: { timestamp: "asc" } } },
+    });
 
-      if (!conversation) {
-        throw new Error("Conversation not found or unauthorized");
-      }
-
-      return conversation;
-    } catch (error: any) {
-      logger.error("Error in ChatService.getConversationHistory:", error);
-      throw error;
+    if (!conversation) {
+      throw new Error("Conversation not found or unauthorized");
     }
+
+    return conversation;
   }
 
   async getUserConversations(userId: string) {
-    try {
-      const conversations = await prisma.conversation.findMany({
-        where: {
-          userId,
-          status: "ACTIVE",
-        },
-        orderBy: {
-          updatedAt: "desc",
-        },
-        include: {
-          messages: {
-            orderBy: {
-              timestamp: "desc",
-            },
-            take: 1,
-          },
-        },
-      });
-
-      return conversations;
-    } catch (error: any) {
-      logger.error("Error in ChatService.getUserConversations:", error);
-      throw error;
-    }
+    return prisma.conversation.findMany({
+      where: { userId, status: "ACTIVE" },
+      orderBy: { updatedAt: "desc" },
+      include: { messages: { orderBy: { timestamp: "desc" }, take: 1 } },
+    });
   }
 }
 
 export default new ChatService();
+
+
