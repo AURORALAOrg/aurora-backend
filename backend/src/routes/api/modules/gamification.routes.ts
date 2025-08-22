@@ -1,7 +1,7 @@
 import express from 'express';
 import { GamificationController } from '../../../controllers/gamification.controller';
 import { isAuthorized, requireRole } from '../../../middlewares/authentication';
-import { awardXPValidation } from '../../../models/validations/xp.validator';
+import { awardXPSchema, awardXPValidation } from '../../../models/validations/xp.validator';
 import validateRequest from '../../../middlewares/validator';
 
 const router = express.Router();
@@ -11,7 +11,7 @@ router.use(isAuthorized());
 router.post(
   '/award-xp',
   requireRole("admin"),
-  validateRequest(awardXPValidation),
+  validateRequest({ body: awardXPSchema, awardXPValidation }),
   GamificationController.awardXP
 );
 

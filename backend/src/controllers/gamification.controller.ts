@@ -1,21 +1,22 @@
 import { Request, Response } from 'express';
-import { z } from 'zod';
+import Joi from 'joi';
 import { prisma } from '../lib/prisma';
 import { XPService } from '../services/xp.service';
 import { BadRequestError, UnauthorizedError } from '../core/api/ApiError';
 import logger from '../core/config/logger';
+
 
 interface AuthenticatedRequest extends Request {
   user?: { id: string; role?: string };
 }
 
 // --- Validation ---
-const awardXPSchema = z.object({
-  questionId: z.string().min(1),
-  isCorrect: z.boolean(),
-  timeSpent: z.number().int().nonnegative(),
-  timeLimit: z.number().int().positive(),
-  targetUserId: z.string().uuid().optional(),
+const awardXPSchema = Joi.object({
+  questionId: Joi.string().min(1).required(),
+  isCorrect: Joi.boolean().required(),
+  timeSpent: Joi.number().integer().min(0).required(),
+  timeLimit: Joi.number().integer().min(1).required(),
+  targetUserId: Joi.string().uuid().optional(),
 });
 
 // --- Helpers ---
@@ -44,7 +45,7 @@ export class GamificationController {
       if (!req.user?.id) throw new UnauthorizedError("Unauthorized - User not authenticated");
 
       // 1) Validate body
-      const body = awardXPSchema.parse(req.body);
+      const body = await awardXPSchema.validateAsync(req.body);
 
       // 2) Normalize role & resolve target
       const isAdmin = String(req.user.role ?? "").toLowerCase() === "admin";
@@ -62,10 +63,10 @@ export class GamificationController {
       const result = await XPService.awardXP(userId, body.questionId, body.isCorrect, body.timeSpent, body.timeLimit);
       return res.status(200).json({ status: "success", data: result });
     } catch (error: any) {
-      if (error instanceof z.ZodError) {
+      if (error instanceof Joi.ValidationError) {
         return res
           .status(400)
-          .json({ status: "error", message: error.issues.map((i) => i.message).join("; ") });
+          .json({ status: "error", message: error.details.map((i) => i.message).join("; ") });
       }
       if (error instanceof BadRequestError) {
         return res.status(400).json({ status: "error", message: error.message });
