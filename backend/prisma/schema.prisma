@@ -50,10 +50,10 @@ model User {
   questions       Question[]
   activities      UserActivity[]
 
-  @@index([lastActivityAt], name: "idx_user_last_activity_at")
-  @@index([lastStreakDate], name: "idx_user_last_streak_date")
-  @@index([totalXP], name: "idx_user_total_xp")
-  @@index([currentStreak], name: "idx_user_current_streak")
+  @@index([lastActivityAt], map: "idx_user_last_activity_at")
+  @@index([lastStreakDate], map: "idx_user_last_streak_date")
+  @@index([totalXP], map: "idx_user_total_xp")
+  @@index([currentStreak], map: "idx_user_current_streak")
 }
 
 model UserActivity {

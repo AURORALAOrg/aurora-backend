@@ -10,17 +10,24 @@ const envVarsSchema = Joi.object()
       .valid("PRODUCTION", "STAGING", "DEVELOPMENT", "TEST")
       .required(),
     SERVER_PORT: Joi.number().default(8000),
-    JWT_SECRET_KEY: Joi.string().required().description("JWT Secret Key"),
+    // biome-ignore lint/suspicious/noThenProperty: Joi schema requires `then`/`otherwise` shape
+    JWT_SECRET_KEY: Joi.string().when('JWT_ALGORITHM', {
+      is: Joi.string().pattern(/^HS/),
+      then: Joi.required().description("HMAC secret (PEM/base64) for HS* algorithms"),
+      otherwise: Joi.forbidden()
+    }),
     JWT_ISSUER: Joi.string().default("aurora"),
     JWT_AUDIENCE: Joi.string().default("aurora-users"),
     JWT_ALGORITHM: Joi.string()
       .valid("HS256", "HS384", "HS512", "RS256", "RS384", "RS512", "ES256", "ES384", "PS256", "PS384", "PS512")
       .default("HS256"),
+    // biome-ignore lint/suspicious/noThenProperty: Joi schema requires `then`/`otherwise` shape
     JWT_PRIVATE_KEY: Joi.string().when('JWT_ALGORITHM', {
       is: Joi.string().pattern(/^(RS|ES|PS)/),
       then: Joi.required().description("JWT private key (PEM) for asymmetric algorithms"),
       otherwise: Joi.forbidden()
     }),
+    // biome-ignore lint/suspicious/noThenProperty: Joi schema requires `then`/`otherwise` shape
     JWT_PUBLIC_KEY: Joi.string().when('JWT_ALGORITHM', {
       is: Joi.string().pattern(/^(RS|ES|PS)/),
       then: Joi.required().description("JWT public key (PEM) for asymmetric algorithms"),
@@ -53,6 +60,7 @@ const serverSettings = {
   jwt: {
     issuer: envVars.JWT_ISSUER as string,
     audience: envVars.JWT_AUDIENCE as string,
+    secretKey: envVars.JWT_SECRET_KEY as string | undefined,
     algorithm: envVars.JWT_ALGORITHM as string,
     privateKey: envVars.JWT_PRIVATE_KEY as string | undefined,
     publicKey: envVars.JWT_PUBLIC_KEY as string | undefined,

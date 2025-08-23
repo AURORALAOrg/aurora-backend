@@ -98,10 +98,10 @@ public static deleteQuestion = asyncHandler(async (req: Request, res: Response) 
     if (!req.user?.id) throw new UnauthorizedError("Unauthorized - User not authenticated");
 
     const { questionId, answer, timeSpent } = req.body ?? {};
-    if (!questionId || typeof answer === "undefined" || timeSpent == null) {
+    if (typeof questionId !== "string" || !questionId.trim() || typeof answer === "undefined" || timeSpent == null) {
       throw new BadRequestError("Missing required fields: questionId, answer, timeSpent");
     }
-    if (typeof timeSpent !== "number" || timeSpent < 0) {
+    if (typeof timeSpent !== "number" || !Number.isFinite(timeSpent) || timeSpent < 0) {
       throw new BadRequestError("Invalid timeSpent");
     }
 
@@ -109,13 +109,32 @@ public static deleteQuestion = asyncHandler(async (req: Request, res: Response) 
     if (!q) throw new NotFoundError("Question not found");
 
     const content = q.content as Partial<QuestionContent>;
-    const normalize = (v: unknown) => (typeof v === 'string' ? v.trim().toLowerCase() : v);
-    const isCorrect = normalize(content?.correctAnswer) === normalize(answer);
-    
+    const norm = (v: unknown): any => {
+        if (v == null) return null;
+        if (Array.isArray(v)) return v.map(norm);
+        if (typeof v === 'number') return v.toString();
+        if (typeof v === 'string') return v.trim().toLowerCase();
+        if (typeof v === 'boolean') return v ? 'true' : 'false';
+        return String(v);
+    };
+    const expected = content?.correctAnswer;
+    const equals = (exp: unknown, act: unknown) => {
+        const e = norm(exp);
+        const a = norm(act);
+        return Array.isArray(e) ? e.some(x => x === a) : e === a;
+    };
+    const isCorrect = equals(expected, answer);
+
     const meta = (q.gameMetadata ?? {}) as Partial<GameMeta>;
     const timeLimit: number = typeof meta.timeLimit === "number" && meta.timeLimit > 0 ? meta.timeLimit : 30;
-
-    const xpResult = await XPService.awardXP(req.user.id, questionId, isCorrect, timeSpent, timeLimit);
+    const effectiveTime = Math.max(0, Math.min(timeSpent, timeLimit));
+    const xpResult = await XPService.awardXP(
+        req.user.id,
+        questionId,
+        isCorrect,
+        effectiveTime,
+        timeLimit
+    );
 
     return new SuccessResponse("Answer submitted", { isCorrect, xpResult }).send(res);
   });

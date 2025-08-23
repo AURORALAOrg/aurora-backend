@@ -11,10 +11,11 @@ export type TokenClaims = JwtPayload & {
 
 const isSymmetric = /^HS/.test(serverSettings.jwt.algorithm);
 const SIGNING_KEY: Secret = isSymmetric
-  ? (serverSettings.jwtSecretKey as string)
+  ? (serverSettings.jwt.secretKey as string)
   : (serverSettings.jwt.privateKey as string);
+
 const VERIFY_KEY: Secret = isSymmetric
-  ? (serverSettings.jwtSecretKey as string)
+  ? (serverSettings.jwt.secretKey as string)
   : (serverSettings.jwt.publicKey as string);
 
 export class Jwt {

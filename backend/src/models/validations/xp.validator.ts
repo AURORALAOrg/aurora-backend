@@ -12,9 +12,10 @@ export const awardXPSchema = Joi.object({
 
 export const awardXPValidation = Joi.object({
   body: Joi.object({
-    points: Joi.number().integer().min(1).max(10000).required(),
+    targetUserId: Joi.string().uuid().optional(),
+    points: Joi.number().integer().strict().min(1).max(10000).required(),
     reason: Joi.string().valid("question_correct", "admin_grant", "bonus").required(),
-    difficultyMultiplier: Joi.number().min(0.5).max(2.0).optional(),
+    difficultyMultiplier: Joi.number().strict().min(0.5).max(2.0).optional(),
   }).required().unknown(false),
 });
 

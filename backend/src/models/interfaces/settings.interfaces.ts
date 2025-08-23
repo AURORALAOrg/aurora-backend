@@ -1,7 +1,14 @@
 export interface ServerSettings {
   serverEnvironment: "PRODUCTION" | "STAGING" | "DEVELOPMENT" | "TEST";
   serverPort: number;
-  jwtSecretKey: string;
+  jwt: {
+    issuer: string;
+    audience: string;
+    algorithm: string;
+    privateKey?: string;
+    publicKey?: string;
+    secretKey?: string; // for HS* algorithms
+  };
   bcryptHashingSalt: string;
   email: {
     username: string;
