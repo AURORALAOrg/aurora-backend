@@ -1,9 +1,8 @@
 // import * as fs from 'fs';
 import fs from 'fs/promises';
 import path from 'path';
-import { PrismaClient } from '@prisma/client';
+import { prisma } from '../src/lib/prisma';
 
-const prisma = new PrismaClient();
 
 const allowedQuestionTypes = ['multiple-choice', 'sentence-builder', 'fill-in-blanks', 'idiom-challenge', 'word-scramble', 'word-matching', 'story-game'];
 const allowedEnglishLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];

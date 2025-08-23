@@ -120,24 +120,6 @@ model Topic {
   @@index([category], map: "topic_category_idx")
 }
 
-enum Status {
-  ACTIVE   @map("active")
-  INACTIVE @map("inactive")
-}
-
-enum QuestionType {
-  MULTIPLE_CHOICE  @map("multiple_choice")
-  SENTENCE_BUILDER @map("sentence_builder")
-  FILL_IN_BLANKS   @map("fill_in_blanks")
-  IDIOM_CHALLENGE  @map("idiom_challenge")
-}
-
-enum DifficultyLevel {
-  BEGINNER     @map("beginner")
-  INTERMEDIATE @map("intermediate")
-  ADVANCED     @map("advanced")
-}
-
 enum EnglishLevel {
   A1
   A2
