@@ -91,9 +91,9 @@ model WalletVerificationChallenge {
 
 model Question {
   id            String   @id @default(uuid())
-  content       Json // Will contain question-specific content
-  metadata      Json // Will contain type and other metadata
-  gameMetadata  Json // Will contain game-specific metadata
+  content       Json
+  metadata      Json
+  gameMetadata  Json
   createdBy     String
   status        Status   @default(ACTIVE)
   createdAt     DateTime @default(now())
@@ -101,4 +101,63 @@ model Question {
   createdByUser User     @relation(fields: [createdBy], references: [id])
 
   @@map("questions")
+}
+
+/// Conversation topics for AI practice, linked conceptually to question categories/levels
+model Topic {
+  id           String       @id @default(uuid())
+  name         String
+  description  String?
+  category     Category
+  englishLevel EnglishLevel
+  prompts      String[]
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+
+                  @@unique([name, category, englishLevel], map: "topic_unique_name_category_level")
+  @@index([englishLevel, category], map: "topic_level_category_idx")
+  @@index([englishLevel], map: "topic_level_idx")
+  @@index([category], map: "topic_category_idx")
+}
+
+enum Status {
+  ACTIVE   @map("active")
+  INACTIVE @map("inactive")
+}
+
+enum QuestionType {
+  MULTIPLE_CHOICE  @map("multiple_choice")
+  SENTENCE_BUILDER @map("sentence_builder")
+  FILL_IN_BLANKS   @map("fill_in_blanks")
+  IDIOM_CHALLENGE  @map("idiom_challenge")
+}
+
+enum DifficultyLevel {
+  BEGINNER     @map("beginner")
+  INTERMEDIATE @map("intermediate")
+  ADVANCED     @map("advanced")
+}
+
+enum EnglishLevel {
+  A1
+  A2
+  B1
+  B2
+  C1
+  C2
+}
+
+enum Category {
+  GRAMMAR
+  VOCABULARY
+  DAILY_LIFE
+  TRAVEL
+  WORK
+  HOBBIES
+  FOOD
+  FAMILY
+  SHOPPING
+  CULTURE
+  BUSINESS
+  CURRENT_EVENTS
 }

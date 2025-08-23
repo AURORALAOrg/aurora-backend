@@ -24,15 +24,39 @@ function daysAgoUTC(n: number): Date {
 const HOURS = (n: number) => n * 60 * 60 * 1000;
 
 async function main() {
-  const adminHashed = await bcrypt.hash("password123!", 10);
-  const staleHashed = await bcrypt.hash("Password123!", 10);
+  // Production guard to prevent accidental seeding
+  if (process.env.NODE_ENV === "production" && process.env.ALLOW_PROD_SEED !== "true") {
+    throw new Error(
+      "Seeding is disabled in production. Set ALLOW_PROD_SEED=true to override."
+    );
+  }
 
-  const admin = await prisma.user.create({
-    data: {
-      email: "customer@aurora.com",
-      password: adminHashed,
-      firstName: "Aurora",
-      lastName: "Admin",
+  // Read seed values from environment variables with safe defaults
+  const SEED_EMAIL = process.env.LOGIN_EMAIL ?? "customer@aurora.com";
+  const SEED_FIRST_NAME = process.env.LOGIN_FIRST_NAME ?? "Aurora";
+  const SEED_LAST_NAME = process.env.LOGIN_LAST_NAME ?? "Admin";
+  const SEED_PASSWORD = process.env.LOGIN_PASSWORD ?? "password123!";
+  const SEED_WALLET_ADDRESS = process.env.LOGIN_WALLET_ADDRESS ?? "0x1234567890123456789012345678901234567890";
+
+  const hashedPassword = await bcrypt.hash(SEED_PASSWORD, 10);
+
+  // Create or update user (idempotent)
+  const user = await prisma.user.upsert({
+    where: {
+      email: SEED_EMAIL,
+    },
+    update: {
+      password: hashedPassword,
+      firstName: SEED_FIRST_NAME,
+      lastName: SEED_LAST_NAME,
+      isEmailVerified: true,
+      status: "ACTIVE",
+    },
+    create: {
+      email: SEED_EMAIL,
+      password: hashedPassword,
+      firstName: SEED_FIRST_NAME,
+      lastName: SEED_LAST_NAME,
       isEmailVerified: true,
       status: "ACTIVE",
       role: "admin",
@@ -44,10 +68,19 @@ async function main() {
     },
   });
 
-  const wallet = await prisma.wallet.create({
-    data: {
-      userId: admin.id,
-      walletAddress: "0x1234567890123456789012345678901234567890",
+  // Create or update wallet for the user (idempotent)
+  const wallet = await prisma.wallet.upsert({
+    where: {
+      userId: user.id,
+    },
+    update: {
+      walletAddress: SEED_WALLET_ADDRESS,
+      isVerified: true,
+      status: "ACTIVE",
+    },
+    create: {
+      userId: user.id,
+      walletAddress: SEED_WALLET_ADDRESS,
       isVerified: true,
       status: "ACTIVE",
     },
@@ -75,7 +108,7 @@ async function main() {
           timeLimit: 30,
           difficultyMultiplier: 1.5,
         } as Prisma.InputJsonValue,
-        createdBy: admin.id,
+        createdBy: user.id,
       },
       {
         content: {
@@ -97,13 +130,13 @@ async function main() {
           timeLimit: 20,
           difficultyMultiplier: 1.2,
         } as Prisma.InputJsonValue,
-        createdBy: admin.id,
+        createdBy: user.id,
       },
     ],
   });
 
   const createdQuestions = await prisma.question.findMany({
-    where: { createdBy: admin.id },
+    where: { createdBy: user.id },
     select: { id: true, gameMetadata: true },
     orderBy: { id: "asc" },
   });
@@ -129,7 +162,7 @@ async function main() {
 
   await prisma.userActivity.create({
     data: {
-      userId: admin.id,
+      userId: user.id,
       activityDate: today,
       xpEarned: xpAwarded1,
       questionsCompleted: 1,
@@ -148,16 +181,16 @@ async function main() {
 
   await prisma.userActivity.create({
     data: {
-      userId: admin.id,
+      userId: user.id,
       activityDate: yesterday,
       xpEarned: xpAwarded2,
       questionsCompleted: 1,
     },
   });
 
-  // Update admin XP totals
+  // Update user XP totals
   await prisma.user.update({
-    where: { id: admin.id },
+    where: { id: user.id },
     data: {
       totalXP,
       dailyXP: xpAwarded1,
@@ -171,7 +204,7 @@ async function main() {
 
   const now = new Date();
   const staleDate = new Date(now.getTime() - HOURS(27)); // >26h ago
-
+  const staleHashed = await bcrypt.hash("Password123!", 10);
   const staleUser = await prisma.user.create({
     data: {
       email: "stale26h@aurora.com",
@@ -208,9 +241,9 @@ async function main() {
   });
 
   console.log({
-    admin: {
-      id: admin.id,
-      email: admin.email,
+    user: {
+      id: user.id,
+      email: user.email,
       totalXP,
       currentStreak,
     },
@@ -225,12 +258,61 @@ async function main() {
     ],
     staleUser,
   });
+
+  // Seed basic topics (idempotent)
+  const topics = [
+    {
+      name: "Food & Restaurants",
+      description: "Practice ordering food and restaurant conversations",
+      category: "FOOD" as const,
+      englishLevel: "A1" as const,
+      prompts: [
+        "You are at a restaurant. Order your favorite meal.",
+        "Describe your favorite food to a friend.",
+      ],
+    },
+    {
+      name: "Travel",
+      description: "Practice talking about trips and transportation",
+      category: "TRAVEL" as const,
+      englishLevel: "B1" as const,
+      prompts: [
+        "Plan a trip to a city you have never visited before.",
+        "Ask for directions to a famous landmark.",
+      ],
+    },
+  ];
+
+  for (const t of topics) {
+    await prisma.topic.upsert({
+      where: {
+        name_category_englishLevel: {
+          name: t.name,
+          category: t.category,
+          englishLevel: t.englishLevel,
+        },
+      },
+      update: {
+        description: t.description,
+        prompts: t.prompts,
+      },
+      create: {
+        name: t.name,
+        description: t.description,
+        category: t.category,
+        englishLevel: t.englishLevel,
+        prompts: t.prompts,
+      },
+    });
+  }
+
+  console.log("✅ Database seeded successfully!");
 }
 
 main()
-  .catch((e) => {
-    console.error(e);
-    process.exit(1);
+  .catch(async (e) => {
+    console.error("❌ Seeding failed:", e);
+    process.exitCode = 1;
   })
   .finally(async () => {
     await prisma.$disconnect();
