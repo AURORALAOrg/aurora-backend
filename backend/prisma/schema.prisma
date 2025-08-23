@@ -27,33 +27,49 @@ enum DifficultyLevel {
 }
 
 model User {
-  id              String         @id @default(uuid())
-  email           String         @unique
+  id              String           @id @default(uuid())
+  email           String           @unique
   password        String
-  isEmailVerified Boolean        @default(false)
+  isEmailVerified Boolean          @default(false)
   firstName       String?
   lastName        String?
   phoneNumber     String?
   profileImage    String?
-  status          Status         @default(INACTIVE)
-  role            String         @default("user")
-  createdAt       DateTime       @default(now())
-  updatedAt       DateTime       @updatedAt
-  totalXP         Int            @default(0) @map("total_xp")
-  dailyXP         Int            @default(0) @map("daily_xp")
-  weeklyXP        Int            @default(0) @map("weekly_xp")
-  currentStreak   Int            @default(0) @map("current_streak")
-  longestStreak   Int            @default(0) @map("longest_streak")
-  lastStreakDate  DateTime?      @map("last_streak_date")
-  lastActivityAt  DateTime?      @map("last_activity_at")
+  status          Status           @default(INACTIVE)
+  role            String           @default("user")
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+  totalXP         Int              @default(0) @map("total_xp")
+  dailyXP         Int              @default(0) @map("daily_xp")
+  weeklyXP        Int              @default(0) @map("weekly_xp")
+  currentStreak   Int              @default(0) @map("current_streak")
+  longestStreak   Int              @default(0) @map("longest_streak")
+  lastStreakDate  DateTime?        @map("last_streak_date")
+  lastActivityAt  DateTime?        @map("last_activity_at")
   wallet          Wallet?
   questions       Question[]
   activities      UserActivity[]
+  UserQuestionXP  UserQuestionXP[]
 
   @@index([lastActivityAt], map: "idx_user_last_activity_at")
   @@index([lastStreakDate], map: "idx_user_last_streak_date")
   @@index([totalXP], map: "idx_user_total_xp")
   @@index([currentStreak], map: "idx_user_current_streak")
+}
+
+model UserQuestionXP {
+  id                   String   @id @default(cuid())
+  userId               String
+  questionId           String
+  xpAwarded            Int
+  awardedAt            DateTime @default(now())
+  totalXPAtAward       Int
+  currentStreakAtAward Int
+
+  user     User     @relation(fields: [userId], references: [id])
+  question Question @relation(fields: [questionId], references: [id])
+
+  @@unique([userId, questionId], map: "userId_questionId")
 }
 
 model UserActivity {
@@ -65,7 +81,7 @@ model UserActivity {
   createdAt          DateTime @default(now())
   user               User     @relation(fields: [userId], references: [id])
 
-  @@unique([userId, activityDate], name: "userId_activityDate")
+  @@unique([userId, activityDate], map: "userId_activityDate")
   @@map("user_activities")
 }
 
@@ -90,15 +106,16 @@ model WalletVerificationChallenge {
 }
 
 model Question {
-  id            String   @id @default(uuid())
-  content       Json
-  metadata      Json
-  gameMetadata  Json
-  createdBy     String
-  status        Status   @default(ACTIVE)
-  createdAt     DateTime @default(now())
-  updatedAt     DateTime @updatedAt
-  createdByUser User     @relation(fields: [createdBy], references: [id])
+  id             String           @id @default(uuid())
+  content        Json
+  metadata       Json
+  gameMetadata   Json
+  createdBy      String
+  status         Status           @default(ACTIVE)
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  createdByUser  User             @relation(fields: [createdBy], references: [id])
+  UserQuestionXP UserQuestionXP[]
 
   @@map("questions")
 }
@@ -114,7 +131,7 @@ model Topic {
   createdAt    DateTime     @default(now())
   updatedAt    DateTime     @updatedAt
 
-                  @@unique([name, category, englishLevel], map: "topic_unique_name_category_level")
+  @@unique([name, category, englishLevel], map: "topic_unique_name_category_level")
   @@index([englishLevel, category], map: "topic_level_category_idx")
   @@index([englishLevel], map: "topic_level_idx")
   @@index([category], map: "topic_category_idx")

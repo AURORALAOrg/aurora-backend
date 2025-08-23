@@ -1,7 +1,6 @@
 import { StreakService } from './streak.service';
 import { prisma } from '../lib/prisma';
 
-
 interface XPAwardInput {
   questionId: string;
   isCorrect: boolean;
@@ -40,144 +39,192 @@ export class XPService {
     timeLimit: number
   ): Promise<XPAwardResponse> {
     if (!isCorrect) {
+      await StreakService.updateUserStreak(userId);
+      const u = await prisma.user.findUnique({ where: { id: userId } });
       return {
         xpAwarded: 0,
-        totalXP: 0,
-        currentStreak: 0,
+        totalXP: u?.totalXP ?? 0,
+        currentStreak: u?.currentStreak ?? 0,
         streakBonus: false,
         timeBonus: false,
         levelUp: false,
       };
     }
 
-    const question = await prisma.question.findUnique({
-      where: { id: questionId },
-    });
-
-    if (!question) {
-      throw new Error('Question not found');
-    }
-
-    const { pointsValue, timeLimit: questionTimeLimit, difficultyMultiplier } =
-      question.gameMetadata as {
-        pointsValue: number,
-        timeLimit: number,
-        difficultyMultiplier: number,
-      } || { pointsValue: 10, timeLimit, difficultyMultiplier: 1 };
-
-
-    // Update streak first to ensure correct multiplier
+    // Ensure streaks are up to date before computing multipliers
     await StreakService.updateUserStreak(userId);
 
-    // Refetch user to get updated streak
-    const user = await prisma.user.findUnique({
-      where: { id: userId },
-    });
+    // Transaction for atomic award + activity write
+    const result = await prisma.$transaction(async (tx) => {
+      // Optional idempotency guard (skips if table doesn’t exist)
+      let duplicate = false;
+      try {
+        // @ts-ignore - table may not exist yet; guarded by try/catch
+        const found = await (tx as any).userQuestionXP?.findUnique?.({
+          where: { userId_questionId: { userId, questionId } },
+          select: { id: true },
+        });
+        duplicate = !!found;
+      } catch (_) {
+        // ignore if table not present
+      }
+      if (duplicate) {
+        const u = await tx.user.findUnique({ where: { id: userId } });
+        return {
+          xpAwarded: 0,
+          totals: {
+            totalXP: u?.totalXP ?? 0,
+          },
+          streak: {
+            current: u?.currentStreak ?? 0,
+          },
+          bonuses: { streakMultiplier: 1.0, timeBonus: 1.0 },
+          level: { old: u?.totalXP ?? 0, new: u?.totalXP ?? 0, up: false },
+        };
+      }
 
-    if (!user) {
-      throw new Error('User not found');
-    }
+      // Load question metadata
+      const question = await tx.question.findUnique({
+        where: { id: questionId },
+        select: { gameMetadata: true },
+      });
+      if (!question) {
+        throw new Error('Question not found');
+      }
 
-    const streakMultiplier = user.currentStreak > 1 ? 1.1 : 1.0;
+      const gm = (question.gameMetadata ?? {}) as Partial<GameMetadata>;
+      const pointsValue = Number(gm.pointsValue ?? 10);
+      const difficultyMultiplier = Number(gm.difficultyMultiplier ?? 1);
+      const configuredTimeLimit = Number(gm.timeLimit ?? timeLimit ?? 30);
+      const safeTimeLimit = Math.max(1, configuredTimeLimit);
 
-    // Use the question's configured time limit (fallback to function arg)
-    const effectiveTimeLimit = questionTimeLimit ?? timeLimit;
-    const timeBonusMult = timeSpent <= effectiveTimeLimit / 2 ? 1.2 : 1.0;
+      const effectiveTime = Math.max(0, Math.min(timeSpent, safeTimeLimit));
+      const timeRemaining = Math.max(0, safeTimeLimit - effectiveTime);
 
-    const finalXP = Math.round(
-      pointsValue * difficultyMultiplier * streakMultiplier * timeBonusMult
-    );
+      // Fetch user AFTER streak service runs to get fresh streak
+      const user = await tx.user.findUnique({ where: { id: userId } });
+      if (!user) {
+        throw new Error('User not found');
+      }
 
-    const updatedUser = await prisma.user.update({
-      where: { id: userId },
-      data: {
-        totalXP: { increment: finalXP },
-        dailyXP: { increment: finalXP },
-        weeklyXP: { increment: finalXP },
-        lastActivityAt: new Date(),
-      },
-    });
+      // === Spec-accurate multipliers ===
+      // Base XP only if correct
+      const baseXP = pointsValue * difficultyMultiplier;
 
-    const { oldLevel, newLevel, levelUp } = this.checkLevelUp(
-      user.totalXP,
-      updatedUser.totalXP
-    );
+      // 10% per day after day-1, capped at +100% => max 2x
+      const streakDaysAfterFirst = Math.max(0, (user.currentStreak ?? 0) - 1);
+      const streakMultiplier = 1 + Math.min(streakDaysAfterFirst, 10) * 0.1; // 1.0..2.0
 
-    const activityDate = utcStartOfToday();
+      // +20% if > 50% of time remaining
+      const timeBonus = timeRemaining > safeTimeLimit * 0.5 ? 1.2 : 1.0;
 
-    await prisma.userActivity.upsert({
-      where: {
-        userId_activityDate: {
-          userId,
-          activityDate, // Date object, not number
+      const finalXP = Math.round(baseXP * streakMultiplier * timeBonus);
+
+      // Update user totals
+      const updated = await tx.user.update({
+        where: { id: userId },
+        data: {
+          totalXP: { increment: finalXP },
+          dailyXP: { increment: finalXP },
+          weeklyXP: { increment: finalXP },
+          lastActivityAt: new Date(),
         },
-      },
-      update: {
-        xpEarned: { increment: finalXP },
-        questionsCompleted: { increment: 1 },
-      },
-      create: {
-        userId,
-        activityDate,
-        xpEarned: finalXP,
-        questionsCompleted: 1,
-      },
+        select: {
+          totalXP: true,
+          dailyXP: true,
+          weeklyXP: true,
+          currentStreak: true,
+          longestStreak: true,
+        },
+      });
+
+      // Level-up check against previous total
+      const { oldLevel, newLevel, levelUp } = XPService.checkLevelUp(
+        (updated.totalXP ?? 0) - finalXP,
+        updated.totalXP ?? 0
+      );
+
+      // Upsert UTC daily activity
+      const activityDate = utcStartOfToday();
+      await tx.userActivity.upsert({
+        where: {
+          userId_activityDate: { userId, activityDate },
+        },
+        update: {
+          xpEarned: { increment: finalXP },
+          questionsCompleted: { increment: 1 },
+        },
+        create: {
+          userId,
+          activityDate,
+          xpEarned: finalXP,
+          questionsCompleted: 1,
+        },
+      });
+
+      try {
+        await (tx as any).userQuestionXP?.create?.({
+          data: {
+            userId,
+            questionId,
+            xpAwarded: finalXP,
+            totalXPAtAward: updated.totalXP,
+            currentStreakAtAward: updated.currentStreak,
+          },
+        });
+      } catch (_) {
+        // ignore if table not present
+      }
+
+      return {
+        xpAwarded: finalXP,
+        totals: { totalXP: updated.totalXP },
+        streak: { current: updated.currentStreak },
+        bonuses: { streakMultiplier, timeBonus },
+        level: { old: oldLevel, new: newLevel, up: levelUp },
+      };
     });
 
     return {
-      xpAwarded: finalXP,
-      totalXP: updatedUser.totalXP,
-      currentStreak: updatedUser.currentStreak,
-      streakBonus: streakMultiplier > 1,
-      timeBonus: timeBonusMult > 1,
-      levelUp,
-      oldLevel,
-      newLevel,
+      xpAwarded: result.xpAwarded,
+      totalXP: result.totals.totalXP,
+      currentStreak: result.streak.current,
+      streakBonus: result.bonuses.streakMultiplier > 1,
+      timeBonus: result.bonuses.timeBonus > 1,
+      levelUp: result.level.up,
+      oldLevel: result.level.old,
+      newLevel: result.level.new,
     };
   }
 
   static async getUserStats(userId: string) {
-    const user = await prisma.user.findUnique({
-      where: { id: userId },
-    });
+    // Ensure streak freshness first
+    await StreakService.updateUserStreak(userId);
+
+    const [user, activities] = await Promise.all([
+      prisma.user.findUnique({ where: { id: userId } }),
+      prisma.userActivity.findMany({
+        where: { userId },
+        orderBy: { activityDate: 'desc' },
+      }),
+    ]);
 
     if (!user) {
       throw new Error('User not found');
     }
 
-    const activities = await prisma.userActivity.findMany({
-      where: { userId },
-      orderBy: { activityDate: 'desc' },
-    });
-
-    // Update streak first to ensure currentStreak is fresh
-    await StreakService.updateUserStreak(userId);
-
-    // Refetch user to get updated streak
-    const updatedUser = await prisma.user.findUnique({
-      where: { id: userId },
-    });
-
-    if (!updatedUser) {
-      throw new Error('User not found after streak update');
-    }
-
     const questionsCompleted = activities.reduce(
-      (sum, activity) => sum + activity.questionsCompleted,
+      (sum, a) => sum + a.questionsCompleted,
       0
     );
-
-    // Placeholder accuracy (you may want to store correct/attempt counts)
-    const accuracy = questionsCompleted
-      ? Math.round((questionsCompleted / questionsCompleted) * 100) // = 100 for now
-      : 0;
+    const accuracy = questionsCompleted ? 100 : 0; // placeholder
 
     return {
-      totalXP: updatedUser.totalXP,
-      dailyXP: updatedUser.dailyXP,
-      weeklyXP: updatedUser.weeklyXP,
-      currentStreak: updatedUser.currentStreak,
-      longestStreak: updatedUser.longestStreak,
+      totalXP: user.totalXP,
+      dailyXP: user.dailyXP,
+      weeklyXP: user.weeklyXP,
+      currentStreak: user.currentStreak,
+      longestStreak: user.longestStreak,
       questionsCompleted,
       accuracy,
     };

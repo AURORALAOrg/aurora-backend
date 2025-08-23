@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 import path from "path";
 import Joi from "joi";
+import { ServerSettings } from "../../models/interfaces/settings.interfaces";
 
 dotenv.config();
 
@@ -53,10 +54,9 @@ if (error) {
   throw new Error(`Config validation error: ${error.message}`);
 }
 
-const serverSettings = {
+const serverSettings: ServerSettings = {
   serverEnvironment: envVars.SERVER_ENVIRONMENT,
   serverPort: envVars.SERVER_PORT,
-  jwtSecretKey: envVars.JWT_SECRET_KEY,
   jwt: {
     issuer: envVars.JWT_ISSUER as string,
     audience: envVars.JWT_AUDIENCE as string,

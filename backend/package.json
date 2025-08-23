@@ -16,7 +16,6 @@
     "run:dailyStreak": "ts-node --project tsconfig.json scripts/run.dailyStreak.ts",
     "run:dailyStreak:build": "node build/scripts/run.dailyStreak.ts",
     "prisma:generate": "prisma generate",
-    "postinstall": "prisma generate",
     "prepare": "cd.. && husky install"
   },
   "keywords": [],
