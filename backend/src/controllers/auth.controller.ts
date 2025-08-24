@@ -38,7 +38,11 @@ export const register = asyncHandler(async (req: Request, res: Response) => {
 
   const verificationLink = `${serverSettings.auroraWebApp.baseUrl}/verify-email?token=${verificationToken}`
 
-  EmailNotifier.sendAccountActivationEmail(email, verificationLink)
+  try {
+    await EmailNotifier.sendAccountActivationEmail(email, verificationLink);
+  } catch (error) {
+    logger.warn("Email send failed (non-blocking)", { error });
+  }
 
   const userResponse = {
     id: result.id,
@@ -63,8 +67,11 @@ export const verifyEmail = asyncHandler(async (req: Request, res: Response) => {
       throw new BadRequestError("Verification token is required")
     }
 
-    const decoded = Jwt.verify(token)
-    const userId = (decoded as any).payload.userId
+    const decoded = Jwt.verify<{ userId?: string; id?: string; sub?: string }>(token);
+    const userId = decoded.userId ?? decoded.id ?? decoded.sub;
+    if (!userId) {
+      throw new BadRequestError("Invalid token payload");
+    }
 
     const updatedUser = await UserService.activateEmail(userId)
     if (!updatedUser) throw new BadRequestError("User not found")
@@ -79,22 +86,23 @@ export const verifyEmail = asyncHandler(async (req: Request, res: Response) => {
 export const login = asyncHandler(async (req: Request, res: Response) => {
   const { email, password } = req.body
 
-  const user = await UserService.readUserByEmail(email)
+  const user = await UserService.readUserByEmailForAuth(email)
   if (!user) throw new BadRequestError("Invalid credentials")
   if (!user.isEmailVerified) {
     throw new BadRequestError("Email not verified. Please verify your email first.")
   }
 
-  const isPasswordValid = await Bcrypt.compare(password, user.password)
-  if (!isPasswordValid) throw new BadRequestError("Invalid credentials")
+  const isPasswordValid = await Bcrypt.compare(password, user.password);
+  if (!isPasswordValid) throw new BadRequestError("Invalid credentials");
 
-  const token = Jwt.issue({ id: user.id }, "1d")
+  const token = Jwt.issue({ sub: user.id, role: user.role }, "1d")
 
   const userResponse = {
     id: user.id,
     email: user.email,
     firstName: user.firstName,
     lastName: user.lastName,
+    role: user.role,
     isEmailVerified: user.isEmailVerified,
     createdAt: user.createdAt,
     status: user.status,

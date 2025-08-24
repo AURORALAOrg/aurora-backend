@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 import path from "path";
 import Joi from "joi";
+import { ServerSettings } from "../../models/interfaces/settings.interfaces";
 
 dotenv.config();
 
@@ -10,16 +11,38 @@ const envVarsSchema = Joi.object()
       .valid("PRODUCTION", "STAGING", "DEVELOPMENT", "TEST")
       .required(),
     SERVER_PORT: Joi.number().default(8000),
-    JWT_SECRET_KEY: Joi.string().required().description("JWT Secret Key"),
-    BCRYPT_SALT_ROUNDS: Joi.number()
+    JWT_SECRET_KEY: Joi.string().when('JWT_ALGORITHM', {
+      is: Joi.string().pattern(/^HS/),
+      /* biome-ignore lint/suspicious/noThenProperty: Joi.when requires `then` */
+      then: Joi.required().description("HMAC secret (PEM/base64) for HS* algorithms"),
+      otherwise: Joi.forbidden()
+    }),
+    JWT_ISSUER: Joi.string().default("aurora"),
+    JWT_AUDIENCE: Joi.string().default("aurora-users"),
+    JWT_ALGORITHM: Joi.string()
+      .valid("HS256", "HS384", "HS512", "RS256", "RS384", "RS512", "ES256", "ES384", "PS256", "PS384", "PS512")
+      .default("HS256"),
+    JWT_PRIVATE_KEY: Joi.string().when('JWT_ALGORITHM', {
+      is: Joi.string().pattern(/^(RS|ES|PS)/),
+      /* biome-ignore lint/suspicious/noThenProperty: Joi.when requires `then` */
+      then: Joi.required().description("JWT private key (PEM) for asymmetric algorithms"),
+      otherwise: Joi.forbidden()
+    }),
+    JWT_PUBLIC_KEY: Joi.string().when('JWT_ALGORITHM', {
+      is: Joi.string().pattern(/^(RS|ES|PS)/),
+      /* biome-ignore lint/suspicious/noThenProperty: Joi.when requires `then` */
+      then: Joi.required().description("JWT public key (PEM) for asymmetric algorithms"),
+      otherwise: Joi.forbidden()
+    }),
+    BCRYPT_SALT_ROUNDS: Joi.number().integer().min(4).max(15)
       .required()
       .description("Bcrypt Salt Rounds"),
     EMAIL_USERNAME: Joi.string().required().description("Email username"),
     EMAIL_PASSWORD: Joi.string().required().description("Email password"),
-    EMAIL_FROM_ADDRESS: Joi.string()
+    EMAIL_FROM_ADDRESS: Joi.string().email()
       .required()
       .description("Sender email address"),
-    AURORA_WEB_APP_BASE_URL: Joi.string()
+    AURORA_WEB_APP_BASE_URL: Joi.string().uri({ scheme: ['http','https'] })
       .required()
       .description("Base URL for Aurora Web App"),
   })
@@ -28,13 +51,29 @@ const envVarsSchema = Joi.object()
 const { value: envVars, error } = envVarsSchema.validate(process.env);
 
 if (error) {
-  throw new Error(`Config validation error: ${error.message}`);
+  const redacted = error.details
+    .map(d => {
+      const key =
+        // `context.key` is preferred, fallback to parsed path
+        (d as any).context?.key ??
+        (Array.isArray((d as any).path) ? (d as any).path.join(".") : String((d as any).path));
+      return `${key}: ${(d as any).type}`;
+    })
+    .join("; ");
+  throw new Error(`Config validation error: ${redacted}`);
 }
 
-const serverSettings = {
+const serverSettings: ServerSettings = {
   serverEnvironment: envVars.SERVER_ENVIRONMENT,
   serverPort: envVars.SERVER_PORT,
-  jwtSecretKey: envVars.JWT_SECRET_KEY,
+  jwt: {
+    issuer: envVars.JWT_ISSUER as string,
+    audience: envVars.JWT_AUDIENCE as string,
+    secretKey: envVars.JWT_SECRET_KEY as string | undefined,
+    algorithm: envVars.JWT_ALGORITHM as string,
+    privateKey: envVars.JWT_PRIVATE_KEY as string | undefined,
+    publicKey: envVars.JWT_PUBLIC_KEY as string | undefined,
+  },
   bcryptHashingSalt: envVars.BCRYPT_SALT_ROUNDS,
   auroraWebApp: {
     baseUrl: envVars.AURORA_WEB_APP_BASE_URL,

@@ -1,7 +1,6 @@
-import { PrismaClient, Status, Question } from "@prisma/client";
+import { Status, Question } from "@prisma/client";
 import { InternalError, BadRequestError } from "../core/api/ApiError";
-
-const prisma = new PrismaClient();
+import { prisma } from "../lib/prisma";
 
 interface IQuestionContent {
     // Multiple choice fields

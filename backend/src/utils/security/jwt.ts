@@ -1,16 +1,46 @@
-import jwt from "jsonwebtoken";
+import jwt, { JwtPayload, Secret, SignOptions, VerifyOptions } from "jsonwebtoken";
 import serverSettings from "../../core/config/settings";
 
-class Jwt {
-  public static issue(payload: any, expires: any): any {
-    return jwt.sign({ payload }, serverSettings.jwtSecretKey as any, {
-      expiresIn: expires as any,
-    });
+
+export type TokenClaims = JwtPayload & {
+  sub?: string;
+  id?: string;
+  userId?: string;
+  role?: string;
+};
+
+const isSymmetric = /^HS/.test(serverSettings.jwt.algorithm);
+const SIGNING_KEY: Secret = isSymmetric
+  ? (serverSettings.jwt.secretKey as string)
+  : (serverSettings.jwt.privateKey as string);
+
+const VERIFY_KEY: Secret = isSymmetric
+  ? (serverSettings.jwt.secretKey as string)
+  : (serverSettings.jwt.publicKey as string);
+
+export class Jwt {
+  public static issue(payload: Record<string, unknown> | TokenClaims, expires?: SignOptions["expiresIn"]): string {
+    const opts: SignOptions = {
+      issuer: serverSettings.jwt.issuer,
+      audience: serverSettings.jwt.audience,
+      algorithm: serverSettings.jwt.algorithm as jwt.Algorithm,
+      expiresIn: (typeof expires !== "undefined" ? expires : "1d") as SignOptions["expiresIn"],
+    };
+    if (!SIGNING_KEY) throw new Error('JWT misconfiguration: missing signing key');
+    return jwt.sign(payload, SIGNING_KEY, opts);
   }
 
-  public static verify(token: string): any {
-    return jwt.verify(token, serverSettings.jwtSecretKey as string);
+  public static verify<T extends JwtPayload = TokenClaims>(token: string): T {
+    const vopts: VerifyOptions = {
+      issuer: serverSettings.jwt.issuer,
+      audience: serverSettings.jwt.audience,
+      algorithms: [serverSettings.jwt.algorithm as jwt.Algorithm],
+    };
+    if (!VERIFY_KEY) throw new Error('JWT misconfiguration: missing verification key');
+    const decoded = jwt.verify(token, VERIFY_KEY, vopts);
+    return decoded as T;
   }
 }
+
 
 export default Jwt;
