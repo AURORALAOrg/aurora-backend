@@ -39,8 +39,19 @@ export class XPService {
     timeLimit: number
   ): Promise<XPAwardResponse> {
     if (!isCorrect) {
-      await StreakService.updateUserStreak(userId);
-      const u = await prisma.user.findUnique({ where: { id: userId } });
+      const now = new Date();
+      // Count an attempt as "activity" to avoid unintended streak breaks by the daily job.
+      await Promise.all([
+        StreakService.updateUserStreak(userId),
+        prisma.user.update({
+          where: { id: userId },
+          data: { lastActivityAt: now },
+        }),
+      ]);
+      const u = await prisma.user.findUnique({
+        where: { id: userId },
+        select: { totalXP: true, currentStreak: true },
+      });
       return {
         xpAwarded: 0,
         totalXP: u?.totalXP ?? 0,
@@ -70,16 +81,22 @@ export class XPService {
       }
       if (duplicate) {
         const u = await tx.user.findUnique({ where: { id: userId } });
+        const xp = u?.totalXP ?? 0;
+        const { oldLevel, newLevel } = XPService.checkLevelUp(xp, xp);
         return {
           xpAwarded: 0,
           totals: {
-            totalXP: u?.totalXP ?? 0,
+            totalXP: xp,
           },
           streak: {
             current: u?.currentStreak ?? 0,
           },
           bonuses: { streakMultiplier: 1.0, timeBonus: 1.0 },
-          level: { old: u?.totalXP ?? 0, new: u?.totalXP ?? 0, up: false },
+          level: {
+            old: oldLevel,
+            new: newLevel,
+            up: false
+          },
         };
       }
 

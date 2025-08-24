@@ -9,7 +9,7 @@ export interface ServerSettings {
     publicKey?: string;
     secretKey?: string; // for HS* algorithms
   };
-  bcryptHashingSalt: string;
+  bcryptHashingSalt: number;  // rounds
   email: {
     username: string;
     fromAddress: string;

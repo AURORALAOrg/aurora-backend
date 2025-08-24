@@ -51,7 +51,16 @@ const envVarsSchema = Joi.object()
 const { value: envVars, error } = envVarsSchema.validate(process.env);
 
 if (error) {
-  throw new Error(`Config validation error: ${error.message}`);
+  const redacted = error.details
+    .map(d => {
+      const key =
+        // `context.key` is preferred, fallback to parsed path
+        (d as any).context?.key ??
+        (Array.isArray((d as any).path) ? (d as any).path.join(".") : String((d as any).path));
+      return `${key}: ${(d as any).type}`;
+    })
+    .join("; ");
+  throw new Error(`Config validation error: ${redacted}`);
 }
 
 const serverSettings: ServerSettings = {

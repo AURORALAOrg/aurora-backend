@@ -14,9 +14,9 @@
     "import:questions:dev": "ts-node --transpile-only scripts/importQuestions.ts",
     "import:questions": "ts-node --project tsconfig.json scripts/importQuestions.ts",
     "run:dailyStreak": "ts-node --project tsconfig.json scripts/run.dailyStreak.ts",
-    "run:dailyStreak:build": "node build/scripts/run.dailyStreak.ts",
+    "run:dailyStreak:prod": "node build/scripts/run.dailyStreak.js",
     "prisma:generate": "prisma generate",
-    "prepare": "cd.. && husky install"
+    "prepare": "cd .. && husky install"
   },
   "keywords": [],
   "author": "",
