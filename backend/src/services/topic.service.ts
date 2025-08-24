@@ -1,7 +1,6 @@
-import { PrismaClient, Topic, Prisma, Category } from "@prisma/client";
+import { Topic, Prisma, Category } from "@prisma/client";
 import { InternalError, BadRequestError, NotFoundError } from "../core/api/ApiError";
-
-const prisma = new PrismaClient();
+import { prisma } from "../lib/prisma";
 
 interface CreateTopicDTO {
   name: string;
