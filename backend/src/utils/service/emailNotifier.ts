@@ -109,7 +109,7 @@ The AURORA Team`
     }
   }
 
-  public static async sendReminderEmails(reminders: ReminderEmailData[], maxRetries: number = 2, retryDelayMs: number = 5000) {
+  public static async sendReminderEmails(reminders: ReminderEmailData[], maxRetries: number = 2, retryDelayMs: number = 1000) {
     const results = {
       success: 0,
       failed: 0,
