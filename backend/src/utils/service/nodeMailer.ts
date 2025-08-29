@@ -8,9 +8,12 @@ class ZohoMailer {
 
   constructor() {
     this.transporter = nodemailer.createTransport({
-      host: "smtp.zeptomail.com",
+      host: "smtp.gmail.com",
       port: 587,
       secure: false,
+      connectionTimeout: 10000, // 10 seconds
+      greetingTimeout: 10000,   // 10 seconds
+      socketTimeout: 10000,     // 10 seconds
       auth: {
         user: serverSettings.email.username,
         pass: serverSettings.email.password,

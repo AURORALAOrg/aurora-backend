@@ -22,6 +22,18 @@ const envVarsSchema = Joi.object()
     AURORA_WEB_APP_BASE_URL: Joi.string()
       .required()
       .description("Base URL for Aurora Web App"),
+    REMINDER_ENABLED: Joi.boolean()
+      .default(true)
+      .description("Enable reminder emails"),
+    CRON_SCHEDULE: Joi.string()
+      .default("0 2 * * *")
+      .description("CRON schedule for reminder job"),
+    REMINDER_MAX_RETRIES: Joi.number()
+      .default(2)
+      .description("Maximum retries for failed email reminders"),
+    REMINDER_RETRY_INTERVAL_HOURS: Joi.number()
+      .default(24)
+      .description("Hours between email retry attempts"),
   })
   .unknown();
 
@@ -43,6 +55,12 @@ const serverSettings = {
     username: envVars.EMAIL_USERNAME,
     password: envVars.EMAIL_PASSWORD,
     fromAddress: envVars.EMAIL_FROM_ADDRESS,
+  },
+  reminders: {
+    enabled: envVars.REMINDER_ENABLED,
+    cronSchedule: envVars.CRON_SCHEDULE,
+    maxRetries: envVars.REMINDER_MAX_RETRIES,
+    retryIntervalHours: envVars.REMINDER_RETRY_INTERVAL_HOURS,
   },
 };
 
