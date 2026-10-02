@@ -1,0 +1,10 @@
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "aurora-backend",
+-  "version": "1.0.0",
++  "version": "1.1.0",
+   "description": "Aurora Language Learning Platform Backend",
+   "main": "dist/index.js",
+   "scripts": {
